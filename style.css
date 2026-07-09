@@ -1527,8 +1527,109 @@ body.palette-dark {
   width: 18px;
   height: 18px;
   stroke: #ffffff;
+}/* ==========================================================================
+   DONATION / SWISH
+   ========================================================================== */
+
+.donate-section {
+  border-top: 1px solid rgba(255,255,255,0.07);
+  padding-top: 16px;
 }
 
+.donate-desc {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  margin: 6px 0 12px;
+  line-height: 1.5;
+}
 
+.swish-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  padding: 10px 16px;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.15);
+  background: linear-gradient(135deg, rgba(80,200,80,0.15), rgba(40,160,40,0.25));
+  color: #e2e8f0;
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+  font-family: inherit;
+}
 
+.swish-btn:hover {
+  background: linear-gradient(135deg, rgba(80,200,80,0.28), rgba(40,160,40,0.4));
+  border-color: rgba(80,200,80,0.5);
+  box-shadow: 0 0 14px rgba(80,200,80,0.2);
+  transform: translateY(-1px);
+}
+
+.swish-logo-inline {
+  height: 20px;
+  width: auto;
+  object-fit: contain;
+  filter: brightness(1.1);
+}
+
+/* Swish Modal */
+.swish-modal-content {
+  max-width: 380px;
+  text-align: center;
+}
+
+.swish-heart-icon {
+  color: #f43f5e;
+  width: 32px !important;
+  height: 32px !important;
+  animation: heartbeat 1.4s ease-in-out infinite;
+}
+
+@keyframes heartbeat {
+  0%, 100% { transform: scale(1); }
+  14%       { transform: scale(1.18); }
+  28%       { transform: scale(1); }
+  42%       { transform: scale(1.12); }
+  56%       { transform: scale(1); }
+}
+
+.swish-modal-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+.swish-modal-body > p {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.swish-qr-wrapper {
+  background: #fff;
+  border-radius: 16px;
+  padding: 12px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.3);
+}
+
+.swish-qr-img {
+  width: 220px;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+.swish-number {
+  font-size: 0.85rem !important;
+  color: var(--text-secondary);
+}
+
+.swish-number strong {
+  color: var(--text-primary);
+  font-size: 1rem;
+}
 

@@ -348,6 +348,16 @@
           </ul>
         </div>
 
+        <!-- Donation / Support Section -->
+        <div class="section-group donate-section">
+          <h3><i data-lucide="heart"></i> Stöd appen</h3>
+          <p class="donate-desc">Drönarkarta är gratis och reklamfri. Om du uppskattar appen får du gärna bjuda på en kaffe via Swish!</p>
+          <button id="swish-btn" class="swish-btn">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Swish_Logo_Secondary_Light-BG_RGB.svg/320px-Swish_Logo_Secondary_Light-BG_RGB.svg.png" alt="Swish" class="swish-logo-inline">
+            Swisha ett bidrag
+          </button>
+        </div>
+
         <!-- Menu Color Palette Selection -->
         <div class="section-group">
           <h3><i data-lucide="palette"></i> Menyfärg</h3>
@@ -360,6 +370,24 @@
         </div>
       </div>
     </aside>
+
+    <!-- Swish Donation Modal -->
+    <div id="swish-modal" class="modal-overlay hidden">
+      <div class="modal-content swish-modal-content">
+        <button id="close-swish-modal" class="close-btn" aria-label="Stäng"><i data-lucide="x"></i></button>
+        <header class="modal-header">
+          <i data-lucide="heart" class="swish-heart-icon"></i>
+          <h2>Stöd Drönarkarta</h2>
+        </header>
+        <div class="modal-body swish-modal-body">
+          <p>Appen är gratis och reklamfri — din donering hjälper till att hålla den uppdaterad och live!</p>
+          <div class="swish-qr-wrapper">
+            <img src="./swish-QR-small.png" alt="Swish QR-kod — Stöd appen" class="swish-qr-img">
+          </div>
+          <p class="swish-number">Eller swisha direkt till <strong>070-042 71 67</strong></p>
+        </div>
+      </div>
+    </div>
 
     <!-- Zone Detail Modal/Overlay (Mobile) -->
     <div id="detail-overlay" class="detail-overlay hidden">

@@ -1565,6 +1565,22 @@ function setupEventListeners() {
   }
 
   // Close geofence warning banner event listener
+  // Swish donation modal
+  const swishBtn = document.getElementById('swish-btn');
+  const swishModal = document.getElementById('swish-modal');
+  const closeSwishModal = document.getElementById('close-swish-modal');
+
+  if (swishBtn && swishModal) {
+    swishBtn.addEventListener('click', () => {
+      swishModal.classList.remove('hidden');
+      initLucide();
+    });
+    closeSwishModal.addEventListener('click', () => swishModal.classList.add('hidden'));
+    swishModal.addEventListener('click', (e) => {
+      if (e.target === swishModal) swishModal.classList.add('hidden');
+    });
+  }
+
   const closeGeofenceBtn = document.getElementById('close-geofence-btn');
   if (closeGeofenceBtn) {
     closeGeofenceBtn.addEventListener('click', () => {
