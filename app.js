@@ -1483,6 +1483,29 @@ function setupEventListeners() {
     });
   }
 
+  // Geofence range slider event listener
+  const geofenceRange = document.getElementById('geofence-range');
+  const geofenceRangeVal = document.getElementById('geofence-range-val');
+  if (geofenceRange && geofenceRangeVal) {
+    const savedRange = localStorage.getItem('maxFlightDistance');
+    if (savedRange) {
+      maxFlightDistance = parseInt(savedRange, 10);
+      geofenceRange.value = maxFlightDistance;
+      geofenceRangeVal.textContent = `${maxFlightDistance} m`;
+    }
+    
+    geofenceRange.addEventListener('input', (e) => {
+      maxFlightDistance = parseInt(e.target.value, 10);
+      geofenceRangeVal.textContent = `${maxFlightDistance} m`;
+      localStorage.setItem('maxFlightDistance', maxFlightDistance);
+      
+      // Re-evaluate geofence alarms instantly on slider update
+      if (userLocation) {
+        checkGeofenceAlert(userLocation);
+      }
+    });
+  }
+
   // Setup GPS position positioning
   setupGeolocation();
 }
@@ -1494,6 +1517,8 @@ let geofenceAlarmInterval = null;
 let geofenceWarningActive = false;
 let dismissedZoneName = null;
 let activeWarningZoneName = '';
+let activeWarningIsInside = false;
+let maxFlightDistance = 150; // Default max flight distance (VLOS) in meters
 
 function checkGeofenceAlert(latlng) {
   if (!latlng) return;
@@ -1522,8 +1547,13 @@ function checkGeofenceAlert(latlng) {
       }
       
       const dist = map.distance(latlng, centerLatLng);
-      // Trigger warning if within the radius or a 200m safety buffer
-      if (dist < (radius + 200)) {
+      if (dist < radius) {
+        isInside = true;
+        isAlertActive = true;
+        nearestZoneName = getFeatureName(zone);
+        break;
+      } else if (dist < (radius + maxFlightDistance)) {
+        isClose = true;
         isAlertActive = true;
         nearestZoneName = getFeatureName(zone);
         break;
@@ -1536,9 +1566,9 @@ function checkGeofenceAlert(latlng) {
       
       isInside = isPointInPolygon(latlng, points);
       if (!isInside) {
-        // Check if user is within 200 meters of any boundary vertex
+        // Check if user is within maxFlightDistance of any boundary vertex
         for (const pt of points) {
-          if (map.distance(latlng, L.latLng(pt.lat, pt.lng)) < 200) {
+          if (map.distance(latlng, L.latLng(pt.lat, pt.lng)) < maxFlightDistance) {
             isClose = true;
             break;
           }
@@ -1560,7 +1590,7 @@ function checkGeofenceAlert(latlng) {
         isInside = isPointInPolygon(latlng, points);
         if (!isInside) {
           for (const pt of points) {
-            if (map.distance(latlng, L.latLng(pt.lat, pt.lng)) < 200) {
+            if (map.distance(latlng, L.latLng(pt.lat, pt.lng)) < maxFlightDistance) {
               isClose = true;
               break;
             }
@@ -1593,12 +1623,17 @@ function checkGeofenceAlert(latlng) {
 
   if (isAlertActive) {
     geofenceWarningActive = true;
-    activeWarningZoneName = nearestZoneName; // store currently active warning name
+    activeWarningZoneName = nearestZoneName;
+    activeWarningIsInside = isInside;
     
     if (banner) {
       banner.classList.remove('hidden');
       if (bannerText) {
-        bannerText.innerHTML = `Du är inuti eller mycket nära restriktionszonen <strong>"${nearestZoneName}"</strong>. Landa omedelbart!`;
+        if (activeWarningIsInside) {
+          bannerText.innerHTML = `Du står <strong>inuti</strong> restriktionszonen <strong>"${nearestZoneName}"</strong>. Flygning förbjuden!`;
+        } else {
+          bannerText.innerHTML = `Zonen <strong>"${nearestZoneName}"</strong> är inom din flygradie (${maxFlightDistance}m). Risk för intrång!`;
+        }
       }
     }
     
@@ -1610,6 +1645,7 @@ function checkGeofenceAlert(latlng) {
   } else {
     geofenceWarningActive = false;
     activeWarningZoneName = '';
+    activeWarningIsInside = false;
     dismissedZoneName = null; // reset dismissed state once they are clear of any zones
     
     if (banner) {
