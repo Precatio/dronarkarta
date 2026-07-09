@@ -1463,6 +1463,26 @@ function setupEventListeners() {
     }
   }
 
+  // Close geofence warning banner event listener
+  const closeGeofenceBtn = document.getElementById('close-geofence-btn');
+  if (closeGeofenceBtn) {
+    closeGeofenceBtn.addEventListener('click', () => {
+      const banner = document.getElementById('geofence-warning-banner');
+      if (banner) {
+        banner.classList.add('hidden');
+      }
+      
+      // Mute geofence safety effects for the currently active warning zone
+      dismissedZoneName = activeWarningZoneName;
+      geofenceWarningActive = false;
+      
+      if (geofenceAlarmInterval) {
+        clearInterval(geofenceAlarmInterval);
+        geofenceAlarmInterval = null;
+      }
+    });
+  }
+
   // Setup GPS position positioning
   setupGeolocation();
 }
@@ -1472,6 +1492,8 @@ function setupEventListeners() {
 // ==========================================================================
 let geofenceAlarmInterval = null;
 let geofenceWarningActive = false;
+let dismissedZoneName = null;
+let activeWarningZoneName = '';
 
 function checkGeofenceAlert(latlng) {
   if (!latlng) return;
@@ -1559,8 +1581,20 @@ function checkGeofenceAlert(latlng) {
   const banner = document.getElementById('geofence-warning-banner');
   const bannerText = document.getElementById('geofence-warning-text');
 
+  // If a zone is active but it matches the dismissed zone name, keep UI muted
+  if (isAlertActive && nearestZoneName === dismissedZoneName) {
+    if (banner) banner.classList.add('hidden');
+    if (geofenceAlarmInterval) {
+      clearInterval(geofenceAlarmInterval);
+      geofenceAlarmInterval = null;
+    }
+    return;
+  }
+
   if (isAlertActive) {
     geofenceWarningActive = true;
+    activeWarningZoneName = nearestZoneName; // store currently active warning name
+    
     if (banner) {
       banner.classList.remove('hidden');
       if (bannerText) {
@@ -1575,6 +1609,9 @@ function checkGeofenceAlert(latlng) {
     }
   } else {
     geofenceWarningActive = false;
+    activeWarningZoneName = '';
+    dismissedZoneName = null; // reset dismissed state once they are clear of any zones
+    
     if (banner) {
       banner.classList.add('hidden');
     }

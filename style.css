@@ -1505,5 +1505,32 @@ body.palette-dark {
   margin-top: 20px;
 }
 
+/* Close Geofence Warning Button */
+.close-geofence-btn {
+  background: none;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.75;
+  transition: var(--transition-smooth);
+  flex-shrink: 0;
+}
+
+.close-geofence-btn:hover {
+  opacity: 1;
+  transform: scale(1.15);
+}
+
+.close-geofence-btn svg {
+  width: 18px;
+  height: 18px;
+  stroke: #ffffff;
+}
+
+
 
 
