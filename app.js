@@ -4,7 +4,7 @@
 // ==========================================================================
 
 // Initialize selected color palette theme
-let selectedPalette = localStorage.getItem('selectedPalette') || 'blue';
+let selectedPalette = localStorage.getItem('selectedPalette') || 'green';
 document.body.className = `palette-${selectedPalette}`;
 
 // Global state variables
