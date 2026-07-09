@@ -71,6 +71,41 @@ const countyViews = {
 
 let selectedRegion = localStorage.getItem('selectedRegion') || 'skane';
 
+// Approximate bounding boxes [minLat, maxLat, minLng, maxLng] per county
+const countyBounds = {
+  blekinge:        [55.95, 56.55, 14.10, 16.30],
+  dalarna:         [59.80, 61.80, 12.80, 16.40],
+  gotland:         [56.90, 58.00, 17.90, 19.30],
+  gavleborg:       [60.60, 62.00, 14.80, 18.00],
+  halland:         [56.30, 57.30, 12.00, 13.30],
+  jamtland:        [61.80, 65.10, 12.00, 17.80],
+  jonkoping:       [57.00, 58.00, 13.20, 15.70],
+  kalmar:          [56.20, 57.80, 15.30, 17.10],
+  kronoberg:       [56.30, 57.20, 13.50, 15.60],
+  norrbotten:      [65.00, 69.10, 17.00, 24.20],
+  skane:           [55.33, 56.45, 12.60, 14.60],
+  stockholm:       [58.80, 59.90, 17.30, 19.20],
+  sodermanland:    [58.60, 59.30, 15.80, 17.70],
+  uppsala:         [59.50, 60.50, 16.60, 18.80],
+  varmland:        [58.80, 60.70, 11.80, 14.50],
+  vasterbotten:    [63.00, 66.00, 15.00, 21.00],
+  vasternorrland:  [62.00, 63.80, 15.30, 18.50],
+  vastmanland:     [59.30, 60.00, 15.20, 17.20],
+  vastra_gotaland: [57.50, 59.10, 11.00, 14.80],
+  orebro:          [58.80, 60.00, 14.00, 15.70],
+  ostergotland:    [57.80, 58.80, 14.50, 16.60]
+};
+
+// Detect which county a lat/lng coordinate falls within
+function detectCountyFromLatLng(lat, lng) {
+  for (const [id, [minLat, maxLat, minLng, maxLng]] of Object.entries(countyBounds)) {
+    if (lat >= minLat && lat <= maxLat && lng >= minLng && lng <= maxLng) {
+      return id;
+    }
+  }
+  return null; // outside Sweden or ambiguous
+}
+
 // Map tile layers
 const tileLayers = {
   dark: L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
@@ -612,6 +647,16 @@ function setupGeolocation() {
         const lng = position.coords.longitude;
         userLocation = L.latLng(lat, lng);
         updateGeofenceCircle();
+
+        // Auto-detect county and load nature reserves if county changed
+        const detectedCounty = detectCountyFromLatLng(lat, lng);
+        if (detectedCounty && detectedCounty !== selectedRegion) {
+          selectedRegion = detectedCounty;
+          localStorage.setItem('selectedRegion', detectedCounty);
+          const regionSelector = document.getElementById('region-selector');
+          if (regionSelector) regionSelector.value = detectedCounty;
+          loadCountyReserves(detectedCounty);
+        }
 
         // Update Button UI
         locateBtn.disabled = false;
