@@ -2,8 +2,9 @@ const fs = require('fs');
 const https = require('https');
 const path = require('path');
 
-const dataDir = '/Volumes/2TB/Antigrvity/drone/data/';
+const dataDir = path.join(__dirname, 'public', 'data');
 fs.mkdirSync(dataDir, { recursive: true });
+
 
 function fetchJson(url) {
   return new Promise((resolve, reject) => {
