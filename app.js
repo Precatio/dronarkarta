@@ -177,6 +177,15 @@ function initMap() {
 
 // ── Destination / Target Flight Point Logic ───────────────────────────────
 function setDestination(lat, lng) {
+  const latLng = L.latLng(lat, lng);
+  if (isCoordinateInRedZone(latLng)) {
+    L.popup()
+      .setLatLng(latLng)
+      .setContent('<strong style="color: #ef4444; font-size: 0.9rem;">Ej tillåtet</strong><br><span style="font-size: 0.8rem;">Du kan inte sätta en flygpunkt i ett rött (tillståndskrävande) restriktionsområde.</span>')
+      .openOn(map);
+    return;
+  }
+
   window._destLat = lat;
   window._destLng = lng;
 
@@ -494,6 +503,14 @@ function renderZones() {
       const popupContent = createPopupContent(feature);
       
       mapLayer.on('click', (e) => {
+        // If it's not a red restricted zone, allow setting it as flight point
+        if (!isRedZone(type, source)) {
+          setDestination(e.latlng.lat, e.latlng.lng);
+          if (window._mapSelectionActive) {
+            deactivateMapSelection();
+          }
+        }
+
         if (window.innerWidth <= 768) {
           L.DomEvent.stopPropagation(e);
           showMobileDetail(feature);
@@ -972,6 +989,32 @@ function isPointInsideFeature(latLng, feature) {
   }
   
   return false;
+}
+
+function isRedZone(type, source) {
+  if (source === 'rsta' || source === 'sup' || source === 'arp') return true;
+  if (type === 'REQ_AUTHORIZATION') return true;
+  return false;
+}
+
+function isCoordinateInRedZone(latLng) {
+  return allFeatures.some(feature => {
+    const type = feature.properties.type;
+    const source = feature.properties.source;
+    if (!isRedZone(type, source)) return false;
+
+    // Check if filter is active for this zone
+    if (source !== 'nvr' && !activeFilters[type]) return false;
+
+    // Handle airport warning area circle (RED)
+    if (source === 'arp') {
+      const coords = feature.geometry.coordinates;
+      const dist = latLng.distanceTo(L.latLng(coords[1], coords[0]));
+      return dist <= 5000; // 5km circle
+    }
+
+    return isPointInsideFeature(latLng, feature);
+  });
 }
 
 // Helper: Point in Polygon ring verification
