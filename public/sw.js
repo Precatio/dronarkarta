@@ -1,4 +1,4 @@
-const CACHE = 'dronarkarta-v2';
+const CACHE = 'dronarkarta-v3';
 const ALWAYS_FETCH = [
   'opendata-download-metfcst.smhi.se',
   'googletagmanager.com',
