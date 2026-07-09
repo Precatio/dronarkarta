@@ -169,6 +169,9 @@ function initMap() {
   // Map click listener to place destination marker
   map.on('click', (e) => {
     setDestination(e.latlng.lat, e.latlng.lng);
+    if (window._mapSelectionActive) {
+      deactivateMapSelection();
+    }
   });
 }
 
@@ -228,10 +231,33 @@ function clearDestination() {
   }
 }
 
+window._mapSelectionActive = false;
+
+function activateMapSelection() {
+  window._mapSelectionActive = true;
+  const banner = document.getElementById('map-select-banner');
+  if (banner) {
+    banner.classList.remove('hidden');
+    initLucide();
+  }
+  const mapEl = document.getElementById('map');
+  if (mapEl) mapEl.style.cursor = 'crosshair';
+}
+
+function deactivateMapSelection() {
+  window._mapSelectionActive = false;
+  const banner = document.getElementById('map-select-banner');
+  if (banner) banner.classList.add('hidden');
+  const mapEl = document.getElementById('map');
+  if (mapEl) mapEl.style.cursor = '';
+}
+
 // Wire copy/clear buttons once window loads / setupEventListeners runs
 function setupDestinationListeners() {
   const clearBtn = document.getElementById('clear-dest-btn');
   const copyBtn = document.getElementById('copy-coords-btn');
+  const activateBtn = document.getElementById('activate-map-click-btn');
+  const cancelBtn = document.getElementById('cancel-map-select-btn');
 
   if (clearBtn) {
     clearBtn.addEventListener('click', (e) => {
@@ -257,6 +283,20 @@ function setupDestinationListeners() {
           console.error('Clipboard copy failed:', err);
         });
       }
+    });
+  }
+
+  if (activateBtn) {
+    activateBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      activateMapSelection();
+    });
+  }
+
+  if (cancelBtn) {
+    cancelBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      deactivateMapSelection();
     });
   }
 }
@@ -1053,6 +1093,21 @@ function getDistanceToSegment(p, a, b) {
 async function performSearch(query) {
   const resultsContainer = document.getElementById('search-results');
   if (!resultsContainer) return;
+
+  // Parse decimal coordinates if possible (e.g. "55.90, 13.50" or "55.90 13.50")
+  const coordRegex = /^\s*([+-]?\d+(?:\.\d+)?)\s*[\s,;]\s*([+-]?\d+(?:\.\d+)?)\s*$/;
+  const match = query.match(coordRegex);
+  if (match) {
+    const lat = parseFloat(match[1]);
+    const lng = parseFloat(match[2]);
+    if (lat >= -90 && lat <= 90 && lng >= -180 && lng <= 180) {
+      map.setView([lat, lng], 14);
+      setDestination(lat, lng);
+      resultsContainer.innerHTML = '';
+      resultsContainer.classList.add('hidden');
+      return;
+    }
+  }
 
   if (!query || query.trim().length < 3) {
     resultsContainer.innerHTML = '';

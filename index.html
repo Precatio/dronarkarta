@@ -174,6 +174,17 @@
     </div>
     <button id="close-geofence-btn" class="close-geofence-btn" aria-label="Stäng varning">
       <i data-lucide="x"></i>
+  </div>
+
+  <!-- Map Select Tooltip Banner -->
+  <div id="map-select-banner" class="geofence-banner hidden" style="background: rgba(12, 74, 96, 0.95); border: 1px solid #38bdf8; box-shadow: 0 0 15px rgba(56, 189, 248, 0.4);">
+    <i data-lucide="crosshair" style="color: #38bdf8; width: 20px; height: 20px; flex-shrink: 0;"></i>
+    <div class="banner-text">
+      <h4 style="color: #38bdf8;">VÄLJ FLYGPUNKT</h4>
+      <p style="color: #fff; font-weight: 500; font-size: 0.8rem; margin: 2px 0 0;">Klicka på kartan för att välja flygpunkt.</p>
+    </div>
+    <button id="cancel-map-select-btn" class="close-geofence-btn" aria-label="Avbryt">
+      <i data-lucide="x" style="stroke: #fff;"></i>
     </button>
   </div>
 
@@ -291,6 +302,10 @@
             <button type="submit" class="icon-btn" aria-label="Sök"><i data-lucide="search"></i></button>
           </form>
           <div id="search-results" class="search-results-list hidden"></div>
+          <button id="activate-map-click-btn" class="secondary-btn" style="margin-top: 8px; width: 100%; display: flex; align-items: center; justify-content: center; gap: 8px;">
+            <i data-lucide="crosshair"></i>
+            <span>Sätt flygpunkt på kartan</span>
+          </button>
         </div>
 
         <!-- Sparade platser -->
