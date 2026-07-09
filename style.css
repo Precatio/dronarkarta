@@ -107,11 +107,11 @@ html, body {
   z-index: 4;
   pointer-events: none;
   background-image: 
-    radial-gradient(circle, transparent 0%, transparent 60%, rgba(16, 185, 129, 0.15) 60.5%, transparent 61%),
-    radial-gradient(circle, transparent 0%, transparent 40%, rgba(16, 185, 129, 0.15) 40.5%, transparent 41%),
-    radial-gradient(circle, transparent 0%, transparent 20%, rgba(16, 185, 129, 0.15) 20.5%, transparent 21%),
-    linear-gradient(rgba(16, 185, 129, 0.05) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(16, 185, 129, 0.05) 1px, transparent 1px);
+    radial-gradient(circle, transparent 0%, transparent 60%, rgba(16, 185, 129, 0.38) 60.2%, rgba(16, 185, 129, 0.42) 60.8%, transparent 61%),
+    radial-gradient(circle, transparent 0%, transparent 40%, rgba(16, 185, 129, 0.38) 40.2%, rgba(16, 185, 129, 0.42) 40.8%, transparent 41%),
+    radial-gradient(circle, transparent 0%, transparent 20%, rgba(16, 185, 129, 0.38) 20.2%, rgba(16, 185, 129, 0.42) 20.8%, transparent 21%),
+    linear-gradient(rgba(16, 185, 129, 0.16) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(16, 185, 129, 0.16) 1px, transparent 1px);
   background-size: 100% 100%, 100% 100%, 100% 100%, 60px 60px, 60px 60px;
   background-position: center;
   mix-blend-mode: screen;
@@ -161,8 +161,9 @@ html, body {
 
 /* Style zone borders specifically to look glowing and prominent without GPU layer bugs */
 .radar-theme .leaflet-interactive {
-  stroke-width: 3px !important;
-  stroke-opacity: 0.95 !important;
+  stroke-width: 3.5px !important;
+  stroke-opacity: 0.98 !important;
+  filter: drop-shadow(0 0 4px currentColor) !important;
 }
 
 .hidden {
