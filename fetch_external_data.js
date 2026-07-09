@@ -323,6 +323,11 @@ async function start() {
     }
   }
 
+  // Save update metadata timestamp file
+  const metaDest = path.join(dataDir, 'last_update.json');
+  fs.writeFileSync(metaDest, JSON.stringify({ lastUpdate: new Date().toISOString() }, null, 2));
+  console.log(`✓ Sparade tidsstämpel i data/last_update.json`);
+
   console.log('--- ALLA FILER NEDLADDADE OCH KLARA ---');
 }
 

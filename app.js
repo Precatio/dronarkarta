@@ -115,14 +115,31 @@ function initMap() {
 async function loadAllAirspaceData() {
   const listContainer = document.getElementById('zones-list');
   try {
-    // Load all LFV national datasets (Sweden-wide) in parallel
-    const [uasRes, ctrRes, rstaRes, arpRes, supRes] = await Promise.all([
+    // Load all LFV national datasets (Sweden-wide) + update metadata in parallel
+    const [uasRes, ctrRes, rstaRes, arpRes, supRes, metaRes] = await Promise.all([
       fetch('./uas_zones_ED318.json').then(r => r.json()).catch(() => ({ features: [] })),
       fetch('./data/ctrs_sverige.json').then(r => r.json()).catch(() => ({ features: [] })),
       fetch('./data/rsta_sverige.json').then(r => r.json()).catch(() => ({ features: [] })),
       fetch('./data/airports_sverige.json').then(r => r.json()).catch(() => ({ features: [] })),
-      fetch('./data/supplements_sverige.json').then(r => r.json()).catch(() => ({ features: [] }))
+      fetch('./data/supplements_sverige.json').then(r => r.json()).catch(() => ({ features: [] })),
+      fetch('./data/last_update.json').then(r => r.json()).catch(() => null)
     ]);
+
+    // Render last update date
+    const lastUpdateDateEl = document.getElementById('last-update-date');
+    if (lastUpdateDateEl) {
+      if (metaRes && metaRes.lastUpdate) {
+        const dateObj = new Date(metaRes.lastUpdate);
+        const formattedDate = dateObj.toLocaleDateString('sv-SE', {
+          year: 'numeric',
+          month: '2-digit',
+          day: '2-digit'
+        });
+        lastUpdateDateEl.textContent = formattedDate;
+      } else {
+        lastUpdateDateEl.textContent = 'Okänt (Ej uppdaterat)';
+      }
+    }
 
     // Tag and normalize features from each source
     const uasFeatures = uasRes.features || [];
