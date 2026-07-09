@@ -1235,6 +1235,29 @@ function setupEventListeners() {
       }
       initLucide();
     });
+
+    // Mobile swipe-down-to-close gesture support for bottom sheet
+    let touchStartY = 0;
+    let touchEndY = 0;
+    
+    sidebar.addEventListener('touchstart', (e) => {
+      touchStartY = e.changedTouches[0].screenY;
+    }, { passive: true });
+    
+    sidebar.addEventListener('touchend', (e) => {
+      touchEndY = e.changedTouches[0].screenY;
+      const diffY = touchEndY - touchStartY;
+      
+      // If user swipes down more than 60px and panel is open, close it
+      if (diffY > 60 && sidebar.classList.contains('open')) {
+        sidebar.classList.remove('open');
+        const icon = toggleBtn.querySelector('i');
+        if (icon) {
+          icon.setAttribute('data-lucide', 'menu');
+          initLucide();
+        }
+      }
+    }, { passive: true });
   }
 
   // Mobile detail overlay close
