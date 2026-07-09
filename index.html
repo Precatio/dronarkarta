@@ -394,41 +394,58 @@
         <!-- Om appen & Datakällor Accordion Section -->
         <div class="section-group collapsible-group">
           <button id="about-toggle-btn" class="accordion-trigger">
-            <span><i data-lucide="info"></i> Om appen & Datakällor</span>
+            <span><i data-lucide="info"></i> Om appen &amp; Datakällor</span>
             <i data-lucide="chevron-down" class="arrow-icon"></i>
           </button>
           <div id="about-panel" class="accordion-panel collapsed">
             <div class="about-content">
-              <p class="about-p"><strong>Svensk Drönarkarta</strong> är ett modernt, optimerat planeringshjälpmedel för drönarflygning i Sverige.</p>
+              <p class="about-p"><strong>Svensk Drönarkarta</strong> är ett modernt, gratis och helt reklamfritt planeringshjälpmedel utvecklat av <strong>Bifrost Outdoors</strong>.</p>
               
-              <h4 class="about-h4">Varför denna app? (Vad gör oss unika?):</h4>
-              <p class="about-desc">Denna sajt skiljer sig från befintliga appar (inklusive myndigheternas egna kartor) på flera viktiga områden:</p>
+              <h4 class="about-h4">Bakgrund (Varför appen skapades):</h4>
+              <p class="about-desc">
+                Appen uppkom ur ett personligt behov av att vilja följa det svenska regelverket för drönare, men där det visade sig vara extremt svårt att hitta ett samlat verktyg. 
+                Särskilt svårt var det att kombinera Naturvårdsverkets gränser för naturreservat med Luftfartsverkets (LFV) flygzoner, och samtidigt se sin egen position i förhållande till dessa områden i realtid. 
+                För att lösa detta byggde vi Drönarkarta, komplett med ett inbyggt, radiebaserat geofence.
+              </p>
+
+              <h4 class="about-h4">Appens funktioner &amp; verktyg:</h4>
               <ul class="about-ul" style="margin-bottom: 14px;">
-                <li><strong>Allt på samma karta:</strong> Vi slår ihop Luftfartsverkets (LFV) luftrum med Naturvårdsverkets miljöskyddsområden. Du slipper hoppa mellan olika myndigheters hemsidor för att planera flygningen.</li>
-                <li><strong>Blixtsnabb laddning:</strong> Genom att dela upp Sveriges över 8 000 naturreservat i län, laddas bara din lokala region in. Det sparar upp till 95% mobildata och gör att kartan flyter perfekt på mobilen.</li>
-                <li><strong>Realtids-NOTAMs:</strong> Vi hämtar och ritar ut tillfälliga flygförbud och restriktioner (t.ex. räddningstjänst, helikopterverksamhet, militära övningar) direkt från LFV:s databaser.</li>
-                <li><strong>Garmin GPX-export:</strong> Du kan ladda ner zoner och gränser som en färgkodad GPX-fil direkt till din Garmin-klocka eller cykeldator för att se restriktioner på handleden i fält.</li>
+                <li><strong>Allt på samma karta:</strong> Luftfartsverkets luftrumszoner (CTR, R-områden, NOTAM) och Naturvårdsverkets miljöskyddsområden i en och samma vy.</li>
+                <li><strong>Realtids-GPS &amp; Geofence:</strong> Visar din exakta position och ritar en streckad radie runt dig baserat på ditt inställda flygavstånd. Varnar direkt om en zon överlappar.</li>
+                <li><strong>Väder &amp; Vind (SMHI):</strong> Visar vindhastighet, vindriktning och temperatur vid din position direkt från SMHI, med en automatisk bedömning av flygförhållandena.</li>
+                <li><strong>Sparade platser:</strong> Bokmärk dina favoritplatser för snabb åtkomst och kartnavigering.</li>
+                <li><strong>Garmin GPX-export:</strong> Exportera zoner till din Garmin-enhet för att ha koll på restriktioner direkt på handleden eller cykeldatorn ute i fält.</li>
+                <li><strong>Blixtsnabb prestanda:</strong> Naturreservaten är uppdelade per län vilket sparar upp till 95% mobildata och gör att kartan laddar direkt.</li>
               </ul>
 
-              <h4 class="about-h4">Datakällor & Uppdatering:</h4>
-              <ul class="about-ul">
-                <li><strong>Luftrum & CTR:</strong> Luftfartsverket (LFV) WFS. CTR-luftrum och 5 km skyddszoner runt flygplatser visas.</li>
-                <li><strong>Restriktionsområden:</strong> LFV WFS (R-områden). Hela städer som Malmö (ES R130) ingår.</li>
-                <li><strong>Naturreservat:</strong> Naturvårdsverket WFS (Skyddad Natur).</li>
-                <li><strong>Uppdateringsfrekvens:</strong> Datan uppdateras automatiskt <strong>en gång i veckan</strong> (varje måndag kl. 04:00 UTC) via GitHub Actions.</li>
+              <h4 class="about-h4">Hur fungerar Offline-stödet? (PWA):</h4>
+              <p class="about-desc">
+                Appen är byggd som en Progressive Web App (PWA). Genom att välja "Lägg till på startskärmen" i din webbläsare installeras appen lokalt.
+                En inbyggd Service Worker lagrar appens kod och grundläggande resurser i en lokal cache. När du startar appen utan internetanslutning laddas gränssnittet direkt från cachen. 
+                Nyligen besökta län (naturreservat och baskartor) sparas i cachen så att du kan planera din flygning även i områden helt utan mobiltäckning.
+              </p>
+
+              <h4 class="about-h4">Datakällor &amp; Uppdatering:</h4>
+              <ul class="about-ul" style="margin-bottom: 14px;">
+                <li><strong>Luftrumszoner &amp; CTR:</strong> Hämtas från Luftfartsverket (LFV) via öppna GIS-tjänster (WFS).</li>
+                <li><strong>Naturreservat:</strong> Hämtas från Naturvårdsverket (Skyddad Natur).</li>
+                <li><strong>Uppdateringsfrekvens:</strong> All geografisk data uppdateras automatiskt <strong>en gång i veckan</strong> (varje måndag kl. 04:00 UTC) genom en automatisk byggprocess på GitHub.</li>
+                <li><strong>Väderdata:</strong> Hämtas i realtid via SMHI:s öppna prognos-API (PMP3G) baserat på din GPS-position.</li>
                 <li><strong>Senaste hämtning:</strong> <span id="last-update-date" style="color: var(--primary); font-weight: bold;">Laddar...</span></li>
               </ul>
-              <h4 class="about-h4">LFV:s Säkerhetskrav & Råd:</h4>
-              <ul class="about-ul">
-                <li><strong>Väjningsplikt:</strong> Drönare har alltid absolut väjningsplikt mot all bemannad luftfart (flygplan, helikopter, luftballong). Landa omedelbart om ett annat luftfartyg närmar sig.</li>
-                <li><strong>Militära zoner:</strong> I militära kontrollzoner (t.ex. Ronneby, Luleå, Malmen, Karlsborg, Visby) gäller inte det civila 50-metersundantaget. Godkännande från militär ATC krävs alltid.</li>
-                <li><strong>AROWeb & Briefing:</strong> LFV föreskriver att piloter måste göra en pre-flight briefing på <strong>aro.lfv.se</strong> för att stämma av aktiva lokala NOTAMs inför start.</li>
-                <li><strong>Säkerhetsmarginal:</strong> Maxhöjden på 120m ger en 30m säkerhetsbuffert till bemannade flyg som normalt flyger på lägst 150m (500 fot) över marken.</li>
-              </ul>
+
+              <h4 class="about-h4">Stöd appens utveckling:</h4>
+              <p class="about-desc">
+                Drönarkarta.se drivs helt utan vinstintresse eller reklam för att hålla kartbilden ren och användbar. 
+                Om du uppskattar appen och vill hjälpa oss att täcka kostnader för servrar, domän och vidareutveckling får du jättegärna skicka en valfri donation via Swish-knappen i menyn. Varje bidrag uppskattas enormt!
+              </p>
+
               <h4 class="about-h4">⚠️ Juridisk Ansvarsfriskrivning:</h4>
-              <p class="about-desc">Denna applikation är <strong>enbart avsedd som ett planeringshjälpmedel</strong>. Kartan är inte en certifierad flyginformationstjänst. Det är alltid drönarpilotens/operatörens personliga och odelbara ansvar att kontrollera gällande regler och lokala föreskrifter inför varje enskild flygning.</p>
-              <p class="about-desc" style="margin-top: 8px; border-left: 2px solid rgba(239, 68, 68, 0.6); padding-left: 8px; font-size: 0.75rem; line-height: 1.4;">
-                Utvecklarna av denna tjänst <strong>friskriver sig helt från allt ansvar</strong> för eventuella överträdelser av Transportstyrelsens föreskrifter <strong>TSFS 2017:110</strong>, EU-förordning <strong>EU 2019/947</strong> eller andra tillämpliga lagar. 
+              <p class="about-desc" style="margin-bottom: 14px;">
+                Denna applikation är <strong>enbart avsedd som ett planeringshjälpmedel</strong>. Kartan är inte en certifierad flyginformationstjänst. Det är alltid drönarpilotens/operatörens personliga och odelbara ansvar att kontrollera gällande regler och lokala föreskrifter inför varje enskild flygning.
+              </p>
+              <p class="about-desc" style="border-left: 2px solid rgba(239, 68, 68, 0.6); padding-left: 8px; font-size: 0.75rem; line-height: 1.4; margin-bottom: 14px;">
+                Utvecklarna av denna tjänst <strong>friskriver sig helt från allt ansvar</strong> för eventuella överträdelser av Transportstyrelsens föreskrifter, EU-förordningar eller andra tillämpliga lagar. 
                 Vi friskriver oss vidare helt från allt ansvar för eventuella tillbud, olyckor, personskador, materiella skador, böter eller andra konsekvenser som uppstår till följd av användningen av kartan, geofencing-varningar, GPX-exporter eller andra funktioner i appen.
               </p>
 
@@ -445,12 +462,6 @@
                 <p>Tel: <a href="tel:0771-503503">0771-503 503</a></p>
                 <p>E-post: <a href="mailto:luftfart@transportstyrelsen.se">luftfart@transportstyrelsen.se</a></p>
                 <p>Webb: <a href="https://transportstyrelsen.se/dronare" target="_blank" rel="noopener">transportstyrelsen.se/dronare</a></p>
-              </div>
-
-              <div class="contact-card">
-                <p class="contact-name">Länsstyrelsen Skåne</p>
-                <p>Tel: <a href="tel:010-2241000">010-224 10 00</a></p>
-                <p>E-post: <a href="mailto:skane@lansstyrelsen.se">skane@lansstyrelsen.se</a></p>
               </div>
 
               <div class="contact-card">
