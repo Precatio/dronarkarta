@@ -15,6 +15,28 @@ let nationalFeatures = [];
 let currentCountyReserves = [];
 let userLocation = null;
 let userMarker = null;
+let userRadiusCircle = null;
+
+// Updates (or creates) the dashed geofence radius circle around the user marker
+function updateGeofenceCircle() {
+  if (!userLocation) return;
+
+  if (userRadiusCircle) {
+    userRadiusCircle.setLatLng(userLocation);
+    userRadiusCircle.setRadius(maxFlightDistance);
+  } else {
+    userRadiusCircle = L.circle(userLocation, {
+      radius: maxFlightDistance,
+      color: '#f97316',
+      weight: 2,
+      opacity: 0.85,
+      fillColor: '#f97316',
+      fillOpacity: 0.06,
+      dashArray: '8, 8',
+      interactive: false
+    }).addTo(map);
+  }
+}
 let activeFilters = {
   REQ_AUTHORIZATION: true,
   CONDITIONAL: true,
@@ -589,6 +611,7 @@ function setupGeolocation() {
         const lat = position.coords.latitude;
         const lng = position.coords.longitude;
         userLocation = L.latLng(lat, lng);
+        updateGeofenceCircle();
 
         // Update Button UI
         locateBtn.disabled = false;
@@ -623,14 +646,24 @@ function setupGeolocation() {
       },
       (error) => {
         console.error('Positioneringsfel:', error);
-        alert(`Kunde inte hämta din position: ${error.message}`);
         locateBtn.disabled = false;
-        locateBtn.querySelector('span').innerText = 'Hitta min position (GPS)';
+        if (error.code === 3) {
+          // Timeout – GPS signal weak, try again silently
+          locateBtn.querySelector('span').innerText = 'GPS-signal svag, försöker...';
+          locateBtn.classList.remove('active');
+        } else if (error.code === 1) {
+          // Permission denied
+          locateBtn.querySelector('span').innerText = 'GPS-åtkomst nekad';
+          alert('Tillåt platsåtkomst i webbläsaren för att använda GPS.');
+        } else {
+          locateBtn.querySelector('span').innerText = 'Hitta min position (GPS)';
+          alert(`Kunde inte hämta din position: ${error.message}`);
+        }
       },
       {
         enableHighAccuracy: true,
-        timeout: 10000,
-        maximumAge: 0
+        timeout: 30000,
+        maximumAge: 5000
       }
     );
   });
@@ -1521,6 +1554,7 @@ function setupEventListeners() {
       maxFlightDistance = parseInt(e.target.value, 10);
       geofenceRangeVal.textContent = `${maxFlightDistance} m`;
       localStorage.setItem('maxFlightDistance', maxFlightDistance);
+      updateGeofenceCircle();
       
       // Re-evaluate geofence alarms instantly on slider update
       if (userLocation) {
