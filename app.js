@@ -166,10 +166,10 @@ function initMap() {
   // Trigger search update on map move
   map.on('moveend', updateLocalZonesList);
 
-  // Map click listener to place destination marker
+  // Map click listener to place destination marker (only when selection mode is active!)
   map.on('click', (e) => {
-    setDestination(e.latlng.lat, e.latlng.lng);
     if (window._mapSelectionActive) {
+      setDestination(e.latlng.lat, e.latlng.lng);
       deactivateMapSelection();
     }
   });
@@ -451,11 +451,16 @@ function renderZones() {
       
       const setupClick = (layer) => {
         layer.on('click', (e) => {
-          if (window.innerWidth <= 768) {
-            L.DomEvent.stopPropagation(e);
-            showMobileDetail(feature);
+          if (window._mapSelectionActive) {
+            setDestination(e.latlng.lat, e.latlng.lng);
+            deactivateMapSelection();
           } else {
-            layer.bindPopup(popupContent, { maxWidth: 320 }).openPopup();
+            if (window.innerWidth <= 768) {
+              L.DomEvent.stopPropagation(e);
+              showMobileDetail(feature);
+            } else {
+              layer.bindPopup(popupContent, { maxWidth: 320 }).openPopup();
+            }
           }
         });
       };
@@ -503,19 +508,16 @@ function renderZones() {
       const popupContent = createPopupContent(feature);
       
       mapLayer.on('click', (e) => {
-        // If it's not a red restricted zone, allow setting it as flight point
-        if (!isRedZone(type, source)) {
+        if (window._mapSelectionActive) {
           setDestination(e.latlng.lat, e.latlng.lng);
-          if (window._mapSelectionActive) {
-            deactivateMapSelection();
-          }
-        }
-
-        if (window.innerWidth <= 768) {
-          L.DomEvent.stopPropagation(e);
-          showMobileDetail(feature);
+          deactivateMapSelection();
         } else {
-          mapLayer.bindPopup(popupContent, { maxWidth: 320 }).openPopup();
+          if (window.innerWidth <= 768) {
+            L.DomEvent.stopPropagation(e);
+            showMobileDetail(feature);
+          } else {
+            mapLayer.bindPopup(popupContent, { maxWidth: 320 }).openPopup();
+          }
         }
       });
 
