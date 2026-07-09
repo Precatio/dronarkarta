@@ -1063,7 +1063,11 @@ function exportToGpx() {
   }
 
   let gpx = '<?xml version="1.0" encoding="UTF-8"?>\n';
-  gpx += '<gpx version="1.1" creator="Svensk Dronarkarta" xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">\n';
+  gpx += '<gpx version="1.1" creator="Svensk Dronarkarta" \n';
+  gpx += '  xmlns="http://www.topografix.com/GPX/1/1" \n';
+  gpx += '  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" \n';
+  gpx += '  xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" \n';
+  gpx += '  xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">\n';
   
   gpx += '  <metadata>\n';
   gpx += '    <name>Dronarzoner Sverige</name>\n';
@@ -1140,6 +1144,32 @@ function exportToGpx() {
       gpx += `  <trk>\n`;
       gpx += `    <name>${escapeXml(name)} (Grans)</name>\n`;
       gpx += `    <desc>${escapeXml(desc)}</desc>\n`;
+      
+      // Determine Garmin and HEX style colors based on zone details
+      let garminColor = 'Yellow';
+      let hexColor = '#f59e0b';
+      
+      if (source === 'nvr') {
+        garminColor = 'DarkGreen';
+        hexColor = '#10b981';
+      } else if (source === 'ctr') {
+        garminColor = 'Yellow'; // Garmin does not have Orange; Yellow is the closest match
+        hexColor = '#f59e0b';
+      } else if (source === 'rsta' || source === 'sup' || type === 'REQ_AUTHORIZATION') {
+        garminColor = 'Red';
+        hexColor = '#ef4444';
+      } else if (type === 'NO_RESTRICTION') {
+        garminColor = 'Cyan';
+        hexColor = '#06b6d4';
+      }
+
+      gpx += `    <extensions>\n`;
+      gpx += `      <gpxx:TrackExtension>\n`;
+      gpx += `        <gpxx:DisplayColor>${garminColor}</gpxx:DisplayColor>\n`;
+      gpx += `      </gpxx:TrackExtension>\n`;
+      gpx += `      <color>${hexColor}</color>\n`;
+      gpx += `    </extensions>\n`;
+
       gpx += `    <trkseg>\n`;
       points.forEach(pt => {
         gpx += `      <trkpt lat="${pt.lat.toFixed(6)}" lon="${pt.lng.toFixed(6)}"></trkpt>\n`;
