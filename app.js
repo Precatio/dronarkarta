@@ -1242,6 +1242,8 @@ function setupEventListeners() {
       const mapWrapper = document.getElementById('map-wrapper');
       const sweepEl = document.getElementById('radar-sweep');
       const gridEl = document.getElementById('radar-grid');
+      const vignetteEl = document.getElementById('radar-vignette');
+      const crtEl = document.getElementById('radar-crt');
 
       // Remove all tile layers
       Object.values(tileLayers).forEach(l => map.removeLayer(l));
@@ -1250,6 +1252,8 @@ function setupEventListeners() {
       mapWrapper.classList.remove('radar-theme');
       sweepEl.classList.add('hidden');
       gridEl.classList.add('hidden');
+      if (vignetteEl) vignetteEl.classList.add('hidden');
+      if (crtEl) crtEl.classList.add('hidden');
 
       if (layerName === 'radar') {
         // Radar theme requires Dark Matter tiles + CSS filter classes + sweep/grid elements
@@ -1257,6 +1261,8 @@ function setupEventListeners() {
         mapWrapper.classList.add('radar-theme');
         sweepEl.classList.remove('hidden');
         gridEl.classList.remove('hidden');
+        if (vignetteEl) vignetteEl.classList.remove('hidden');
+        if (crtEl) crtEl.classList.remove('hidden');
       } else {
         tileLayers[layerName].addTo(map);
       }

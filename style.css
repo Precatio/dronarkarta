@@ -87,8 +87,8 @@ html, body {
   height: 100%;
   z-index: 5;
   pointer-events: none;
-  background: conic-gradient(from 0deg, rgba(16, 185, 129, 0.12) 0deg, transparent 120deg);
-  animation: radar-sweep-animation 8s linear infinite;
+  background: conic-gradient(from 0deg, rgba(16, 185, 129, 0.45) 0deg, rgba(16, 185, 129, 0.15) 1.5deg, rgba(16, 185, 129, 0.02) 60deg, transparent 150deg);
+  animation: radar-sweep-animation 6s linear infinite;
   transform-origin: center;
   mix-blend-mode: screen;
 }
@@ -107,24 +107,61 @@ html, body {
   z-index: 4;
   pointer-events: none;
   background-image: 
-    radial-gradient(circle, transparent 0%, transparent 60%, rgba(16, 185, 129, 0.04) 60.5%, transparent 61%),
-    radial-gradient(circle, transparent 0%, transparent 40%, rgba(16, 185, 129, 0.04) 40.5%, transparent 41%),
-    radial-gradient(circle, transparent 0%, transparent 20%, rgba(16, 185, 129, 0.04) 20.5%, transparent 21%),
-    linear-gradient(rgba(16, 185, 129, 0.02) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(16, 185, 129, 0.02) 1px, transparent 1px);
-  background-size: 100% 100%, 100% 100%, 100% 100%, 50px 50px, 50px 50px;
+    radial-gradient(circle, transparent 0%, transparent 60%, rgba(16, 185, 129, 0.15) 60.5%, transparent 61%),
+    radial-gradient(circle, transparent 0%, transparent 40%, rgba(16, 185, 129, 0.15) 40.5%, transparent 41%),
+    radial-gradient(circle, transparent 0%, transparent 20%, rgba(16, 185, 129, 0.15) 20.5%, transparent 21%),
+    linear-gradient(rgba(16, 185, 129, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(16, 185, 129, 0.05) 1px, transparent 1px);
+  background-size: 100% 100%, 100% 100%, 100% 100%, 60px 60px, 60px 60px;
   background-position: center;
   mix-blend-mode: screen;
 }
 
+.radar-vignette {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 7;
+  pointer-events: none;
+  background: radial-gradient(circle, transparent 40%, rgba(0, 15, 5, 0.6) 100%);
+  border: 1px solid rgba(16, 185, 129, 0.25);
+  box-shadow: inset 0 0 50px rgba(16, 185, 129, 0.35);
+  mix-blend-mode: multiply;
+}
+
+.radar-crt {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 6;
+  pointer-events: none;
+  background: 
+    linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.3) 50%),
+    linear-gradient(90deg, rgba(16, 185, 129, 0.04), rgba(0, 255, 0, 0.01), rgba(16, 185, 129, 0.04));
+  background-size: 100% 4px, 6px 100%;
+  opacity: 0.85;
+  mix-blend-mode: normal;
+  animation: crt-flicker 0.15s infinite;
+}
+
+@keyframes crt-flicker {
+  0% { opacity: 0.82; }
+  50% { opacity: 0.86; }
+  100% { opacity: 0.82; }
+}
+
 /* Green monochrome filter for map tiles in radar theme */
 .radar-theme .leaflet-tile {
-  filter: sepia(1) saturate(10) hue-rotate(85deg) brightness(0.65) contrast(1.4) !important;
+  filter: sepia(1) saturate(22) hue-rotate(95deg) brightness(0.6) contrast(1.7) !important;
 }
 
 /* Add a green electronic glow to zone borders in radar theme */
 .radar-theme .leaflet-overlay-pane svg {
-  filter: drop-shadow(0 0 2px rgba(16, 185, 129, 0.4));
+  filter: drop-shadow(0 0 3px rgba(16, 185, 129, 0.6)) drop-shadow(0 0 1px rgba(16, 185, 129, 0.8));
 }
 
 .hidden {
