@@ -156,12 +156,13 @@ html, body {
 
 /* Green monochrome filter for map tiles in radar theme */
 .radar-theme .leaflet-tile {
-  filter: sepia(1) saturate(22) hue-rotate(95deg) brightness(0.6) contrast(1.7) !important;
+  filter: sepia(1) saturate(18) hue-rotate(95deg) brightness(1.35) contrast(1.15) !important;
 }
 
-/* Add a green electronic glow to zone borders in radar theme */
-.radar-theme .leaflet-overlay-pane svg {
-  filter: drop-shadow(0 0 3px rgba(16, 185, 129, 0.6)) drop-shadow(0 0 1px rgba(16, 185, 129, 0.8));
+/* Style zone borders specifically to look glowing and prominent without GPU layer bugs */
+.radar-theme .leaflet-interactive {
+  stroke-width: 3px !important;
+  stroke-opacity: 0.95 !important;
 }
 
 .hidden {
