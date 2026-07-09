@@ -34,6 +34,14 @@
   <meta name="robots" content="index, follow">
   <meta name="author" content="Drönarkarta.se">
 
+  <!-- PWA -->
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#10b981">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Drönarkarta">
+  <link rel="apple-touch-icon" href="/bifrost-icon.jpg">
+
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://dronarkarta.se/">
@@ -209,6 +217,20 @@
         <span>Hitta min position (GPS)</span>
       </button>
 
+      <!-- Weather Card (visas när GPS är aktivt) -->
+      <div id="weather-card" class="weather-card hidden">
+        <div class="weather-row">
+          <span id="weather-symbol" class="weather-symbol" title="Väder">⛅</span>
+          <span id="weather-temp" class="weather-temp">--°C</span>
+          <div class="weather-wind">
+            <span id="weather-wind-arrow" class="wind-arrow" title="Vindriktning">↑</span>
+            <span id="weather-wind-speed">-- m/s</span>
+          </div>
+          <span id="weather-wind-status" class="wind-status wind-ok">Bra</span>
+        </div>
+        <div class="weather-source">SMHI · <span id="weather-updated">uppdaterar...</span></div>
+      </div>
+
       <!-- Collapsible Section Tabs/Accordion -->
       <div class="panel-content">
         <!-- Quick Zooms -->
@@ -256,26 +278,49 @@
           <div id="search-results" class="search-results-list hidden"></div>
         </div>
 
-        <!-- Geofence Settings -->
+        <!-- Sparade platser -->
         <div class="section-group">
-          <h3><i data-lucide="shield-alert"></i> Geofence-inställningar</h3>
-          <div style="margin-bottom: 8px; display: flex; justify-content: space-between; align-items: center;">
-            <label for="geofence-range" class="dropdown-label" style="margin-bottom: 0; font-size: 0.8rem;">Max flyg-avstånd (VLOS):</label>
-            <span id="geofence-range-val" style="color: var(--primary); font-weight: 700; font-size: 0.9rem;">150 m</span>
+          <div class="section-row-header">
+            <h3><i data-lucide="bookmark"></i> Sparade platser</h3>
+            <button id="save-place-btn" class="icon-btn save-place-btn hidden" title="Spara nuvarande GPS-position" aria-label="Spara plats">
+              <i data-lucide="plus"></i>
+            </button>
           </div>
-          <input type="range" id="geofence-range" min="50" max="500" step="25" value="150" style="width: 100%; accent-color: var(--primary); background: rgba(255,255,255,0.06); border-radius: 4px; height: 6px; cursor: pointer; border: none; outline: none; margin-bottom: 8px;">
-          <p class="section-desc">Ställ in hur långt bort från dig du planerar att flyga. Appen varnar om en restriktionszon är inom denna radie.</p>
+          <div id="saved-places-list" class="saved-places-list">
+            <p class="list-placeholder">Aktivera GPS och tryck <strong>+</strong> för att spara en plats.</p>
+          </div>
         </div>
 
-        <!-- Garmin Sync Section -->
-        <div class="section-group">
-          <h3><i data-lucide="smartphone"></i> Garmin GPS-synk</h3>
-          <div class="garmin-sync-box">
-            <button id="export-gpx-btn" class="secondary-btn">
-              <i data-lucide="download"></i>
-              <span>Exportera zoner (GPX)</span>
-            </button>
-            <p class="section-desc">Ladda ner valda zoner som en GPX-fil. Importera till Garmin Connect, Garmin Explore eller direkt via USB för att se restriktionsområdena på din Garmin-karta.</p>
+        <!-- Geofence Settings (collapsible) -->
+        <div class="section-group collapsible-group">
+          <button id="geofence-toggle-btn" class="accordion-trigger" aria-expanded="false">
+            <span><i data-lucide="shield-alert"></i> Geofence-inställningar</span>
+            <i data-lucide="chevron-down" class="arrow-icon"></i>
+          </button>
+          <div id="geofence-panel" class="accordion-panel collapsed">
+            <div style="margin-bottom: 8px; display: flex; justify-content: space-between; align-items: center;">
+              <label for="geofence-range" class="dropdown-label" style="margin-bottom: 0; font-size: 0.8rem;">Max flyg-avstånd (VLOS):</label>
+              <span id="geofence-range-val" style="color: var(--primary); font-weight: 700; font-size: 0.9rem;">150 m</span>
+            </div>
+            <input type="range" id="geofence-range" min="50" max="500" step="25" value="150" style="width: 100%; accent-color: var(--primary); background: rgba(255,255,255,0.06); border-radius: 4px; height: 6px; cursor: pointer; border: none; outline: none; margin-bottom: 8px;">
+            <p class="section-desc">Ställ in hur långt bort från dig du planerar att flyga. Appen varnar om en restriktionszon är inom denna radie.</p>
+          </div>
+        </div>
+
+        <!-- Garmin Sync Section (collapsible) -->
+        <div class="section-group collapsible-group">
+          <button id="garmin-toggle-btn" class="accordion-trigger" aria-expanded="false">
+            <span><i data-lucide="smartphone"></i> Garmin GPS-synk</span>
+            <i data-lucide="chevron-down" class="arrow-icon"></i>
+          </button>
+          <div id="garmin-panel" class="accordion-panel collapsed">
+            <div class="garmin-sync-box">
+              <button id="export-gpx-btn" class="secondary-btn">
+                <i data-lucide="download"></i>
+                <span>Exportera zoner (GPX)</span>
+              </button>
+              <p class="section-desc">Ladda ner valda zoner som en GPX-fil. Importera till Garmin Connect, Garmin Explore eller direkt via USB för att se restriktionsområdena på din Garmin-karta.</p>
+            </div>
           </div>
         </div>
 
@@ -291,42 +336,47 @@
         </div>
 
 
-        <!-- Filter Controls -->
-        <div class="section-group">
-          <h3><i data-lucide="sliders-horizontal"></i> Filtrera zoner</h3>
-          <div class="filter-options">
-            <label class="checkbox-container">
-              <input type="checkbox" id="filter-auth" checked>
-              <span class="custom-checkbox auth-box"></span>
-              <span class="filter-label">
-                <strong>Kräver tillstånd</strong> (REQ_AUTHORIZATION)
-                <span class="badge auth-badge">Flygplatser, helikopterplattor, skyddsobjekt, CTR, R-områden</span>
-              </span>
-            </label>
-            <label class="checkbox-container">
-              <input type="checkbox" id="filter-cond" checked>
-              <span class="custom-checkbox cond-box"></span>
-              <span class="filter-label">
-                <strong>Särskilda villkor</strong> (CONDITIONAL)
-                <span class="badge cond-badge">Känsliga områden, CTR (50m höjd), sjukhus</span>
-              </span>
-            </label>
-            <label class="checkbox-container">
-              <input type="checkbox" id="filter-nvr" checked>
-              <span class="custom-checkbox nvr-box"></span>
-              <span class="filter-label">
-                <strong>Naturreservat</strong> (Gröna områden)
-                <span class="badge nvr-badge">Skyddad natur, djur- och fågelskydd</span>
-              </span>
-            </label>
-            <label class="checkbox-container">
-              <input type="checkbox" id="filter-info" checked>
-              <span class="custom-checkbox info-box"></span>
-              <span class="filter-label">
-                <strong>Informatoriska zoner</strong> (NO_RESTRICTION)
-                <span class="badge info-badge">Lågflygområden etc.</span>
-              </span>
-            </label>
+        <!-- Filter Controls (collapsible) -->
+        <div class="section-group collapsible-group">
+          <button id="filter-toggle-btn" class="accordion-trigger" aria-expanded="false">
+            <span><i data-lucide="sliders-horizontal"></i> Filtrera zoner</span>
+            <i data-lucide="chevron-down" class="arrow-icon"></i>
+          </button>
+          <div id="filter-panel" class="accordion-panel collapsed">
+            <div class="filter-options">
+              <label class="checkbox-container">
+                <input type="checkbox" id="filter-auth" checked>
+                <span class="custom-checkbox auth-box"></span>
+                <span class="filter-label">
+                  <strong>Kräver tillstånd</strong>
+                  <span class="badge auth-badge">Flygplatser, CTR, R-områden</span>
+                </span>
+              </label>
+              <label class="checkbox-container">
+                <input type="checkbox" id="filter-cond" checked>
+                <span class="custom-checkbox cond-box"></span>
+                <span class="filter-label">
+                  <strong>Särskilda villkor</strong>
+                  <span class="badge cond-badge">Känsliga områden, sjukhus</span>
+                </span>
+              </label>
+              <label class="checkbox-container">
+                <input type="checkbox" id="filter-nvr" checked>
+                <span class="custom-checkbox nvr-box"></span>
+                <span class="filter-label">
+                  <strong>Naturreservat</strong>
+                  <span class="badge nvr-badge">Skyddad natur</span>
+                </span>
+              </label>
+              <label class="checkbox-container">
+                <input type="checkbox" id="filter-info" checked>
+                <span class="custom-checkbox info-box"></span>
+                <span class="filter-label">
+                  <strong>Informatoriska zoner</strong>
+                  <span class="badge info-badge">Lågflygområden</span>
+                </span>
+              </label>
+            </div>
           </div>
         </div>
 
@@ -412,18 +462,23 @@
           </div>
         </div>
 
-        <!-- Rules & Disclaimer -->
-        <div class="section-group disclaimer" style="margin-top: 10px;">
-          <h3><i data-lucide="shield-alert"></i> Regler & Flygcompliance</h3>
-          <ul>
-            <li><strong>Registrering:</strong> Du måste registrera dig som operatör hos Transportstyrelsen och märka din drönare med ditt unika <strong>Operatörs-ID</strong>.</li>
-            <li><strong>Drönarkort:</strong> För drönare över 250 gram krävs ett giltigt **drönarkort** (A1/A3 eller A2) utfärdat av Transportstyrelsen.</li>
-            <li><strong>Flyghöjd:</strong> Max flyghöjd är <strong>120 meter</strong> över marken (AGL) i den öppna kategorin.</li>
-            <li><strong>Direkt synhåll:</strong> Flygning ska ske inom direkt **synhåll (VLOS)** utan kikare eller bildskärm (om du inte flyger med en spotter).</li>
-            <li><strong>Flygfoto (Spridningstillstånd):</strong> Det krävs tillstånd från **Lantmäteriet** innan du publicerar eller delar flygbilder/filmer på nätet.</li>
-            <li><strong>GDPR & Kamerabevakning:</strong> Fotografering av personer utan samtycke kan bryta mot GDPR och Kamerabevakningslagen.</li>
-            <li><strong>Håll avstånd:</strong> Flyg aldrig över folksamlingar och visa hänsyn till fågel- och djurliv (speciellt i naturreservat).</li>
-          </ul>
+        <!-- Rules & Disclaimer (collapsible) -->
+        <div class="section-group collapsible-group">
+          <button id="rules-toggle-btn" class="accordion-trigger" aria-expanded="false">
+            <span><i data-lucide="book-open"></i> Regler &amp; Flygcompliance</span>
+            <i data-lucide="chevron-down" class="arrow-icon"></i>
+          </button>
+          <div id="rules-panel" class="accordion-panel collapsed">
+            <ul class="rules-list">
+              <li><strong>Registrering:</strong> Registrera dig som operatör hos Transportstyrelsen och märka drönaren med ditt <strong>Operatörs-ID</strong>.</li>
+              <li><strong>Drönarkort:</strong> För drönare över 250 g krävs drönarkort (A1/A3 eller A2).</li>
+              <li><strong>Flyghöjd:</strong> Max <strong>120 meter</strong> AGL i öppen kategori.</li>
+              <li><strong>Synhåll (VLOS):</strong> Flygning ska ske inom direkt synhåll utan kikare.</li>
+              <li><strong>Flygfoto:</strong> Tillstånd från Lantmäteriet krävs innan publicering av flygbilder.</li>
+              <li><strong>GDPR:</strong> Fotografering av personer utan samtycke kan bryta mot GDPR.</li>
+              <li><strong>Hänsyn:</strong> Flyg aldrig över folksamlingar. Visa hänsyn i naturreservat.</li>
+            </ul>
+          </div>
         </div>
 
         <!-- Donation / Support Section -->

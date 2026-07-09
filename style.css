@@ -1869,3 +1869,150 @@ body.palette-dark {
   color: var(--text-primary);
   letter-spacing: 0.01em;
 }
+
+/* ==========================================================================
+   WEATHER CARD
+   ========================================================================== */
+.weather-card {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 12px;
+  padding: 10px 14px;
+  margin: 8px 0 0;
+  transition: var(--transition-smooth);
+}
+.weather-card.hidden { display: none; }
+
+.weather-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.weather-symbol { font-size: 1.4rem; line-height: 1; }
+.weather-temp { font-size: 1rem; font-weight: 700; color: var(--text-primary); }
+
+.weather-wind {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--text-secondary);
+  font-size: 0.82rem;
+}
+.wind-arrow {
+  font-size: 1.1rem;
+  display: inline-block;
+  transition: transform 0.4s ease;
+}
+
+.wind-status {
+  margin-left: auto;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 20px;
+  letter-spacing: 0.03em;
+}
+.wind-ok   { background: rgba(16,185,129,0.18); color: #10b981; }
+.wind-warn { background: rgba(245,158,11,0.18); color: #f59e0b; }
+.wind-bad  { background: rgba(239,68,68,0.18);  color: #ef4444; }
+
+.weather-source {
+  font-size: 0.68rem;
+  color: var(--text-secondary);
+  opacity: 0.6;
+  margin-top: 5px;
+}
+
+/* ==========================================================================
+   SAVED PLACES
+   ========================================================================== */
+.section-row-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+.section-row-header h3 { margin-bottom: 0; }
+
+.save-place-btn {
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+  flex-shrink: 0;
+}
+.save-place-btn:hover { background: var(--primary-hover); transform: scale(1.08); }
+.save-place-btn.hidden { display: none; }
+.save-place-btn svg { width: 14px; height: 14px; }
+
+.saved-places-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.saved-place-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 8px;
+  padding: 7px 10px;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+}
+.saved-place-item:hover { background: rgba(255,255,255,0.08); border-color: var(--primary); }
+
+.saved-place-icon {
+  color: var(--primary);
+  flex-shrink: 0;
+}
+.saved-place-icon svg { width: 14px; height: 14px; }
+
+.saved-place-name {
+  flex: 1;
+  font-size: 0.82rem;
+  color: var(--text-primary);
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.saved-place-delete {
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  opacity: 0.5;
+  cursor: pointer;
+  padding: 2px;
+  display: flex;
+  align-items: center;
+  transition: var(--transition-smooth);
+  flex-shrink: 0;
+}
+.saved-place-delete:hover { opacity: 1; color: #ef4444; }
+.saved-place-delete svg { width: 13px; height: 13px; }
+
+/* Rules list inside accordion */
+.rules-list {
+  margin: 0;
+  padding-left: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.rules-list li {
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+  line-height: 1.45;
+}
+.rules-list li strong { color: var(--text-primary); }

@@ -648,6 +648,13 @@ function setupGeolocation() {
         userLocation = L.latLng(lat, lng);
         updateGeofenceCircle();
 
+        // Store globally for saved places + weather
+        window._lastKnownLat = lat;
+        window._lastKnownLng = lng;
+        const savePlaceBtnEl = document.getElementById('save-place-btn');
+        if (savePlaceBtnEl) savePlaceBtnEl.classList.remove('hidden');
+        fetchSMHIWeather(lat, lng);
+
         // Auto-detect county and load nature reserves if county changed
         const detectedCounty = detectCountyFromLatLng(lat, lng);
         if (detectedCounty && detectedCounty !== selectedRegion) {
@@ -1491,15 +1498,149 @@ function setupEventListeners() {
   }
 
   // Accordion Toggle for About/Disclaimer section
-  const aboutToggleBtn = document.getElementById('about-toggle-btn');
-  const aboutPanel = document.getElementById('about-panel');
-  if (aboutToggleBtn && aboutPanel) {
-    aboutToggleBtn.addEventListener('click', () => {
-      const isCollapsed = aboutPanel.classList.contains('collapsed');
-      aboutPanel.classList.toggle('collapsed');
-      aboutToggleBtn.setAttribute('aria-expanded', isCollapsed ? 'true' : 'false');
+  // ── Generic accordion helper ──────────────────────────────────────────────
+  function setupAccordion(btnId, panelId) {
+    const btn   = document.getElementById(btnId);
+    const panel = document.getElementById(panelId);
+    if (!btn || !panel) return;
+    btn.addEventListener('click', () => {
+      const isCollapsed = panel.classList.contains('collapsed');
+      panel.classList.toggle('collapsed');
+      btn.setAttribute('aria-expanded', isCollapsed ? 'true' : 'false');
+      const arrow = btn.querySelector('.arrow-icon');
+      if (arrow) arrow.style.transform = isCollapsed ? 'rotate(180deg)' : '';
+      initLucide();
     });
   }
+  setupAccordion('about-toggle-btn',    'about-panel');
+  setupAccordion('geofence-toggle-btn', 'geofence-panel');
+  setupAccordion('garmin-toggle-btn',   'garmin-panel');
+  setupAccordion('filter-toggle-btn',   'filter-panel');
+  setupAccordion('rules-toggle-btn',    'rules-panel');
+
+  // ── SMHI Väder ────────────────────────────────────────────────────────────
+  const SMHI_SYMBOLS = {
+    1:'☀️',2:'🌤️',3:'⛅',4:'🌥️',5:'☁️',6:'☁️',7:'🌫️',
+    8:'🌦️',9:'🌧️',10:'🌧️',11:'⛈️',12:'🌨️',13:'🌨️',14:'🌨️',
+    15:'❄️',16:'❄️',17:'❄️',18:'🌦️',19:'🌦️',20:'🌦️',
+    21:'⛈️',22:'🌨️',23:'🌨️',24:'🌨️',25:'🌨️',26:'🌨️',27:'🌨️'
+  };
+  function degToCompass(deg) {
+    const dirs = ['N','NNO','NO','ONO','O','OSO','SO','SSO','S','SSV','SV','VSV','V','VNV','NV','NNV'];
+    return dirs[Math.round(deg / 22.5) % 16];
+  }
+  function windStatusClass(ws) {
+    if (ws < 5)  return ['wind-ok',   'Bra'];
+    if (ws < 9)  return ['wind-warn', 'Försiktigt'];
+    return              ['wind-bad',  'Flyg ej'];
+  }
+  async function fetchSMHIWeather(lat, lng) {
+    const lon = lng.toFixed(6);
+    const la  = lat.toFixed(6);
+    const url = `https://opendata-download-metfcst.smhi.se/api/category/pmp3g/version/2/geotype/point/lon/${lon}/lat/${la}/data.json`;
+    try {
+      const resp = await fetch(url);
+      if (!resp.ok) return;
+      const data = await resp.json();
+      const ts   = data.timeSeries && data.timeSeries[0];
+      if (!ts) return;
+      const get = name => {
+        const p = ts.parameters.find(x => x.name === name);
+        return p ? p.values[0] : null;
+      };
+      const temp   = get('t');
+      const ws     = get('ws');
+      const wd     = get('wd');
+      const sym    = get('Wsymb2');
+
+      const card   = document.getElementById('weather-card');
+      if (!card) return;
+      card.classList.remove('hidden');
+
+      document.getElementById('weather-symbol').textContent    = SMHI_SYMBOLS[sym] || '🌡️';
+      document.getElementById('weather-temp').textContent       = temp != null ? `${Math.round(temp)}°C` : '--°C';
+      document.getElementById('weather-wind-speed').textContent = ws  != null ? `${ws.toFixed(1)} m/s ${degToCompass(wd)}` : '-- m/s';
+
+      const arrow = document.getElementById('weather-wind-arrow');
+      if (arrow && wd != null) arrow.style.transform = `rotate(${wd}deg)`;
+
+      const [cls, label] = windStatusClass(ws != null ? ws : 0);
+      const statusEl = document.getElementById('weather-wind-status');
+      statusEl.textContent = label;
+      statusEl.className   = `wind-status ${cls}`;
+
+      const now = new Date();
+      document.getElementById('weather-updated').textContent =
+        `${now.getHours().toString().padStart(2,'0')}:${now.getMinutes().toString().padStart(2,'0')}`;
+    } catch (err) {
+      console.warn('SMHI weather fetch failed:', err);
+    }
+  }
+
+  // ── Sparade platser ───────────────────────────────────────────────────────
+  const PLACES_KEY = 'savedPlaces';
+  function loadPlaces()        { try { return JSON.parse(localStorage.getItem(PLACES_KEY)) || []; } catch { return []; } }
+  function savePlaces(places)  { localStorage.setItem(PLACES_KEY, JSON.stringify(places)); }
+
+  function renderPlaces() {
+    const list = document.getElementById('saved-places-list');
+    if (!list) return;
+    const places = loadPlaces();
+    if (places.length === 0) {
+      list.innerHTML = '<p class="list-placeholder">Aktivera GPS och tryck <strong>+</strong> för att spara en plats.</p>';
+      return;
+    }
+    list.innerHTML = places.map(p => `
+      <div class="saved-place-item" data-id="${p.id}" title="${p.lat.toFixed(5)}, ${p.lng.toFixed(5)}">
+        <span class="saved-place-icon"><i data-lucide="map-pin"></i></span>
+        <span class="saved-place-name">${p.name}</span>
+        <button class="saved-place-delete" data-id="${p.id}" aria-label="Ta bort plats">
+          <i data-lucide="trash-2"></i>
+        </button>
+      </div>`).join('');
+    initLucide();
+
+    // Fly-to on row click
+    list.querySelectorAll('.saved-place-item').forEach(el => {
+      el.addEventListener('click', (e) => {
+        if (e.target.closest('.saved-place-delete')) return;
+        const id = el.dataset.id;
+        const p  = loadPlaces().find(x => x.id === id);
+        if (p && map) map.setView([p.lat, p.lng], 14);
+      });
+    });
+
+    // Delete buttons
+    list.querySelectorAll('.saved-place-delete').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const id = btn.dataset.id;
+        savePlaces(loadPlaces().filter(x => x.id !== id));
+        renderPlaces();
+      });
+    });
+  }
+  renderPlaces();
+
+  const savePlaceBtn = document.getElementById('save-place-btn');
+  if (savePlaceBtn) {
+    savePlaceBtn.addEventListener('click', () => {
+      if (!window._lastKnownLat || !window._lastKnownLng) return;
+      const defaultName = `Plats ${loadPlaces().length + 1}`;
+      const name = prompt('Namn på platsen:', defaultName);
+      if (name === null) return;
+      const places = loadPlaces();
+      places.push({
+        id:  Date.now().toString(),
+        name: name.trim() || defaultName,
+        lat:  window._lastKnownLat,
+        lng:  window._lastKnownLng
+      });
+      savePlaces(places);
+      renderPlaces();
+    });
+  }
+
 
   // Color Palette Selector buttons
   const paletteBtns = document.querySelectorAll('.palette-btn');
@@ -1912,4 +2053,13 @@ function playBeep(freq, duration) {
   
   osc.start();
   osc.stop(audioCtx.currentTime + duration);
+}
+
+// ── PWA Service Worker Registration ──────────────────────────────────────────
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/sw.js')
+      .then(reg => console.log('[SW] Registered, scope:', reg.scope))
+      .catch(err => console.warn('[SW] Registration failed:', err));
+  });
 }
