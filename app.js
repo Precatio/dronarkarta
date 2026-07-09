@@ -1640,6 +1640,70 @@ function setupEventListeners() {
   }
 
   // Setup GPS position positioning
+  // ------------------------------------------------------------------
+  // Cookie Consent (Consent Mode v2)
+  // ------------------------------------------------------------------
+  function applyConsent(granted) {
+    if (typeof gtag === 'function') {
+      gtag('consent', 'update', {
+        'analytics_storage': granted ? 'granted' : 'denied',
+        'ad_storage':        'denied',
+        'ad_user_data':      'denied',
+        'ad_personalization':'denied'
+      });
+    }
+    localStorage.setItem('cookieConsent', granted ? 'granted' : 'denied');
+  }
+
+  function hideCookieUI() {
+    const banner  = document.getElementById('cookie-banner');
+    const details = document.getElementById('cookie-details');
+    if (banner)  banner.classList.add('hidden');
+    if (details) details.classList.add('hidden');
+  }
+
+  const savedConsent = localStorage.getItem('cookieConsent');
+  if (savedConsent) {
+    // Re-apply saved choice on every load
+    applyConsent(savedConsent === 'granted');
+  } else {
+    // Show banner after short delay so app loads first
+    setTimeout(() => {
+      const banner = document.getElementById('cookie-banner');
+      if (banner) {
+        banner.classList.remove('hidden');
+        initLucide();
+      }
+    }, 800);
+  }
+
+  // Accept buttons
+  ['cookie-accept', 'cookie-accept-from-detail'].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.addEventListener('click', () => { applyConsent(true);  hideCookieUI(); });
+  });
+
+  // Decline buttons
+  ['cookie-decline', 'cookie-decline-from-detail'].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.addEventListener('click', () => { applyConsent(false); hideCookieUI(); });
+  });
+
+  // "Läs mer" → open details panel
+  const detailsLink  = document.getElementById('cookie-details-link');
+  const detailsPanel = document.getElementById('cookie-details');
+  const detailsClose = document.getElementById('cookie-details-close');
+  if (detailsLink && detailsPanel) {
+    detailsLink.addEventListener('click', (e) => {
+      e.preventDefault();
+      detailsPanel.classList.remove('hidden');
+      initLucide();
+    });
+  }
+  if (detailsClose) {
+    detailsClose.addEventListener('click', () => detailsPanel.classList.add('hidden'));
+  }
+
   setupGeolocation();
 }
 

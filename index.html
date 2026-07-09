@@ -1,6 +1,21 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
+  <!-- Consent Mode v2: default BEFORE GTM loads -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('consent', 'default', {
+      'ad_storage':          'denied',
+      'ad_user_data':        'denied',
+      'ad_personalization':  'denied',
+      'analytics_storage':   'denied',
+      'functionality_storage': 'granted',
+      'security_storage':    'granted',
+      'wait_for_update':     500
+    });
+  </script>
+
   <!-- Google Tag Manager -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -90,6 +105,58 @@
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K3N55M73"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
+
+  <!-- Cookie Consent Banner -->
+  <div id="cookie-banner" class="cookie-banner hidden" role="dialog" aria-label="Cookie-inställningar">
+    <div class="cookie-banner-inner">
+      <div class="cookie-text">
+        <p class="cookie-title"><i data-lucide="cookie"></i> Cookies &amp; Integritet</p>
+        <p class="cookie-desc">
+          Vi använder enbart <strong>anonym statistik</strong> (Google Analytics) för att förstå hur appen används och förbättra den. 
+          Ingen data används för marknadsföring eller reklam, och din position delas aldrig med tredje part.
+          <a href="#" id="cookie-details-link" class="cookie-link">Läs mer</a>
+        </p>
+      </div>
+      <div class="cookie-actions">
+        <button id="cookie-accept" class="cookie-btn cookie-accept-btn">Acceptera statistik</button>
+        <button id="cookie-decline" class="cookie-btn cookie-decline-btn">Avvisa</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cookie Details Expandable -->
+  <div id="cookie-details" class="cookie-details hidden">
+    <div class="cookie-details-inner">
+      <button id="cookie-details-close" class="close-btn" aria-label="Stäng"><i data-lucide="x"></i></button>
+      <h3><i data-lucide="shield-check"></i> Hur vi använder cookies</h3>
+      <div class="cookie-detail-row">
+        <div class="cookie-detail-label">
+          <span class="cookie-dot green"></span>
+          <strong>Nödvändiga (alltid aktiva)</strong>
+        </div>
+        <p>Används för att appen ska fungera korrekt — t.ex. sparade inställningar (valt län, geofence-radie, kartlager). Ingen persondata.</p>
+      </div>
+      <div class="cookie-detail-row">
+        <div class="cookie-detail-label">
+          <span class="cookie-dot blue"></span>
+          <strong>Statistik (kräver samtycke)</strong>
+        </div>
+        <p>Google Analytics mäter anonymt hur många som besöker appen och vilka funktioner som används. IP-adresser anonymiseras. Data används <strong>aldrig</strong> för reklam eller marknadsföring.</p>
+      </div>
+      <div class="cookie-detail-row">
+        <div class="cookie-detail-label">
+          <span class="cookie-dot red"></span>
+          <strong>Marknadsföring (aldrig aktivt)</strong>
+        </div>
+        <p>Drönarkarta.se använder <strong>inga</strong> marknadsföringscookies, spårningspixlar eller reklamlösningar.</p>
+      </div>
+      <div class="cookie-detail-actions">
+        <button id="cookie-accept-from-detail" class="cookie-btn cookie-accept-btn">Acceptera statistik</button>
+        <button id="cookie-decline-from-detail" class="cookie-btn cookie-decline-btn">Avvisa</button>
+      </div>
+    </div>
+  </div>
+
   <!-- Geofence Proximity Warning Banner -->
   <div id="geofence-warning-banner" class="geofence-banner hidden">
     <i data-lucide="shield-alert" class="warning-icon"></i>
