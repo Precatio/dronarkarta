@@ -1653,7 +1653,7 @@ function checkGeofenceAlert(latlng) {
       banner.classList.remove('hidden');
       if (bannerText) {
         if (activeWarningIsInside) {
-          bannerText.innerHTML = `Du står <strong>inuti</strong> restriktionszonen <strong>"${nearestZoneName}"</strong>. Flygning förbjuden!`;
+          bannerText.innerHTML = `Du står <strong>inuti</strong> restriktionszonen <strong>"${nearestZoneName}"</strong>. <strong>Flygförbud!</strong>`;
         } else {
           bannerText.innerHTML = `Zonen <strong>"${nearestZoneName}"</strong> är inom din flygradie (${maxFlightDistance}m). Risk för intrång!`;
         }
