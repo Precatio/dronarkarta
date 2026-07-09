@@ -381,10 +381,27 @@
         </header>
         <div class="modal-body swish-modal-body">
           <p>Appen är gratis och reklamfri — din donering hjälper till att hålla den uppdaterad och live!</p>
-          <div class="swish-qr-wrapper">
-            <img src="./swish-QR-small.png" alt="Swish QR-kod — Stöd appen" class="swish-qr-img">
+
+          <!-- Desktop: QR-kod -->
+          <div id="swish-desktop" class="swish-desktop-block">
+            <p class="swish-instruction">Scanna med Swish-appen på din telefon:</p>
+            <div class="swish-qr-wrapper">
+              <img src="./swish-QR-small.png" alt="Swish QR-kod — Stöd appen" class="swish-qr-img">
+            </div>
           </div>
-          <p class="swish-number">Eller swisha direkt till <strong>070-042 71 67</strong></p>
+
+          <!-- Mobil: djuplänk som öppnar Swish-appen direkt -->
+          <div id="swish-mobile" class="swish-mobile-block hidden">
+            <a href="swish://payment?phone=0700427167&amount=&message=St%C3%B6d%20Dr%C3%B6narkarta.se&edit=phone%2Camount"
+               class="swish-deeplink-btn" id="swish-deeplink">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Swish_Logo_Secondary_Light-BG_RGB.svg/320px-Swish_Logo_Secondary_Light-BG_RGB.svg.png"
+                   alt="Swish" class="swish-logo-inline">
+              Öppna Swish &amp; swisha
+            </a>
+            <p class="swish-instruction" style="margin-top:10px;">Tryck för att öppna Swish-appen direkt.<br>Du väljer själv belopp.</p>
+          </div>
+
+          <p class="swish-number">Nummer: <strong>070-042 71 67</strong></p>
         </div>
       </div>
     </div>

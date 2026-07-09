@@ -1574,6 +1574,21 @@ function setupEventListeners() {
     swishBtn.addEventListener('click', () => {
       swishModal.classList.remove('hidden');
       initLucide();
+
+      // Detect mobile: touch screen or narrow viewport
+      const isMobile = window.matchMedia('(pointer: coarse)').matches
+        || /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+
+      const desktopBlock = document.getElementById('swish-desktop');
+      const mobileBlock  = document.getElementById('swish-mobile');
+
+      if (isMobile) {
+        desktopBlock.classList.add('hidden');
+        mobileBlock.classList.remove('hidden');
+      } else {
+        desktopBlock.classList.remove('hidden');
+        mobileBlock.classList.add('hidden');
+      }
     });
     closeSwishModal.addEventListener('click', () => swishModal.classList.add('hidden'));
     swishModal.addEventListener('click', (e) => {

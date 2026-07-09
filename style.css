@@ -1633,3 +1633,42 @@ body.palette-dark {
   font-size: 1rem;
 }
 
+.swish-instruction {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  text-align: center;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Deep-link button for mobile */
+.swish-deeplink-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  padding: 14px 20px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #3ab54a, #25a035);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 4px 18px rgba(40,160,60,0.35);
+  transition: var(--transition-smooth);
+  font-family: inherit;
+}
+
+.swish-deeplink-btn:hover,
+.swish-deeplink-btn:active {
+  background: linear-gradient(135deg, #46c957, #2db840);
+  box-shadow: 0 6px 24px rgba(40,160,60,0.5);
+  transform: translateY(-2px);
+}
+
+.swish-deeplink-btn .swish-logo-inline {
+  height: 22px;
+  filter: brightness(10);  /* make logo white on green bg */
+}
+
