@@ -1423,8 +1423,11 @@ body.palette-dark {
   border: 1px solid var(--border-color);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6), 0 0 20px var(--primary-glow);
   max-width: 580px;
-  width: 90%;
-  padding: 28px;
+  width: 95%;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
   border-radius: 16px;
   color: var(--text-primary);
   font-family: var(--font-sans);
@@ -1457,10 +1460,13 @@ body.palette-dark {
   flex-shrink: 0;
 }
 
+/* Modal layout details */
 .modal-body {
-  font-size: 0.875rem;
-  line-height: 1.5;
+  font-size: 0.85rem;
+  line-height: 1.45;
   color: var(--text-secondary);
+  overflow-y: auto;
+  padding-right: 6px;
 }
 
 .disclaimer-highlight {
