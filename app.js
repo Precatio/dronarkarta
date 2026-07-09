@@ -1430,6 +1430,8 @@ function setupEventListeners() {
   // Startup check for disclaimer modal
   const disclaimerModal = document.getElementById('disclaimer-modal');
   const acceptDisclaimerBtn = document.getElementById('accept-disclaimer-btn');
+  const modalDisclaimerLink = document.getElementById('modal-disclaimer-link');
+  
   if (disclaimerModal && acceptDisclaimerBtn) {
     const hasAccepted = localStorage.getItem('disclaimerAccepted') === 'true';
     if (!hasAccepted) {
@@ -1440,6 +1442,25 @@ function setupEventListeners() {
       localStorage.setItem('disclaimerAccepted', 'true');
       disclaimerModal.classList.add('hidden');
     });
+
+    if (modalDisclaimerLink) {
+      modalDisclaimerLink.addEventListener('click', (e) => {
+        e.preventDefault();
+        localStorage.setItem('disclaimerAccepted', 'true');
+        disclaimerModal.classList.add('hidden');
+        
+        // Open the sidebar about panel and scroll to it
+        const aboutPanel = document.getElementById('about-panel');
+        const aboutToggleBtn = document.getElementById('about-toggle-btn');
+        if (aboutPanel && aboutToggleBtn) {
+          aboutPanel.classList.remove('collapsed');
+          aboutToggleBtn.setAttribute('aria-expanded', 'true');
+          setTimeout(() => {
+            aboutPanel.scrollIntoView({ behavior: 'smooth', block: 'end' });
+          }, 100);
+        }
+      });
+    }
   }
 
   // Setup GPS position positioning

@@ -80,7 +80,7 @@
     <aside id="sidebar" class="sidebar-panel">
       <header class="app-header">
         <div class="logo-area">
-          <i data-lucide="navigation" class="logo-icon"></i>
+          <img src="./logo.jpg" alt="Svensk Drönarkarta Logotyp" class="logo-img">
           <h1>Svensk Drönarkarta</h1>
         </div>
         <p class="subtitle">Se UAS-zoner (geografiska zoner) och din position i realtid. Täcker hela Sverige.</p>
@@ -354,8 +354,12 @@
           <p><strong>Inget ansvar:</strong> Utvecklarna friskriver sig helt från allt ansvar för eventuella överträdelser av föreskrifter som <strong>TSFS 2017:110</strong> och <strong>EU 2019/947</strong>, samt för eventuella tillbud, olyckor, böter eller andra konsekvenser vid användning av kartan, geofencing-varningar eller dess övriga funktioner.</p>
         </div>
       </div>
-      <footer class="modal-footer">
+      <footer class="modal-footer" style="flex-direction: column; gap: 12px; align-items: center;">
         <button id="accept-disclaimer-btn" class="primary-btn">Jag förstår och godkänner</button>
+        <p style="margin: 0; font-size: 0.8rem; color: var(--text-secondary);">
+          Genom att klicka på knappen godkänner du vår 
+          <a href="#" id="modal-disclaimer-link" style="color: var(--primary); text-decoration: underline; font-weight: 600;">fullständiga ansvarsfriskrivning</a>.
+        </p>
       </footer>
     </div>
   </div>
