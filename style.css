@@ -1569,10 +1569,10 @@ body.palette-dark {
 }
 
 .swish-logo-inline {
-  height: 20px;
+  height: 22px;
   width: auto;
   object-fit: contain;
-  filter: brightness(1.1);
+  border-radius: 4px;
 }
 
 /* Swish Modal */
@@ -1668,8 +1668,7 @@ body.palette-dark {
 }
 
 .swish-deeplink-btn .swish-logo-inline {
-  height: 22px;
-  filter: brightness(10);  /* make logo white on green bg */
+  height: 24px;
 }
 
 
@@ -1845,7 +1844,9 @@ body.palette-dark {
   height: 36px;
   border-radius: 50%;
   object-fit: cover;
-  border: 1px solid rgba(255,255,255,0.12);
+  object-position: 50% 16%;
+  background-color: #ffffff;
+  border: 1px solid rgba(255,255,255,0.15);
   flex-shrink: 0;
 }
 
