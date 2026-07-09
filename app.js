@@ -3,6 +3,10 @@
 // Sweden-wide airspace coverage + Dynamic county-level nature reserves
 // ==========================================================================
 
+// Initialize selected color palette theme
+let selectedPalette = localStorage.getItem('selectedPalette') || 'blue';
+document.body.className = `palette-${selectedPalette}`;
+
 // Global state variables
 let map;
 let zoneLayers = [];
@@ -1367,6 +1371,33 @@ function setupEventListeners() {
       const isCollapsed = aboutPanel.classList.contains('collapsed');
       aboutPanel.classList.toggle('collapsed');
       aboutToggleBtn.setAttribute('aria-expanded', isCollapsed ? 'true' : 'false');
+    });
+  }
+
+  // Color Palette Selector buttons
+  const paletteBtns = document.querySelectorAll('.palette-btn');
+  if (paletteBtns.length > 0) {
+    paletteBtns.forEach(btn => {
+      if (btn.dataset.palette === selectedPalette) {
+        btn.classList.add('active');
+      } else {
+        btn.classList.remove('active');
+      }
+    });
+
+    paletteBtns.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        const palette = e.target.dataset.palette;
+        selectedPalette = palette;
+        localStorage.setItem('selectedPalette', palette);
+        
+        // Remove old palette class and add new one
+        document.body.className = document.body.className.replace(/\bpalette-\w+\b/g, '');
+        document.body.classList.add(`palette-${palette}`);
+
+        paletteBtns.forEach(b => b.classList.remove('active'));
+        e.target.classList.add('active');
+      });
     });
   }
 

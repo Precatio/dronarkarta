@@ -1206,3 +1206,71 @@ html, body {
     font-size: 1.25rem;
   }
 }
+
+/* ==========================================================================
+   COLOR PALETTES FOR MENU/SIDEBAR
+   ========================================================================== */
+.palette-selector {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.palette-btn {
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 8px 0;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+  text-shadow: 0 1px 2px rgba(0,0,0,0.6);
+  opacity: 0.75;
+}
+
+.palette-btn:hover {
+  opacity: 1;
+  transform: translateY(-1px);
+}
+
+.palette-btn.active {
+  opacity: 1;
+  box-shadow: 0 0 8px var(--primary-glow);
+  outline: 2px solid var(--primary);
+  outline-offset: -2px;
+}
+
+/* Palette Overrides on Body */
+body.palette-green {
+  --bg-card: rgba(12, 30, 22, 0.88);
+  --bg-card-hover: rgba(18, 43, 31, 0.93);
+  --bg-input: rgba(8, 20, 15, 0.7);
+  --primary: #10b981;
+  --primary-hover: #059669;
+  --primary-glow: rgba(16, 185, 129, 0.35);
+  --border-focus: rgba(16, 185, 129, 0.5);
+}
+
+body.palette-orange {
+  --bg-card: rgba(30, 20, 12, 0.88);
+  --bg-card-hover: rgba(43, 29, 18, 0.93);
+  --bg-input: rgba(20, 13, 8, 0.7);
+  --primary: #f59e0b;
+  --primary-hover: #d97706;
+  --primary-glow: rgba(245, 158, 11, 0.35);
+  --border-focus: rgba(245, 158, 11, 0.5);
+}
+
+body.palette-dark {
+  --bg-card: rgba(15, 15, 15, 0.92);
+  --bg-card-hover: rgba(25, 25, 25, 0.96);
+  --bg-input: rgba(5, 5, 5, 0.75);
+  --primary: #e2e8f0;
+  --primary-hover: #f8fafc;
+  --primary-glow: rgba(226, 232, 240, 0.25);
+  --border-focus: rgba(226, 232, 240, 0.4);
+}
+
