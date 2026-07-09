@@ -156,7 +156,7 @@ html, body {
 
 /* Green monochrome filter for map tiles in radar theme */
 .radar-theme .leaflet-tile {
-  filter: sepia(1) saturate(18) hue-rotate(95deg) brightness(0.6) contrast(1.65) !important;
+  filter: sepia(1) saturate(15) hue-rotate(95deg) brightness(0.85) contrast(1.4) !important;
 }
 
 /* Style zone borders specifically to look glowing and prominent without GPU layer bugs */
