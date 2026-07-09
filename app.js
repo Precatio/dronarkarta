@@ -2267,7 +2267,27 @@ function playBeep(freq, duration) {
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
     navigator.serviceWorker.register('/sw.js')
-      .then(reg => console.log('[SW] Registered, scope:', reg.scope))
+      .then(reg => {
+        console.log('[SW] Registered, scope:', reg.scope);
+        // When a new SW is waiting, skip waiting and reload to activate immediately
+        reg.addEventListener('updatefound', () => {
+          const newWorker = reg.installing;
+          if (!newWorker) return;
+          newWorker.addEventListener('statechange', () => {
+            if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+              console.log('[SW] New version available, reloading...');
+              newWorker.postMessage({ type: 'SKIP_WAITING' });
+            }
+          });
+        });
+      })
       .catch(err => console.warn('[SW] Registration failed:', err));
+
+    // When the controller changes (new SW took over), reload the page
+    navigator.serviceWorker.addEventListener('controllerchange', () => {
+      console.log('[SW] Controller changed, reloading page...');
+      window.location.reload();
+    });
   });
 }
+
