@@ -1312,3 +1312,85 @@ body.palette-dark {
   --border-focus: rgba(226, 232, 240, 0.4);
 }
 
+/* ==========================================================================
+   GEOFENCING ALERTS & WARNING BANNER
+   ========================================================================== */
+.geofence-banner {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  background: rgba(239, 68, 68, 0.95);
+  border: 2px solid #ffffff;
+  box-shadow: 0 4px 20px rgba(239, 68, 68, 0.5), 0 0 15px rgba(239, 68, 68, 0.3);
+  padding: 12px 24px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #ffffff;
+  font-family: var(--font-sans);
+  max-width: 90%;
+  width: 500px;
+  backdrop-filter: blur(8px);
+  animation: pulse-border 1.5s infinite, slide-down 0.3s ease-out;
+}
+
+.geofence-banner .warning-icon {
+  width: 28px;
+  height: 28px;
+  stroke: #ffffff;
+  animation: warning-pulse 1s infinite alternate;
+  flex-shrink: 0;
+}
+
+.geofence-banner .banner-text {
+  flex-grow: 1;
+}
+
+.geofence-banner .banner-text h4 {
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.4);
+}
+
+.geofence-banner .banner-text p {
+  margin: 2px 0 0 0;
+  font-size: 0.8rem;
+  font-weight: 500;
+  line-height: 1.3;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.4);
+}
+
+@keyframes pulse-border {
+  0% { box-shadow: 0 4px 20px rgba(239, 68, 68, 0.5), 0 0 0 0px rgba(255, 255, 255, 0.4); }
+  70% { box-shadow: 0 4px 20px rgba(239, 68, 68, 0.5), 0 0 0 10px rgba(255, 255, 255, 0); }
+  100% { box-shadow: 0 4px 20px rgba(239, 68, 68, 0.5), 0 0 0 0px rgba(255, 255, 255, 0); }
+}
+
+@keyframes warning-pulse {
+  from { transform: scale(1); }
+  to { transform: scale(1.15); }
+}
+
+@keyframes slide-down {
+  from { top: -80px; opacity: 0; }
+  to { top: 20px; opacity: 1; }
+}
+
+@media (max-width: 768px) {
+  .geofence-banner {
+    width: calc(100% - 32px);
+    top: 16px;
+    padding: 10px 16px;
+  }
+  @keyframes slide-down {
+    from { top: -80px; opacity: 0; }
+    to { top: 16px; opacity: 1; }
+  }
+}
+
+

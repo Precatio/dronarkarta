@@ -617,6 +617,9 @@ function setupGeolocation() {
         // Check flight status and update sidebar status card
         checkUserFlightStatus(userLocation);
         updateLocalZonesList();
+        
+        // Active Geofence Alert Check
+        checkGeofenceAlert(userLocation);
       },
       (error) => {
         console.error('Positioneringsfel:', error);
@@ -1426,4 +1429,181 @@ function setupEventListeners() {
 
   // Setup GPS position positioning
   setupGeolocation();
+}
+
+// ==========================================================================
+// ACTIVE GEOFENCING PROXIMITY ALERTS (AUDIO & VIBRATION)
+// ==========================================================================
+let geofenceAlarmInterval = null;
+let geofenceWarningActive = false;
+
+function checkGeofenceAlert(latlng) {
+  if (!latlng) return;
+  
+  let isAlertActive = false;
+  let nearestZoneName = '';
+
+  // Get only red (no-fly/restricted) zones where authorization is required
+  const redZones = allFeatures.filter(f => f.properties.type === 'REQ_AUTHORIZATION');
+
+  for (const zone of redZones) {
+    const source = zone.properties.source;
+    let points = [];
+    let isInside = false;
+    let isClose = false;
+
+    // 1. Point geometries (mostly airports / heliports with circular warning buffers)
+    if (zone.geometry.type === 'Point') {
+      const centerLng = zone.geometry.coordinates[0];
+      const centerLat = zone.geometry.coordinates[1];
+      const centerLatLng = L.latLng(centerLat, centerLng);
+      
+      let radius = 5000; // default airport CTR exemption buffer (5 km)
+      if (zone.geometry.extent && zone.geometry.extent.subType === 'Circle') {
+        radius = zone.geometry.extent.radius;
+      }
+      
+      const dist = map.distance(latlng, centerLatLng);
+      // Trigger warning if within the radius or a 200m safety buffer
+      if (dist < (radius + 200)) {
+        isAlertActive = true;
+        nearestZoneName = getFeatureName(zone);
+        break;
+      }
+    } 
+    // 2. Polygon geometries (Restriktionsområden, NOTAMs)
+    else if (zone.geometry.type === 'Polygon') {
+      const outerRing = zone.geometry.coordinates[0];
+      points = outerRing.map(c => ({ lat: c[1], lng: c[0] }));
+      
+      isInside = isPointInPolygon(latlng, points);
+      if (!isInside) {
+        // Check if user is within 200 meters of any boundary vertex
+        for (const pt of points) {
+          if (map.distance(latlng, L.latLng(pt.lat, pt.lng)) < 200) {
+            isClose = true;
+            break;
+          }
+        }
+      }
+      
+      if (isInside || isClose) {
+        isAlertActive = true;
+        nearestZoneName = getFeatureName(zone);
+        break;
+      }
+    } 
+    // 3. MultiPolygon geometries
+    else if (zone.geometry.type === 'MultiPolygon') {
+      for (const poly of zone.geometry.coordinates) {
+        const outerRing = poly[0];
+        points = outerRing.map(c => ({ lat: c[1], lng: c[0] }));
+        
+        isInside = isPointInPolygon(latlng, points);
+        if (!isInside) {
+          for (const pt of points) {
+            if (map.distance(latlng, L.latLng(pt.lat, pt.lng)) < 200) {
+              isClose = true;
+              break;
+            }
+          }
+        }
+        
+        if (isInside || isClose) {
+          isAlertActive = true;
+          nearestZoneName = getFeatureName(zone);
+          break;
+        }
+      }
+      if (isAlertActive) break;
+    }
+  }
+
+  // Handle geofence UI banner and device effects
+  const banner = document.getElementById('geofence-warning-banner');
+  const bannerText = document.getElementById('geofence-warning-text');
+
+  if (isAlertActive) {
+    geofenceWarningActive = true;
+    if (banner) {
+      banner.classList.remove('hidden');
+      if (bannerText) {
+        bannerText.innerHTML = `Du är inuti eller mycket nära restriktionszonen <strong>"${nearestZoneName}"</strong>. Landa omedelbart!`;
+      }
+    }
+    
+    // Start warning sound beep interval if not running
+    if (!geofenceAlarmInterval) {
+      triggerGeofenceEffects();
+      geofenceAlarmInterval = setInterval(triggerGeofenceEffects, 1500);
+    }
+  } else {
+    geofenceWarningActive = false;
+    if (banner) {
+      banner.classList.add('hidden');
+    }
+    if (geofenceAlarmInterval) {
+      clearInterval(geofenceAlarmInterval);
+      geofenceAlarmInterval = null;
+    }
+  }
+}
+
+// Ray-casting Point-in-polygon helper
+function isPointInPolygon(latlng, vs) {
+  const x = latlng.lng, y = latlng.lat;
+  let inside = false;
+  for (let i = 0, j = vs.length - 1; i < vs.length; j = i++) {
+    const xi = vs[i].lng, yi = vs[i].lat;
+    const xj = vs[j].lng, yj = vs[j].lat;
+    const intersect = ((yi > y) !== (yj > y))
+        && (x < (xj - xi) * (y - yi) / (yj - yi) + xi);
+    if (intersect) inside = !inside;
+  }
+  return inside;
+}
+
+// Sound Synthesizer via Web Audio API + vibration
+let audioCtx = null;
+function triggerGeofenceEffects() {
+  if (!geofenceWarningActive) return;
+
+  // 1. Synthesize alarm sound
+  try {
+    if (!audioCtx) {
+      audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    }
+    if (audioCtx.state === 'suspended') {
+      audioCtx.resume();
+    }
+    
+    // Play dual rapid warning beeps
+    playBeep(980, 0.15); // High pitch B5
+    setTimeout(() => playBeep(980, 0.15), 200);
+  } catch (e) {
+    console.error('Kunde inte spela upp geofence-ljud:', e);
+  }
+
+  // 2. Trigger vibration (vibe 300ms, pause 100ms, vibe 300ms)
+  if (navigator.vibrate) {
+    navigator.vibrate([300, 100, 300]);
+  }
+}
+
+function playBeep(freq, duration) {
+  if (!audioCtx) return;
+  const osc = audioCtx.createOscillator();
+  const gainNode = audioCtx.createGain();
+  
+  osc.type = 'sawtooth';
+  osc.frequency.setValueAtTime(freq, audioCtx.currentTime);
+  
+  gainNode.gain.setValueAtTime(0.15, audioCtx.currentTime);
+  gainNode.gain.exponentialRampToValueAtTime(0.01, audioCtx.currentTime + duration);
+  
+  osc.connect(gainNode);
+  gainNode.connect(audioCtx.destination);
+  
+  osc.start();
+  osc.stop(audioCtx.currentTime + duration);
 }

@@ -52,6 +52,15 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+  <!-- Geofence Proximity Warning Banner -->
+  <div id="geofence-warning-banner" class="geofence-banner hidden">
+    <i data-lucide="shield-alert" class="warning-icon"></i>
+    <div class="banner-text">
+      <h4>GEOFENCE-VARNING</h4>
+      <p id="geofence-warning-text">Du är för nära eller inuti en restriktionszon!</p>
+    </div>
+  </div>
+
   <div id="app-container">
     <!-- Map Area Wrapper with Radar Overlays -->
     <div id="map-wrapper">
