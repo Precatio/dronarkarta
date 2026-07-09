@@ -236,11 +236,11 @@ async function start() {
     console.error('Fel vid hämtning av AIP SUP:', e.message);
   }
 
-  // B. Fetch Live dynamic NOTAM restrictions (dynais:NOTAM_ARCHIVE)
+  // B. Fetch Live dynamic NOTAM restrictions (dynais:NOTAM)
   try {
-    console.log('Hämtar aktiva NOTAM-områden (dynais:NOTAM_ARCHIVE) från LFV...');
+    console.log('Hämtar aktiva NOTAM-områden (dynais:NOTAM) från LFV...');
     const todayIso = new Date().toISOString().split('T')[0] + 'T00:00:00Z';
-    const notamUrl = `https://daim.lfv.se/geoserver/wfs?service=WFS&version=1.1.0&request=GetFeature&typeName=dynais:NOTAM_ARCHIVE&outputFormat=application/json&cql_filter=(CODE23%20ilike%20%27R%25%27%20OR%20CODE23%20ilike%20%27W%25%27)%20AND%20CODE45%20%3C%3E%20%27TT%27%20AND%20ENDVALIDITY%20%3E%3D%20%27${todayIso}%27`;
+    const notamUrl = `https://daim.lfv.se/geoserver/wfs?service=WFS&version=1.1.0&request=GetFeature&typeName=dynais:NOTAM&outputFormat=application/json&cql_filter=(CODE23%20ilike%20%27R%25%27%20OR%20CODE23%20ilike%20%27W%25%27)%20AND%20CODE45%20%3C%3E%20%27TT%27%20AND%20ENDVALIDITY%20%3E%3D%20%27${todayIso}%27`;
     
     const geojson = await fetchJson(notamUrl);
     const features = geojson.features || [];
