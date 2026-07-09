@@ -2,7 +2,7 @@ name: Uppdatera luftrumsdata
 
 on:
   schedule:
-    - cron: '0 4 * * 1' # Körs varje måndag kl 04:00 UTC
+    - cron: '0 */6 * * *' # Körs var 6:e timme för färska NOTAMs och restriktioner
   workflow_dispatch: # Gör det möjligt att starta manuellt från GitHubs gränssnitt
 
 jobs:
