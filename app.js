@@ -1427,6 +1427,21 @@ function setupEventListeners() {
     });
   }
 
+  // Startup check for disclaimer modal
+  const disclaimerModal = document.getElementById('disclaimer-modal');
+  const acceptDisclaimerBtn = document.getElementById('accept-disclaimer-btn');
+  if (disclaimerModal && acceptDisclaimerBtn) {
+    const hasAccepted = localStorage.getItem('disclaimerAccepted') === 'true';
+    if (!hasAccepted) {
+      disclaimerModal.classList.remove('hidden');
+    }
+    
+    acceptDisclaimerBtn.addEventListener('click', () => {
+      localStorage.setItem('disclaimerAccepted', 'true');
+      disclaimerModal.classList.add('hidden');
+    });
+  }
+
   // Setup GPS position positioning
   setupGeolocation();
 }
