@@ -231,6 +231,21 @@
         <div class="weather-source">SMHI · <span id="weather-updated">uppdaterar...</span></div>
       </div>
 
+      <!-- Destination Card (visas när man klickar på kartan) -->
+      <div id="destination-card" class="destination-card hidden">
+        <div class="dest-header">
+          <h4><i data-lucide="crosshair"></i> Planerad flygpunkt</h4>
+          <button id="clear-dest-btn" class="dest-clear-btn" title="Rensa punkt" aria-label="Rensa flygpunkt"><i data-lucide="trash-2"></i></button>
+        </div>
+        <div class="dest-coords-row">
+          <span id="dest-coords-text" class="dest-coords">55.12345, 12.12345</span>
+          <button id="copy-coords-btn" class="dest-copy-btn" title="Kopiera koordinater" aria-label="Kopiera koordinater"><i data-lucide="copy"></i></button>
+        </div>
+        <div id="dest-distance-row" class="dest-info-row hidden">
+          <span>Avstånd från dig: <strong id="dest-distance-val">-- m</strong></span>
+        </div>
+      </div>
+
       <!-- Collapsible Section Tabs/Accordion -->
       <div class="panel-content">
         <!-- Quick Zooms -->

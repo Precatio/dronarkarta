@@ -2018,3 +2018,128 @@ body.palette-dark {
   line-height: 1.45;
 }
 .rules-list li strong { color: var(--text-primary); }
+
+/* ==========================================================================
+   DESTINATION CARD & MARKER
+   ========================================================================== */
+.destination-card {
+  background: rgba(56, 189, 248, 0.08); /* Subtle cyber-blue highlight */
+  border: 1px solid rgba(56, 189, 248, 0.2);
+  border-radius: 12px;
+  padding: 12px 14px;
+  margin: 8px 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  animation: slideUpBanner 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+.destination-card.hidden { display: none !important; }
+
+.dest-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.dest-header h4 {
+  margin: 0;
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #38bdf8; /* Cyber blue */
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.dest-header h4 svg {
+  width: 15px;
+  height: 15px;
+}
+
+.dest-clear-btn {
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  opacity: 0.6;
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition-smooth);
+}
+.dest-clear-btn:hover {
+  opacity: 1;
+  color: #ef4444;
+  transform: scale(1.1);
+}
+.dest-clear-btn svg {
+  width: 14px;
+  height: 14px;
+}
+
+.dest-coords-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.04);
+}
+
+.dest-coords {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  letter-spacing: 0.02em;
+}
+
+.dest-copy-btn {
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  opacity: 0.7;
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition-smooth);
+}
+.dest-copy-btn:hover {
+  opacity: 1;
+  color: #38bdf8;
+  transform: scale(1.1);
+}
+.dest-copy-btn svg {
+  width: 14px;
+  height: 14px;
+}
+
+.dest-info-row {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
+.dest-info-row.hidden { display: none !important; }
+.dest-info-row strong {
+  color: var(--text-primary);
+}
+
+/* Custom glowing target marker */
+.dest-marker-icon {
+  background: none;
+  border: none;
+}
+.dest-marker-icon svg {
+  width: 32px;
+  height: 32px;
+  color: #38bdf8;
+  filter: drop-shadow(0 0 4px #38bdf8);
+  animation: dest-marker-bounce 1s ease-in-out infinite alternate;
+}
+
+@keyframes dest-marker-bounce {
+  from { transform: translateY(0); }
+  to { transform: translateY(-4px); }
+}

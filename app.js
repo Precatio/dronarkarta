@@ -15,6 +15,7 @@ let nationalFeatures = [];
 let currentCountyReserves = [];
 let userLocation = null;
 let userMarker = null;
+let destinationMarker = null;
 let userRadiusCircle = null;
 
 // Updates (or creates) the dashed geofence radius circle around the user marker
@@ -164,7 +165,102 @@ function initMap() {
 
   // Trigger search update on map move
   map.on('moveend', updateLocalZonesList);
+
+  // Map click listener to place destination marker
+  map.on('click', (e) => {
+    setDestination(e.latlng.lat, e.latlng.lng);
+  });
 }
+
+// ── Destination / Target Flight Point Logic ───────────────────────────────
+function setDestination(lat, lng) {
+  window._destLat = lat;
+  window._destLng = lng;
+
+  const card = document.getElementById('destination-card');
+  const coordText = document.getElementById('dest-coords-text');
+  const distRow = document.getElementById('dest-distance-row');
+  const distVal = document.getElementById('dest-distance-val');
+
+  if (coordText) {
+    coordText.textContent = `${lat.toFixed(5)}, ${lng.toFixed(5)}`;
+  }
+
+  // Update distance to user if GPS is active
+  if (userLocation && distRow && distVal) {
+    const dist = userLocation.distanceTo(L.latLng(lat, lng));
+    distRow.classList.remove('hidden');
+    distVal.innerText = dist < 1000 ? `${Math.round(dist)} m` : `${(dist/1000).toFixed(2)} km`;
+  } else if (distRow) {
+    distRow.classList.add('hidden');
+  }
+
+  if (card) {
+    card.classList.remove('hidden');
+    initLucide();
+  }
+
+  // Move or draw marker
+  if (destinationMarker) {
+    destinationMarker.setLatLng([lat, lng]);
+  } else {
+    const targetIcon = L.divIcon({
+      className: 'dest-marker-icon',
+      html: '<i data-lucide="crosshair"></i>',
+      iconSize: [32, 32],
+      iconAnchor: [16, 16]
+    });
+    destinationMarker = L.marker([lat, lng], { icon: targetIcon }).addTo(map);
+    initLucide();
+  }
+}
+
+function clearDestination() {
+  window._destLat = undefined;
+  window._destLng = undefined;
+
+  const card = document.getElementById('destination-card');
+  if (card) card.classList.add('hidden');
+
+  if (destinationMarker) {
+    map.removeLayer(destinationMarker);
+    destinationMarker = null;
+  }
+}
+
+// Wire copy/clear buttons once window loads / setupEventListeners runs
+function setupDestinationListeners() {
+  const clearBtn = document.getElementById('clear-dest-btn');
+  const copyBtn = document.getElementById('copy-coords-btn');
+
+  if (clearBtn) {
+    clearBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      clearDestination();
+    });
+  }
+
+  if (copyBtn) {
+    copyBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      if (window._destLat !== undefined && window._destLng !== undefined) {
+        const text = `${window._destLat.toFixed(5)}, ${window._destLng.toFixed(5)}`;
+        navigator.clipboard.writeText(text).then(() => {
+          const originalHTML = copyBtn.innerHTML;
+          copyBtn.innerHTML = '<i data-lucide="check" style="color:#10b981"></i>';
+          initLucide();
+          setTimeout(() => {
+            copyBtn.innerHTML = originalHTML;
+            initLucide();
+          }, 1500);
+        }).catch(err => {
+          console.error('Clipboard copy failed:', err);
+        });
+      }
+    });
+  }
+}
+
 
 // --------------------------------------------------------------------------
 // DATA LOADING AND PARSING (MULTIPLE SOURCES)
@@ -654,6 +750,17 @@ function setupGeolocation() {
         const savePlaceBtnEl = document.getElementById('save-place-btn');
         if (savePlaceBtnEl) savePlaceBtnEl.classList.remove('hidden');
         fetchSMHIWeather(lat, lng);
+
+        // Update distance to planned destination in real-time if active
+        if (window._destLat !== undefined && window._destLng !== undefined) {
+          const dist = userLocation.distanceTo(L.latLng(window._destLat, window._destLng));
+          const distRow = document.getElementById('dest-distance-row');
+          const distVal = document.getElementById('dest-distance-val');
+          if (distRow && distVal) {
+            distRow.classList.remove('hidden');
+            distVal.innerText = dist < 1000 ? `${Math.round(dist)} m` : `${(dist/1000).toFixed(2)} km`;
+          }
+        }
 
         // Auto-detect county and load nature reserves if county changed
         const detectedCounty = detectCountyFromLatLng(lat, lng);
@@ -1306,6 +1413,7 @@ function exportToGpx() {
 // EVENT LISTENERS AND INTERACTIONS
 // --------------------------------------------------------------------------
 function setupEventListeners() {
+  setupDestinationListeners();
   // Mobile Panel Toggle
   const toggleBtn = document.getElementById('toggle-panel-btn');
   const sidebar = document.getElementById('sidebar');
