@@ -1,0 +1,13 @@
+{
+  "name": "drone-map-sweden",
+  "version": "1.0.0",
+  "description": "Drönarkarta över Sverige med fokus på Skåne",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0"
+  }
+}

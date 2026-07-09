@@ -1,0 +1,35 @@
+name: Uppdatera luftrumsdata
+
+on:
+  schedule:
+    - cron: '0 4 * * 1' # Körs varje måndag kl 04:00 UTC
+  workflow_dispatch: # Gör det möjligt att starta manuellt från GitHubs gränssnitt
+
+jobs:
+  update-airspace:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Hämta kod
+        uses: actions/checkout@v4
+
+      - name: Konfigurera Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Kör hämtskript för LFV & Naturvårdsverket
+        run: node fetch_external_data.js
+
+      - name: Committa och pusha ändringar
+        run: |
+          git config --global user.name "Drönarkarta Databot"
+          git config --global user.email "bot@dronarkarta.se"
+          git add data/
+          
+          # Commit och pusha endast om det finns faktiska skillnader i datan
+          if ! git diff --cached --quiet; then
+            git commit -m "Automatisk veckouppdatering av luftrum och reservat"
+            git push
+          else
+            echo "Inga ändringar hittades i luftrumsdatan denna vecka."
+          fi

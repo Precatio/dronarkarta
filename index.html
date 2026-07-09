@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Svensk Drönarkarta | Drönarzoner & Restriktionsområden i Realtid</title>
+  <meta name="description" content="Interaktiv karta över drönarzoner och restriktionsområden i Sverige. Se kontrollzoner (CTR), flygplatser, R-områden och länsindelade naturreservat i realtid. Exportera GPX till Garmin.">
+  <meta name="keywords" content="drönarkarta, drönarzoner, drönare regler, UAS zoner, restriktionsområden, kontrollzon, CTR, flygplats skyddszon, naturreservat drönare, Garmin drönarkarta, GPX drönarzoner, flyga drönare Sverige, LFV drönarkarta">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Svensk Drönarkarta | Drönarzoner & Restriktionsområden i Realtid">
+  <meta property="og:description" content="Se CTR-zoner, R-områden, flygplatser och naturreservat för drönarflygning i hela Sverige. Ladda ner GPX för Garmin.">
+  <meta property="og:image" content="logo.jpg">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="Svensk Drönarkarta | Drönarzoner Sverige">
+  <meta property="twitter:description" content="Se tillfälliga NOTAM-zoner, kontrollzoner, flygplatser och naturreservat i din drönarapp. Exportera GPX.">
+
+  <!-- JSON-LD Structured Data Schema Markup for Search Engines -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Svensk Drönarkarta",
+    "url": "https://dronarkarta.se",
+    "description": "Interaktiv drönarkarta över Sverige. Visar kontrollzoner, restriktionsområden, NOTAM och naturreservat med LFV och Naturvårdsverkets data.",
+    "applicationCategory": "MapApplication",
+    "operatingSystem": "Web Browser",
+    "browserRequirements": "Requires JavaScript. Requires HTML5.",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "SEK"
+    }
+  }
+  </script>
+  
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <!-- Custom Styling -->
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div id="app-container">
+    <!-- Map Area Wrapper with Radar Overlays -->
+    <div id="map-wrapper">
+      <div id="map"></div>
+      <div id="radar-sweep" class="radar-sweep hidden"></div>
+      <div id="radar-grid" class="radar-grid hidden"></div>
+    </div>
+
+    <!-- Floating UI Toggle Button (Mobile) -->
+    <button id="toggle-panel-btn" class="floating-btn mobile-only" aria-label="Visa/dölj panel">
+      <i data-lucide="menu"></i>
+    </button>
+
+    <!-- UI Overlay Panels -->
+    <aside id="sidebar" class="sidebar-panel">
+      <header class="app-header">
+        <div class="logo-area">
+          <i data-lucide="navigation" class="logo-icon"></i>
+          <h1>Svensk Drönarkarta</h1>
+        </div>
+        <p class="subtitle">Se UAS-zoner (geografiska zoner) och din position i realtid. Täcker hela Sverige.</p>
+      </header>
+
+      <!-- Flight Permission Status Panel -->
+      <section id="status-card" class="status-card status-unknown">
+        <div class="status-header">
+          <div class="status-indicator"></div>
+          <h2 id="status-title">Aktivera position...</h2>
+        </div>
+        <p id="status-desc" class="status-desc">Klicka på "Hitta mig" för att kontrollera om du befinner dig i ett restriktionsområde.</p>
+      </section>
+
+      <!-- Geolocation Action Button -->
+      <button id="locate-btn" class="primary-btn">
+        <i data-lucide="map-pin"></i>
+        <span>Hitta min position (GPS)</span>
+      </button>
+
+      <!-- Collapsible Section Tabs/Accordion -->
+      <div class="panel-content">
+        <!-- Quick Zooms -->
+        <div class="section-group">
+          <h3><i data-lucide="compass"></i> Snabbval</h3>
+          <div class="quick-zooms">
+            <button class="zoom-btn" data-lat="55.9" data-lng="13.5" data-zoom="9" data-region="skane">Skåne</button>
+            <button class="zoom-btn" data-lat="59.329" data-lng="18.068" data-zoom="11" data-region="stockholm">Stockholm</button>
+            <button class="zoom-btn" data-lat="57.708" data-lng="11.974" data-zoom="11" data-region="vastra_gotaland">Göteborg</button>
+            <button class="zoom-btn" data-lat="63.0" data-lng="16.0" data-zoom="5">Sverige</button>
+          </div>
+        </div>
+
+        <!-- Search Box -->
+        <div class="section-group">
+          <h3><i data-lucide="search"></i> Sök plats</h3>
+          <form id="search-form" class="search-box">
+            <input type="text" id="search-input" placeholder="Sök ort, adress..." autocomplete="off">
+            <button type="submit" class="icon-btn" aria-label="Sök"><i data-lucide="search"></i></button>
+          </form>
+          <div id="search-results" class="search-results-list hidden"></div>
+        </div>
+
+        <!-- Garmin Sync Section -->
+        <div class="section-group">
+          <h3><i data-lucide="smartphone"></i> Garmin GPS-synk</h3>
+          <div class="garmin-sync-box">
+            <button id="export-gpx-btn" class="secondary-btn">
+              <i data-lucide="download"></i>
+              <span>Exportera zoner (GPX)</span>
+            </button>
+            <p class="section-desc">Ladda ner valda zoner som en GPX-fil. Importera till Garmin Connect, Garmin Explore eller direkt via USB för att se restriktionsområdena på din Garmin-karta.</p>
+          </div>
+        </div>
+
+        <!-- Map Layer Selection & Region Selection -->
+        <div class="section-group">
+          <h3><i data-lucide="layers"></i> Kartlager & Region</h3>
+          <div class="layer-selector" style="margin-bottom: 12px;">
+            <button class="layer-btn active" data-layer="dark">Mörk</button>
+            <button class="layer-btn" data-layer="satellite">Satellit</button>
+            <button class="layer-btn" data-layer="light">Ljus</button>
+            <button class="layer-btn" data-layer="radar">Radar</button>
+          </div>
+          
+          <label for="region-selector" class="dropdown-label">Län (Naturreservat):</label>
+          <select id="region-selector" class="dropdown-select">
+            <option value="blekinge">Blekinge Län</option>
+            <option value="dalarna">Dalarnas Län</option>
+            <option value="gotland">Gotlands Län</option>
+            <option value="gavleborg">Gävleborgs Län</option>
+            <option value="halland">Hallands Län</option>
+            <option value="jamtland">Jämtlands Län</option>
+            <option value="jonkoping">Jönköpings Län</option>
+            <option value="kalmar">Kalmar Län</option>
+            <option value="kronoberg">Kronobergs Län</option>
+            <option value="norrbotten">Norrbottens Län</option>
+            <option value="skane" selected>Skåne Län</option>
+            <option value="stockholm">Stockholms Län</option>
+            <option value="sodermanland">Södermanlands Län</option>
+            <option value="uppsala">Uppsala Län</option>
+            <option value="varmland">Värmlands Län</option>
+            <option value="vasterbotten">Västerbottens Län</option>
+            <option value="vasternorrland">Västernorrlands Län</option>
+            <option value="vastmanland">Västmanlands Län</option>
+            <option value="vastra_gotaland">Västra Götalands Län</option>
+            <option value="orebro">Örebro Län</option>
+            <option value="ostergotland">Östergötlands Län</option>
+          </select>
+        </div>
+
+        <!-- Filter Controls -->
+        <div class="section-group">
+          <h3><i data-lucide="sliders-horizontal"></i> Filtrera zoner</h3>
+          <div class="filter-options">
+            <label class="checkbox-container">
+              <input type="checkbox" id="filter-auth" checked>
+              <span class="custom-checkbox auth-box"></span>
+              <span class="filter-label">
+                <strong>Kräver tillstånd</strong> (REQ_AUTHORIZATION)
+                <span class="badge auth-badge">Flygplatser, helikopterplattor, skyddsobjekt, CTR, R-områden</span>
+              </span>
+            </label>
+            <label class="checkbox-container">
+              <input type="checkbox" id="filter-cond" checked>
+              <span class="custom-checkbox cond-box"></span>
+              <span class="filter-label">
+                <strong>Särskilda villkor</strong> (CONDITIONAL)
+                <span class="badge cond-badge">Känsliga områden, CTR (50m höjd), sjukhus</span>
+              </span>
+            </label>
+            <label class="checkbox-container">
+              <input type="checkbox" id="filter-nvr" checked>
+              <span class="custom-checkbox nvr-box"></span>
+              <span class="filter-label">
+                <strong>Naturreservat</strong> (Gröna områden)
+                <span class="badge nvr-badge">Skyddad natur, djur- och fågelskydd</span>
+              </span>
+            </label>
+            <label class="checkbox-container">
+              <input type="checkbox" id="filter-info" checked>
+              <span class="custom-checkbox info-box"></span>
+              <span class="filter-label">
+                <strong>Informatoriska zoner</strong> (NO_RESTRICTION)
+                <span class="badge info-badge">Lågflygområden etc.</span>
+              </span>
+            </label>
+          </div>
+        </div>
+
+        <!-- List of Zones in View -->
+        <div class="section-group">
+          <div class="list-header">
+            <h3><i data-lucide="list"></i> Zoner i närheten</h3>
+            <span id="zone-count-badge" class="count-badge">0</span>
+          </div>
+          <div id="zones-list" class="zones-list">
+            <div class="list-placeholder">Laddar UAS-zoner...</div>
+          </div>
+        </div>
+
+        <!-- Om appen & Datakällor Accordion Section -->
+        <div class="section-group collapsible-group">
+          <button id="about-toggle-btn" class="accordion-trigger">
+            <span><i data-lucide="info"></i> Om appen & Datakällor</span>
+            <i data-lucide="chevron-down" class="arrow-icon"></i>
+          </button>
+          <div id="about-panel" class="accordion-panel collapsed">
+            <div class="about-content">
+              <p class="about-p"><strong>Svensk Drönarkarta</strong> är ett planeringshjälpmedel för drönarflygning i Sverige.</p>
+              
+              <h4 class="about-h4">Datakällor & Uppdatering:</h4>
+              <ul class="about-ul">
+                <li><strong>Luftrum & CTR:</strong> Luftfartsverket (LFV) WFS. CTR-luftrum och 5 km skyddszoner runt flygplatser visas.</li>
+                <li><strong>Restriktionsområden:</strong> LFV WFS (R-områden). Hela städer som Malmö (ES R130) ingår.</li>
+                <li><strong>Naturreservat:</strong> Naturvårdsverket WFS (Skyddad Natur).</li>
+                <li><strong>Uppdateringsintervall:</strong> Datan hämtas automatiskt varje **måndag kl 04:00 UTC** via GitHub Actions.</li>
+              </ul>
+
+              <h4 class="about-h4">⚠️ Ansvarsfriskrivning (Disclaimer):</h4>
+              <p class="about-desc">Denna app är enbart avsedd som ett planeringsstöd. <strong>Det är alltid drönarpilotens personliga ansvar</strong> att kontrollera gällande regler, lokala föreskrifter och tillfälliga flygförbud (NOTAM) inför varje enskild flygning. Kartan är inte en certifierad flyginformationstjänst.</p>
+
+              <h4 class="about-h4">Myndighetskontakt:</h4>
+              <div class="contact-card">
+                <p class="contact-name">Luftfartsverket (LFV)</p>
+                <p>Tel: <a href="tel:011-192000">011-19 20 00</a></p>
+                <p>E-post: <a href="mailto:lfv@lfv.se">lfv@lfv.se</a></p>
+                <p>Briefing: <a href="https://aro.lfv.se" target="_blank" rel="noopener">aro.lfv.se</a></p>
+              </div>
+
+              <div class="contact-card">
+                <p class="contact-name">Transportstyrelsen (Luftfart)</p>
+                <p>Tel: <a href="tel:0771-503503">0771-503 503</a></p>
+                <p>E-post: <a href="mailto:luftfart@transportstyrelsen.se">luftfart@transportstyrelsen.se</a></p>
+                <p>Webb: <a href="https://transportstyrelsen.se/dronare" target="_blank" rel="noopener">transportstyrelsen.se/dronare</a></p>
+              </div>
+
+              <div class="contact-card">
+                <p class="contact-name">Länsstyrelsen Skåne</p>
+                <p>Tel: <a href="tel:010-2241000">010-224 10 00</a></p>
+                <p>E-post: <a href="mailto:skane@lansstyrelsen.se">skane@lansstyrelsen.se</a></p>
+              </div>
+
+              <div class="contact-card">
+                <p class="contact-name">Naturvårdsverket</p>
+                <p>Tel: <a href="tel:010-6981000">010-698 10 00</a></p>
+                <p>E-post: <a href="mailto:registrator@naturvardsverket.se">registrator@naturvardsverket.se</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Rules & Disclaimer -->
+        <div class="section-group disclaimer" style="margin-top: 10px;">
+          <h3><i data-lucide="shield-alert"></i> Regler & Flygcompliance</h3>
+          <ul>
+            <li><strong>Registrering:</strong> Du måste registrera dig som operatör hos Transportstyrelsen och märka din drönare med ditt unika <strong>Operatörs-ID</strong>.</li>
+            <li><strong>Drönarkort:</strong> För drönare över 250 gram krävs ett giltigt **drönarkort** (A1/A3 eller A2) utfärdat av Transportstyrelsen.</li>
+            <li><strong>Flyghöjd:</strong> Max flyghöjd är <strong>120 meter</strong> över marken (AGL) i den öppna kategorin.</li>
+            <li><strong>Direkt synhåll:</strong> Flygning ska ske inom direkt **synhåll (VLOS)** utan kikare eller bildskärm (om du inte flyger med en spotter).</li>
+            <li><strong>Flygfoto (Spridningstillstånd):</strong> Det krävs tillstånd från **Lantmäteriet** innan du publicerar eller delar flygbilder/filmer på nätet.</li>
+            <li><strong>GDPR & Kamerabevakning:</strong> Fotografering av personer utan samtycke kan bryta mot GDPR och Kamerabevakningslagen.</li>
+            <li><strong>Håll avstånd:</strong> Flyg aldrig över folksamlingar och visa hänsyn till fågel- och djurliv (speciellt i naturreservat).</li>
+          </ul>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Zone Detail Modal/Overlay (Mobile) -->
+    <div id="detail-overlay" class="detail-overlay hidden">
+      <div class="detail-content">
+        <button id="close-detail-btn" class="close-btn"><i data-lucide="x"></i></button>
+        <div id="detail-body"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  
+  <!-- Application Logic -->
+  <script type="module" src="./app.js"></script>
+</body>
+</html>

@@ -1,0 +1,6538 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "ARP.31483",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.65611111,
+          56.86305556
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESMB",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "BORGLANDA",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR , date ",
+        "COMMENT_2": "Traffic permitted: V",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 3564,
+        "IDNR": 31483,
+        "MI_STYLE": null,
+        "name": "BORGLANDA",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESMB"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31484",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.91222222,
+          59.60833333
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESSM",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "BRATTFORSHEDEN",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR , date ",
+        "COMMENT_2": "Traffic permitted: V",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 3565,
+        "IDNR": 31484,
+        "MI_STYLE": null,
+        "name": "BRATTFORSHEDEN",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESSM"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31485",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.37722222,
+          60.55611111
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESKD",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "DALA-JÄRNA",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR , date ",
+        "COMMENT_2": "Traffic permitted: V",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 3567,
+        "IDNR": 31485,
+        "MI_STYLE": null,
+        "name": "DALA-JÄRNA",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESKD"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31486",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.83333333,
+          61.38694444
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESUY",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "EDSBYN",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR , date ",
+        "COMMENT_2": "Traffic permitted: V",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 3568,
+        "IDNR": 31486,
+        "MI_STYLE": null,
+        "name": "EDSBYN",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESUY"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31487",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.52861111,
+          60.15472222
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESKH",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "EKSHÄRAD",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR , date ",
+        "COMMENT_2": "Traffic permitted: V",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 3569,
+        "IDNR": 31487,
+        "MI_STYLE": null,
+        "name": "EKSHÄRAD",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESKH"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31488",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.94194444,
+          57.67
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESMC",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "EKSJÖ/Ränneslätt",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR , date ",
+        "COMMENT_2": "Traffic permitted: V",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 3570,
+        "IDNR": 31488,
+        "MI_STYLE": null,
+        "name": "EKSJÖ/Ränneslätt",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESMC"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31489",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.44194444,
+          59.38388889
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESSC",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "ESKILSTUNA/Ekeby",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR , date ",
+        "COMMENT_2": "Traffic permitted: V",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 3572,
+        "IDNR": 31489,
+        "MI_STYLE": null,
+        "name": "ESKILSTUNA/Ekeby",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESSC"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31490",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.33111111,
+          55.84833333
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESME",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "ESLÖV",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR , date ",
+        "COMMENT_2": "Traffic permitted: V",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 3573,
+        "IDNR": 31490,
+        "MI_STYLE": null,
+        "name": "ESLÖV",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESME"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31491",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.47055556,
+          56.38777778
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESMF",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "FAGERHULT",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR , date ",
+        "COMMENT_2": "Traffic permitted: V",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 3574,
+        "IDNR": 31491,
+        "MI_STYLE": null,
+        "name": "FAGERHULT",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESMF"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31492",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.38722222,
+          56.96861111
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESGF",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "FALKENBERG/Morup",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR , date ",
+        "COMMENT_2": "Traffic permitted: V",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 3575,
+        "IDNR": 31492,
+        "MI_STYLE": null,
+        "name": "FALKENBERG/Morup",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESGF"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31493",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.74916667,
+          63.21277778
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESNF",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "ÅVIKEN/Åviken Fly Camp",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR , date ",
+        "COMMENT_2": "Traffic permitted: V",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 3577,
+        "IDNR": 31493,
+        "MI_STYLE": null,
+        "name": "ÅVIKEN/Åviken Fly Camp",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESNF"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31494",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.07805556,
+          60.55083333
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESVG",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "GAGNEF",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR , date ",
+        "COMMENT_2": "Traffic permitted: V",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 3578,
+        "IDNR": 31494,
+        "MI_STYLE": null,
+        "name": "GAGNEF",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESVG"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31495",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.97555556,
+          65.30527778
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESUG",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "GARGNÄS",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR , date ",
+        "COMMENT_2": "Traffic permitted: V",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 3579,
+        "IDNR": 31495,
+        "MI_STYLE": null,
+        "name": "GARGNÄS",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESUG"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31496",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.42944444,
+          60.28611111
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESKG",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "GRYTTJOM",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR , date ",
+        "COMMENT_2": "Traffic permitted: V",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 3581,
+        "IDNR": 31496,
+        "MI_STYLE": null,
+        "name": "GRYTTJOM",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESKG"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31497",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.61055556,
+          58.57861111
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESGN",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "GÖTENE/Brännebrona",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR , date ",
+        "COMMENT_2": "Traffic permitted: V",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 3582,
+        "IDNR": 31497,
+        "MI_STYLE": null,
+        "name": "GÖTENE/Brännebrona",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESGN"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31498",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.13694444,
+          57.29222222
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESMV",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "HAGSHULT",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR 06.0, date 2020-01-01",
+        "COMMENT_2": "Traffic permitted: V",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 3583,
+        "IDNR": 31498,
+        "MI_STYLE": null,
+        "name": "HAGSHULT",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESMV"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31499",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.45888889,
+          63.73833333
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESNA",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "HALLVIKEN",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR , date ",
+        "COMMENT_2": "Traffic permitted: V",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 3584,
+        "IDNR": 31499,
+        "MI_STYLE": null,
+        "name": "HALLVIKEN",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESNA"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31500",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.74722222,
+          62.40888889
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESNC",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "HEDE/Hedlanda",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR , date ",
+        "COMMENT_2": "Traffic permitted: V",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 3586,
+        "IDNR": 31500,
+        "MI_STYLE": null,
+        "name": "HEDE/Hedlanda",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESNC"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31501",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.10805556,
+          58.02944444
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESGH",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "HERRLJUNGA",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR , date ",
+        "COMMENT_2": "Traffic permitted: V",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 3589,
+        "IDNR": 31501,
+        "MI_STYLE": null,
+        "name": "HERRLJUNGA",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESGH"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31502",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.42361111,
+          59.8675
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESVH",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "HÄLLEFORS",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR , date ",
+        "COMMENT_2": "Traffic permitted: V",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 3591,
+        "IDNR": 31502,
+        "MI_STYLE": null,
+        "name": "HÄLLEFORS",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESVH"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31503",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.98138889,
+          62.63361111
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESUH",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "HÄRNÖSAND/Myran",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR , date ",
+        "COMMENT_2": "Traffic permitted: V",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 3592,
+        "IDNR": 31503,
+        "MI_STYLE": null,
+        "name": "HÄRNÖSAND/Myran",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESUH"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31504",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.57583333,
+          56.18472222
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESMH",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "HÖGANÄS",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR , date ",
+        "COMMENT_2": "Traffic permitted: V",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 3593,
+        "IDNR": 31504,
+        "MI_STYLE": null,
+        "name": "HÖGANÄS",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESMH"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31505",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.50722222,
+          58.51361111
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESIA",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "KARLSBORG",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR 06.0, date 2025-01-01",
+        "COMMENT_2": "Traffic permitted: V",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 3595,
+        "IDNR": 31505,
+        "MI_STYLE": null,
+        "name": "KARLSBORG",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESIA"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31506",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.22027778,
+          59.02222222
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESVK",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "KATRINEHOLM",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR , date ",
+        "COMMENT_2": "Traffic permitted: V",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 3596,
+        "IDNR": 31506,
+        "MI_STYLE": null,
+        "name": "KATRINEHOLM",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESVK"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31507",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.05333333,
+          55.995
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESMJ",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "KÅGERÖD",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR , date ",
+        "COMMENT_2": "Traffic permitted: V",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 3599,
+        "IDNR": 31507,
+        "MI_STYLE": null,
+        "name": "KÅGERÖD",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESMJ"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31508",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.96972222,
+          59.5275
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESVQ",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "KÖPING",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR , date ",
+        "COMMENT_2": "Traffic permitted: V",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 3600,
+        "IDNR": 31508,
+        "MI_STYLE": null,
+        "name": "KÖPING",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESVQ"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31467",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.99361111,
+          60.15472222
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESST",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "TORSBY",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR 06.0, date 2025-01-01",
+        "COMMENT_2": "Traffic permitted: IV",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 3009,
+        "IDNR": 31467,
+        "MI_STYLE": null,
+        "name": "TORSBY",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESST"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31468",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.92166667,
+          56.95027778
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESMG",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "LJUNGBY/Feringe",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR , date ",
+        "COMMENT_2": "Traffic permitted: V",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 3010,
+        "IDNR": 31468,
+        "MI_STYLE": null,
+        "name": "LJUNGBY/Feringe",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESMG"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31469",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.83972222,
+          64.57861111
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESNV",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "VILHELMINA",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR 08.0, date 2025-01-01",
+        "COMMENT_2": "Traffic permitted: IV",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 3012,
+        "IDNR": 31469,
+        "MI_STYLE": null,
+        "name": "VILHELMINA",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESNV"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31470",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.09638889,
+          60.08833333
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESSG",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "LUDVIKA",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR , date ",
+        "COMMENT_2": "Traffic permitted: V",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 3013,
+        "IDNR": 31470,
+        "MI_STYLE": null,
+        "name": "LUDVIKA",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESSG"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31471",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.58777778,
+          58.17
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESGK",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "FALKÖPING",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR , date ",
+        "COMMENT_2": "Traffic permitted: V",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 3014,
+        "IDNR": 31471,
+        "MI_STYLE": null,
+        "name": "FALKÖPING",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESGK"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31472",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.15,
+          65.87527778
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESPE",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "VIDSEL",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR 11.0, date 2025-01-01",
+        "COMMENT_2": "Traffic permitted: V",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 3015,
+        "IDNR": 31472,
+        "MI_STYLE": null,
+        "name": "VIDSEL",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESPE"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31473",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.57888889,
+          60.02111111
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESOH",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "HAGFORS",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR 05.0, date 2020-01-01",
+        "COMMENT_2": "Traffic permitted: IV",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 3018,
+        "IDNR": 31473,
+        "MI_STYLE": null,
+        "name": "HAGFORS",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESOH"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31474",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.08277778,
+          65.80611111
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESUT",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "HEMAVAN TÄRNABY",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR 08.0, date 2025-01-01",
+        "COMMENT_2": "Traffic permitted: IV",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 3019,
+        "IDNR": 31474,
+        "MI_STYLE": null,
+        "name": "HEMAVAN TÄRNABY",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESUT"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31509",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.86944444,
+          55.94444444
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESML",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "LANDSKRONA",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR , date ",
+        "COMMENT_2": "Traffic permitted: V",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 3601,
+        "IDNR": 31509,
+        "MI_STYLE": null,
+        "name": "LANDSKRONA",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESML"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31510",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.00416667,
+          61.81694444
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESUL",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "LJUSDAL",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR , date ",
+        "COMMENT_2": "Traffic permitted: V",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 3603,
+        "IDNR": 31510,
+        "MI_STYLE": null,
+        "name": "LJUSDAL",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESUL"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31511",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.72666667,
+          60.65888889
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESVM",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "MALUNG/Skinnlanda",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR , date ",
+        "COMMENT_2": "Traffic permitted: V",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 3606,
+        "IDNR": 31511,
+        "MI_STYLE": null,
+        "name": "MALUNG/Skinnlanda",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESVM"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31512",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.84638889,
+          61.29111111
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESUM",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "MOHED",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR , date ",
+        "COMMENT_2": "Traffic permitted: V",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 3607,
+        "IDNR": 31512,
+        "MI_STYLE": null,
+        "name": "MOHED",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESUM"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31513",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.49055556,
+          59.79888889
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESKO",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "MUNKFORS",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR , date ",
+        "COMMENT_2": "Traffic permitted: V",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 3609,
+        "IDNR": 31513,
+        "MI_STYLE": null,
+        "name": "MUNKFORS",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESKO"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31514",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.80833333,
+          63.12527778
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESNM",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "OPTAND",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR , date ",
+        "COMMENT_2": "Traffic permitted: V",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 3612,
+        "IDNR": 31514,
+        "MI_STYLE": null,
+        "name": "OPTAND",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESNM"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31515",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.71916667,
+          61.19222222
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESNR",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "ORSA",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR , date ",
+        "COMMENT_2": "Traffic permitted: V",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 3613,
+        "IDNR": 31515,
+        "MI_STYLE": null,
+        "name": "ORSA",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESNR"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31516",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.52194444,
+          58.39611111
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESCF",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "LINKÖPING/Malmen",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR 07.0, date 2025-01-01",
+        "COMMENT_2": "Traffic permitted: IV",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 2836,
+        "IDNR": 31516,
+        "MI_STYLE": null,
+        "name": "LINKÖPING/Malmen",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESCF"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31524",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.82,
+          56.69083333
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESMT",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "HALMSTAD",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR 05.0, date 2025-01-01",
+        "COMMENT_2": "Traffic permitted: IV",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 2861,
+        "IDNR": 31524,
+        "MI_STYLE": null,
+        "name": "HALMSTAD",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESMT"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31525",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.94222222,
+          59.35444444
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESSB",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "STOCKHOLM/Bromma",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR 08.0, date 2025-01-01",
+        "COMMENT_2": "Traffic permitted: IV",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 2867,
+        "IDNR": 31525,
+        "MI_STYLE": null,
+        "name": "STOCKHOLM/Bromma",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESSB"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31526",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.2875,
+          56.68555556
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESMQ",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "KALMAR",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR 07.0, date 2025-01-01",
+        "COMMENT_2": "Traffic permitted: IV",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 2870,
+        "IDNR": 31526,
+        "MI_STYLE": null,
+        "name": "KALMAR",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESMQ"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31527",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.12361111,
+          65.54333333
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESPA",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "LULEÅ/Kallax",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR 10.0, date 2020-01-01",
+        "COMMENT_2": "Traffic permitted: IV",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 2875,
+        "IDNR": 31527,
+        "MI_STYLE": null,
+        "name": "LULEÅ/Kallax",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESPA"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31528",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.33555556,
+          67.82138889
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESNQ",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "KIRUNA",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR 10.0, date 2020-01-01",
+        "COMMENT_2": "Traffic permitted: IV",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 2878,
+        "IDNR": 31528,
+        "MI_STYLE": null,
+        "name": "KIRUNA",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESNQ"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31529",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.86416667,
+          57.06833333
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESFS",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "SANDVIK",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR , date ",
+        "COMMENT_2": "Traffic permitted: V",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 3617,
+        "IDNR": 31529,
+        "MI_STYLE": null,
+        "name": "SANDVIK",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESFS"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31530",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.26083333,
+          65.39833333
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESNP",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "PITEÅ",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR , date ",
+        "COMMENT_2": "Traffic permitted: V",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 3614,
+        "IDNR": 31530,
+        "MI_STYLE": null,
+        "name": "PITEÅ",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESNP"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31531",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.48361111,
+          63.49027778
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESUR",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "RAMSELE",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR , date ",
+        "COMMENT_2": "Traffic permitted: V",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 3615,
+        "IDNR": 31531,
+        "MI_STYLE": null,
+        "name": "RAMSELE",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESUR"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31532",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.05305556,
+          58.49805556
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESFR",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "RÅDA",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR , date ",
+        "COMMENT_2": "Traffic permitted: V",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 3616,
+        "IDNR": 31532,
+        "MI_STYLE": null,
+        "name": "RÅDA",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESFR"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31533",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.82722222,
+          60.785
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESVS",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "SILJANSNÄS",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR , date ",
+        "COMMENT_2": "Traffic permitted: V",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 3618,
+        "IDNR": 31533,
+        "MI_STYLE": null,
+        "name": "SILJANSNÄS",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESVS"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31534",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.44,
+          57.16861111
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESMY",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "SMÅLANDSSTENAR",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR , date ",
+        "COMMENT_2": "Traffic permitted: V",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 3621,
+        "IDNR": 31534,
+        "MI_STYLE": null,
+        "name": "SMÅLANDSSTENAR",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESMY"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31535",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.98555556,
+          63.17111111
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESNB",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "SOLLEFTEÅ",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR , date ",
+        "COMMENT_2": "Traffic permitted: V",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 3622,
+        "IDNR": 31535,
+        "MI_STYLE": null,
+        "name": "SOLLEFTEÅ",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESNB"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31536",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.74055556,
+          59.345
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESSE",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "STOCKHOLM/Skå-Edeby",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR , date ",
+        "COMMENT_2": "Traffic permitted: V",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 3624,
+        "IDNR": 31536,
+        "MI_STYLE": null,
+        "name": "STOCKHOLM/Skå-Edeby",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESSE"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31537",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.58666667,
+          60.58777778
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESOL",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "STORVIK/Lemstanäs",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR , date ",
+        "COMMENT_2": "Traffic permitted: V",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 3627,
+        "IDNR": 31537,
+        "MI_STYLE": null,
+        "name": "STORVIK/Lemstanäs",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESOL"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31538",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.83388889,
+          61.16472222
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESKS",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "SÄLEN/Scandinavian Mountains",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR 05.0, date 2020-01-01",
+        "COMMENT_2": "Traffic permitted: IV",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 3628,
+        "IDNR": 31538,
+        "MI_STYLE": null,
+        "name": "SÄLEN/Scandinavian Mountains",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESKS"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31539",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.34361111,
+          59.01694444
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESGS",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "STRÖMSTAD/Näsinge",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR , date ",
+        "COMMENT_2": "Traffic permitted: V",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 3629,
+        "IDNR": 31539,
+        "MI_STYLE": null,
+        "name": "STRÖMSTAD/Näsinge",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESGS"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31540",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.53666667,
+          59.92277778
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESKC",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "SUNDBRO",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR , date ",
+        "COMMENT_2": "Traffic permitted: V",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 3630,
+        "IDNR": 31540,
+        "MI_STYLE": null,
+        "name": "SUNDBRO",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESKC"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31541",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.11277778,
+          59.86027778
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESKU",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "SUNNE",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR , date ",
+        "COMMENT_2": "Traffic permitted: V",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 3631,
+        "IDNR": 31541,
+        "MI_STYLE": null,
+        "name": "SUNNE",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESKU"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31542",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.95833333,
+          59.09111111
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESGY",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "SÄFFLE",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR , date ",
+        "COMMENT_2": "Traffic permitted: V",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 3632,
+        "IDNR": 31542,
+        "MI_STYLE": null,
+        "name": "SÄFFLE",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESGY"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31543",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.67722222,
+          55.59833333
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESMI",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "SJÖBO SÖVDE",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR , date ",
+        "COMMENT_2": "Traffic permitted: V",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 3634,
+        "IDNR": 31543,
+        "MI_STYLE": null,
+        "name": "SJÖBO SÖVDE",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESMI"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31544",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.99555556,
+          58.19194444
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESGD",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "TIDAHOLM/Bämmelshed",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR , date ",
+        "COMMENT_2": "Traffic permitted: V",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 3635,
+        "IDNR": 31544,
+        "MI_STYLE": null,
+        "name": "TIDAHOLM/Bämmelshed",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESGD"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31545",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.42194444,
+          60.345
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESKT",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "TIERP",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR , date ",
+        "COMMENT_2": "Traffic permitted: V",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 3636,
+        "IDNR": 31545,
+        "MI_STYLE": null,
+        "name": "TIERP",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESKT"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31546",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.77527778,
+          58.36777778
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESGU",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "UDDEVALLA/Rörkärr",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR , date ",
+        "COMMENT_2": "Traffic permitted: V",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 3639,
+        "IDNR": 31546,
+        "MI_STYLE": null,
+        "name": "UDDEVALLA/Rörkärr",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESGU"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31547",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.22805556,
+          57.12472222
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESGV",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "VARBERG",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR , date ",
+        "COMMENT_2": "Traffic permitted: V",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 3641,
+        "IDNR": 31547,
+        "MI_STYLE": null,
+        "name": "VARBERG",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESGV"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31548",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.4025,
+          58.09861111
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESSI",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "VISINGSÖ",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR , date ",
+        "COMMENT_2": "Traffic permitted: V",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 3643,
+        "IDNR": 31548,
+        "MI_STYLE": null,
+        "name": "VISINGSÖ",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESSI"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31549",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.21111111,
+          59.10111111
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESSZ",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "GNESTA/Vängsö",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR , date ",
+        "COMMENT_2": "Traffic permitted: V",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 3644,
+        "IDNR": 31549,
+        "MI_STYLE": null,
+        "name": "GNESTA/Vängsö",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESSZ"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31550",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.52361111,
+          57.78
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESSW",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "VÄSTERVIK",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR , date ",
+        "COMMENT_2": "Traffic permitted: V",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 3645,
+        "IDNR": 31550,
+        "MI_STYLE": null,
+        "name": "VÄSTERVIK",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESSW"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31551",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.20694444,
+          56.08527778
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESTL",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "LJUNGBYHED",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR 05.0, date 2025-01-01",
+        "COMMENT_2": "Traffic permitted: IV",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 2895,
+        "IDNR": 31551,
+        "MI_STYLE": null,
+        "name": "LJUNGBYHED",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESTL"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31552",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.09833333,
+          61.26138889
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESNY",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "SÖDERHAMN",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR , date ",
+        "COMMENT_2": "Traffic permitted: V",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 2884,
+        "IDNR": 31552,
+        "MI_STYLE": null,
+        "name": "SÖDERHAMN",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESNY"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31553",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.515,
+          60.42222222
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESSD",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "BORLÄNGE",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR 06.0, date 2025-01-01",
+        "COMMENT_2": "Traffic permitted: IV",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 2887,
+        "IDNR": 31553,
+        "MI_STYLE": null,
+        "name": "BORLÄNGE",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESSD"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31554",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.04,
+          59.22805556
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESOE",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "ÖREBRO",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR 07.0, date 2025-01-01",
+        "COMMENT_2": "Traffic permitted: IV",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 2892,
+        "IDNR": 31554,
+        "MI_STYLE": null,
+        "name": "ÖREBRO",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESOE"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31555",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.71777778,
+          64.5475
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESNL",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "LYCKSELE",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR 08.0, date 2020-01-01",
+        "COMMENT_2": "Traffic permitted: IV",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 2900,
+        "IDNR": 31555,
+        "MI_STYLE": null,
+        "name": "LYCKSELE",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESNL"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31556",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.90361111,
+          58.78861111
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESKN",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "STOCKHOLM/Skavsta",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR 06.0, date 2020-01-01",
+        "COMMENT_2": "Traffic permitted: IV",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 2903,
+        "IDNR": 31556,
+        "MI_STYLE": null,
+        "name": "STOCKHOLM/Skavsta",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESKN"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31557",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.49472222,
+          59.34444444
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESKK",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "KARLSKOGA",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR , date ",
+        "COMMENT_2": "Traffic permitted: V",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 2908,
+        "IDNR": 31557,
+        "MI_STYLE": null,
+        "name": "KARLSKOGA",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESKK"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31558",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.34611111,
+          57.66277778
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESSV",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "VISBY",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR 07.0, date 2025-01-01",
+        "COMMENT_2": "Traffic permitted: IV",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 2911,
+        "IDNR": 31558,
+        "MI_STYLE": null,
+        "name": "VISBY",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESSV"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31559",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.67972222,
+          58.40638889
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESSL",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "LINKÖPING/Saab",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR 07.0, date 2025-01-01",
+        "COMMENT_2": "Traffic permitted: IV",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 2914,
+        "IDNR": 31559,
+        "MI_STYLE": null,
+        "name": "LINKÖPING/Saab",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESSL"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31560",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.07694444,
+          64.62472222
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESNS",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "SKELLEFTEÅ",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR 10.0, date 2025-01-01",
+        "COMMENT_2": "Traffic permitted: IV",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 2917,
+        "IDNR": 31560,
+        "MI_STYLE": null,
+        "name": "SKELLEFTEÅ",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESNS"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31561",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.71111111,
+          58.42833333
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESIB",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "SÅTENÄS",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR 04.0, date 2020-01-01",
+        "COMMENT_2": "Traffic permitted: IV",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 2920,
+        "IDNR": 31561,
+        "MI_STYLE": null,
+        "name": "SÅTENÄS",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESIB"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31562",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.345,
+          58.31805556
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESGT",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "GÖTEBORG/Stallbacka",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR 05.0, date 2025-01-01",
+        "COMMENT_2": "Traffic permitted: IV",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 2927,
+        "IDNR": 31562,
+        "MI_STYLE": null,
+        "name": "GÖTEBORG/Stallbacka",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESGT"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31563",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.28,
+          63.79305556
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESNU",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "UMEÅ",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR 08.0, date 2020-01-01",
+        "COMMENT_2": "Traffic permitted: IV",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 2930,
+        "IDNR": 31563,
+        "MI_STYLE": null,
+        "name": "UMEÅ",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESNU"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31564",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.5925,
+          59.90027778
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESCM",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "UPPSALA",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR 08.0, date 2025-01-01",
+        "COMMENT_2": "Traffic permitted: IV",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 2933,
+        "IDNR": 31564,
+        "MI_STYLE": null,
+        "name": "UPPSALA",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESCM"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31517",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.28194444,
+          65.59027778
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESNX",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "ARVIDSJAUR",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR 08.0, date 2020-01-01",
+        "COMMENT_2": "Traffic permitted: IV",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 2827,
+        "IDNR": 31517,
+        "MI_STYLE": null,
+        "name": "ARVIDSJAUR",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESNX"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31518",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.81222222,
+          67.13305556
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESNG",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "GÄLLIVARE",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR 09.0, date 2020-01-01",
+        "COMMENT_2": "Traffic permitted: IV",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 2830,
+        "IDNR": 31518,
+        "MI_STYLE": null,
+        "name": "GÄLLIVARE",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESNG"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31519",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.51055556,
+          60.95861111
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESKM",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "MORA/Siljan",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR 06.0, date 2025-01-01",
+        "COMMENT_2": "Traffic permitted: IV",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 2833,
+        "IDNR": 31519,
+        "MI_STYLE": null,
+        "name": "MORA/Siljan",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESKM"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31520",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.87055556,
+          57.77555556
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESGP",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "GÖTEBORG/Säve",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR 04.0, date 2020-01-01",
+        "COMMENT_2": "Traffic permitted: V",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 2844,
+        "IDNR": 31520,
+        "MI_STYLE": null,
+        "name": "GÖTEBORG/Säve",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESGP"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31521",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.08527778,
+          55.92055556
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESMK",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "KRISTIANSTAD",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR 06.0, date 2025-01-01",
+        "COMMENT_2": "Traffic permitted: IV",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 2849,
+        "IDNR": 31521,
+        "MI_STYLE": null,
+        "name": "KRISTIANSTAD",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESMK"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31522",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.69666667,
+          64.96083333
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESUD",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "STORUMAN",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR , date ",
+        "COMMENT_2": "Traffic permitted: V",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 2855,
+        "IDNR": 31522,
+        "MI_STYLE": null,
+        "name": "STORUMAN",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESUD"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31523",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.95138889,
+          60.59333333
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESSK",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "GÄVLE",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR , date ",
+        "COMMENT_2": "Traffic permitted: V",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 2858,
+        "IDNR": 31523,
+        "MI_STYLE": null,
+        "name": "GÄVLE",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESSK"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31565",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.70833333,
+          59.35222222
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESSU",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "ESKILSTUNA",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR 07.0, date 2025-01-01",
+        "COMMENT_2": "Traffic permitted: IV",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 2938,
+        "IDNR": 31565,
+        "MI_STYLE": null,
+        "name": "ESKILSTUNA",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESSU"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31566",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.9925,
+          63.40777778
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESNO",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "ÖRNSKÖLDSVIK",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR 08.0, date 2020-01-01",
+        "COMMENT_2": "Traffic permitted: IV",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 2953,
+        "IDNR": 31566,
+        "MI_STYLE": null,
+        "name": "ÖRNSKÖLDSVIK",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESNO"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31567",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.83472222,
+          62.56527778
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESUJ",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "ÅNGE/Tälje",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR , date ",
+        "COMMENT_2": "Traffic permitted: V",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 3651,
+        "IDNR": 31567,
+        "MI_STYLE": null,
+        "name": "ÅNGE/Tälje",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESUJ"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31568",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.50305556,
+          59.57583333
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESSX",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "VÄSTERÅS/Johannisberg",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR , date ",
+        "COMMENT_2": "Traffic permitted: V",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 3646,
+        "IDNR": 31568,
+        "MI_STYLE": null,
+        "name": "VÄSTERÅS/Johannisberg",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESSX"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31569",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.6025,
+          58.13472222
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESGC",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "ÅLLEBERG",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR , date ",
+        "COMMENT_2": "Traffic permitted: V",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 3649,
+        "IDNR": 31569,
+        "MI_STYLE": null,
+        "name": "ÅLLEBERG",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESGC"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31570",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.16638889,
+          56.57055556
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESMU",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "ÄLMHULT/Möckeln",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR , date ",
+        "COMMENT_2": "Traffic permitted: V",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 3653,
+        "IDNR": 31570,
+        "MI_STYLE": null,
+        "name": "ÄLMHULT/Möckeln",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESMU"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31571",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.06138889,
+          65.64583333
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESUV",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "ÄLVSBYN",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR , date ",
+        "COMMENT_2": "Traffic permitted: V",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 3654,
+        "IDNR": 31571,
+        "MI_STYLE": null,
+        "name": "ÄLVSBYN",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESUV"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31572",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.29111111,
+          57.66
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESGG",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "GÖTEBORG/Landvetter",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR 04.0, date 2020-01-01",
+        "COMMENT_2": "Traffic permitted: IV",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 2971,
+        "IDNR": 31572,
+        "MI_STYLE": null,
+        "name": "GÖTEBORG/Landvetter",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESGG"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31573",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3375,
+          59.44472222
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESOK",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "KARLSTAD",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR 05.0, date 2020-01-01",
+        "COMMENT_2": "Traffic permitted: IV",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 2956,
+        "IDNR": 31573,
+        "MI_STYLE": null,
+        "name": "KARLSTAD",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESOK"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31574",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.44277778,
+          62.52944444
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESNN",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "SUNDSVALL-TIMRÅ",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR 07.0, date 2020-01-01",
+        "COMMENT_2": "Traffic permitted: IV",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 2965,
+        "IDNR": 31574,
+        "MI_STYLE": null,
+        "name": "SUNDSVALL-TIMRÅ",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESNN"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31575",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.35333333,
+          55.54833333
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESMS",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "MALMÖ",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR 04.0, date 2020-01-01",
+        "COMMENT_2": "Traffic permitted: IV",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 2968,
+        "IDNR": 31575,
+        "MI_STYLE": null,
+        "name": "MALMÖ",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESMS"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31576",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.24638889,
+          58.58611111
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESSP",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "NORRKÖPING/Kungsängen",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR 06.0, date 2020-01-01",
+        "COMMENT_2": "Traffic permitted: IV",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 2974,
+        "IDNR": 31576,
+        "MI_STYLE": null,
+        "name": "NORRKÖPING/Kungsängen",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESSP"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31577",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.82333333,
+          57.52583333
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESSF",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "HULTSFRED-VIMMERBY",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR , date ",
+        "COMMENT_2": "Traffic permitted: V",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 2977,
+        "IDNR": 31577,
+        "MI_STYLE": null,
+        "name": "HULTSFRED-VIMMERBY",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESSF"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31578",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.17444444,
+          58.46527778
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESGL",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "LIDKÖPING",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR , date ",
+        "COMMENT_2": "Traffic permitted: V",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 2980,
+        "IDNR": 31578,
+        "MI_STYLE": null,
+        "name": "LIDKÖPING",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESGL"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31579",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.265,
+          56.26666667
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESDF",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "RONNEBY",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR 05.0, date 2020-01-01",
+        "COMMENT_2": "Traffic permitted: IV",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 2983,
+        "IDNR": 31579,
+        "MI_STYLE": null,
+        "name": "RONNEBY",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESDF"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31580",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.1475,
+          66.49666667
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESNJ",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "JOKKMOKK",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR , date ",
+        "COMMENT_2": "Traffic permitted: V",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 2986,
+        "IDNR": 31580,
+        "MI_STYLE": null,
+        "name": "JOKKMOKK",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESNJ"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31581",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.97277778,
+          58.45611111
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESGR",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "SKÖVDE",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR , date ",
+        "COMMENT_2": "Traffic permitted: V",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 2989,
+        "IDNR": 31581,
+        "MI_STYLE": null,
+        "name": "SKÖVDE",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESGR"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31582",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.72888889,
+          56.93027778
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESMX",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "VÄXJÖ/Kronoberg",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR 06.0, date 2020-01-01",
+        "COMMENT_2": "Traffic permitted: IV",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 2992,
+        "IDNR": 31582,
+        "MI_STYLE": null,
+        "name": "VÄXJÖ/Kronoberg",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESMX"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31583",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.06916667,
+          57.75833333
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESGJ",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "JÖNKÖPING",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR 07.0, date 2025-01-01",
+        "COMMENT_2": "Traffic permitted: IV",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 2995,
+        "IDNR": 31583,
+        "MI_STYLE": null,
+        "name": "JÖNKÖPING",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESGJ"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31584",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.49833333,
+          57.35194444
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESMO",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "OSKARSHAMN",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR , date ",
+        "COMMENT_2": "Traffic permitted: V",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 2998,
+        "IDNR": 31584,
+        "MI_STYLE": null,
+        "name": "OSKARSHAMN",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESMO"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31585",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.06888889,
+          67.24583333
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESUP",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "PAJALA",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR 13.0, date 2025-01-01",
+        "COMMENT_2": "Traffic permitted: IV",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 3001,
+        "IDNR": 31585,
+        "MI_STYLE": null,
+        "name": "PAJALA",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESUP"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31586",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.63944444,
+          59.675
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESKV",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "ARVIKA",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR , date ",
+        "COMMENT_2": "Traffic permitted: V",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 3008,
+        "IDNR": 31586,
+        "MI_STYLE": null,
+        "name": "ARVIKA",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESKV"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31587",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.87888889,
+          56.13361111
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESFA",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "HÄSSLEHOLM/Bokeberg",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR , date ",
+        "COMMENT_2": "Traffic permitted: V",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 3661,
+        "IDNR": 31587,
+        "MI_STYLE": null,
+        "name": "HÄSSLEHOLM/Bokeberg",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESFA"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31588",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.05027778,
+          57.32861111
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESMZ",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "ÖLANDA",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR , date ",
+        "COMMENT_2": "Traffic permitted: V",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 3655,
+        "IDNR": 31588,
+        "MI_STYLE": null,
+        "name": "ÖLANDA",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESMZ"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31589",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.64888889,
+          57.44527778
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESGM",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "ÖRESTEN",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR , date ",
+        "COMMENT_2": "Traffic permitted: V",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 3656,
+        "IDNR": 31589,
+        "MI_STYLE": null,
+        "name": "ÖRESTEN",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESGM"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31590",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.68944444,
+          61.86972222
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESUE",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "IDRE",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR , date ",
+        "COMMENT_2": "Traffic permitted: V",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 3658,
+        "IDNR": 31590,
+        "MI_STYLE": null,
+        "name": "IDRE",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESUE"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31591",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.845,
+          57.69583333
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESGE",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "BORÅS",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR , date ",
+        "COMMENT_2": "Traffic permitted: V",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 3662,
+        "IDNR": 31591,
+        "MI_STYLE": null,
+        "name": "BORÅS",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESGE"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31592",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.69638889,
+          59.73277778
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESSN",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "NORRTÄLJE",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR , date ",
+        "COMMENT_2": "Traffic permitted: V",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 3719,
+        "IDNR": 31592,
+        "MI_STYLE": null,
+        "name": "NORRTÄLJE",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESSN"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31593",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.76888889,
+          63.04861111
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESNK",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "KRAMFORS-SOLLEFTEÅ",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR 07.0, date 2020-01-01",
+        "COMMENT_2": "Traffic permitted: IV",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 3816,
+        "IDNR": 31593,
+        "MI_STYLE": null,
+        "name": "KRAMFORS-SOLLEFTEÅ",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESNK"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31594",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.63361111,
+          59.58944444
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESOW",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "STOCKHOLM/Västerås",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR 06.0, date 2020-01-01",
+        "COMMENT_2": "Traffic permitted: IV",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 3818,
+        "IDNR": 31594,
+        "MI_STYLE": null,
+        "name": "STOCKHOLM/Västerås",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESOW"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31595",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.91861111,
+          59.65194444
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESSA",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "STOCKHOLM/Arlanda",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR 08.0, date 2025-01-01",
+        "COMMENT_2": "Traffic permitted: IV",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 3820,
+        "IDNR": 31595,
+        "MI_STYLE": null,
+        "name": "STOCKHOLM/Arlanda",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESSA"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31596",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.02527778,
+          55.39611111
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESTT",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "VELLINGE",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR , date ",
+        "COMMENT_2": "Traffic permitted: V",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 3921,
+        "IDNR": 31596,
+        "MI_STYLE": null,
+        "name": "VELLINGE",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESTT"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31597",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.855,
+          56.29111111
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESTA",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "ÄNGELHOLM",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR 05.0, date 2025-01-01",
+        "COMMENT_2": "Traffic permitted: IV",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 5566,
+        "IDNR": 31597,
+        "MI_STYLE": null,
+        "name": "ÄNGELHOLM",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESTA"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31598",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.315,
+          58.63027778
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESTF",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "FJÄLLBACKA",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR , date ",
+        "COMMENT_2": "Traffic permitted: V",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 6746,
+        "IDNR": 31598,
+        "MI_STYLE": null,
+        "name": "FJÄLLBACKA",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESTF"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31599",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.03833333,
+          57.85
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESVB",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "BUNGE",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR , date ",
+        "COMMENT_2": "Traffic permitted: V",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 7270,
+        "IDNR": 31599,
+        "MI_STYLE": null,
+        "name": "BUNGE",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESVB"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31600",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.00138889,
+          63.04166667
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESUO",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "OVIKEN",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR , date ",
+        "COMMENT_2": "Traffic permitted: V",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 7608,
+        "IDNR": 31600,
+        "MI_STYLE": null,
+        "name": "OVIKEN",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESUO"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31601",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.32055556,
+          63.39194444
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESUI",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "MELLANSEL",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR , date ",
+        "COMMENT_2": "Traffic permitted: V",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 7785,
+        "IDNR": 31601,
+        "MI_STYLE": null,
+        "name": "MELLANSEL",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESUI"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31602",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.50027778,
+          63.19444444
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESNZ",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "ÅRE ÖSTERSUND",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR 06.0, date 2025-01-01",
+        "COMMENT_2": "Traffic permitted: IV",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 7856,
+        "IDNR": 31602,
+        "MI_STYLE": null,
+        "name": "ÅRE ÖSTERSUND",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESNZ"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31603",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.78583333,
+          58.03916667
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESGO",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "VÅRGÅRDA",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR , date ",
+        "COMMENT_2": "Traffic permitted: V",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 12067,
+        "IDNR": 31603,
+        "MI_STYLE": null,
+        "name": "VÅRGÅRDA",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESGO"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31604",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.605,
+          58.43333333
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESVE",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "STEGEBORG",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR , date ",
+        "COMMENT_2": "Traffic permitted: V",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 12070,
+        "IDNR": 31604,
+        "MI_STYLE": null,
+        "name": "STEGEBORG",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESVE"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31605",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.145,
+          59.74722222
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESVL",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "ENKÖPING/Långtora",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR , date ",
+        "COMMENT_2": "Traffic permitted: V",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 14353,
+        "IDNR": 31605,
+        "MI_STYLE": null,
+        "name": "ENKÖPING/Långtora",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESVL"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31475",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.08055556,
+          61.76833333
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESNH",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "HUDIKSVALL",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR , date ",
+        "COMMENT_2": "Traffic permitted: V",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 3020,
+        "IDNR": 31475,
+        "MI_STYLE": null,
+        "name": "HUDIKSVALL",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESNH"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31476",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.42416667,
+          62.04777778
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESND",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "SVEG",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR 06.0, date 2025-01-01",
+        "COMMENT_2": "Traffic permitted: IV",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 3021,
+        "IDNR": 31476,
+        "MI_STYLE": null,
+        "name": "SVEG",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESND"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31477",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.57805556,
+          57.94972222
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESGI",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "ALINGSÅS",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR , date ",
+        "COMMENT_2": "Traffic permitted: V",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 3557,
+        "IDNR": 31477,
+        "MI_STYLE": null,
+        "name": "ALINGSÅS",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESGI"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31478",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.60176667,
+          57.26503056
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESMP",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "ANDERSTORP",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR , date ",
+        "COMMENT_2": "Traffic permitted: V",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 3558,
+        "IDNR": 31478,
+        "MI_STYLE": null,
+        "name": "ANDERSTORP",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESMP"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31479",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.92083333,
+          59.38833333
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESQO",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "ARBOGA",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR , date ",
+        "COMMENT_2": "Traffic permitted: V",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 3559,
+        "IDNR": 31479,
+        "MI_STYLE": null,
+        "name": "ARBOGA",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESQO"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31480",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.3725,
+          61.5125
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESUB",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "ARBRÅ",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR , date ",
+        "COMMENT_2": "Traffic permitted: V",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 3560,
+        "IDNR": 31480,
+        "MI_STYLE": null,
+        "name": "ARBRÅ",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESUB"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31481",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.12277778,
+          60.18027778
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESVA",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "AVESTA",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR , date ",
+        "COMMENT_2": "Traffic permitted: V",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 3561,
+        "IDNR": 31481,
+        "MI_STYLE": null,
+        "name": "AVESTA",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESVA"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ARP.31482",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.97361111,
+          58.17722222
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "POSITIONINDICATOR": "ESGA",
+        "TYPEOFPOINT": "ARP",
+        "NAMEOFPOINT": null,
+        "ESTABLISHEDYEAR": null,
+        "DRAWSEQNUMBER": null,
+        "SEQUENCENUMBER": null,
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "UDDEVALLA/Backamo",
+        "MSL": null,
+        "AGL": null,
+        "ELLIPSOIDHEIGHT": null,
+        "FREQ": null,
+        "WEF": "2026-07-09",
+        "AFTN": "F",
+        "BASENO": "0",
+        "COMMENT_1": "MAG VAR , date ",
+        "COMMENT_2": "Traffic permitted: V",
+        "QUALITY": "ROUTINE",
+        "CRC_HEIGHT": null,
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 3562,
+        "IDNR": 31482,
+        "MI_STYLE": null,
+        "name": "UDDEVALLA/Backamo",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "indicator": "ESGA"
+      }
+    }
+  ]
+}
