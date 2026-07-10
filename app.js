@@ -911,19 +911,27 @@ function setupGeolocation() {
     }
 
     locateBtn.disabled = true;
-    locateBtn.querySelector('span').innerText = 'Söker GPS-signal...';
+    locateBtn.querySelector('span').innerText = 'Söker position...';
     firstLock = false;
 
-    // Fast first fix — runs full UI update immediately, then starts continuous watch
+    const isMobile = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+
+    // Step 1: Fast low-accuracy fix (works indoors, on desktop, via WiFi/IP)
     navigator.geolocation.getCurrentPosition(
       (pos) => {
-        onPositionReceived(pos);   // ← full UI update on first fix
-        startWatch(true);          // ← then keep watching continuously
+        onPositionReceived(pos);   // immediate UI update
+        // Step 2: Start continuous low-accuracy watch
+        startWatch(false);
+        // Step 3: On mobile, upgrade to high-accuracy GPS after 2s
+        if (isMobile) {
+          setTimeout(() => startWatch(true), 2000);
+        }
       },
       () => {
-        startWatch(true);          // getCurrentPosition failed, go straight to watch
+        // Low-accuracy failed — try high accuracy directly (mobile outdoors)
+        startWatch(isMobile ? true : false);
       },
-      { enableHighAccuracy: true, timeout: 8000, maximumAge: 10000 }
+      { enableHighAccuracy: false, timeout: 5000, maximumAge: 60000 }
     );
   });
 }
