@@ -1167,34 +1167,66 @@ html, body {
   display: none;
 }
 
-/* Pulsing User Location Marker */
-.user-location-marker {
-  width: 18px;
-  height: 18px;
-  background: #3b82f6;
-  border: 3px solid #ffffff;
-  border-radius: 50%;
-  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+/* ── User GPS Position Marker (crosshair) ─────────────────────────────── */
+.user-location-marker-container { background: none; border: none; }
+
+.ulm-wrapper {
   position: relative;
+  width: 48px;
+  height: 48px;
 }
 
-.user-location-marker::after {
-  content: '';
+/* Pulsing accuracy ring */
+.ulm-ring {
   position: absolute;
-  top: -9px;
-  left: -9px;
-  width: 30px;
-  height: 30px;
+  inset: 0;
   border-radius: 50%;
-  background: rgba(59, 130, 246, 0.3);
-  animation: pulse-glow-blue 2s infinite;
+  border: 2px solid var(--primary, #38bdf8);
+  opacity: 0.55;
+  animation: ulm-pulse 2.2s ease-out infinite;
   pointer-events: none;
 }
-
-@keyframes pulse-glow-blue {
-  0% { transform: scale(0.5); opacity: 1; }
-  100% { transform: scale(1.5); opacity: 0; }
+@keyframes ulm-pulse {
+  0%   { transform: scale(0.55); opacity: 0.75; }
+  70%  { transform: scale(1.15); opacity: 0.15; }
+  100% { transform: scale(1.15); opacity: 0; }
 }
+
+/* Solid center dot */
+.ulm-core {
+  position: absolute;
+  top: 50%; left: 50%;
+  width: 10px; height: 10px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: var(--primary, #38bdf8);
+  border: 2px solid #ffffff;
+  box-shadow:
+    0 0 0 1px rgba(0,0,0,0.35),
+    0 0 8px 2px var(--primary-glow, rgba(56,189,248,0.55));
+  z-index: 2;
+}
+
+/* Cross arms */
+.ulm-arm {
+  position: absolute;
+  background: var(--primary, #38bdf8);
+  border-radius: 1px;
+  opacity: 0.9;
+}
+.ulm-arm-n, .ulm-arm-s {
+  width: 2px; height: 9px;
+  left: 50%; transform: translateX(-50%);
+}
+.ulm-arm-w, .ulm-arm-e {
+  height: 2px; width: 9px;
+  top: 50%; transform: translateY(-50%);
+}
+.ulm-arm-n { top: 6px; }
+.ulm-arm-s { bottom: 6px; }
+.ulm-arm-w { left: 6px; }
+.ulm-arm-e { right: 6px; }
+
 
 /* ==========================================================================
    RESPONSIVE DESIGN — MOBILE FIRST

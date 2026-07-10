@@ -842,9 +842,16 @@ function setupGeolocation() {
         } else {
           const userIcon = L.divIcon({
             className: 'user-location-marker-container',
-            html: '<div class="user-location-marker"></div>',
-            iconSize: [24, 24],
-            iconAnchor: [12, 12]
+            html: `<div class="ulm-wrapper">
+                     <div class="ulm-ring"></div>
+                     <div class="ulm-core"></div>
+                     <div class="ulm-arm ulm-arm-n"></div>
+                     <div class="ulm-arm ulm-arm-s"></div>
+                     <div class="ulm-arm ulm-arm-w"></div>
+                     <div class="ulm-arm ulm-arm-e"></div>
+                   </div>`,
+            iconSize:   [48, 48],
+            iconAnchor: [24, 24]
           });
           userMarker = L.marker(userLocation, { icon: userIcon }).addTo(map);
         }
