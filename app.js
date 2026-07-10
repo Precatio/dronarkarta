@@ -786,9 +786,82 @@ function setupGeolocation() {
   const locateBtn = document.getElementById('locate-btn');
   if (!locateBtn) return;
 
-  let watchId = null;   // prevent duplicate watches
+  let watchId   = null;
   let firstLock = false;
 
+  // ── Shared handler: runs on every position fix (quick or continuous) ──────
+  function onPositionReceived(position) {
+    const lat = position.coords.latitude;
+    const lng = position.coords.longitude;
+    userLocation = L.latLng(lat, lng);
+    updateGeofenceCircle();
+
+    window._lastKnownLat = lat;
+    window._lastKnownLng = lng;
+
+    fetchSMHIWeather(lat, lng);
+
+    // Update distance to planned destination
+    if (window._destLat !== undefined && window._destLng !== undefined) {
+      const dist = userLocation.distanceTo(L.latLng(window._destLat, window._destLng));
+      const distRow = document.getElementById('dest-distance-row');
+      const distVal = document.getElementById('dest-distance-val');
+      if (distRow && distVal) {
+        distRow.classList.remove('hidden');
+        distVal.innerText = dist < 1000 ? `${Math.round(dist)} m` : `${(dist/1000).toFixed(2)} km`;
+      }
+    }
+
+    // Auto-detect county
+    const detectedCounty = detectCountyFromLatLng(lat, lng);
+    if (detectedCounty && detectedCounty !== selectedRegion) {
+      selectedRegion = detectedCounty;
+      localStorage.setItem('selectedRegion', detectedCounty);
+      const regionSelector = document.getElementById('region-selector');
+      if (regionSelector) regionSelector.value = detectedCounty;
+      loadCountyReserves(detectedCounty);
+    }
+
+    // Button UI
+    locateBtn.disabled = false;
+    locateBtn.querySelector('span').innerText = 'GPS positionerad';
+    locateBtn.classList.add('active');
+
+    // FAB active state
+    document.getElementById('map-locate-btn')?.classList.add('gps-active');
+
+    // Draw or move marker
+    if (userMarker) {
+      userMarker.setLatLng(userLocation);
+    } else {
+      const userIcon = L.divIcon({
+        className: 'user-location-marker-container',
+        html: `<div class="ulm-wrapper">
+                 <div class="ulm-ring"></div>
+                 <div class="ulm-core"></div>
+                 <div class="ulm-arm ulm-arm-n"></div>
+                 <div class="ulm-arm ulm-arm-s"></div>
+                 <div class="ulm-arm ulm-arm-w"></div>
+                 <div class="ulm-arm ulm-arm-e"></div>
+               </div>`,
+        iconSize:   [48, 48],
+        iconAnchor: [24, 24]
+      });
+      userMarker = L.marker(userLocation, { icon: userIcon }).addTo(map);
+    }
+
+    // Center map on first lock
+    if (!firstLock) {
+      firstLock = true;
+      map.setView(userLocation, 14);
+    }
+
+    checkUserFlightStatus(userLocation);
+    updateLocalZonesList();
+    checkGeofenceAlert(userLocation);
+  }
+
+  // ── Start continuous watchPosition ────────────────────────────────────────
   function startWatch(highAccuracy) {
     if (watchId !== null) {
       navigator.geolocation.clearWatch(watchId);
@@ -796,82 +869,12 @@ function setupGeolocation() {
     }
 
     watchId = navigator.geolocation.watchPosition(
-      (position) => {
-        const lat = position.coords.latitude;
-        const lng = position.coords.longitude;
-        userLocation = L.latLng(lat, lng);
-        updateGeofenceCircle();
-
-        window._lastKnownLat = lat;
-        window._lastKnownLng = lng;
-
-        fetchSMHIWeather(lat, lng);
-
-        // Update distance to planned destination in real-time if active
-        if (window._destLat !== undefined && window._destLng !== undefined) {
-          const dist = userLocation.distanceTo(L.latLng(window._destLat, window._destLng));
-          const distRow = document.getElementById('dest-distance-row');
-          const distVal = document.getElementById('dest-distance-val');
-          if (distRow && distVal) {
-            distRow.classList.remove('hidden');
-            distVal.innerText = dist < 1000 ? `${Math.round(dist)} m` : `${(dist/1000).toFixed(2)} km`;
-          }
-        }
-
-        // Auto-detect county and load nature reserves if county changed
-        const detectedCounty = detectCountyFromLatLng(lat, lng);
-        if (detectedCounty && detectedCounty !== selectedRegion) {
-          selectedRegion = detectedCounty;
-          localStorage.setItem('selectedRegion', detectedCounty);
-          const regionSelector = document.getElementById('region-selector');
-          if (regionSelector) regionSelector.value = detectedCounty;
-          loadCountyReserves(detectedCounty);
-        }
-
-        // Update Button UI
-        locateBtn.disabled = false;
-        locateBtn.querySelector('span').innerText = 'GPS positionerad';
-        locateBtn.classList.add('active');
-
-        // FAB active state
-        document.getElementById('map-locate-btn')?.classList.add('gps-active');
-
-        // Draw or move user position marker
-        if (userMarker) {
-          userMarker.setLatLng(userLocation);
-        } else {
-          const userIcon = L.divIcon({
-            className: 'user-location-marker-container',
-            html: `<div class="ulm-wrapper">
-                     <div class="ulm-ring"></div>
-                     <div class="ulm-core"></div>
-                     <div class="ulm-arm ulm-arm-n"></div>
-                     <div class="ulm-arm ulm-arm-s"></div>
-                     <div class="ulm-arm ulm-arm-w"></div>
-                     <div class="ulm-arm ulm-arm-e"></div>
-                   </div>`,
-            iconSize:   [48, 48],
-            iconAnchor: [24, 24]
-          });
-          userMarker = L.marker(userLocation, { icon: userIcon }).addTo(map);
-        }
-
-        // Center map to user position on first lock
-        if (!firstLock) {
-          firstLock = true;
-          map.setView(userLocation, 14);
-        }
-
-        checkUserFlightStatus(userLocation);
-        updateLocalZonesList();
-        checkGeofenceAlert(userLocation);
-      },
+      onPositionReceived,
       (error) => {
         console.warn('GPS-fel (kod ' + error.code + '):', error.message);
         locateBtn.disabled = false;
 
         if (error.code === 1) {
-          // PERMISSION_DENIED
           locateBtn.querySelector('span').innerText = 'GPS-åtkomst nekad';
           locateBtn.classList.remove('active');
           if (!locateBtn.dataset.permDeniedAlerted) {
@@ -879,25 +882,19 @@ function setupGeolocation() {
             alert('Tillåt platsåtkomst i webbläsaren/inställningar för att använda GPS.');
           }
         } else if (error.code === 2) {
-          // POSITION_UNAVAILABLE — try lower accuracy fallback
           if (highAccuracy) {
             locateBtn.querySelector('span').innerText = 'Byter till nätverks-GPS...';
-            startWatch(false); // retry without high accuracy
+            startWatch(false);
           } else {
             locateBtn.querySelector('span').innerText = 'Position ej tillgänglig';
           }
         } else if (error.code === 3) {
-          // TIMEOUT — silent retry, keep watching
           locateBtn.querySelector('span').innerText = 'GPS-signal svag, söker...';
         } else {
           locateBtn.querySelector('span').innerText = 'Hitta min position (GPS)';
         }
       },
-      {
-        enableHighAccuracy: highAccuracy,
-        timeout:            highAccuracy ? 12000 : 20000,
-        maximumAge:         3000
-      }
+      { enableHighAccuracy: highAccuracy, timeout: highAccuracy ? 12000 : 20000, maximumAge: 3000 }
     );
   }
 
@@ -907,7 +904,7 @@ function setupGeolocation() {
       return;
     }
 
-    // If already watching, just re-center
+    // Already watching — just re-center
     if (watchId !== null && userLocation) {
       map.setView(userLocation, 14);
       return;
@@ -917,18 +914,14 @@ function setupGeolocation() {
     locateBtn.querySelector('span').innerText = 'Söker GPS-signal...';
     firstLock = false;
 
-    // Fast first fix with getCurrentPosition, then hand off to watchPosition
+    // Fast first fix — runs full UI update immediately, then starts continuous watch
     navigator.geolocation.getCurrentPosition(
       (pos) => {
-        // Got a quick fix — show immediately, then start watch
-        userLocation = L.latLng(pos.coords.latitude, pos.coords.longitude);
-        map.setView(userLocation, 14);
-        firstLock = true;
-        startWatch(true);
+        onPositionReceived(pos);   // ← full UI update on first fix
+        startWatch(true);          // ← then keep watching continuously
       },
       () => {
-        // getCurrentPosition failed, go straight to watchPosition
-        startWatch(true);
+        startWatch(true);          // getCurrentPosition failed, go straight to watch
       },
       { enableHighAccuracy: true, timeout: 8000, maximumAge: 10000 }
     );
