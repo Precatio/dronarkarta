@@ -830,7 +830,7 @@ function setupGeolocation() {
 
         // Update Button UI
         locateBtn.disabled = false;
-        locateBtn.querySelector('span').innerText = 'Uppdaterar position (GPS)';
+        locateBtn.querySelector('span').innerText = 'GPS positionerad';
         locateBtn.classList.add('active');
 
         // FAB active state
