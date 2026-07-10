@@ -1443,6 +1443,17 @@ function exportToGpx() {
   gpx += `    <time>${new Date().toISOString()}</time>\n`;
   gpx += '  </metadata>\n';
 
+  // Planned flight point — exported as first waypoint if set
+  if (window._destLat !== undefined && window._destLng !== undefined) {
+    const destLat = window._destLat.toFixed(6);
+    const destLng = window._destLng.toFixed(6);
+    gpx += `  <wpt lat="${destLat}" lon="${destLng}">\n`;
+    gpx += `    <name>Planerad flygpunkt</name>\n`;
+    gpx += `    <desc>Mitt planerade flygomrade - exporterat fran Svensk Dronarkarta</desc>\n`;
+    gpx += `    <sym>Flag, Red</sym>\n`;
+    gpx += `  </wpt>\n`;
+  }
+
   filteredFeatures.forEach(feature => {
     const name = getFeatureName(feature);
     const type = feature.properties.type;
