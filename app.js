@@ -880,6 +880,19 @@ function setupGeolocation() {
   }
 
 
+  // ── IP-based geolocation (desktop fallback — no permission needed) ─────────
+  async function tryIpGeolocation() {
+    try {
+      const res  = await fetch('https://ipinfo.io/json', { signal: AbortSignal.timeout(4000) });
+      const data = await res.json();
+      if (!data.loc) return null;
+      const [lat, lng] = data.loc.split(',').map(Number);
+      return { coords: { latitude: lat, longitude: lng, accuracy: 50000 } }; // ~city accuracy
+    } catch {
+      return null;
+    }
+  }
+
   locateBtn.addEventListener('click', () => {
     if (!navigator.geolocation) {
       alert('Din webbläsare stöder inte GPS-positionering.');
@@ -906,66 +919,87 @@ function setupGeolocation() {
     const isMobile = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     let gotFirstFix = false;
 
-    // Hint timer — if no fix after 4s, show permission tip
-    const hintTimer = setTimeout(() => {
-      if (!gotFirstFix) {
-        locateBtn.querySelector('span').innerText = 'Kontrollera platstillstånd i webbläsaren...';
-        locateBtn.disabled = false;
-      }
-    }, 4000);
+    // ── MOBILE: high-accuracy GPS ──────────────────────────────────────────
+    if (isMobile) {
+      locateBtn.querySelector('span').innerText = 'Söker GPS-signal...';
 
-    // Start low-accuracy watch immediately — returns quickly via network/WiFi/IP
-    // maximumAge: Infinity means "use ANY cached position instantly"
-    watchId = navigator.geolocation.watchPosition(
-      (position) => {
-        clearTimeout(hintTimer);
-        gotFirstFix = true;
-        onPositionReceived(position);
+      // Start with low-accuracy for quick first fix, then upgrade
+      watchId = navigator.geolocation.watchPosition(
+        (position) => {
+          gotFirstFix = true;
+          onPositionReceived(position);
 
-        // On mobile: after first low-accuracy fix, upgrade to GPS precision
-        if (isMobile) {
+          // Upgrade to high-accuracy GPS after first low-accuracy fix
           setTimeout(() => {
-            if (watchId !== null) {
-              navigator.geolocation.clearWatch(watchId);
-            }
+            if (watchId !== null) navigator.geolocation.clearWatch(watchId);
             watchId = navigator.geolocation.watchPosition(
               onPositionReceived,
-              (err) => { console.warn('Hög-noggrannhet fel:', err.message); },
-              { enableHighAccuracy: true, timeout: 15000, maximumAge: 0 }
+              (err) => { console.warn('GPS hög noggrannhet:', err.message); },
+              { enableHighAccuracy: true, timeout: 20000, maximumAge: 0 }
             );
-          }, 1500);
-        }
-      },
-      (error) => {
-        clearTimeout(hintTimer);
-        locateBtn.disabled = false;
-        console.warn('GPS-fel (kod ' + error.code + '):', error.message);
-
-        if (error.code === 1) {
-          locateBtn.querySelector('span').innerText = 'GPS-åtkomst nekad';
-          locateBtn.classList.remove('active');
-          if (!locateBtn.dataset.permDeniedAlerted) {
-            locateBtn.dataset.permDeniedAlerted = 'true';
-            alert('Tillåt platsåtkomst i webbläsaren/inställningar för att använda GPS.');
+          }, 1000);
+        },
+        (error) => {
+          locateBtn.disabled = false;
+          if (error.code === 1) {
+            locateBtn.querySelector('span').innerText = 'GPS-åtkomst nekad';
+            locateBtn.classList.remove('active');
+            if (!locateBtn.dataset.permDeniedAlerted) {
+              locateBtn.dataset.permDeniedAlerted = 'true';
+              alert('Tillåt platsåtkomst i inställningar för att använda GPS.');
+            }
+          } else {
+            locateBtn.querySelector('span').innerText = 'Kunde inte hämta GPS-position';
           }
-        } else if (error.code === 2) {
-          locateBtn.querySelector('span').innerText = 'Position ej tillgänglig';
-        } else if (error.code === 3) {
-          // Timeout on low-accuracy is unusual — try once more without cache
-          locateBtn.querySelector('span').innerText = 'Söker på nytt...';
-          navigator.geolocation.clearWatch(watchId);
-          watchId = navigator.geolocation.watchPosition(
-            (p) => { gotFirstFix = true; onPositionReceived(p); },
-            () => { locateBtn.querySelector('span').innerText = 'Kunde inte hämta position'; },
-            { enableHighAccuracy: false, timeout: 20000, maximumAge: 0 }
-          );
-        } else {
-          locateBtn.querySelector('span').innerText = 'Hitta min position (GPS)';
+        },
+        { enableHighAccuracy: false, timeout: 8000, maximumAge: Infinity }
+      );
+
+    // ── DESKTOP: IP-geolokalisering + browser-fallback ─────────────────────
+    } else {
+      locateBtn.querySelector('span').innerText = 'Hämtar position via nätverk...';
+
+      // Path A: IP geolocation — instant, no permission dialog
+      tryIpGeolocation().then(ipPos => {
+        if (ipPos && !gotFirstFix) {
+          gotFirstFix = true;
+          onPositionReceived(ipPos);
+          locateBtn.querySelector('span').innerText = 'Nätverksposition (IP/WiFi)';
         }
-      },
-      // maximumAge: Infinity → accept any cached position = instant response
-      { enableHighAccuracy: false, timeout: 10000, maximumAge: Infinity }
-    );
+      });
+
+      // Path B: Browser watchPosition in parallel — more accurate if permission granted
+      watchId = navigator.geolocation.watchPosition(
+        (position) => {
+          gotFirstFix = true;
+          onPositionReceived(position); // overrides IP fix if more accurate
+        },
+        (error) => {
+          // Browser geolocation failed — that's OK, IP geolocation handles it
+          console.warn('Browser-GPS ej tillgänglig (desktop):', error.message);
+          if (!gotFirstFix) {
+            locateBtn.disabled = false;
+            if (error.code === 1) {
+              // Permission denied but IP succeeded → keep IP position, just note it
+              if (userLocation) {
+                locateBtn.querySelector('span').innerText = 'Nätverksposition (IP/WiFi)';
+              } else {
+                locateBtn.querySelector('span').innerText = 'GPS-åtkomst nekad';
+              }
+            }
+          }
+        },
+        { enableHighAccuracy: false, timeout: 10000, maximumAge: Infinity }
+      );
+
+      // Hint if nothing arrives within 5s
+      setTimeout(() => {
+        if (!gotFirstFix) {
+          locateBtn.querySelector('span').innerText = 'Kontrollera platstillstånd i webbläsaren...';
+          locateBtn.disabled = false;
+        }
+      }, 5000);
+    }
   });
 }
 
