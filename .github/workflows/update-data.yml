@@ -5,6 +5,9 @@ on:
     - cron: '0 */6 * * *' # Körs var 6:e timme för färska NOTAMs och restriktioner
   workflow_dispatch: # Gör det möjligt att starta manuellt från GitHubs gränssnitt
 
+permissions:
+  contents: write
+
 jobs:
   update-airspace:
     runs-on: ubuntu-latest
@@ -15,15 +18,18 @@ jobs:
       - name: Konfigurera Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
 
       - name: Kör hämtskript för LFV & Naturvårdsverket
         run: node fetch_external_data.js
 
       - name: Committa och pusha ändringar
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config --global user.name "Drönarkarta Databot"
           git config --global user.email "bot@dronarkarta.se"
+          git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}
           git add public/data/
           
           # Commit och pusha endast om det finns faktiska skillnader i datan
