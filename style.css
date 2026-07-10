@@ -2296,6 +2296,18 @@ body.palette-dark {
   color: var(--text-primary);
 }
 
+.dest-gpx-note {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  margin-top: 6px;
+  padding-top: 6px;
+  border-top: 1px solid rgba(255,255,255,0.05);
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  opacity: 0.75;
+}
+
 /* Custom glowing target marker */
 .dest-marker-icon {
   background: none;
