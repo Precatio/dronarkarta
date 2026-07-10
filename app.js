@@ -806,8 +806,7 @@ function setupGeolocation() {
         // Store globally for saved places + weather
         window._lastKnownLat = lat;
         window._lastKnownLng = lng;
-        const savePlaceBtnEl = document.getElementById('save-place-btn');
-        if (savePlaceBtnEl) savePlaceBtnEl.classList.remove('hidden');
+
         fetchSMHIWeather(lat, lng);
 
         // Update distance to planned destination in real-time if active
@@ -1783,70 +1782,6 @@ function setupEventListeners() {
     } catch (err) {
       console.warn('SMHI weather fetch failed:', err);
     }
-  }
-
-  // ── Sparade platser ───────────────────────────────────────────────────────
-  const PLACES_KEY = 'savedPlaces';
-  function loadPlaces()        { try { return JSON.parse(localStorage.getItem(PLACES_KEY)) || []; } catch { return []; } }
-  function savePlaces(places)  { localStorage.setItem(PLACES_KEY, JSON.stringify(places)); }
-
-  function renderPlaces() {
-    const list = document.getElementById('saved-places-list');
-    if (!list) return;
-    const places = loadPlaces();
-    if (places.length === 0) {
-      list.innerHTML = '<p class="list-placeholder">Aktivera GPS och tryck <strong>+</strong> för att spara en plats.</p>';
-      return;
-    }
-    list.innerHTML = places.map(p => `
-      <div class="saved-place-item" data-id="${p.id}" title="${p.lat.toFixed(5)}, ${p.lng.toFixed(5)}">
-        <span class="saved-place-icon"><i data-lucide="map-pin"></i></span>
-        <span class="saved-place-name">${p.name}</span>
-        <button class="saved-place-delete" data-id="${p.id}" aria-label="Ta bort plats">
-          <i data-lucide="trash-2"></i>
-        </button>
-      </div>`).join('');
-    initLucide();
-
-    // Fly-to on row click
-    list.querySelectorAll('.saved-place-item').forEach(el => {
-      el.addEventListener('click', (e) => {
-        if (e.target.closest('.saved-place-delete')) return;
-        const id = el.dataset.id;
-        const p  = loadPlaces().find(x => x.id === id);
-        if (p && map) map.setView([p.lat, p.lng], 14);
-      });
-    });
-
-    // Delete buttons
-    list.querySelectorAll('.saved-place-delete').forEach(btn => {
-      btn.addEventListener('click', (e) => {
-        e.stopPropagation();
-        const id = btn.dataset.id;
-        savePlaces(loadPlaces().filter(x => x.id !== id));
-        renderPlaces();
-      });
-    });
-  }
-  renderPlaces();
-
-  const savePlaceBtn = document.getElementById('save-place-btn');
-  if (savePlaceBtn) {
-    savePlaceBtn.addEventListener('click', () => {
-      if (!window._lastKnownLat || !window._lastKnownLng) return;
-      const defaultName = `Plats ${loadPlaces().length + 1}`;
-      const name = prompt('Namn på platsen:', defaultName);
-      if (name === null) return;
-      const places = loadPlaces();
-      places.push({
-        id:  Date.now().toString(),
-        name: name.trim() || defaultName,
-        lat:  window._lastKnownLat,
-        lng:  window._lastKnownLng
-      });
-      savePlaces(places);
-      renderPlaces();
-    });
   }
 
 
