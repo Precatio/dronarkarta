@@ -861,18 +861,67 @@ function setupGeolocation() {
     checkGeofenceAlert(userLocation);
   }
 
-  // ── Start continuous watchPosition ────────────────────────────────────────
-  function startWatch(highAccuracy) {
+
+  locateBtn.addEventListener('click', () => {
+    if (!navigator.geolocation) {
+      alert('Din webbläsare stöder inte GPS-positionering.');
+      return;
+    }
+
+    // Already watching and have a position — just re-center
+    if (watchId !== null && userLocation) {
+      map.setView(userLocation, 14);
+      return;
+    }
+
+    // Clear any stale watch
     if (watchId !== null) {
       navigator.geolocation.clearWatch(watchId);
       watchId = null;
     }
 
-    watchId = navigator.geolocation.watchPosition(
-      onPositionReceived,
-      (error) => {
-        console.warn('GPS-fel (kod ' + error.code + '):', error.message);
+    locateBtn.disabled = true;
+    locateBtn.querySelector('span').innerText = 'Söker position...';
+    firstLock = false;
+    delete locateBtn.dataset.permDeniedAlerted;
+
+    const isMobile = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+    let gotFirstFix = false;
+
+    // Hint timer — if no fix after 4s, show permission tip
+    const hintTimer = setTimeout(() => {
+      if (!gotFirstFix) {
+        locateBtn.querySelector('span').innerText = 'Kontrollera platstillstånd i webbläsaren...';
         locateBtn.disabled = false;
+      }
+    }, 4000);
+
+    // Start low-accuracy watch immediately — returns quickly via network/WiFi/IP
+    // maximumAge: Infinity means "use ANY cached position instantly"
+    watchId = navigator.geolocation.watchPosition(
+      (position) => {
+        clearTimeout(hintTimer);
+        gotFirstFix = true;
+        onPositionReceived(position);
+
+        // On mobile: after first low-accuracy fix, upgrade to GPS precision
+        if (isMobile) {
+          setTimeout(() => {
+            if (watchId !== null) {
+              navigator.geolocation.clearWatch(watchId);
+            }
+            watchId = navigator.geolocation.watchPosition(
+              onPositionReceived,
+              (err) => { console.warn('Hög-noggrannhet fel:', err.message); },
+              { enableHighAccuracy: true, timeout: 15000, maximumAge: 0 }
+            );
+          }, 1500);
+        }
+      },
+      (error) => {
+        clearTimeout(hintTimer);
+        locateBtn.disabled = false;
+        console.warn('GPS-fel (kod ' + error.code + '):', error.message);
 
         if (error.code === 1) {
           locateBtn.querySelector('span').innerText = 'GPS-åtkomst nekad';
@@ -882,56 +931,22 @@ function setupGeolocation() {
             alert('Tillåt platsåtkomst i webbläsaren/inställningar för att använda GPS.');
           }
         } else if (error.code === 2) {
-          if (highAccuracy) {
-            locateBtn.querySelector('span').innerText = 'Byter till nätverks-GPS...';
-            startWatch(false);
-          } else {
-            locateBtn.querySelector('span').innerText = 'Position ej tillgänglig';
-          }
+          locateBtn.querySelector('span').innerText = 'Position ej tillgänglig';
         } else if (error.code === 3) {
-          locateBtn.querySelector('span').innerText = 'GPS-signal svag, söker...';
+          // Timeout on low-accuracy is unusual — try once more without cache
+          locateBtn.querySelector('span').innerText = 'Söker på nytt...';
+          navigator.geolocation.clearWatch(watchId);
+          watchId = navigator.geolocation.watchPosition(
+            (p) => { gotFirstFix = true; onPositionReceived(p); },
+            () => { locateBtn.querySelector('span').innerText = 'Kunde inte hämta position'; },
+            { enableHighAccuracy: false, timeout: 20000, maximumAge: 0 }
+          );
         } else {
           locateBtn.querySelector('span').innerText = 'Hitta min position (GPS)';
         }
       },
-      { enableHighAccuracy: highAccuracy, timeout: highAccuracy ? 12000 : 20000, maximumAge: 3000 }
-    );
-  }
-
-  locateBtn.addEventListener('click', () => {
-    if (!navigator.geolocation) {
-      alert('Din webbläsare stöder inte GPS-positionering.');
-      return;
-    }
-
-    // Already watching — just re-center
-    if (watchId !== null && userLocation) {
-      map.setView(userLocation, 14);
-      return;
-    }
-
-    locateBtn.disabled = true;
-    locateBtn.querySelector('span').innerText = 'Söker position...';
-    firstLock = false;
-
-    const isMobile = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
-
-    // Step 1: Fast low-accuracy fix (works indoors, on desktop, via WiFi/IP)
-    navigator.geolocation.getCurrentPosition(
-      (pos) => {
-        onPositionReceived(pos);   // immediate UI update
-        // Step 2: Start continuous low-accuracy watch
-        startWatch(false);
-        // Step 3: On mobile, upgrade to high-accuracy GPS after 2s
-        if (isMobile) {
-          setTimeout(() => startWatch(true), 2000);
-        }
-      },
-      () => {
-        // Low-accuracy failed — try high accuracy directly (mobile outdoors)
-        startWatch(isMobile ? true : false);
-      },
-      { enableHighAccuracy: false, timeout: 5000, maximumAge: 60000 }
+      // maximumAge: Infinity → accept any cached position = instant response
+      { enableHighAccuracy: false, timeout: 10000, maximumAge: Infinity }
     );
   });
 }
