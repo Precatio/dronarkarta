@@ -1844,8 +1844,10 @@ function setupEventListeners() {
       const mapWrapper = document.getElementById('map-wrapper');
       const sweepEl = document.getElementById('radar-sweep');
       const gridEl = document.getElementById('radar-grid');
+      const sqgridEl = document.getElementById('radar-sqgrid');
       const vignetteEl = document.getElementById('radar-vignette');
       const crtEl = document.getElementById('radar-crt');
+      const noiseEl = document.getElementById('radar-noise');
 
       // Remove all tile layers
       Object.values(tileLayers).forEach(l => map.removeLayer(l));
@@ -1854,8 +1856,12 @@ function setupEventListeners() {
       mapWrapper.classList.remove('radar-theme');
       sweepEl.classList.add('hidden');
       gridEl.classList.add('hidden');
+      if (sqgridEl) sqgridEl.classList.add('hidden');
       if (vignetteEl) vignetteEl.classList.add('hidden');
       if (crtEl) crtEl.classList.add('hidden');
+      if (noiseEl) noiseEl.classList.add('hidden');
+      // Clear any running glitch interval
+      if (window._radarGlitchInterval) { clearInterval(window._radarGlitchInterval); window._radarGlitchInterval = null; }
 
       if (layerName === 'radar') {
         // Radar theme requires Dark Matter tiles + CSS filter classes + sweep/grid elements
@@ -1863,8 +1869,16 @@ function setupEventListeners() {
         mapWrapper.classList.add('radar-theme');
         sweepEl.classList.remove('hidden');
         gridEl.classList.remove('hidden');
+        if (sqgridEl) sqgridEl.classList.remove('hidden');
         if (vignetteEl) vignetteEl.classList.remove('hidden');
         if (crtEl) crtEl.classList.remove('hidden');
+        if (noiseEl) noiseEl.classList.remove('hidden');
+        // Filmisk glitch-hopp: triggas slumpmässigt var 8–30 sekund
+        window._radarGlitchInterval = setInterval(() => {
+          if (!noiseEl || noiseEl.classList.contains('hidden')) return;
+          noiseEl.classList.add('glitch-jump');
+          setTimeout(() => noiseEl.classList.remove('glitch-jump'), 130);
+        }, 8000 + Math.random() * 22000);
       } else {
         tileLayers[layerName].addTo(map);
       }
