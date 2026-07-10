@@ -18,15 +18,24 @@ let userMarker = null;
 let destinationMarker = null;
 let userRadiusCircle = null;
 
-// Updates (or creates) the dashed geofence radius circle around the user marker
+// Returns the active geofence center: planned flight point if set, otherwise GPS position
+function getGeofenceCenter() {
+  if (window._destLat !== undefined && window._destLng !== undefined) {
+    return L.latLng(window._destLat, window._destLng);
+  }
+  return userLocation || null;
+}
+
+// Updates (or creates) the dashed geofence radius circle around the active center
 function updateGeofenceCircle() {
-  if (!userLocation) return;
+  const center = getGeofenceCenter();
+  if (!center) return;
 
   if (userRadiusCircle) {
-    userRadiusCircle.setLatLng(userLocation);
+    userRadiusCircle.setLatLng(center);
     userRadiusCircle.setRadius(maxFlightDistance);
   } else {
-    userRadiusCircle = L.circle(userLocation, {
+    userRadiusCircle = L.circle(center, {
       radius: maxFlightDistance,
       color: '#f97316',
       weight: 2,
@@ -225,6 +234,11 @@ function setDestination(lat, lng) {
     destinationMarker = L.marker([lat, lng], { icon: targetIcon }).addTo(map);
     initLucide();
   }
+
+  // Move geofence circle to the planned flight point
+  updateGeofenceCircle();
+  const geofenceCenter = getGeofenceCenter();
+  if (geofenceCenter) checkGeofenceAlert(geofenceCenter);
 }
 
 function clearDestination() {
@@ -238,6 +252,10 @@ function clearDestination() {
     map.removeLayer(destinationMarker);
     destinationMarker = null;
   }
+
+  // Move geofence circle back to GPS position (or hide if no GPS)
+  updateGeofenceCircle();
+  if (userLocation) checkGeofenceAlert(userLocation);
 }
 
 window._mapSelectionActive = false;
@@ -2036,10 +2054,11 @@ function setupEventListeners() {
       geofenceRangeVal.textContent = `${maxFlightDistance} m`;
       localStorage.setItem('maxFlightDistance', maxFlightDistance);
       updateGeofenceCircle();
-      
+
       // Re-evaluate geofence alarms instantly on slider update
-      if (userLocation) {
-        checkGeofenceAlert(userLocation);
+      const center = getGeofenceCenter();
+      if (center) {
+        checkGeofenceAlert(center);
       }
     });
   }
