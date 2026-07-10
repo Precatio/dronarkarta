@@ -311,36 +311,26 @@
 
 
 
-        <!-- Geofence Settings (collapsible) -->
-        <div class="section-group collapsible-group">
-          <button id="geofence-toggle-btn" class="accordion-trigger" aria-expanded="false">
-            <span><i data-lucide="shield-alert"></i> Geofence-inställningar</span>
-            <i data-lucide="chevron-down" class="arrow-icon"></i>
-          </button>
-          <div id="geofence-panel" class="accordion-panel collapsed">
-            <div style="margin-bottom: 8px; display: flex; justify-content: space-between; align-items: center;">
-              <label for="geofence-range" class="dropdown-label" style="margin-bottom: 0; font-size: 0.8rem;">Max flyg-avstånd (VLOS):</label>
-              <span id="geofence-range-val" style="color: var(--primary); font-weight: 700; font-size: 0.9rem;">150 m</span>
-            </div>
-            <input type="range" id="geofence-range" min="50" max="500" step="25" value="150" style="width: 100%; accent-color: var(--primary); background: rgba(255,255,255,0.06); border-radius: 4px; height: 6px; cursor: pointer; border: none; outline: none; margin-bottom: 8px;">
-            <p class="section-desc">Ställ in hur långt bort från dig du planerar att flyga. Appen varnar om en restriktionszon är inom denna radie.</p>
+        <!-- Geofence Settings -->
+        <div class="section-group">
+          <h3><i data-lucide="shield-alert"></i> Geofence-inställningar</h3>
+          <div style="margin-bottom: 8px; display: flex; justify-content: space-between; align-items: center;">
+            <label for="geofence-range" class="dropdown-label" style="margin-bottom: 0; font-size: 0.8rem;">Max flyg-avstånd (VLOS):</label>
+            <span id="geofence-range-val" style="color: var(--primary); font-weight: 700; font-size: 0.9rem;">150 m</span>
           </div>
+          <input type="range" id="geofence-range" min="50" max="500" step="25" value="150" style="width: 100%; accent-color: var(--primary); background: rgba(255,255,255,0.06); border-radius: 4px; height: 6px; cursor: pointer; border: none; outline: none; margin-bottom: 8px;">
+          <p class="section-desc">Ställ in hur långt bort från dig du planerar att flyga. Appen varnar om en restriktionszon är inom denna radie.</p>
         </div>
 
-        <!-- Garmin Sync Section (collapsible) -->
-        <div class="section-group collapsible-group">
-          <button id="garmin-toggle-btn" class="accordion-trigger" aria-expanded="false">
-            <span><i data-lucide="smartphone"></i> Garmin GPS-synk</span>
-            <i data-lucide="chevron-down" class="arrow-icon"></i>
-          </button>
-          <div id="garmin-panel" class="accordion-panel collapsed">
-            <div class="garmin-sync-box">
-              <button id="export-gpx-btn" class="secondary-btn">
-                <i data-lucide="download"></i>
-                <span>Exportera zoner (GPX)</span>
-              </button>
-              <p class="section-desc">Ladda ner valda zoner som en GPX-fil. Importera till Garmin Connect, Garmin Explore eller direkt via USB för att se restriktionsområdena på din Garmin-karta.</p>
-            </div>
+        <!-- Garmin Sync Section -->
+        <div class="section-group">
+          <h3><i data-lucide="smartphone"></i> Garmin GPS-synk</h3>
+          <div class="garmin-sync-box">
+            <button id="export-gpx-btn" class="secondary-btn">
+              <i data-lucide="download"></i>
+              <span>Exportera zoner (GPX)</span>
+            </button>
+            <p class="section-desc">Ladda ner valda zoner som en GPX-fil. Importera till Garmin Connect, Garmin Explore eller direkt via USB för att se restriktionsområdena på din Garmin-karta.</p>
           </div>
         </div>
 

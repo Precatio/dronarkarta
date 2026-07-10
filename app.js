@@ -1720,8 +1720,6 @@ function setupEventListeners() {
     });
   }
   setupAccordion('about-toggle-btn',    'about-panel');
-  setupAccordion('geofence-toggle-btn', 'geofence-panel');
-  setupAccordion('garmin-toggle-btn',   'garmin-panel');
   setupAccordion('filter-toggle-btn',   'filter-panel');
   setupAccordion('rules-toggle-btn',    'rules-panel');
 
