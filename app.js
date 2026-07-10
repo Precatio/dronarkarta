@@ -1513,43 +1513,74 @@ function exportToGpx() {
 // --------------------------------------------------------------------------
 function setupEventListeners() {
   setupDestinationListeners();
-  // Mobile Panel Toggle
+
+  // ── Mobile Bottom Sheet — 3-snap system ──────────────────────────────────
   const toggleBtn = document.getElementById('toggle-panel-btn');
-  const sidebar = document.getElementById('sidebar');
-  if (toggleBtn && sidebar) {
-    toggleBtn.addEventListener('click', () => {
-      sidebar.classList.toggle('open');
-      const icon = toggleBtn.querySelector('i');
-      if (sidebar.classList.contains('open')) {
-        icon.setAttribute('data-lucide', 'chevron-down');
-      } else {
-        icon.setAttribute('data-lucide', 'menu');
-      }
+  const sidebar   = document.getElementById('sidebar');
+
+  function getSnap() {
+    if (sidebar.classList.contains('snap-full')) return 'full';
+    if (sidebar.classList.contains('snap-half')) return 'half';
+    return 'hidden';
+  }
+
+  function setSnap(state) {
+    sidebar.classList.remove('snap-half', 'snap-full');
+    if (state === 'half') sidebar.classList.add('snap-half');
+    if (state === 'full') sidebar.classList.add('snap-full');
+    // Update toggle icon
+    const icon = toggleBtn?.querySelector('i');
+    if (icon) {
+      icon.setAttribute('data-lucide', state === 'hidden' ? 'menu' : 'chevron-down');
       initLucide();
+    }
+  }
+
+  if (toggleBtn && sidebar) {
+    // Tap: cycle hidden → half → full → hidden
+    toggleBtn.addEventListener('click', () => {
+      const current = getSnap();
+      if      (current === 'hidden') setSnap('half');
+      else if (current === 'half')   setSnap('full');
+      else                           setSnap('hidden');
     });
 
-    // Mobile swipe-down-to-close gesture support for bottom sheet
+    // Swipe on drag handle (::before pseudo — touch on top 40px of sidebar)
     let touchStartY = 0;
-    let touchEndY = 0;
-    
+    let touchStartX = 0;
+
     sidebar.addEventListener('touchstart', (e) => {
-      touchStartY = e.changedTouches[0].screenY;
+      touchStartY = e.changedTouches[0].clientY;
+      touchStartX = e.changedTouches[0].clientX;
     }, { passive: true });
-    
+
     sidebar.addEventListener('touchend', (e) => {
-      touchEndY = e.changedTouches[0].screenY;
-      const diffY = touchEndY - touchStartY;
-      
-      // If user swipes down more than 60px and panel is open, close it
-      if (diffY > 60 && sidebar.classList.contains('open')) {
-        sidebar.classList.remove('open');
-        const icon = toggleBtn.querySelector('i');
-        if (icon) {
-          icon.setAttribute('data-lucide', 'menu');
-          initLucide();
-        }
+      const dy = e.changedTouches[0].clientY - touchStartY;
+      const dx = Math.abs(e.changedTouches[0].clientX - touchStartX);
+      // Only act on mostly-vertical swipes of >40px starting near the top handle
+      if (dx > 40 || Math.abs(dy) < 40) return;
+      if (touchStartY > sidebar.getBoundingClientRect().top + 60) return; // only handle area
+      const current = getSnap();
+      if (dy < 0) {
+        // Swipe up → expand
+        if (current === 'hidden') setSnap('half');
+        else if (current === 'half') setSnap('full');
+      } else {
+        // Swipe down → collapse
+        if (current === 'full') setSnap('half');
+        else setSnap('hidden');
       }
     }, { passive: true });
+  }
+
+  // ── Floating GPS FAB ─────────────────────────────────────────────────
+  const mapLocateBtn = document.getElementById('map-locate-btn');
+  const mainLocateBtn = document.getElementById('locate-btn');
+  if (mapLocateBtn && mainLocateBtn) {
+    mapLocateBtn.addEventListener('click', () => {
+      mainLocateBtn.click(); // delegate to the main locate button
+      mapLocateBtn.classList.add('gps-active');
+    });
   }
 
   // Mobile detail overlay close
@@ -1643,9 +1674,7 @@ function setupEventListeners() {
       }
       
       if (window.innerWidth <= 768 && sidebar) {
-        sidebar.classList.remove('open');
-        toggleBtn.querySelector('i').setAttribute('data-lucide', 'menu');
-        initLucide();
+        setSnap('hidden');
       }
     });
   });
