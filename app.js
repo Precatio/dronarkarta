@@ -2228,6 +2228,7 @@ function checkGeofenceAlert(latlng) {
   
   let isAlertActive = false;
   let nearestZoneName = '';
+  let isInside = false;   // declared here so it's in scope after the loop
 
   // Get only red (no-fly/restricted) zones where authorization is required
   const redZones = allFeatures.filter(f => f.properties.type === 'REQ_AUTHORIZATION');
@@ -2235,7 +2236,7 @@ function checkGeofenceAlert(latlng) {
   for (const zone of redZones) {
     const source = zone.properties.source;
     let points = [];
-    let isInside = false;
+    isInside = false;
     let isClose = false;
 
     // 1. Point geometries (mostly airports / heliports with circular warning buffers)
