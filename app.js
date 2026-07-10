@@ -1719,9 +1719,24 @@ function setupEventListeners() {
       initLucide();
     });
   }
-  setupAccordion('about-toggle-btn',    'about-panel');
-  setupAccordion('filter-toggle-btn',   'filter-panel');
-  setupAccordion('rules-toggle-btn',    'rules-panel');
+  setupAccordion('filter-toggle-btn', 'filter-panel');
+
+  // ── Info Modals (Om appen & Regler) ───────────────────────────────────────
+  function openModal(id) {
+    const m = document.getElementById(id);
+    if (m) { m.classList.remove('hidden'); initLucide(); }
+  }
+  function closeModal(id) {
+    const m = document.getElementById(id);
+    if (m) m.classList.add('hidden');
+  }
+  document.getElementById('open-about-btn')?.addEventListener('click', () => openModal('about-modal'));
+  document.getElementById('close-about-modal')?.addEventListener('click', () => closeModal('about-modal'));
+  document.getElementById('about-modal')?.addEventListener('click', (e) => { if (e.target.id === 'about-modal') closeModal('about-modal'); });
+
+  document.getElementById('open-rules-btn')?.addEventListener('click', () => openModal('rules-modal'));
+  document.getElementById('close-rules-modal')?.addEventListener('click', () => closeModal('rules-modal'));
+  document.getElementById('rules-modal')?.addEventListener('click', (e) => { if (e.target.id === 'rules-modal') closeModal('rules-modal'); });
 
   // ── SMHI Väder ────────────────────────────────────────────────────────────
   const SMHI_SYMBOLS = {

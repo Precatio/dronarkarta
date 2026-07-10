@@ -210,6 +210,14 @@
         <div class="logo-area">
           <i data-lucide="navigation" class="logo-icon"></i>
           <h1>Svensk Drönarkarta</h1>
+          <div class="header-icon-btns">
+            <button id="open-rules-btn" class="header-icon-btn" title="Regler &amp; Flygcompliance" aria-label="Regler">
+              <i data-lucide="book-open"></i>
+            </button>
+            <button id="open-about-btn" class="header-icon-btn" title="Om appen &amp; Datakällor" aria-label="Om appen">
+              <i data-lucide="info"></i>
+            </button>
+          </div>
         </div>
         <p class="subtitle">Se UAS-zoner, flygzoner och din position i realtid. Täcker hela Sverige (uppdateras var 6:e timme för färska NOTAMs).</p>
       </header>
@@ -346,47 +354,42 @@
         </div>
 
 
-        <!-- Filter Controls (collapsible) -->
-        <div class="section-group collapsible-group">
-          <button id="filter-toggle-btn" class="accordion-trigger" aria-expanded="false">
-            <span><i data-lucide="sliders-horizontal"></i> Filtrera zoner</span>
-            <i data-lucide="chevron-down" class="arrow-icon"></i>
-          </button>
-          <div id="filter-panel" class="accordion-panel collapsed">
-            <div class="filter-options">
-              <label class="checkbox-container">
-                <input type="checkbox" id="filter-auth" checked>
-                <span class="custom-checkbox auth-box"></span>
-                <span class="filter-label">
-                  <strong>Kräver tillstånd</strong>
-                  <span class="badge auth-badge">Flygplatser, CTR, R-områden</span>
-                </span>
-              </label>
-              <label class="checkbox-container">
-                <input type="checkbox" id="filter-cond" checked>
-                <span class="custom-checkbox cond-box"></span>
-                <span class="filter-label">
-                  <strong>Särskilda villkor</strong>
-                  <span class="badge cond-badge">Känsliga områden, sjukhus</span>
-                </span>
-              </label>
-              <label class="checkbox-container">
-                <input type="checkbox" id="filter-nvr" checked>
-                <span class="custom-checkbox nvr-box"></span>
-                <span class="filter-label">
-                  <strong>Naturreservat</strong>
-                  <span class="badge nvr-badge">Skyddad natur</span>
-                </span>
-              </label>
-              <label class="checkbox-container">
-                <input type="checkbox" id="filter-info" checked>
-                <span class="custom-checkbox info-box"></span>
-                <span class="filter-label">
-                  <strong>Informatoriska zoner</strong>
-                  <span class="badge info-badge">Lågflygområden</span>
-                </span>
-              </label>
-            </div>
+        <!-- Filter Controls -->
+        <div class="section-group">
+          <h3><i data-lucide="sliders-horizontal"></i> Filtrera zoner</h3>
+          <div class="filter-options">
+            <label class="checkbox-container">
+              <input type="checkbox" id="filter-auth" checked>
+              <span class="custom-checkbox auth-box"></span>
+              <span class="filter-label">
+                <strong>Kräver tillstånd</strong>
+                <span class="badge auth-badge">Flygplatser, CTR, R-områden</span>
+              </span>
+            </label>
+            <label class="checkbox-container">
+              <input type="checkbox" id="filter-cond" checked>
+              <span class="custom-checkbox cond-box"></span>
+              <span class="filter-label">
+                <strong>Särskilda villkor</strong>
+                <span class="badge cond-badge">Känsliga områden, sjukhus</span>
+              </span>
+            </label>
+            <label class="checkbox-container">
+              <input type="checkbox" id="filter-nvr" checked>
+              <span class="custom-checkbox nvr-box"></span>
+              <span class="filter-label">
+                <strong>Naturreservat</strong>
+                <span class="badge nvr-badge">Skyddad natur</span>
+              </span>
+            </label>
+            <label class="checkbox-container">
+              <input type="checkbox" id="filter-info" checked>
+              <span class="custom-checkbox info-box"></span>
+              <span class="filter-label">
+                <strong>Informatoriska zoner</strong>
+                <span class="badge info-badge">Lågflygområden</span>
+              </span>
+            </label>
           </div>
         </div>
 
@@ -401,106 +404,7 @@
           </div>
         </div>
 
-        <!-- Om appen & Datakällor Accordion Section -->
-        <div class="section-group collapsible-group">
-          <button id="about-toggle-btn" class="accordion-trigger">
-            <span><i data-lucide="info"></i> Om appen &amp; Datakällor</span>
-            <i data-lucide="chevron-down" class="arrow-icon"></i>
-          </button>
-          <div id="about-panel" class="accordion-panel collapsed">
-            <div class="about-content">
-              <p class="about-p"><strong>Svensk Drönarkarta</strong> är ett modernt, gratis och helt reklamfritt planeringshjälpmedel utvecklat av <strong>Bifrost Outdoors</strong>.</p>
-              
-              <h4 class="about-h4">Bakgrund (Varför appen skapades):</h4>
-              <p class="about-desc">
-                Appen uppkom ur ett personligt behov av att vilja följa det svenska regelverket för drönare, men där det visade sig vara extremt svårt att hitta ett samlat verktyg. 
-                Särskilt svårt var det att kombinera Naturvårdsverkets gränser för naturreservat med Luftfartsverkets (LFV) flygzoner, och samtidigt se sin egen position i förhållande till dessa områden i realtid. 
-                För att lösa detta byggde vi Drönarkarta, komplett med ett inbyggt, radiebaserat geofence.
-              </p>
 
-              <h4 class="about-h4">Appens funktioner &amp; verktyg:</h4>
-              <ul class="about-ul" style="margin-bottom: 14px;">
-                <li><strong>Allt på samma karta:</strong> Luftfartsverkets luftrumszoner (CTR, R-områden, NOTAM) och Naturvårdsverkets miljöskyddsområden i en och samma vy.</li>
-                <li><strong>Realtids-GPS &amp; Geofence:</strong> Visar din exakta position och ritar en streckad radie runt dig baserat på ditt inställda flygavstånd. Varnar direkt om en zon överlappar.</li>
-                <li><strong>Väder &amp; Vind (SMHI):</strong> Visar vindhastighet, vindriktning och temperatur vid din position direkt från SMHI, med en automatisk bedömning av flygförhållandena.</li>
-
-                <li><strong>Garmin GPX-export:</strong> Exportera zoner till din Garmin-enhet för att ha koll på restriktioner direkt på handleden eller cykeldatorn ute i fält.</li>
-                <li><strong>Blixtsnabb prestanda:</strong> Naturreservaten är uppdelade per län vilket sparar upp till 95% mobildata och gör att kartan laddar direkt.</li>
-              </ul>
-
-              <h4 class="about-h4">Hur fungerar Offline-stödet? (PWA):</h4>
-              <p class="about-desc">
-                Appen är byggd som en Progressive Web App (PWA). Genom att välja "Lägg till på startskärmen" i din webbläsare installeras appen lokalt.
-                En inbyggd Service Worker lagrar appens kod och grundläggande resurser i en lokal cache. När du startar appen utan internetanslutning laddas gränssnittet direkt från cachen. 
-                Nyligen besökta län (naturreservat och baskartor) sparas i cachen så att du kan planera din flygning även i områden helt utan mobiltäckning.
-              </p>
-
-              <h4 class="about-h4">Datakällor &amp; Uppdatering:</h4>
-              <ul class="about-ul" style="margin-bottom: 14px;">
-                <li><strong>Luftrumszoner &amp; CTR:</strong> Hämtas från Luftfartsverket (LFV) via öppna GIS-tjänster (WFS).</li>
-                <li><strong>Naturreservat:</strong> Hämtas från Naturvårdsverket (Skyddad Natur).</li>
-                <li><strong>Uppdateringsfrekvens:</strong> All geografisk data uppdateras automatiskt <strong>en gång i veckan</strong> (varje måndag kl. 04:00 UTC) genom en automatisk byggprocess på GitHub.</li>
-                <li><strong>Väderdata:</strong> Hämtas i realtid via SMHI:s öppna prognos-API (PMP3G) baserat på din GPS-position.</li>
-                <li><strong>Senaste hämtning:</strong> <span id="last-update-date" style="color: var(--primary); font-weight: bold;">Laddar...</span></li>
-              </ul>
-
-              <h4 class="about-h4">Stöd appens utveckling:</h4>
-              <p class="about-desc">
-                Drönarkarta.se drivs helt utan vinstintresse eller reklam för att hålla kartbilden ren och användbar. 
-                Om du uppskattar appen och vill hjälpa oss att täcka kostnader för servrar, domän och vidareutveckling får du jättegärna skicka en valfri donation via Swish-knappen i menyn. Varje bidrag uppskattas enormt!
-              </p>
-
-              <h4 class="about-h4">⚠️ Juridisk Ansvarsfriskrivning:</h4>
-              <p class="about-desc" style="margin-bottom: 14px;">
-                Denna applikation är <strong>enbart avsedd som ett planeringshjälpmedel</strong>. Kartan är inte en certifierad flyginformationstjänst. Det är alltid drönarpilotens/operatörens personliga och odelbara ansvar att kontrollera gällande regler och lokala föreskrifter inför varje enskild flygning.
-              </p>
-              <p class="about-desc" style="border-left: 2px solid rgba(239, 68, 68, 0.6); padding-left: 8px; font-size: 0.75rem; line-height: 1.4; margin-bottom: 14px;">
-                Utvecklarna av denna tjänst <strong>friskriver sig helt från allt ansvar</strong> för eventuella överträdelser av Transportstyrelsens föreskrifter, EU-förordningar eller andra tillämpliga lagar. 
-                Vi friskriver oss vidare helt från allt ansvar för eventuella tillbud, olyckor, personskador, materiella skador, böter eller andra konsekvenser som uppstår till följd av användningen av kartan, geofencing-varningar, GPX-exporter eller andra funktioner i appen.
-              </p>
-
-              <h4 class="about-h4">Myndighetskontakt:</h4>
-              <div class="contact-card">
-                <p class="contact-name">Luftfartsverket (LFV)</p>
-                <p>Tel: <a href="tel:011-192000">011-19 20 00</a></p>
-                <p>E-post: <a href="mailto:lfv@lfv.se">lfv@lfv.se</a></p>
-                <p>Briefing: <a href="https://aro.lfv.se" target="_blank" rel="noopener">aro.lfv.se</a></p>
-              </div>
-
-              <div class="contact-card">
-                <p class="contact-name">Transportstyrelsen (Luftfart)</p>
-                <p>Tel: <a href="tel:0771-503503">0771-503 503</a></p>
-                <p>E-post: <a href="mailto:luftfart@transportstyrelsen.se">luftfart@transportstyrelsen.se</a></p>
-                <p>Webb: <a href="https://transportstyrelsen.se/dronare" target="_blank" rel="noopener">transportstyrelsen.se/dronare</a></p>
-              </div>
-
-              <div class="contact-card">
-                <p class="contact-name">Naturvårdsverket</p>
-                <p>Tel: <a href="tel:010-6981000">010-698 10 00</a></p>
-                <p>E-post: <a href="mailto:registrator@naturvardsverket.se">registrator@naturvardsverket.se</a></p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Rules & Disclaimer (collapsible) -->
-        <div class="section-group collapsible-group">
-          <button id="rules-toggle-btn" class="accordion-trigger" aria-expanded="false">
-            <span><i data-lucide="book-open"></i> Regler &amp; Flygcompliance</span>
-            <i data-lucide="chevron-down" class="arrow-icon"></i>
-          </button>
-          <div id="rules-panel" class="accordion-panel collapsed">
-            <ul class="rules-list">
-              <li><strong>Registrering:</strong> Registrera dig som operatör hos Transportstyrelsen och märka drönaren med ditt <strong>Operatörs-ID</strong>.</li>
-              <li><strong>Drönarkort:</strong> För drönare över 250 g krävs drönarkort (A1/A3 eller A2).</li>
-              <li><strong>Flyghöjd:</strong> Max <strong>120 meter</strong> AGL i öppen kategori.</li>
-              <li><strong>Synhåll (VLOS):</strong> Flygning ska ske inom direkt synhåll utan kikare.</li>
-              <li><strong>Flygfoto:</strong> Tillstånd från Lantmäteriet krävs innan publicering av flygbilder.</li>
-              <li><strong>GDPR:</strong> Fotografering av personer utan samtycke kan bryta mot GDPR.</li>
-              <li><strong>Hänsyn:</strong> Flyg aldrig över folksamlingar. Visa hänsyn i naturreservat.</li>
-            </ul>
-          </div>
-        </div>
 
         <!-- Menu Color Palette Selection -->
         <div class="section-group">
@@ -558,6 +462,107 @@
           </div>
 
           <p class="swish-number">Nummer: <strong>070-042 71 67</strong></p>
+        </div>
+    </div>
+
+    <!-- About Modal -->
+    <div id="about-modal" class="modal-overlay hidden" role="dialog" aria-modal="true" aria-labelledby="about-modal-title">
+      <div class="modal-content info-modal-content">
+        <button id="close-about-modal" class="close-btn" aria-label="Stäng"><i data-lucide="x"></i></button>
+        <header class="modal-header">
+          <i data-lucide="info" class="modal-header-icon"></i>
+          <h2 id="about-modal-title">Om appen &amp; Datakällor</h2>
+        </header>
+        <div class="modal-body">
+          <p class="about-p"><strong>Svensk Drönarkarta</strong> är ett modernt, gratis och helt reklamfritt planeringshjälpmedel utvecklat av <strong>Bifrost Outdoors</strong>.</p>
+
+          <h4 class="about-h4">Bakgrund (Varför appen skapades):</h4>
+          <p class="about-desc">
+            Appen uppkom ur ett personligt behov av att vilja följa det svenska regelverket för drönare, men där det visade sig vara extremt svårt att hitta ett samlat verktyg.
+            Särskilt svårt var det att kombinera Naturvårdsverkets gränser för naturreservat med Luftfartsverkets (LFV) flygzoner, och samtidigt se sin egen position i förhållande till dessa områden i realtid.
+            För att lösa detta byggde vi Drönarkarta, komplett med ett inbyggt, radiebaserat geofence.
+          </p>
+
+          <h4 class="about-h4">Appens funktioner &amp; verktyg:</h4>
+          <ul class="about-ul" style="margin-bottom: 14px;">
+            <li><strong>Allt på samma karta:</strong> Luftfartsverkets luftrumszoner (CTR, R-områden, NOTAM) och Naturvårdsverkets miljöskyddsområden i en och samma vy.</li>
+            <li><strong>Realtids-GPS &amp; Geofence:</strong> Visar din exakta position och ritar en streckad radie runt dig baserat på ditt inställda flygavstånd. Varnar direkt om en zon överlappar.</li>
+            <li><strong>Väder &amp; Vind (SMHI):</strong> Visar vindhastighet, vindriktning och temperatur vid din position direkt från SMHI, med en automatisk bedömning av flygförhållandena.</li>
+            <li><strong>Garmin GPX-export:</strong> Exportera zoner till din Garmin-enhet för att ha koll på restriktioner direkt på handleden eller cykeldatorn ute i fält.</li>
+            <li><strong>Blixtsnabb prestanda:</strong> Naturreservaten är uppdelade per län vilket sparar upp till 95% mobildata och gör att kartan laddar direkt.</li>
+          </ul>
+
+          <h4 class="about-h4">Hur fungerar Offline-stödet? (PWA):</h4>
+          <p class="about-desc">
+            Appen är byggd som en Progressive Web App (PWA). Genom att välja "Lägg till på startskärmen" i din webbläsare installeras appen lokalt.
+            En inbyggd Service Worker lagrar appens kod och grundläggande resurser i en lokal cache. När du startar appen utan internetanslutning laddas gränssnittet direkt från cachen.
+            Nyligen besökta län (naturreservat och baskartor) sparas i cachen så att du kan planera din flygning även i områden helt utan mobiltäckning.
+          </p>
+
+          <h4 class="about-h4">Datakällor &amp; Uppdatering:</h4>
+          <ul class="about-ul" style="margin-bottom: 14px;">
+            <li><strong>Luftrumszoner &amp; CTR:</strong> Hämtas från Luftfartsverket (LFV) via öppna GIS-tjänster (WFS).</li>
+            <li><strong>Naturreservat:</strong> Hämtas från Naturvårdsverket (Skyddad Natur).</li>
+            <li><strong>Uppdateringsfrekvens:</strong> All geografisk data uppdateras automatiskt <strong>en gång i veckan</strong> (varje måndag kl. 04:00 UTC) genom en automatisk byggprocess på GitHub.</li>
+            <li><strong>Väderdata:</strong> Hämtas i realtid via SMHI:s öppna prognos-API (PMP3G) baserat på din GPS-position.</li>
+            <li><strong>Senaste hämtning:</strong> <span id="last-update-date" style="color: var(--primary); font-weight: bold;">Laddar...</span></li>
+          </ul>
+
+          <h4 class="about-h4">Stöd appens utveckling:</h4>
+          <p class="about-desc">
+            Drönarkarta.se drivs helt utan vinstintresse eller reklam för att hålla kartbilden ren och användbar.
+            Om du uppskattar appen och vill hjälpa oss att täcka kostnader för servrar, domän och vidareutveckling får du jättegärna skicka en valfri donation via Swish-knappen i menyn.
+          </p>
+
+          <h4 class="about-h4">⚠️ Juridisk Ansvarsfriskrivning:</h4>
+          <p class="about-desc" style="margin-bottom: 14px;">
+            Denna applikation är <strong>enbart avsedd som ett planeringshjälpmedel</strong>. Kartan är inte en certifierad flyginformationstjänst. Det är alltid drönarpilotens/operatörens personliga och odelbara ansvar att kontrollera gällande regler och lokala föreskrifter inför varje enskild flygning.
+          </p>
+          <p class="about-desc" style="border-left: 2px solid rgba(239, 68, 68, 0.6); padding-left: 8px; font-size: 0.75rem; line-height: 1.4; margin-bottom: 14px;">
+            Utvecklarna av denna tjänst <strong>friskriver sig helt från allt ansvar</strong> för eventuella överträdelser av Transportstyrelsens föreskrifter, EU-förordningar eller andra tillämpliga lagar.
+            Vi friskriver oss vidare helt från allt ansvar för eventuella tillbud, olyckor, personskador, materiella skador, böter eller andra konsekvenser som uppstår till följd av användningen av kartan, geofencing-varningar, GPX-exporter eller andra funktioner i appen.
+          </p>
+
+          <h4 class="about-h4">Myndighetskontakt:</h4>
+          <div class="contact-card">
+            <p class="contact-name">Luftfartsverket (LFV)</p>
+            <p>Tel: <a href="tel:011-192000">011-19 20 00</a></p>
+            <p>E-post: <a href="mailto:lfv@lfv.se">lfv@lfv.se</a></p>
+            <p>Briefing: <a href="https://aro.lfv.se" target="_blank" rel="noopener">aro.lfv.se</a></p>
+          </div>
+          <div class="contact-card">
+            <p class="contact-name">Transportstyrelsen (Luftfart)</p>
+            <p>Tel: <a href="tel:0771-503503">0771-503 503</a></p>
+            <p>E-post: <a href="mailto:luftfart@transportstyrelsen.se">luftfart@transportstyrelsen.se</a></p>
+            <p>Webb: <a href="https://transportstyrelsen.se/dronare" target="_blank" rel="noopener">transportstyrelsen.se/dronare</a></p>
+          </div>
+          <div class="contact-card">
+            <p class="contact-name">Naturvårdsverket</p>
+            <p>Tel: <a href="tel:010-6981000">010-698 10 00</a></p>
+            <p>E-post: <a href="mailto:registrator@naturvardsverket.se">registrator@naturvardsverket.se</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Rules Modal -->
+    <div id="rules-modal" class="modal-overlay hidden" role="dialog" aria-modal="true" aria-labelledby="rules-modal-title">
+      <div class="modal-content info-modal-content">
+        <button id="close-rules-modal" class="close-btn" aria-label="Stäng"><i data-lucide="x"></i></button>
+        <header class="modal-header">
+          <i data-lucide="book-open" class="modal-header-icon"></i>
+          <h2 id="rules-modal-title">Regler &amp; Flygcompliance</h2>
+        </header>
+        <div class="modal-body">
+          <ul class="rules-list">
+            <li><strong>Registrering:</strong> Registrera dig som operatör hos Transportstyrelsen och märka drönaren med ditt <strong>Operatörs-ID</strong>.</li>
+            <li><strong>Drönarkort:</strong> För drönare över 250 g krävs drönarkort (A1/A3 eller A2).</li>
+            <li><strong>Flyghöjd:</strong> Max <strong>120 meter</strong> AGL i öppen kategori.</li>
+            <li><strong>Synhåll (VLOS):</strong> Flygning ska ske inom direkt synhåll utan kikare.</li>
+            <li><strong>Flygfoto:</strong> Tillstånd från Lantmäteriet krävs innan publicering av flygbilder.</li>
+            <li><strong>GDPR:</strong> Fotografering av personer utan samtycke kan bryta mot GDPR.</li>
+            <li><strong>Hänsyn:</strong> Flyg aldrig över folksamlingar. Visa hänsyn i naturreservat.</li>
+          </ul>
         </div>
       </div>
     </div>

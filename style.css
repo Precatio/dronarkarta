@@ -256,6 +256,56 @@ html, body {
   margin-bottom: 8px;
 }
 
+.header-icon-btns {
+  display: flex;
+  gap: 4px;
+  margin-left: auto;
+}
+
+.header-icon-btn {
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.10);
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+  flex-shrink: 0;
+}
+.header-icon-btn:hover {
+  background: rgba(255,255,255,0.12);
+  color: var(--primary);
+  border-color: var(--primary);
+}
+.header-icon-btn svg { width: 15px; height: 15px; }
+
+.info-modal-content {
+  max-width: 560px;
+  max-height: 80vh;
+  display: flex;
+  flex-direction: column;
+}
+.info-modal-content .modal-body {
+  overflow-y: auto;
+  flex: 1;
+  padding: 0 24px 24px;
+}
+.info-modal-content .modal-body::-webkit-scrollbar { width: 4px; }
+.info-modal-content .modal-body::-webkit-scrollbar-track { background: transparent; }
+.info-modal-content .modal-body::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.15); border-radius: 2px; }
+
+.modal-header-icon {
+  width: 22px;
+  height: 22px;
+  color: var(--primary);
+  flex-shrink: 0;
+}
+
+
 .logo-icon {
   color: var(--primary);
   width: 24px;
