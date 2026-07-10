@@ -786,24 +786,22 @@ function setupGeolocation() {
   const locateBtn = document.getElementById('locate-btn');
   if (!locateBtn) return;
 
-  locateBtn.addEventListener('click', () => {
-    if (!navigator.geolocation) {
-      alert('Din webbläsare stöder inte GPS-positionering.');
-      return;
+  let watchId = null;   // prevent duplicate watches
+  let firstLock = false;
+
+  function startWatch(highAccuracy) {
+    if (watchId !== null) {
+      navigator.geolocation.clearWatch(watchId);
+      watchId = null;
     }
 
-    locateBtn.disabled = true;
-    locateBtn.querySelector('span').innerText = 'Söker GPS-signal...';
-    
-    // Watch position in real-time
-    navigator.geolocation.watchPosition(
+    watchId = navigator.geolocation.watchPosition(
       (position) => {
         const lat = position.coords.latitude;
         const lng = position.coords.longitude;
         userLocation = L.latLng(lat, lng);
         updateGeofenceCircle();
 
-        // Store globally for saved places + weather
         window._lastKnownLat = lat;
         window._lastKnownLng = lng;
 
@@ -835,6 +833,9 @@ function setupGeolocation() {
         locateBtn.querySelector('span').innerText = 'Uppdaterar position (GPS)';
         locateBtn.classList.add('active');
 
+        // FAB active state
+        document.getElementById('map-locate-btn')?.classList.add('gps-active');
+
         // Draw or move user position marker
         if (userMarker) {
           userMarker.setLatLng(userLocation);
@@ -849,39 +850,80 @@ function setupGeolocation() {
         }
 
         // Center map to user position on first lock
-        if (!locateBtn.dataset.hasLocked) {
-          map.setView(userLocation, 13);
-          locateBtn.dataset.hasLocked = 'true';
+        if (!firstLock) {
+          firstLock = true;
+          map.setView(userLocation, 14);
         }
 
-        // Check flight status and update sidebar status card
         checkUserFlightStatus(userLocation);
         updateLocalZonesList();
-        
-        // Active Geofence Alert Check
         checkGeofenceAlert(userLocation);
       },
       (error) => {
-        console.error('Positioneringsfel:', error);
+        console.warn('GPS-fel (kod ' + error.code + '):', error.message);
         locateBtn.disabled = false;
-        if (error.code === 3) {
-          // Timeout – GPS signal weak, try again silently
-          locateBtn.querySelector('span').innerText = 'GPS-signal svag, försöker...';
-          locateBtn.classList.remove('active');
-        } else if (error.code === 1) {
-          // Permission denied
+
+        if (error.code === 1) {
+          // PERMISSION_DENIED
           locateBtn.querySelector('span').innerText = 'GPS-åtkomst nekad';
-          alert('Tillåt platsåtkomst i webbläsaren för att använda GPS.');
+          locateBtn.classList.remove('active');
+          if (!locateBtn.dataset.permDeniedAlerted) {
+            locateBtn.dataset.permDeniedAlerted = 'true';
+            alert('Tillåt platsåtkomst i webbläsaren/inställningar för att använda GPS.');
+          }
+        } else if (error.code === 2) {
+          // POSITION_UNAVAILABLE — try lower accuracy fallback
+          if (highAccuracy) {
+            locateBtn.querySelector('span').innerText = 'Byter till nätverks-GPS...';
+            startWatch(false); // retry without high accuracy
+          } else {
+            locateBtn.querySelector('span').innerText = 'Position ej tillgänglig';
+          }
+        } else if (error.code === 3) {
+          // TIMEOUT — silent retry, keep watching
+          locateBtn.querySelector('span').innerText = 'GPS-signal svag, söker...';
         } else {
           locateBtn.querySelector('span').innerText = 'Hitta min position (GPS)';
-          alert(`Kunde inte hämta din position: ${error.message}`);
         }
       },
       {
-        enableHighAccuracy: true,
-        timeout: 30000,
-        maximumAge: 5000
+        enableHighAccuracy: highAccuracy,
+        timeout:            highAccuracy ? 12000 : 20000,
+        maximumAge:         3000
       }
+    );
+  }
+
+  locateBtn.addEventListener('click', () => {
+    if (!navigator.geolocation) {
+      alert('Din webbläsare stöder inte GPS-positionering.');
+      return;
+    }
+
+    // If already watching, just re-center
+    if (watchId !== null && userLocation) {
+      map.setView(userLocation, 14);
+      return;
+    }
+
+    locateBtn.disabled = true;
+    locateBtn.querySelector('span').innerText = 'Söker GPS-signal...';
+    firstLock = false;
+
+    // Fast first fix with getCurrentPosition, then hand off to watchPosition
+    navigator.geolocation.getCurrentPosition(
+      (pos) => {
+        // Got a quick fix — show immediately, then start watch
+        userLocation = L.latLng(pos.coords.latitude, pos.coords.longitude);
+        map.setView(userLocation, 14);
+        firstLock = true;
+        startWatch(true);
+      },
+      () => {
+        // getCurrentPosition failed, go straight to watchPosition
+        startWatch(true);
+      },
+      { enableHighAccuracy: true, timeout: 8000, maximumAge: 10000 }
     );
   });
 }
@@ -993,8 +1035,11 @@ function isPointInsideFeature(latLng, feature) {
 }
 
 function isRedZone(type, source) {
-  if (source === 'rsta' || source === 'sup' || source === 'arp') return true;
-  if (type === 'REQ_AUTHORIZATION') return true;
+  // Only hard-restricted zones block flight point placement.
+  // 'arp' (airport warning circle) and 'ctr' (orange CTR) are NOT hard blocks.
+  if (source === 'rsta') return true;  // R-områden (restricted areas)
+  if (source === 'sup')  return true;  // Temporary NOTAM restrictions
+  if (type === 'REQ_AUTHORIZATION' && source !== 'arp' && source !== 'ctr') return true;
   return false;
 }
 
