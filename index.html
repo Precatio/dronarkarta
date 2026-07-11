@@ -24,7 +24,7 @@
   })(window,document,'script','dataLayer','GTM-K3N55M73');</script>
   <!-- End Google Tag Manager -->
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Drönarkarta Sverige | GPS-karta för Flygzoner, Restriktioner & Drönarlagar</title>
   <meta name="description" content="Gratis interaktiv drönarkarta med GPS-positionering för hela Sverige. Se flygzoner, kontrollzoner (CTR), R-områden, NOTAM, geofence-varningar och naturreservat i realtid. Exportera GPX till Garmin. Följ Transportstyrelsens och EASA:s drönarlagar.">
   <meta name="keywords" content="drönarkarta, drönarkarta GPS, flygzoner drönare, drönare regler Sverige, UAS zoner, restriktionsområden drönare, kontrollzon CTR, drönare tillstånd, geofence drönare, NOTAM drönare, drönare luftrum, Transportstyrelsen drönare, EASA drönarkarta, LFV drönarkarta, U-space, A1 A2 A3 drönare, drönare kategori, naturreservat drönare, flygplats skyddszon, drönare 120 meter, får jag flyga drönare här, flyga drönare Sverige, GPX drönarzoner, Garmin drönarkarta, drönare karta realtid, ED-318, drönare luftrumsrestriktioner, drönarzoner Skåne, drönarzoner Stockholm, drönarzoner Göteborg">
@@ -98,13 +98,14 @@
   <!-- Google Fonts: Inter -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+  <link rel="stylesheet" media="print" onload="this.media='all'" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
   
   <!-- Leaflet CSS -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
   
   <!-- Lucide Icons -->
-  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="https://unpkg.com/lucide@latest" defer></script>
   
   <!-- Custom Styling -->
   <link rel="stylesheet" href="./style.css">
@@ -192,7 +193,7 @@
 
   <div id="app-container">
     <!-- Map Area Wrapper with Radar Overlays -->
-    <div id="map-wrapper">
+    <main id="map-wrapper">
       <div id="map"></div>
       <div id="radar-sweep" class="radar-sweep hidden"></div>
       <div id="radar-grid" class="radar-grid hidden"></div>
@@ -200,7 +201,7 @@
       <div id="radar-vignette" class="radar-vignette hidden"></div>
       <div id="radar-crt" class="radar-crt hidden"></div>
       <div id="radar-noise" class="radar-noise hidden"></div>
-    </div>
+    </main>
 
     <!-- Floating UI Toggle Button (Mobile) -->
     <button id="toggle-panel-btn" class="floating-btn mobile-only" aria-label="Visa/dölj panel">
@@ -431,7 +432,7 @@
           <h3><i data-lucide="heart"></i> Stöd appen</h3>
           <p class="donate-desc">Drönarkarta är gratis och reklamfri. Om du uppskattar appen får du gärna bjuda på en kaffe via Swish!</p>
           <button id="swish-btn" class="swish-btn">
-            <img src="./swish-logo.svg" alt="Swish" class="swish-logo-inline">
+            <img src="./swish-logo.svg" alt="Swish" class="swish-logo-inline" width="33" height="22">
             Swisha ett bidrag
           </button>
         </div>
@@ -456,7 +457,7 @@
           <div id="swish-desktop" class="swish-desktop-block">
             <p class="swish-instruction">Scanna med Swish-appen på din telefon:</p>
             <div class="swish-qr-wrapper">
-              <img src="./swish-QR-small.png" alt="Swish QR-kod — Stöd appen" class="swish-qr-img">
+              <img src="./swish-QR-small.png" alt="Swish QR-kod — Stöd appen" class="swish-qr-img" width="220" height="220">
             </div>
           </div>
 
@@ -464,7 +465,7 @@
           <div id="swish-mobile" class="swish-mobile-block hidden">
             <a href="swish://payment?phone=0700427167&amount=&message=St%C3%B6d%20Dr%C3%B6narkarta.se&edit=phone%2Camount"
                class="swish-deeplink-btn" id="swish-deeplink">
-              <img src="./swish-logo.svg" alt="Swish" class="swish-logo-inline">
+              <img src="./swish-logo.svg" alt="Swish" class="swish-logo-inline" width="33" height="22">
               Öppna Swish &amp; swisha
             </a>
             <p class="swish-instruction" style="margin-top:10px;">Tryck för att öppna Swish-appen direkt.<br>Du väljer själv belopp.</p>

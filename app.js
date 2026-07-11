@@ -116,6 +116,23 @@ function detectCountyFromLatLng(lat, lng) {
   return null; // outside Sweden or ambiguous
 }
 
+// Detect and automatically load reserves for a county if coordinates fall into a new one
+function detectAndChangeCounty(lat, lng) {
+  const detectedCounty = detectCountyFromLatLng(lat, lng);
+  if (detectedCounty && detectedCounty !== selectedRegion) {
+    selectedRegion = detectedCounty;
+    localStorage.setItem('selectedRegion', detectedCounty);
+    const regionSelector = document.getElementById('region-selector');
+    if (regionSelector) {
+      regionSelector.value = detectedCounty;
+    }
+    loadCountyReserves(detectedCounty);
+    return true;
+  }
+  return false;
+}
+
+
 // Map tile layers
 const tileLayers = {
   dark: L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
@@ -195,6 +212,9 @@ function setDestination(lat, lng) {
     return;
   }
 
+  // Auto-detect and change county if flight point is in a different county
+  detectAndChangeCounty(lat, lng);
+
   window._destLat = lat;
   window._destLng = lng;
 
@@ -231,7 +251,11 @@ function setDestination(lat, lng) {
       iconSize: [32, 32],
       iconAnchor: [16, 16]
     });
-    destinationMarker = L.marker([lat, lng], { icon: targetIcon }).addTo(map);
+    destinationMarker = L.marker([lat, lng], {
+      icon: targetIcon,
+      title: 'Planerad flygpunkt',
+      alt: 'Planerad flygpunkt'
+    }).addTo(map);
     initLucide();
   }
 
@@ -453,7 +477,12 @@ function renderZones() {
         iconSize: [24, 24],
         iconAnchor: [12, 12]
       });
-      const marker = L.marker(airportLatLng, { icon: planeIcon });
+      const name = getFeatureName(feature);
+      const marker = L.marker(airportLatLng, {
+        icon: planeIcon,
+        title: `Flygplats: ${name}`,
+        alt: `Flygplats: ${name}`
+      });
 
       // 2. Create 5km airport protection area circle (Red)
       const warningCircle = L.circle(airportLatLng, {
@@ -864,7 +893,11 @@ function setupGeolocation() {
         iconSize:   [48, 48],
         iconAnchor: [24, 24]
       });
-      userMarker = L.marker(userLocation, { icon: userIcon }).addTo(map);
+      userMarker = L.marker(userLocation, {
+        icon: userIcon,
+        title: 'Din position',
+        alt: 'Din position'
+      }).addTo(map);
     }
 
     // Center map on first lock — zoom depends on accuracy
@@ -1415,6 +1448,9 @@ async function performSearch(query) {
         const lat = parseFloat(item.lat);
         const lng = parseFloat(item.lon);
         map.setView([lat, lng], 13);
+        
+        // Auto-detect and change county if searched location is in a different county
+        detectAndChangeCounty(lat, lng);
         
         L.popup()
           .setLatLng([lat, lng])
@@ -2325,12 +2361,72 @@ function checkGeofenceAlert(latlng) {
     }
   }
 
+  // 4. Naturreservat scanning (if no red zone alert is active)
+  let isNvrActive = false;
+  let nearestNvrName = '';
+  let isNvrInside = false;
+
+  if (!isAlertActive) {
+    const nvrZones = allFeatures.filter(f => f.properties.source === 'nvr');
+    for (const zone of nvrZones) {
+      let points = [];
+      let inside = false;
+      let close = false;
+
+      if (zone.geometry.type === 'Polygon') {
+        const outerRing = zone.geometry.coordinates[0];
+        points = outerRing.map(c => ({ lat: c[1], lng: c[0] }));
+        inside = isPointInPolygon(latlng, points);
+        if (!inside) {
+          for (const pt of points) {
+            if (map.distance(latlng, L.latLng(pt.lat, pt.lng)) < maxFlightDistance) {
+              close = true;
+              break;
+            }
+          }
+        }
+      } else if (zone.geometry.type === 'MultiPolygon') {
+        for (const poly of zone.geometry.coordinates) {
+          const outerRing = poly[0];
+          points = outerRing.map(c => ({ lat: c[1], lng: c[0] }));
+          inside = isPointInPolygon(latlng, points);
+          if (!inside) {
+            for (const pt of points) {
+              if (map.distance(latlng, L.latLng(pt.lat, pt.lng)) < maxFlightDistance) {
+                close = true;
+                break;
+              }
+            }
+          }
+          if (inside || close) break;
+        }
+      }
+
+      if (inside || close) {
+        isNvrActive = true;
+        nearestNvrName = getFeatureName(zone);
+        isNvrInside = inside;
+        break;
+      }
+    }
+  }
+
   // Handle geofence UI banner and device effects
   const banner = document.getElementById('geofence-warning-banner');
   const bannerText = document.getElementById('geofence-warning-text');
 
-  // If a zone is active but it matches the dismissed zone name, keep UI muted
+  // If a red zone is active but it matches the dismissed zone name, keep UI muted
   if (isAlertActive && nearestZoneName === dismissedZoneName) {
+    if (banner) banner.classList.add('hidden');
+    if (geofenceAlarmInterval) {
+      clearInterval(geofenceAlarmInterval);
+      geofenceAlarmInterval = null;
+    }
+    return;
+  }
+
+  // If a nature reserve is active but it matches the dismissed zone name, keep UI muted
+  if (!isAlertActive && isNvrActive && nearestNvrName === dismissedZoneName) {
     if (banner) banner.classList.add('hidden');
     if (geofenceAlarmInterval) {
       clearInterval(geofenceAlarmInterval);
@@ -2346,6 +2442,13 @@ function checkGeofenceAlert(latlng) {
     
     if (banner) {
       banner.classList.remove('hidden');
+      // Set styling for Red alert
+      banner.style.background = 'rgba(239, 68, 68, 0.95)';
+      banner.style.borderColor = '#ffffff';
+      banner.style.boxShadow = '0 4px 20px rgba(239, 68, 68, 0.5), 0 0 15px rgba(239, 68, 68, 0.3)';
+      const warningIcon = banner.querySelector('.warning-icon');
+      if (warningIcon) warningIcon.style.stroke = '#ffffff';
+
       if (bannerText) {
         if (activeWarningIsInside) {
           bannerText.innerHTML = `Du står <strong>inuti</strong> restriktionszonen <strong>"${nearestZoneName}"</strong>. <strong>Flygförbud!</strong>`;
@@ -2359,6 +2462,34 @@ function checkGeofenceAlert(latlng) {
     if (!geofenceAlarmInterval) {
       triggerGeofenceEffects();
       geofenceAlarmInterval = setInterval(triggerGeofenceEffects, 1500);
+    }
+  } else if (isNvrActive) {
+    geofenceWarningActive = false; // Mute sound alarms for NVR
+    activeWarningZoneName = nearestNvrName;
+    activeWarningIsInside = isNvrInside;
+    
+    if (banner) {
+      banner.classList.remove('hidden');
+      // Set styling for Nature Reserve (Green / Emerald)
+      banner.style.background = 'rgba(16, 185, 129, 0.95)';
+      banner.style.borderColor = '#ffffff';
+      banner.style.boxShadow = '0 4px 20px rgba(16, 185, 129, 0.5), 0 0 15px rgba(16, 185, 129, 0.3)';
+      const warningIcon = banner.querySelector('.warning-icon');
+      if (warningIcon) warningIcon.style.stroke = '#ffffff';
+
+      if (bannerText) {
+        if (activeWarningIsInside) {
+          bannerText.innerHTML = `Du är <strong>inuti</strong> naturreservatet <strong>"${nearestNvrName}"</strong>. Kontrollera lokala flygregler!`;
+        } else {
+          bannerText.innerHTML = `Reservatet <strong>"${nearestNvrName}"</strong> är inom din flygradie (${maxFlightDistance}m). Tänk på djurlivet!`;
+        }
+      }
+    }
+    
+    // Stop any running sound alarm from red zones
+    if (geofenceAlarmInterval) {
+      clearInterval(geofenceAlarmInterval);
+      geofenceAlarmInterval = null;
     }
   } else {
     geofenceWarningActive = false;
