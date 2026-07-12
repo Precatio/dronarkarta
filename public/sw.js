@@ -28,6 +28,9 @@ self.addEventListener('activate', e => {
 });
 
 self.addEventListener('fetch', e => {
+  // Only handle HTTP/HTTPS requests (ignores chrome-extension, data, etc.)
+  if (!e.request.url.startsWith('http')) return;
+
   const url = new URL(e.request.url);
 
   // Always go to network for third-party/analytics/map tiles
