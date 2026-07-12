@@ -94,6 +94,48 @@
     }
   }
   </script>
+
+  <!-- FAQ Structured Data Schema Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Finns det en drönarkarta med GPS-positionering för att se sin position i realtid?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja! Svensk Drönarkarta är en interaktiv drönarkarta med inbyggd GPS-positionering och geofencing. Du kan se din exakta position i realtid på kartan när du är ute i fält, vilket gör det enkelt åtgärda om du flyger säkert och utanför restriktionszoner."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Hur kan jag se min position i realtid på kartan när jag flyger drönare?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Genom att klicka på knappen 'Hitta min position (GPS)' i appen hämtar kartan din aktuella position via telefonens eller surfplattans GPS och ritar ut dig i realtid. Ett inbyggt geofence ritar en VLOS-radie runt dig för att varna om du närmar dig tillståndskrävande zoner."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Finns det ett bra alternativ till LFV:s drönarkarta?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, Svensk Drönarkarta är ett utmärkt, gratis och reklamfritt alternativ till LFV:s drönarkarta. Till skillnad från LFV:s tjänst kan du här se din egen GPS-position i realtid på kartan i fält, ladda in Naturvårdsverkets naturreservat länsvis för att spara mobildata, samt exportera flygzoner direkt till din Garmin-klocka."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Hur kan jag planera och flyga med min aktuella position i fält?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Med Svensk Drönarkarta kan du planera flygningar i fält genom att klicka på kartan för att sätta en planerad flygpunkt. Du ser direkt avståndet till flygpunkten från din aktuella GPS-position, och kan enkelt öppna koordinaterna i telefonens Google Maps eller skicka dem via en QR-kod till en annan enhet."
+        }
+      }
+    ]
+  }
+  </script>
   
   <!-- Google Fonts: Inter -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -544,6 +586,26 @@
           <p class="about-desc" style="border-left: 2px solid rgba(239, 68, 68, 0.6); padding-left: 8px; font-size: 0.75rem; line-height: 1.4; margin-bottom: 14px;">
             Utvecklarna friskriver sig helt från ansvar för eventuella regelöverträdelser (t.ex. TSFS 2017:110 eller EU 2019/947) samt alla typer av olyckor, skador eller böter som uppstår i samband med användningen av denna karta.
           </p>
+
+          <h4 class="about-h4">Vanliga frågor (FAQ):</h4>
+          <div class="faq-section" style="margin-bottom: 14px; font-size: 0.85rem; line-height: 1.5; display: flex; flex-direction: column; gap: 10px;">
+            <div>
+              <strong style="color: var(--primary);">Finns det en drönarkarta med GPS-positionering för att se sin position i realtid?</strong>
+              <p style="margin-top: 4px; color: var(--text-secondary);">Ja! Svensk Drönarkarta är en interaktiv drönarkarta med inbyggd GPS-positionering. Du kan se din exakta position i realtid på kartan när du är ute i fält, vilket underlättar säker flygning.</p>
+            </div>
+            <div>
+              <strong style="color: var(--primary);">Hur kan jag se min position i realtid på kartan?</strong>
+              <p style="margin-top: 4px; color: var(--text-secondary);">Klicka på knappen "Hitta min position (GPS)" för att hämta din aktuella position. Ett geofence ritar en radie runt dig för att varna om du närmar dig restriktionszoner.</p>
+            </div>
+            <div>
+              <strong style="color: var(--primary);">Finns det ett bra alternativ till LFV:s drönarkarta?</strong>
+              <p style="margin-top: 4px; color: var(--text-secondary);">Ja, denna karta fungerar som ett komplement och alternativ till LFV:s drönarkarta genom att visa din GPS-position i realtid, ge geofence-varningar för naturreservat samt tillåta GPX-export till Garmin-enheter.</p>
+            </div>
+            <div>
+              <strong style="color: var(--primary);">Hur kan jag planera och flyga med min aktuella position?</strong>
+              <p style="margin-top: 4px; color: var(--text-secondary);">Klicka på kartan för att sätta en planerad flygpunkt. Du ser direkt avståndet till flygpunkten från din GPS-position och kan öppna den i mobilens Google Maps eller skicka den till din telefon.</p>
+            </div>
+          </div>
 
           <h4 class="about-h4">Myndighetskontakt:</h4>
           <div class="contact-card">
