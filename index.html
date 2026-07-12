@@ -273,7 +273,17 @@
         <div id="dest-distance-row" class="dest-info-row hidden">
           <span>Avstånd från dig: <strong id="dest-distance-val">-- m</strong></span>
         </div>
-        <p class="dest-gpx-note"><i data-lucide="download" style="width:11px;height:11px;vertical-align:middle;margin-right:3px;"></i>Ingår som waypoint i Garmin GPX-exporten</p>
+        <div class="dest-actions-row" style="margin-top: 10px; display: flex; gap: 8px; flex-wrap: wrap;">
+          <a id="dest-maps-btn" href="#" target="_blank" rel="noopener" class="secondary-btn" style="flex: 1; display: flex; align-items: center; justify-content: center; gap: 6px; text-decoration: none; font-size: 0.8rem; padding: 6px 12px; background: rgba(56, 189, 248, 0.1); border: 1px solid rgba(56, 189, 248, 0.3); border-radius: 6px; color: var(--text-primary);">
+            <i data-lucide="map" style="width:14px; height:14px;"></i>
+            <span>Google Maps</span>
+          </a>
+          <button id="dest-phone-btn" class="secondary-btn" style="flex: 1; display: flex; align-items: center; justify-content: center; gap: 6px; font-size: 0.8rem; padding: 6px 12px; background: rgba(16, 185, 129, 0.1); border: 1px solid rgba(16, 185, 129, 0.3); border-radius: 6px; color: var(--text-primary); cursor: pointer;">
+            <i data-lucide="smartphone" style="width:14px; height:14px;"></i>
+            <span>Till telefon</span>
+          </button>
+        </div>
+        <p class="dest-gpx-note" style="margin-top: 10px;"><i data-lucide="download" style="width:11px;height:11px;vertical-align:middle;margin-right:3px;"></i>Ingår som waypoint i Garmin GPX-exporten</p>
       </div>
 
       <!-- Collapsible Section Tabs/Accordion -->
@@ -472,6 +482,32 @@
           </div>
 
           <p class="swish-number">Nummer: <strong>070-042 71 67</strong></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Send to Phone Modal -->
+    <div id="phone-modal" class="modal-overlay hidden" role="dialog" aria-modal="true" aria-labelledby="phone-modal-title">
+      <div class="modal-content swish-modal-content">
+        <button id="close-phone-modal" class="close-btn" aria-label="Stäng"><i data-lucide="x"></i></button>
+        <header class="modal-header">
+          <i data-lucide="smartphone" class="swish-heart-icon" style="color: var(--primary); animation: none;"></i>
+          <h2 id="phone-modal-title">Öppna i telefonen</h2>
+        </header>
+        <div class="modal-body swish-modal-body">
+          <p>Skanna QR-koden med mobilkameran för att öppna flygpunkten i Google Maps direkt i din telefon:</p>
+          
+          <div class="swish-qr-wrapper" style="margin: 16px auto; width: fit-content;">
+            <img id="phone-qr-img" src="" alt="Google Maps QR-kod" class="swish-qr-img" width="220" height="220">
+          </div>
+
+          <div style="margin-top: 15px;">
+            <p style="font-size: 0.8rem; color: var(--text-secondary); margin-bottom: 5px;">Eller kopiera länken:</p>
+            <div style="display: flex; gap: 6px; background: var(--bg-input); padding: 6px 12px; border-radius: 8px; border: 1px solid var(--border-color); align-items: center; justify-content: space-between;">
+              <span id="phone-link-text" style="font-family: monospace; font-size: 0.8rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 220px; color: var(--text-primary);">https://google.com/...</span>
+              <button id="copy-phone-link-btn" class="dest-copy-btn" title="Kopiera länk" style="background: none; border: none; cursor: pointer; color: var(--primary);"><i data-lucide="copy" style="width: 16px; height: 16px;"></i></button>
+            </div>
+          </div>
         </div>
       </div>
     </div>

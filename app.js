@@ -238,6 +238,10 @@ function setDestination(lat, lng) {
 
   if (card) {
     card.classList.remove('hidden');
+    const mapsBtn = document.getElementById('dest-maps-btn');
+    if (mapsBtn) {
+      mapsBtn.href = `https://www.google.com/maps/search/?api=1&query=${lat},${lng}`;
+    }
     initLucide();
   }
 
@@ -348,6 +352,72 @@ function setupDestinationListeners() {
     cancelBtn.addEventListener('click', (e) => {
       e.stopPropagation();
       deactivateMapSelection();
+    });
+  }
+
+  // "Till telefon" sharing action
+  const phoneBtn = document.getElementById('dest-phone-btn');
+  if (phoneBtn) {
+    phoneBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      if (window._destLat === undefined || window._destLng === undefined) return;
+
+      const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${window._destLat},${window._destLng}`;
+      const isMobile = navigator.maxTouchPoints > 1 || ('ontouchstart' in window && navigator.maxTouchPoints > 0);
+
+      if (isMobile && navigator.share) {
+        navigator.share({
+          title: 'Planerad flygpunkt',
+          text: `Här är min planerade flygpunkt på Drönarkartan: ${window._destLat.toFixed(5)}, ${window._destLng.toFixed(5)}`,
+          url: mapsUrl
+        }).catch(err => console.log('Share failed:', err));
+      } else {
+        const modal = document.getElementById('phone-modal');
+        const qrImg = document.getElementById('phone-qr-img');
+        const linkText = document.getElementById('phone-link-text');
+        
+        if (modal) {
+          if (qrImg) {
+            qrImg.src = `https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=${encodeURIComponent(mapsUrl)}`;
+          }
+          if (linkText) {
+            linkText.textContent = mapsUrl;
+          }
+          modal.classList.remove('hidden');
+          initLucide();
+        }
+      }
+    });
+  }
+
+  // Close phone modal
+  const closePhoneModalBtn = document.getElementById('close-phone-modal');
+  if (closePhoneModalBtn) {
+    closePhoneModalBtn.addEventListener('click', () => {
+      const modal = document.getElementById('phone-modal');
+      if (modal) modal.classList.add('hidden');
+    });
+  }
+
+  // Copy phone link from modal
+  const copyPhoneLinkBtn = document.getElementById('copy-phone-link-btn');
+  if (copyPhoneLinkBtn) {
+    copyPhoneLinkBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      if (window._destLat !== undefined && window._destLng !== undefined) {
+        const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${window._destLat},${window._destLng}`;
+        navigator.clipboard.writeText(mapsUrl).then(() => {
+          const originalHTML = copyPhoneLinkBtn.innerHTML;
+          copyPhoneLinkBtn.innerHTML = '<i data-lucide="check" style="color:#10b981"></i>';
+          initLucide();
+          setTimeout(() => {
+            copyPhoneLinkBtn.innerHTML = originalHTML;
+            initLucide();
+          }, 1500);
+        }).catch(err => {
+          console.error('Clipboard copy failed:', err);
+        });
+      }
     });
   }
 }
