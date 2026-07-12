@@ -922,8 +922,6 @@ function setupGeolocation() {
     window._lastKnownLat = lat;
     window._lastKnownLng = lng;
 
-    try { fetchSMHIWeather(lat, lng); } catch(e) { console.warn('[GPS] SMHI fetch error:', e.message); }
-
     // Update distance to planned destination
     if (window._destLat !== undefined && window._destLng !== undefined) {
       const dist = userLocation.distanceTo(L.latLng(window._destLat, window._destLng));
@@ -1157,59 +1155,6 @@ function setupGeolocation() {
       gpsStatus('Fel: ' + e.message, { disabled: false });
     }
   });
-}
-
-// --------------------------------------------------------------------------
-// SMHI WEATHER — global scope so onPositionReceived() can call it
-// --------------------------------------------------------------------------
-const SMHI_SYMBOLS = {
-  1:'☀️',2:'🌤️',3:'⛅',4:'🌥️',5:'☁️',6:'☁️',7:'🌫️',
-  8:'🌦️',9:'🌧️',10:'🌧️',11:'⛈️',12:'🌨️',13:'🌨️',14:'🌨️',
-  15:'❄️',16:'❄️',17:'❄️',18:'🌦️',19:'🌦️',20:'🌦️',
-  21:'⛈️',22:'🌨️',23:'🌨️',24:'🌨️',25:'🌨️',26:'🌨️',27:'🌨️'
-};
-function degToCompass(deg) {
-  const dirs = ['N','NNO','NO','ONO','O','OSO','SO','SSO','S','SSV','SV','VSV','V','VNV','NV','NNV'];
-  return dirs[Math.round(deg / 22.5) % 16];
-}
-function windStatusClass(ws) {
-  if (ws < 5) return ['wind-ok',   'Bra'];
-  if (ws < 9) return ['wind-warn', 'Försiktigt'];
-  return             ['wind-bad',  'Flyg ej'];
-}
-async function fetchSMHIWeather(lat, lng) {
-  const url = `https://opendata-download-metfcst.smhi.se/api/category/pmp3g/version/2/geotype/point/lon/${lng.toFixed(6)}/lat/${lat.toFixed(6)}/data.json`;
-  try {
-    const resp = await fetch(url);
-    if (!resp.ok) return;
-    const data = await resp.json();
-    const ts   = data.timeSeries && data.timeSeries[0];
-    if (!ts) return;
-    const get = name => { const p = ts.parameters.find(x => x.name === name); return p ? p.values[0] : null; };
-    const temp = get('t'), ws = get('ws'), wd = get('wd'), sym = get('Wsymb2');
-
-    const card = document.getElementById('weather-card');
-    if (!card) return;
-    card.classList.remove('hidden');
-
-    document.getElementById('weather-symbol').textContent    = SMHI_SYMBOLS[sym] || '🌡️';
-    document.getElementById('weather-temp').textContent       = temp != null ? `${Math.round(temp)}°C` : '--°C';
-    document.getElementById('weather-wind-speed').textContent = ws   != null ? `${ws.toFixed(1)} m/s ${degToCompass(wd)}` : '-- m/s';
-
-    const arrow = document.getElementById('weather-wind-arrow');
-    if (arrow && wd != null) arrow.style.transform = `rotate(${wd}deg)`;
-
-    const [cls, label] = windStatusClass(ws != null ? ws : 0);
-    const statusEl = document.getElementById('weather-wind-status');
-    statusEl.textContent = label;
-    statusEl.className   = `wind-status ${cls}`;
-
-    const now = new Date();
-    document.getElementById('weather-updated').textContent =
-      `${now.getHours().toString().padStart(2,'0')}:${now.getMinutes().toString().padStart(2,'0')}`;
-  } catch (err) {
-    console.warn('[SMHI] Fetch failed:', err.message);
-  }
 }
 
 function checkUserFlightStatus(latLng) {
@@ -2122,9 +2067,6 @@ function setupEventListeners() {
   document.getElementById('open-rules-btn')?.addEventListener('click', () => openModal('rules-modal'));
   document.getElementById('close-rules-modal')?.addEventListener('click', () => closeModal('rules-modal'));
   document.getElementById('rules-modal')?.addEventListener('click', (e) => { if (e.target.id === 'rules-modal') closeModal('rules-modal'); });
-
-  // ── SMHI Väder — setup only (fetchSMHIWeather is global, defined below setupGeolocation) ──
-
 
   // Color Palette Selector buttons
   const paletteBtns = document.querySelectorAll('.palette-btn');

@@ -246,20 +246,6 @@
         <span>Hitta min position (GPS)</span>
       </button>
 
-      <!-- Weather Card (visas när GPS är aktivt) -->
-      <div id="weather-card" class="weather-card hidden">
-        <div class="weather-row">
-          <span id="weather-symbol" class="weather-symbol" title="Väder">⛅</span>
-          <span id="weather-temp" class="weather-temp">--°C</span>
-          <div class="weather-wind">
-            <span id="weather-wind-arrow" class="wind-arrow" title="Vindriktning">↑</span>
-            <span id="weather-wind-speed">-- m/s</span>
-          </div>
-          <span id="weather-wind-status" class="wind-status wind-ok">Bra</span>
-        </div>
-        <div class="weather-source">SMHI · <span id="weather-updated">uppdaterar...</span></div>
-      </div>
-
       <!-- Destination Card (visas när man klickar på kartan) -->
       <div id="destination-card" class="destination-card hidden">
         <div class="dest-header">
@@ -521,72 +507,56 @@
           <h2 id="about-modal-title">Om appen &amp; Datakällor</h2>
         </header>
         <div class="modal-body">
-          <p class="about-p"><strong>Svensk Drönarkarta</strong> är ett modernt, gratis och helt reklamfritt planeringshjälpmedel utvecklat av <strong>Bifrost Outdoors</strong>.</p>
+          <p class="about-p"><strong>Svensk Drönarkarta</strong> är ett gratis och reklamfritt planeringshjälpmedel för drönarflygning i Sverige, utvecklat av <strong>Bifrost Outdoors</strong>.</p>
 
-          <h4 class="about-h4">Bakgrund (Varför appen skapades):</h4>
+          <h4 class="about-h4">Varför skapades appen?</h4>
           <p class="about-desc">
-            Appen uppkom ur ett personligt behov av att vilja följa det svenska regelverket för drönare, men där det visade sig vara extremt svårt att hitta ett samlat verktyg.
-            Särskilt svårt var det att kombinera Naturvårdsverkets gränser för naturreservat med Luftfartsverkets (LFV) flygzoner, och samtidigt se sin egen position i förhållande till dessa områden i realtid.
-            För att lösa detta byggde vi Drönarkarta, komplett med ett inbyggt, radiebaserat geofence.
+            Appen uppkom ur behovet av att enkelt kunna kombinera Luftfartsverkets (LFV) flygzoner med Naturvårdsverkets gränser för naturreservat samt se sin egen position i realtid i förhållande till dessa områden.
           </p>
 
           <h4 class="about-h4">Appens funktioner &amp; verktyg:</h4>
           <ul class="about-ul" style="margin-bottom: 14px;">
-            <li><strong>Allt på samma karta:</strong> Luftfartsverkets luftrumszoner (CTR, R-områden, NOTAM) och Naturvårdsverkets miljöskyddsområden i en och samma vy.</li>
-            <li><strong>Realtids-GPS &amp; Geofence:</strong> Visar din exakta position och ritar en streckad radie runt dig baserat på ditt inställda flygavstånd. Varnar direkt om en zon överlappar.</li>
-            <li><strong>Väder &amp; Vind (SMHI):</strong> Visar vindhastighet, vindriktning och temperatur vid din position direkt från SMHI, med en automatisk bedömning av flygförhållandena.</li>
-            <li><strong>Garmin GPX-export:</strong> Exportera zoner till din Garmin-enhet för att ha koll på restriktioner direkt på handleden eller cykeldatorn ute i fält.</li>
-            <li><strong>Blixtsnabb prestanda:</strong> Naturreservaten är uppdelade per län vilket sparar upp till 95% mobildata och gör att kartan laddar direkt.</li>
+            <li><strong>Allt på samma karta:</strong> Luftrumszoner (CTR, R-områden, NOTAM) och naturreservat i en och samma vy.</li>
+            <li><strong>Realtids-GPS &amp; Geofence:</strong> Visar din position och varnar direkt på skärmen (och med vibrationssignaler i mobilen) om du närmar dig eller befinner dig i restriktionszoner eller naturreservat.</li>
+            <li><strong>Dela flygpunkt:</strong> Skicka dina planerade flygpunkter direkt till Google Maps eller dela till mobilen via en smidig QR-kod/delningslänk.</li>
+            <li><strong>Länsautomatisering:</strong> Reservaten laddas in dynamiskt baserat på var du befinner dig eller planerar att flyga, vilket sparar upp till 95% mobildata.</li>
+            <li><strong>Garmin GPX-export:</strong> Exportera valda restriktionszoner som en GPX-fil för att visa dem direkt på din Garmin-enhet.</li>
+            <li><strong>Offline-stöd (PWA):</strong> Spara nyligen besökta län och kartskikt lokalt så att du har tillgång till dem även i områden utan mobiltäckning.</li>
           </ul>
-
-          <h4 class="about-h4">Hur fungerar Offline-stödet? (PWA):</h4>
-          <p class="about-desc">
-            Appen är byggd som en Progressive Web App (PWA). Genom att välja "Lägg till på startskärmen" i din webbläsare installeras appen lokalt.
-            En inbyggd Service Worker lagrar appens kod och grundläggande resurser i en lokal cache. När du startar appen utan internetanslutning laddas gränssnittet direkt från cachen.
-            Nyligen besökta län (naturreservat och baskartor) sparas i cachen så att du kan planera din flygning även i områden helt utan mobiltäckning.
-          </p>
 
           <h4 class="about-h4">Datakällor &amp; Uppdatering:</h4>
           <ul class="about-ul" style="margin-bottom: 14px;">
             <li><strong>Luftrumszoner &amp; CTR:</strong> Hämtas från Luftfartsverket (LFV) via öppna GIS-tjänster (WFS).</li>
             <li><strong>Naturreservat:</strong> Hämtas från Naturvårdsverket (Skyddad Natur).</li>
-            <li><strong>Uppdateringsfrekvens:</strong> All geografisk data uppdateras automatiskt <strong>en gång i veckan</strong> (varje måndag kl. 04:00 UTC) genom en automatisk byggprocess på GitHub.</li>
-            <li><strong>Väderdata:</strong> Hämtas i realtid via SMHI:s öppna prognos-API (PMP3G) baserat på din GPS-position.</li>
+            <li><strong>Uppdateringsfrekvens:</strong> Geografisk data uppdateras automatiskt en gång i veckan (måndagar kl. 04:00 UTC).</li>
             <li><strong>Senaste hämtning:</strong> <span id="last-update-date" style="color: var(--primary); font-weight: bold;">Laddar...</span></li>
           </ul>
 
-          <h4 class="about-h4">Stöd appens utveckling:</h4>
-          <p class="about-desc">
-            Drönarkarta.se drivs helt utan vinstintresse eller reklam för att hålla kartbilden ren och användbar.
-            Om du uppskattar appen och vill hjälpa oss att täcka kostnader för servrar, domän och vidareutveckling får du jättegärna skicka en valfri donation via Swish-knappen i menyn.
+          <h4 class="about-h4">Integritet &amp; Statistik:</h4>
+          <p class="about-desc" style="margin-bottom: 14px;">
+            Vi använder det integritetsfokuserade statistikverktyget <strong>Robinsignals.com</strong> för att analysera sajtens användning och serverbelastning. Verktyget samlar <strong>inte</strong> in några personuppgifter, IP-adresser eller GPS-koordinater, och använder <strong>inga cookies</strong>. Din integritet är till 100% skyddad.
           </p>
 
           <h4 class="about-h4">⚠️ Juridisk Ansvarsfriskrivning:</h4>
           <p class="about-desc" style="margin-bottom: 14px;">
-            Denna applikation är <strong>enbart avsedd som ett planeringshjälpmedel</strong>. Kartan är inte en certifierad flyginformationstjänst. Det är alltid drönarpilotens/operatörens personliga och odelbara ansvar att kontrollera gällande regler och lokala föreskrifter inför varje enskild flygning.
+            Tjänsten är enbart ett <strong>planeringshjälpmedel</strong> och ingen certifierad flyginformationstjänst. Det är alltid drönarpilotens/operatörens personliga ansvar att kontrollera gällande regler inför varje enskild flygning.
           </p>
           <p class="about-desc" style="border-left: 2px solid rgba(239, 68, 68, 0.6); padding-left: 8px; font-size: 0.75rem; line-height: 1.4; margin-bottom: 14px;">
-            Utvecklarna av denna tjänst <strong>friskriver sig helt från allt ansvar</strong> för eventuella överträdelser av Transportstyrelsens föreskrifter, EU-förordningar eller andra tillämpliga lagar.
-            Vi friskriver oss vidare helt från allt ansvar för eventuella tillbud, olyckor, personskador, materiella skador, böter eller andra konsekvenser som uppstår till följd av användningen av kartan, geofencing-varningar, GPX-exporter eller andra funktioner i appen.
+            Utvecklarna friskriver sig helt från ansvar för eventuella regelöverträdelser (t.ex. TSFS 2017:110 eller EU 2019/947) samt alla typer av olyckor, skador eller böter som uppstår i samband med användningen av denna karta.
           </p>
 
           <h4 class="about-h4">Myndighetskontakt:</h4>
           <div class="contact-card">
             <p class="contact-name">Luftfartsverket (LFV)</p>
-            <p>Tel: <a href="tel:011-192000">011-19 20 00</a></p>
-            <p>E-post: <a href="mailto:lfv@lfv.se">lfv@lfv.se</a></p>
-            <p>Briefing: <a href="https://aro.lfv.se" target="_blank" rel="noopener">aro.lfv.se</a></p>
+            <p>Tel: <a href="tel:011-192000">011-19 20 00</a> · E-post: <a href="mailto:lfv@lfv.se">lfv@lfv.se</a> · Webb: <a href="https://aro.lfv.se" target="_blank" rel="noopener">aro.lfv.se</a></p>
           </div>
           <div class="contact-card">
             <p class="contact-name">Transportstyrelsen (Luftfart)</p>
-            <p>Tel: <a href="tel:0771-503503">0771-503 503</a></p>
-            <p>E-post: <a href="mailto:luftfart@transportstyrelsen.se">luftfart@transportstyrelsen.se</a></p>
-            <p>Webb: <a href="https://transportstyrelsen.se/dronare" target="_blank" rel="noopener">transportstyrelsen.se/dronare</a></p>
+            <p>Tel: <a href="tel:0771-503503">0771-503 503</a> · E-post: <a href="mailto:luftfart@transportstyrelsen.se">luftfart@transportstyrelsen.se</a> · Webb: <a href="https://transportstyrelsen.se/dronare" target="_blank" rel="noopener">transportstyrelsen.se/dronare</a></p>
           </div>
           <div class="contact-card">
             <p class="contact-name">Naturvårdsverket</p>
-            <p>Tel: <a href="tel:010-6981000">010-698 10 00</a></p>
-            <p>E-post: <a href="mailto:registrator@naturvardsverket.se">registrator@naturvardsverket.se</a></p>
+            <p>Tel: <a href="tel:010-6981000">010-698 10 00</a> · E-post: <a href="mailto:registrator@naturvardsverket.se">registrator@naturvardsverket.se</a></p>
           </div>
         </div>
       </div>
