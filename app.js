@@ -2236,8 +2236,6 @@ function setupEventListeners() {
     applyConsent(savedConsent === 'granted');
   } else {
     // Show banner after short delay so app loads first
-    // TEMPORARILY DISABLED: Not using GA4 currently
-    /*
     setTimeout(() => {
       const banner = document.getElementById('cookie-banner');
       if (banner) {
@@ -2245,7 +2243,6 @@ function setupEventListeners() {
         initLucide();
       }
     }, 800);
-    */
   }
 
   // Accept buttons
