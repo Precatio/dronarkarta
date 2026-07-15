@@ -13,6 +13,7 @@ let zoneLayers = [];
 let allFeatures = [];
 let nationalFeatures = [];
 let currentCountyReserves = [];
+let rwy5kCodes = new Set();
 let userLocation = null;
 let userMarker = null;
 let destinationMarker = null;
@@ -430,12 +431,14 @@ async function loadAllAirspaceData() {
   const listContainer = document.getElementById('zones-list');
   try {
     // Load all LFV national datasets (Sweden-wide) + update metadata in parallel
-    const [uasRes, ctrRes, rstaRes, arpRes, supRes, metaRes] = await Promise.all([
+    const [uasRes, ctrRes, rstaRes, arpRes, supRes, helipadsRes, rwy5kRes, metaRes] = await Promise.all([
       fetch('./uas_zones_ED318.json').then(r => r.json()).catch(() => ({ features: [] })),
       fetch('./data/ctrs_sverige.json').then(r => r.json()).catch(() => ({ features: [] })),
       fetch('./data/rsta_sverige.json').then(r => r.json()).catch(() => ({ features: [] })),
       fetch('./data/airports_sverige.json').then(r => r.json()).catch(() => ({ features: [] })),
       fetch('./data/supplements_sverige.json').then(r => r.json()).catch(() => ({ features: [] })),
+      fetch('./data/helipads_sverige.json').then(r => r.json()).catch(() => ({ features: [] })),
+      fetch('./data/rwy5k_sverige.json').then(r => r.json()).catch(() => ({ features: [] })),
       fetch('./data/last_update.json').then(r => r.json()).catch(() => null)
     ]);
 
@@ -471,13 +474,24 @@ async function loadAllAirspaceData() {
     const supFeatures = supRes.features || [];
     supFeatures.forEach(f => f.properties.source = 'sup');
 
+    const helipadsFeatures = helipadsRes.features || [];
+    helipadsFeatures.forEach(f => f.properties.source = 'hkp');
+
+    const rwy5kFeatures = rwy5kRes.features || [];
+    rwy5kFeatures.forEach(f => f.properties.source = 'rwy5k');
+
+    // Populate the set of airport codes that have precise runway buffer geometries
+    rwy5kCodes = new Set(rwy5kFeatures.map(f => f.properties.indicator).filter(Boolean));
+
     // Save as national features
     nationalFeatures = [
       ...uasFeatures,
       ...ctrFeatures,
       ...rstaFeatures,
       ...arpFeatures,
-      ...supFeatures
+      ...supFeatures,
+      ...helipadsFeatures,
+      ...rwy5kFeatures
     ];
     
     console.log(`Laddade ${nationalFeatures.length} nationella luftrum och zoner.`);
@@ -539,6 +553,7 @@ function renderZones() {
     if (source === 'arp') {
       const coordinates = feature.geometry.coordinates; // [lng, lat]
       const airportLatLng = [coordinates[1], coordinates[0]];
+      const code = feature.properties.indicator || '';
 
       // 1. Create airport DivIcon marker (Red bubble)
       const planeIcon = L.divIcon({
@@ -554,15 +569,18 @@ function renderZones() {
         alt: `Flygplats: ${name}`
       });
 
-      // 2. Create 5km airport protection area circle (Red)
-      const warningCircle = L.circle(airportLatLng, {
-        radius: 5000,
-        color: '#ef4444',
-        fillColor: '#ef4444',
-        fillOpacity: 0.04,
-        weight: 1.5,
-        dashArray: '5, 5'
-      });
+      // 2. Create 5km airport protection area circle (Red) - Only if we do NOT have a precise runway buffer polygon
+      let warningCircle = null;
+      if (!rwy5kCodes.has(code)) {
+        warningCircle = L.circle(airportLatLng, {
+          radius: 5000,
+          color: '#ef4444',
+          fillColor: '#ef4444',
+          fillOpacity: 0.04,
+          weight: 1.5,
+          dashArray: '5, 5'
+        });
+      }
 
       const popupContent = createPopupContent(feature);
       
@@ -583,16 +601,16 @@ function renderZones() {
       };
 
       setupClick(marker);
-      setupClick(warningCircle);
-
       marker.addTo(map);
-      warningCircle.addTo(map);
-      
       marker.feature = feature;
-      warningCircle.feature = feature;
-
       zoneLayers.push(marker);
-      zoneLayers.push(warningCircle);
+
+      if (warningCircle) {
+        setupClick(warningCircle);
+        warningCircle.addTo(map);
+        warningCircle.feature = feature;
+        zoneLayers.push(warningCircle);
+      }
       return;
     }
 
@@ -676,6 +694,16 @@ function getZoneStyle(type, source) {
     color = '#ef4444'; // Red
     fillOpacity = 0.22;
     weight = 3;
+    dashArray = '5, 5';
+  } else if (source === 'rwy5k') {
+    color = '#ef4444'; // Red
+    fillOpacity = 0.04;
+    weight = 1.5;
+    dashArray = '5, 5';
+  } else if (source === 'hkp') {
+    color = '#ef4444'; // Red
+    fillOpacity = 0.06;
+    weight = 1.5;
     dashArray = '5, 5';
   } else {
     // Original UAS zones
@@ -778,13 +806,44 @@ function createPopupContent(feature) {
   // 3. LFV ARP Airport marker popup content
   if (source === 'arp') {
     const code = feature.properties.indicator || '';
+    const hasPreciseZone = rwy5kCodes.has(code);
     return `
       <div class="popup-zone-details">
-        <span class="popup-zone-tag tag-auth">Flygplats / Heliport</span>
+        <span class="popup-zone-tag tag-auth">Flygplats (Trafikpunkt)</span>
         <h4>${name}</h4>
         ${code ? `<p><strong>Flygplatskod:</strong> ${code}</p>` : ''}
-        <p><strong>Skyddszon:</strong> 5 km radie (röd streckad linje)</p>
-        <p><strong>Regler:</strong> Flygning inom 5 km kräver tillstånd, alternativt är maxhöjden begränsad till 50 m AGL (10 m för heliportar) om ingen CTR är aktiv.</p>
+        <p><strong>Skyddszon:</strong> ${hasPreciseZone ? 'Exakt skyddszon ritas som röd streckad yta.' : '5 km radie (röd streckad linje)'}</p>
+        <p><strong>Regler:</strong> Flygning närmare än 5 km från flygplatsens banor kräver tillstånd från flygtrafikledningen (ATC) om en kontrollzon (CTR) är aktiv. Om du befinner dig i en aktiv kontrollzon men mer än 5 km från banorna får du flyga utan tillstånd upp till 50 m AGL (för drönare under 7 kg och max 90 km/h).</p>
+      </div>
+    `;
+  }
+
+  // 3b. LFV HKP Helipad popup content
+  if (source === 'hkp') {
+    const code = feature.properties.indicator || '';
+    const comment = feature.properties.comment || '';
+    return `
+      <div class="popup-zone-details">
+        <span class="popup-zone-tag tag-auth">Helikopterflygplats (1 km)</span>
+        <h4>${name}</h4>
+        ${code ? `<p><strong>Helikopterflygplatskod:</strong> ${code}</p>` : ''}
+        <p><strong>Skyddszon:</strong> 1 km radie (röd streckad linje)</p>
+        <p><strong>Regler:</strong> Flygning närmare än 1 000 meter från helikopterflygplatsen kräver samråd med helikopterflygplatsen innan flygning. Om du befinner dig i en aktiv kontrollzon (CTR) men mer än 1 000 meter från helikopterflygplatsen får du flyga utan tillstånd upp till 10 m AGL.</p>
+        ${comment ? `<p><strong>Information:</strong> ${comment}</p>` : ''}
+      </div>
+    `;
+  }
+
+  // 3c. LFV Runway Protection Zone (RWY5K) popup content
+  if (source === 'rwy5k') {
+    const code = feature.properties.indicator || '';
+    return `
+      <div class="popup-zone-details">
+        <span class="popup-zone-tag tag-auth">Skyddszon Landningsbana (5 km)</span>
+        <h4>${name}</h4>
+        ${code ? `<p><strong>Flygplatskod:</strong> ${code}</p>` : ''}
+        <p><strong>Skyddszon:</strong> 5 km från banorna (röd streckad linje)</p>
+        <p><strong>Regler:</strong> Denna zon täcker området inom 5 km från flygplatsens landningsbanor. Flygning inom denna zon kräver tillstånd från flygtrafikledningen (ATC) när kontrollzonen är aktiv.</p>
       </div>
     `;
   }
@@ -1192,32 +1251,62 @@ function checkUserFlightStatus(latLng) {
     const zoneNames = insideOtherAuth.map(z => getFeatureName(z)).join(', ');
     statusDesc.innerHTML = `Du befinner dig inom restriktionszon: <strong>${zoneNames}</strong>. Du MÅSTE ha tillstånd från ansvarig myndighet innan flygning!`;
   } else if (insideCTR.length > 0) {
-    // Inside CTR: Calculate distance to the nearest airport center (ARP)
-    const airports = allFeatures.filter(z => z.properties.source === 'arp');
-    let nearestAirport = null;
-    let minAirportDist = Infinity;
-    
-    airports.forEach(airport => {
-      const airportLatLng = L.latLng(airport.geometry.coordinates[1], airport.geometry.coordinates[0]);
-      const dist = latLng.distanceTo(airportLatLng);
-      if (dist < minAirportDist) {
-        minAirportDist = dist;
-        nearestAirport = airport;
-      }
-    });
-
+    // Inside CTR: Determine if we are within 5km of the runways
     const ctrNames = insideCTR.map(z => getFeatureName(z)).join(', ');
+    
+    // Check if the user is inside any precise runway protection zone polygons (source === 'rwy5k')
+    const insideRwy5k = insideZones.filter(z => z.properties.source === 'rwy5k');
+    
+    let isWithin5k = false;
+    let distanceStr = '';
+    
+    if (insideRwy5k.length > 0) {
+      isWithin5k = true;
+      distanceStr = 'inom skyddszonen';
+    } else {
+      // Fallback: Check distance to nearest airport ARP
+      const airports = allFeatures.filter(z => z.properties.source === 'arp');
+      let nearestAirport = null;
+      let minAirportDist = Infinity;
+      
+      airports.forEach(airport => {
+        const airportLatLng = L.latLng(airport.geometry.coordinates[1], airport.geometry.coordinates[0]);
+        const dist = latLng.distanceTo(airportLatLng);
+        if (dist < minAirportDist) {
+          minAirportDist = dist;
+          nearestAirport = airport;
+        }
+      });
+      
+      const code = nearestAirport?.properties.indicator || '';
+      if (rwy5kCodes.has(code)) {
+        // If the nearest airport has a precise zone, but we are NOT inside it, then we are outside 5km
+        isWithin5k = false;
+        // Estimate distance to nearest runway boundary (using the rwy5k polygon)
+        const rwyFeat = allFeatures.find(z => z.properties.source === 'rwy5k' && z.properties.indicator === code);
+        if (rwyFeat) {
+          const distToRwyZone = calculateDistanceToFeature(latLng, rwyFeat);
+          distanceStr = `ca ${(distToRwyZone/1000 + 5.0).toFixed(1)} km`; // approximate distance to runway
+        } else {
+          distanceStr = `${(minAirportDist/1000).toFixed(1)} km`;
+        }
+      } else {
+        // Standard circle fallback
+        isWithin5k = minAirportDist <= 5000;
+        distanceStr = `${(minAirportDist/1000).toFixed(2)} km`;
+      }
+    }
 
-    if (minAirportDist <= 5000) {
+    if (isWithin5k) {
       // Within 5km of the airport in CTR -> Restricted!
       statusCard.classList.add('status-restricted');
       statusTitle.innerText = 'Kräver tillstånd (Inom 5 km från flygplats)';
-      statusDesc.innerHTML = `Du befinner dig i <strong>${ctrNames}</strong> och är endast ${(minAirportDist/1000).toFixed(2)} km från flygplatsens banor. Flygning kräver särskilt tillstånd från flygtrafikledningen (ATC).`;
+      statusDesc.innerHTML = `Du befinner dig i <strong>${ctrNames}</strong> och är ${distanceStr} från flygplatsens banor. Flygning kräver särskilt tillstånd från flygtrafikledningen (ATC).`;
     } else {
-      // Outside 5km in CTR -> Warning/Conditional (allows flying up to 50m AGL under TSFS 2020:87)
+      // Outside 5km in CTR -> Warning/Conditional (allows flying up to 50m AGL under TSFS 2020:87 / TSFS 2021:130)
       statusCard.classList.add('status-warning'); // Amber color card
       statusTitle.innerText = 'CTR Villkor: Max 50 m höjd';
-      statusDesc.innerHTML = `Du befinner dig i <strong>${ctrNames}</strong> och är ${(minAirportDist/1000).toFixed(1)} km från banorna. Du får flyga upp till <strong>50 meter över marken (AGL)</strong> utan godkännande, förutsatt att drönaren väger &lt; 7 kg och hastighet &lt; 90 km/h.`;
+      statusDesc.innerHTML = `Du befinner dig i <strong>${ctrNames}</strong> och är mer än 5 km från banorna (avstånd: ${distanceStr}). Du får flyga upp till <strong>50 meter över marken (AGL)</strong> utan godkännande, förutsatt att drönaren väger &lt; 7 kg och hastighet &lt; 90 km/h.`;
     }
   } else if (insideCond.length > 0) {
     // Inside Nature Reserve or Hospital zones
@@ -1246,6 +1335,9 @@ function isPointInsideFeature(latLng, feature) {
 
   // Draw 5km warning zones around Airport points
   if (geom.type === 'Point' && feature.properties.source === 'arp') {
+    if (rwy5kCodes.has(feature.properties.indicator)) {
+      return false; // Skip circular buffer because we have the precise runway buffer polygon
+    }
     const center = L.latLng(geom.coordinates[1], geom.coordinates[0]);
     const dist = latLng.distanceTo(center);
     return dist <= 5000; // 5 km warning boundary
@@ -1267,7 +1359,7 @@ function isRedZone(type, source) {
   // 'arp' (airport warning circle) and 'ctr' (orange CTR) are NOT hard blocks.
   if (source === 'rsta') return true;  // R-områden (restricted areas)
   if (source === 'sup')  return true;  // Temporary NOTAM restrictions
-  if (type === 'REQ_AUTHORIZATION' && source !== 'arp' && source !== 'ctr') return true;
+  if (type === 'REQ_AUTHORIZATION' && source !== 'arp' && source !== 'ctr' && source !== 'rwy5k' && source !== 'hkp') return true;
   return false;
 }
 
@@ -1282,6 +1374,9 @@ function isCoordinateInRedZone(latLng) {
 
     // Handle airport warning area circle (RED)
     if (source === 'arp') {
+      if (rwy5kCodes.has(feature.properties.indicator)) {
+        return false; // Skip circular buffer because we have the precise runway buffer polygon
+      }
       const coords = feature.geometry.coordinates;
       const dist = latLng.distanceTo(L.latLng(coords[1], coords[0]));
       return dist <= 5000; // 5km circle
@@ -1343,7 +1438,9 @@ function calculateDistanceToFeature(latLng, feature) {
   if (geom.type === 'Point' && feature.properties.source === 'arp') {
     const center = L.latLng(geom.coordinates[1], geom.coordinates[0]);
     const dist = latLng.distanceTo(center);
-    return Math.max(0, dist - 5000); // Distance to 5km airport zone
+    const code = feature.properties.indicator || '';
+    const radius = rwy5kCodes.has(code) ? 0 : 5000;
+    return Math.max(0, dist - radius); // Distance to airport warning boundary
   }
 
   if (geom.type === 'Polygon') {
@@ -1567,6 +1664,8 @@ function updateLocalZonesList() {
     if (source === 'arp') sourceLabel = 'Flygplats';
     if (source === 'sup') sourceLabel = 'NOTAM';
     if (source === 'nvr') sourceLabel = 'Naturreservat';
+    if (source === 'hkp') sourceLabel = 'Helikopterflygplats';
+    if (source === 'rwy5k') sourceLabel = 'Skyddszon landningsbana';
 
     card.innerHTML = `
       <div class="zone-item-title">${name}</div>
@@ -1696,7 +1795,13 @@ function exportToGpx() {
       desc = `Restriktionsomrade | Plats: ${loc} | Hojd: ${layer.lower}-${layer.upper} ft`;
     } else if (source === 'arp') {
       const code = feature.properties.indicator || '';
-      desc = `Flygplats/Heliport | Kod: ${code} | OBS: 5 km skyddszon`;
+      desc = `Flygplats | Kod: ${code} | OBS: 5 km skyddszon`;
+    } else if (source === 'hkp') {
+      const code = feature.properties.indicator || '';
+      desc = `Helikopterflygplats | Kod: ${code} | OBS: 1 km skyddszon`;
+    } else if (source === 'rwy5k') {
+      const code = feature.properties.indicator || '';
+      desc = `Landningsbana skyddsomrade | Kod: ${code} | OBS: 5 km skyddsomrade`;
     } else if (source === 'sup') {
       desc = `NOTAM/Tillfallig restriktion | Info: ${feature.properties.comment || ''}`;
     } else if (source === 'nvr') {
@@ -1711,8 +1816,10 @@ function exportToGpx() {
       if (feature.geometry.extent && feature.geometry.extent.subType === 'Circle') {
         points = getCirclePoints({ lat: centerLat, lng: centerLng }, feature.geometry.extent.radius);
       } else if (source === 'arp') {
-        // Warning circle around airports
-        points = getCirclePoints({ lat: centerLat, lng: centerLng }, 5000);
+        // Warning circle around airports - only if it does NOT have a precise runway polygon
+        if (!rwy5kCodes.has(feature.properties.indicator)) {
+          points = getCirclePoints({ lat: centerLat, lng: centerLng }, 5000);
+        }
       }
     } else if (feature.geometry.type === 'Polygon') {
       const outerRing = feature.geometry.coordinates[0];
@@ -2303,6 +2410,9 @@ function checkGeofenceAlert(latlng) {
 
     // 1. Point geometries (mostly airports / heliports with circular warning buffers)
     if (zone.geometry.type === 'Point') {
+      if (source === 'arp' && rwy5kCodes.has(zone.properties.indicator)) {
+        continue; // Skip circular buffer because we have the precise runway buffer polygon
+      }
       const centerLng = zone.geometry.coordinates[0];
       const centerLat = zone.geometry.coordinates[1];
       const centerLatLng = L.latLng(centerLat, centerLng);

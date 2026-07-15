@@ -205,6 +205,47 @@ async function start() {
     console.error('Fel vid hämtning av Airports:', e.message);
   }
 
+  // 3b. Fetch Helipads (HKP1K) (All of Sweden)
+  try {
+    console.log('Hämtar helikopterflygplatser skyddszoner (HKP1K) från LFV...');
+    const url = 'https://daim.lfv.se/geoserver/wfs?service=WFS&version=1.1.0&request=GetFeature&typeName=DAIM_TOPO:HKP1K&outputFormat=application/json';
+    const geojson = await fetchJson(url);
+    const features = geojson.features || [];
+    
+    features.forEach(f => {
+      f.properties.name = f.properties.LOCATION || 'Helikopterflygplats';
+      f.properties.type = 'REQ_AUTHORIZATION';
+      f.properties.reason = ['AIR_TRAFFIC'];
+      f.properties.indicator = f.properties.POSITIONIN || '';
+      f.properties.comment = f.properties.COM_SE || '';
+    });
+
+    fs.writeFileSync(path.join(dataDir, 'helipads_sverige.json'), JSON.stringify({ type: 'FeatureCollection', features: features }, null, 2));
+    console.log(`Sparade ${features.length} helikopterflygplatser i data/helipads_sverige.json`);
+  } catch (e) {
+    console.error('Fel vid hämtning av helikopterflygplatser (HKP1K):', e.message);
+  }
+
+  // 3c. Fetch Runway Protection Zones (RWY5K) (All of Sweden)
+  try {
+    console.log('Hämtar landningsbanor skyddszoner (RWY5K) från LFV...');
+    const url = 'https://daim.lfv.se/geoserver/wfs?service=WFS&version=1.1.0&request=GetFeature&typeName=DAIM_TOPO:RWY5K&outputFormat=application/json';
+    const geojson = await fetchJson(url);
+    const features = geojson.features || [];
+    
+    features.forEach(f => {
+      f.properties.name = f.properties.NAMEOFAREA || 'Landningsbana skyddsområde';
+      f.properties.type = 'REQ_AUTHORIZATION';
+      f.properties.reason = ['AIR_TRAFFIC'];
+      f.properties.indicator = f.properties.POSITIONIN || '';
+    });
+
+    fs.writeFileSync(path.join(dataDir, 'rwy5k_sverige.json'), JSON.stringify({ type: 'FeatureCollection', features: features }, null, 2));
+    console.log(`Sparade ${features.length} skyddszoner (RWY5K) i data/rwy5k_sverige.json`);
+  } catch (e) {
+    console.error('Fel vid hämtning av skyddszoner (RWY5K):', e.message);
+  }
+
   // 4. Fetch Temporary restrictions (AIP SUP + Live dynamic NOTAM archive)
   let combinedSupplements = [];
   
