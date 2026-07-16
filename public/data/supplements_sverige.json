@@ -3225,6 +3225,1969 @@
     },
     {
       "type": "Feature",
+      "id": "SUP.39",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                12.79138889,
+                63.68
+              ],
+              [
+                12.89333333,
+                63.66777778
+              ],
+              [
+                12.9,
+                63.64722222
+              ],
+              [
+                12.89111111,
+                63.62111111
+              ],
+              [
+                12.83388889,
+                63.62583333
+              ],
+              [
+                12.81027778,
+                63.64888889
+              ],
+              [
+                12.73083333,
+                63.6575
+              ],
+              [
+                12.79138889,
+                63.68
+              ]
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "the_geom",
+      "properties": {
+        "NAME": "KALLSJÖN WEST UAS",
+        "ID": "ESD878_2",
+        "DESIG": "ESD878",
+        "LOWER": "SFC",
+        "UPPER": "3100",
+        "FROM": "2026-07-23T00:00Z",
+        "TO": "2026-10-23T00:00Z",
+        "SCHEDULE": "23 JUL 2026 - 23 OCT 2026",
+        "COM_SE": "Tillfälliga farliga områden ESD877 Hotagen UAS, ESD878 Kallsjön West UAS, ESD879 Kallsjön North UAS och ESD880 Kallsjön South UAS upprättas för UAS som flyger utom synhåll (BVLOS) med särskilda villkor.",
+        "COM_EN": "Temporary danger areas ESD877 Hotagen UAS, ESD878 Kallsjön West UAS, ESD879 Kallsjön North UAS and ESD880 Kallsjön South UAS established for UAS flying beyond visual line of sight (BVLOS) with special permission.",
+        "URL": "https://aro.lfv.se/content/eaip/AIRAC%20AIP%20AMDT%204-2026_2026_06_11/eSUP/AIP%20SUP%20122-2026_2026_07_23/ES-SUP-sv-SE.html#SUP",
+        "COORD": "",
+        "LOW_UOM": "",
+        "UP_UOM": "ft AMSL",
+        "name": "KALLSJÖN WEST UAS",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "OTHER"
+        ],
+        "comment": "Tillfälliga farliga områden ESD877 Hotagen UAS, ESD878 Kallsjön West UAS, ESD879 Kallsjön North UAS och ESD880 Kallsjön South UAS upprättas för UAS som flyger utom synhåll (BVLOS) med särskilda villkor.",
+        "validFrom": "2026-07-23T00:00Z",
+        "validTo": "2026-10-23T00:00Z",
+        "layer": {
+          "lower": "SFC",
+          "upper": "3100",
+          "uom": "ft AMSL",
+          "lowerReference": "AGL",
+          "upperReference": "AMSL"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SUP.40",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                13.71527778,
+                64.02944444
+              ],
+              [
+                13.87805556,
+                64.00444444
+              ],
+              [
+                13.82416667,
+                63.95694444
+              ],
+              [
+                13.64138889,
+                63.87
+              ],
+              [
+                13.39416667,
+                63.91888889
+              ],
+              [
+                13.46416667,
+                63.99138889
+              ],
+              [
+                13.71527778,
+                64.02944444
+              ]
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "the_geom",
+      "properties": {
+        "NAME": "HOTAGEN UAS",
+        "ID": "ESD877_2",
+        "DESIG": "ESD877",
+        "LOWER": "SFC",
+        "UPPER": "4600",
+        "FROM": "2026-07-23T00:00Z",
+        "TO": "2026-10-23T00:00Z",
+        "SCHEDULE": "23 JUL 2026 - 23 OCT 2026",
+        "COM_SE": "Tillfälliga farliga områden ESD877 Hotagen UAS, ESD878 Kallsjön West UAS, ESD879 Kallsjön North UAS och ESD880 Kallsjön South UAS upprättas för UAS som flyger utom synhåll (BVLOS) med särskilda villkor.",
+        "COM_EN": "Temporary danger areas ESD877 Hotagen UAS, ESD878 Kallsjön West UAS, ESD879 Kallsjön North UAS and ESD880 Kallsjön South UAS established for UAS flying beyond visual line of sight (BVLOS) with special permission.",
+        "URL": "https://aro.lfv.se/content/eaip/AIRAC%20AIP%20AMDT%204-2026_2026_06_11/eSUP/AIP%20SUP%20122-2026_2026_07_23/ES-SUP-sv-SE.html#SUP",
+        "COORD": "",
+        "LOW_UOM": "",
+        "UP_UOM": "ft AMSL",
+        "name": "HOTAGEN UAS",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "OTHER"
+        ],
+        "comment": "Tillfälliga farliga områden ESD877 Hotagen UAS, ESD878 Kallsjön West UAS, ESD879 Kallsjön North UAS och ESD880 Kallsjön South UAS upprättas för UAS som flyger utom synhåll (BVLOS) med särskilda villkor.",
+        "validFrom": "2026-07-23T00:00Z",
+        "validTo": "2026-10-23T00:00Z",
+        "layer": {
+          "lower": "SFC",
+          "upper": "4600",
+          "uom": "ft AMSL",
+          "lowerReference": "AGL",
+          "upperReference": "AMSL"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SUP.41",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                13.39611111,
+                63.48416667
+              ],
+              [
+                13.5575,
+                63.48472222
+              ],
+              [
+                13.57527778,
+                63.41694444
+              ],
+              [
+                13.4,
+                63.41583333
+              ],
+              [
+                13.39611111,
+                63.48416667
+              ]
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "the_geom",
+      "properties": {
+        "NAME": "KALLSJÖN SOUTH UAS",
+        "ID": "ESD880_2",
+        "DESIG": "ESD880",
+        "LOWER": "SFC",
+        "UPPER": "2600",
+        "FROM": "2026-07-23T00:00Z",
+        "TO": "2026-10-23T00:00Z",
+        "SCHEDULE": "23 JUL 2026 - 23 OCT 2026",
+        "COM_SE": "Tillfälliga farliga områden ESD877 Hotagen UAS, ESD878 Kallsjön West UAS, ESD879 Kallsjön North UAS och ESD880 Kallsjön South UAS upprättas för UAS som flyger utom synhåll (BVLOS) med särskilda villkor.",
+        "COM_EN": "Temporary danger areas ESD877 Hotagen UAS, ESD878 Kallsjön West UAS, ESD879 Kallsjön North UAS and ESD880 Kallsjön South UAS established for UAS flying beyond visual line of sight (BVLOS) with special permission.",
+        "URL": "https://aro.lfv.se/content/eaip/AIRAC%20AIP%20AMDT%204-2026_2026_06_11/eSUP/AIP%20SUP%20122-2026_2026_07_23/ES-SUP-sv-SE.html#SUP",
+        "COORD": "",
+        "LOW_UOM": "",
+        "UP_UOM": "ft AMSL",
+        "name": "KALLSJÖN SOUTH UAS",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "OTHER"
+        ],
+        "comment": "Tillfälliga farliga områden ESD877 Hotagen UAS, ESD878 Kallsjön West UAS, ESD879 Kallsjön North UAS och ESD880 Kallsjön South UAS upprättas för UAS som flyger utom synhåll (BVLOS) med särskilda villkor.",
+        "validFrom": "2026-07-23T00:00Z",
+        "validTo": "2026-10-23T00:00Z",
+        "layer": {
+          "lower": "SFC",
+          "upper": "2600",
+          "uom": "ft AMSL",
+          "lowerReference": "AGL",
+          "upperReference": "AMSL"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SUP.42",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                13.66722222,
+                63.71666667
+              ],
+              [
+                13.63027778,
+                63.59166667
+              ],
+              [
+                13.46472222,
+                63.54277778
+              ],
+              [
+                13.25805556,
+                63.65638889
+              ],
+              [
+                13.30138889,
+                63.69944444
+              ],
+              [
+                13.66722222,
+                63.71666667
+              ]
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "the_geom",
+      "properties": {
+        "NAME": "KALLSJÖN NORTH UAS",
+        "ID": "ESD879_2",
+        "DESIG": "ESD879",
+        "LOWER": "SFC",
+        "UPPER": "2800",
+        "FROM": "2026-07-23T00:00Z",
+        "TO": "2026-10-23T00:00Z",
+        "SCHEDULE": "23 JUL 2026 - 23 OCT 2026",
+        "COM_SE": "Tillfälliga farliga områden ESD877 Hotagen UAS, ESD878 Kallsjön West UAS, ESD879 Kallsjön North UAS och ESD880 Kallsjön South UAS upprättas för UAS som flyger utom synhåll (BVLOS) med särskilda villkor.",
+        "COM_EN": "Temporary danger areas ESD877 Hotagen UAS, ESD878 Kallsjön West UAS, ESD879 Kallsjön North UAS and ESD880 Kallsjön South UAS established for UAS flying beyond visual line of sight (BVLOS) with special permission.",
+        "URL": "https://aro.lfv.se/content/eaip/AIRAC%20AIP%20AMDT%204-2026_2026_06_11/eSUP/AIP%20SUP%20122-2026_2026_07_23/ES-SUP-sv-SE.html#SUP",
+        "COORD": "",
+        "LOW_UOM": "",
+        "UP_UOM": "ft AMSL",
+        "name": "KALLSJÖN NORTH UAS",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "OTHER"
+        ],
+        "comment": "Tillfälliga farliga områden ESD877 Hotagen UAS, ESD878 Kallsjön West UAS, ESD879 Kallsjön North UAS och ESD880 Kallsjön South UAS upprättas för UAS som flyger utom synhåll (BVLOS) med särskilda villkor.",
+        "validFrom": "2026-07-23T00:00Z",
+        "validTo": "2026-10-23T00:00Z",
+        "layer": {
+          "lower": "SFC",
+          "upper": "2800",
+          "uom": "ft AMSL",
+          "lowerReference": "AGL",
+          "upperReference": "AMSL"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SUP.43",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                14.75523116,
+                57.75833333
+              ],
+              [
+                14.75192757,
+                57.72245812
+              ],
+              [
+                14.74204862,
+                57.68692841
+              ],
+              [
+                14.72568945,
+                57.65208636
+              ],
+              [
+                14.70300761,
+                57.61826753
+              ],
+              [
+                14.67422153,
+                57.58579761
+              ],
+              [
+                14.63960845,
+                57.55498931
+              ],
+              [
+                14.59950169,
+                57.52613931
+              ],
+              [
+                14.55428752,
+                57.49952548
+              ],
+              [
+                14.50440137,
+                57.4754041
+              ],
+              [
+                14.45032368,
+                57.45400749
+              ],
+              [
+                14.39257523,
+                57.4355417
+              ],
+              [
+                14.33171218,
+                57.42018457
+              ],
+              [
+                14.26832068,
+                57.408084
+              ],
+              [
+                14.20301121,
+                57.39935653
+              ],
+              [
+                14.13641275,
+                57.39408619
+              ],
+              [
+                14.06916667,
+                57.39232375
+              ],
+              [
+                14.00192059,
+                57.39408619
+              ],
+              [
+                13.93532212,
+                57.39935653
+              ],
+              [
+                13.87001266,
+                57.408084
+              ],
+              [
+                13.80662115,
+                57.42018457
+              ],
+              [
+                13.7457581,
+                57.4355417
+              ],
+              [
+                13.68800966,
+                57.45400749
+              ],
+              [
+                13.63393196,
+                57.4754041
+              ],
+              [
+                13.58404581,
+                57.49952548
+              ],
+              [
+                13.53883164,
+                57.52613931
+              ],
+              [
+                13.49872489,
+                57.55498931
+              ],
+              [
+                13.4641118,
+                57.58579761
+              ],
+              [
+                13.43532572,
+                57.61826753
+              ],
+              [
+                13.41264388,
+                57.65208636
+              ],
+              [
+                13.39628471,
+                57.68692841
+              ],
+              [
+                13.38640576,
+                57.72245812
+              ],
+              [
+                13.38310217,
+                57.75833333
+              ],
+              [
+                13.38640576,
+                57.79420855
+              ],
+              [
+                13.39628471,
+                57.82973826
+              ],
+              [
+                13.41264388,
+                57.86458031
+              ],
+              [
+                13.43532572,
+                57.89839914
+              ],
+              [
+                13.4641118,
+                57.93086905
+              ],
+              [
+                13.49872489,
+                57.96167736
+              ],
+              [
+                13.53883164,
+                57.99052735
+              ],
+              [
+                13.58404581,
+                58.01714119
+              ],
+              [
+                13.63393196,
+                58.04126256
+              ],
+              [
+                13.68800966,
+                58.06265918
+              ],
+              [
+                13.7457581,
+                58.08112496
+              ],
+              [
+                13.80662115,
+                58.09648209
+              ],
+              [
+                13.87001266,
+                58.10858266
+              ],
+              [
+                13.93532212,
+                58.11731014
+              ],
+              [
+                14.00192059,
+                58.12258048
+              ],
+              [
+                14.06916667,
+                58.12434291
+              ],
+              [
+                14.13641275,
+                58.12258048
+              ],
+              [
+                14.20301121,
+                58.11731014
+              ],
+              [
+                14.26832068,
+                58.10858266
+              ],
+              [
+                14.33171218,
+                58.09648209
+              ],
+              [
+                14.39257523,
+                58.08112496
+              ],
+              [
+                14.45032368,
+                58.06265918
+              ],
+              [
+                14.50440137,
+                58.04126256
+              ],
+              [
+                14.55428752,
+                58.01714119
+              ],
+              [
+                14.59950169,
+                57.99052735
+              ],
+              [
+                14.63960845,
+                57.96167736
+              ],
+              [
+                14.67422153,
+                57.93086905
+              ],
+              [
+                14.70300761,
+                57.89839914
+              ],
+              [
+                14.72568945,
+                57.86458031
+              ],
+              [
+                14.74204862,
+                57.82973826
+              ],
+              [
+                14.75192757,
+                57.79420855
+              ],
+              [
+                14.75523116,
+                57.75833333
+              ]
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "the_geom",
+      "properties": {
+        "NAME": "HULT",
+        "ID": "ESR715_2",
+        "DESIG": "ESR715",
+        "LOWER": "2200",
+        "UPPER": "FL275",
+        "FROM": "2026-08-12T06:00Z",
+        "TO": "2026-08-12T23:30Z",
+        "SCHEDULE": "12 AUG 2026, 0600-2330 (0500-2230)",
+        "COM_SE": "Det tillfälliga restriktionsområdet ESR715 Hult upprättas för flygverksamhet.",
+        "COM_EN": "The temporary restricted area ESR715 Hult is established for aviation operations.",
+        "URL": "https://aro.lfv.se/content/eaip/AIRAC%20AIP%20AMDT%204-2026_2026_06_11/eSUP/AIP%20SUP%20123-2026_2026_08_11/ES-SUP-sv-SE.html#SUP",
+        "COORD": "A circle with radius 22 NM centered on 574530N 0140409E",
+        "LOW_UOM": "ft AMSL",
+        "UP_UOM": "",
+        "name": "HULT",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "OTHER"
+        ],
+        "comment": "Det tillfälliga restriktionsområdet ESR715 Hult upprättas för flygverksamhet.",
+        "validFrom": "2026-08-12T06:00Z",
+        "validTo": "2026-08-12T23:30Z",
+        "layer": {
+          "lower": "2200",
+          "upper": "FL275",
+          "uom": "ft AMSL",
+          "lowerReference": "AGL",
+          "upperReference": "AMSL"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SUP.44",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                14.75523116,
+                57.75833333
+              ],
+              [
+                14.75192757,
+                57.72245812
+              ],
+              [
+                14.74204862,
+                57.68692841
+              ],
+              [
+                14.72568945,
+                57.65208636
+              ],
+              [
+                14.70300761,
+                57.61826753
+              ],
+              [
+                14.67422153,
+                57.58579761
+              ],
+              [
+                14.63960845,
+                57.55498931
+              ],
+              [
+                14.59950169,
+                57.52613931
+              ],
+              [
+                14.55428752,
+                57.49952548
+              ],
+              [
+                14.50440137,
+                57.4754041
+              ],
+              [
+                14.45032368,
+                57.45400749
+              ],
+              [
+                14.39257523,
+                57.4355417
+              ],
+              [
+                14.33171218,
+                57.42018457
+              ],
+              [
+                14.26832068,
+                57.408084
+              ],
+              [
+                14.20301121,
+                57.39935653
+              ],
+              [
+                14.13641275,
+                57.39408619
+              ],
+              [
+                14.06916667,
+                57.39232375
+              ],
+              [
+                14.00192059,
+                57.39408619
+              ],
+              [
+                13.93532212,
+                57.39935653
+              ],
+              [
+                13.87001266,
+                57.408084
+              ],
+              [
+                13.80662115,
+                57.42018457
+              ],
+              [
+                13.7457581,
+                57.4355417
+              ],
+              [
+                13.68800966,
+                57.45400749
+              ],
+              [
+                13.63393196,
+                57.4754041
+              ],
+              [
+                13.58404581,
+                57.49952548
+              ],
+              [
+                13.53883164,
+                57.52613931
+              ],
+              [
+                13.49872489,
+                57.55498931
+              ],
+              [
+                13.4641118,
+                57.58579761
+              ],
+              [
+                13.43532572,
+                57.61826753
+              ],
+              [
+                13.41264388,
+                57.65208636
+              ],
+              [
+                13.39628471,
+                57.68692841
+              ],
+              [
+                13.38640576,
+                57.72245812
+              ],
+              [
+                13.38310217,
+                57.75833333
+              ],
+              [
+                13.38640576,
+                57.79420855
+              ],
+              [
+                13.39628471,
+                57.82973826
+              ],
+              [
+                13.41264388,
+                57.86458031
+              ],
+              [
+                13.43532572,
+                57.89839914
+              ],
+              [
+                13.4641118,
+                57.93086905
+              ],
+              [
+                13.49872489,
+                57.96167736
+              ],
+              [
+                13.53883164,
+                57.99052735
+              ],
+              [
+                13.58404581,
+                58.01714119
+              ],
+              [
+                13.63393196,
+                58.04126256
+              ],
+              [
+                13.68800966,
+                58.06265918
+              ],
+              [
+                13.7457581,
+                58.08112496
+              ],
+              [
+                13.80662115,
+                58.09648209
+              ],
+              [
+                13.87001266,
+                58.10858266
+              ],
+              [
+                13.93532212,
+                58.11731014
+              ],
+              [
+                14.00192059,
+                58.12258048
+              ],
+              [
+                14.06916667,
+                58.12434291
+              ],
+              [
+                14.13641275,
+                58.12258048
+              ],
+              [
+                14.20301121,
+                58.11731014
+              ],
+              [
+                14.26832068,
+                58.10858266
+              ],
+              [
+                14.33171218,
+                58.09648209
+              ],
+              [
+                14.39257523,
+                58.08112496
+              ],
+              [
+                14.45032368,
+                58.06265918
+              ],
+              [
+                14.50440137,
+                58.04126256
+              ],
+              [
+                14.55428752,
+                58.01714119
+              ],
+              [
+                14.59950169,
+                57.99052735
+              ],
+              [
+                14.63960845,
+                57.96167736
+              ],
+              [
+                14.67422153,
+                57.93086905
+              ],
+              [
+                14.70300761,
+                57.89839914
+              ],
+              [
+                14.72568945,
+                57.86458031
+              ],
+              [
+                14.74204862,
+                57.82973826
+              ],
+              [
+                14.75192757,
+                57.79420855
+              ],
+              [
+                14.75523116,
+                57.75833333
+              ]
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "the_geom",
+      "properties": {
+        "NAME": "HULT",
+        "ID": "ESR715_3",
+        "DESIG": "ESR715",
+        "LOWER": "2200",
+        "UPPER": "FL275",
+        "FROM": "2026-08-13T06:00Z",
+        "TO": "2026-08-13T14:00Z",
+        "SCHEDULE": "13 AUG 2026, 0600-1400 (0500-1300)",
+        "COM_SE": "Det tillfälliga restriktionsområdet ESR715 Hult upprättas för flygverksamhet.",
+        "COM_EN": "The temporary restricted area ESR715 Hult is established for aviation operations.",
+        "URL": "https://aro.lfv.se/content/eaip/AIRAC%20AIP%20AMDT%204-2026_2026_06_11/eSUP/AIP%20SUP%20123-2026_2026_08_11/ES-SUP-sv-SE.html#SUP",
+        "COORD": "A circle with radius 22 NM centered on 574530N 0140409E",
+        "LOW_UOM": "ft AMSL",
+        "UP_UOM": "",
+        "name": "HULT",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "OTHER"
+        ],
+        "comment": "Det tillfälliga restriktionsområdet ESR715 Hult upprättas för flygverksamhet.",
+        "validFrom": "2026-08-13T06:00Z",
+        "validTo": "2026-08-13T14:00Z",
+        "layer": {
+          "lower": "2200",
+          "upper": "FL275",
+          "uom": "ft AMSL",
+          "lowerReference": "AGL",
+          "upperReference": "AMSL"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SUP.45",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                14.75523116,
+                57.75833333
+              ],
+              [
+                14.75192757,
+                57.72245812
+              ],
+              [
+                14.74204862,
+                57.68692841
+              ],
+              [
+                14.72568945,
+                57.65208636
+              ],
+              [
+                14.70300761,
+                57.61826753
+              ],
+              [
+                14.67422153,
+                57.58579761
+              ],
+              [
+                14.63960845,
+                57.55498931
+              ],
+              [
+                14.59950169,
+                57.52613931
+              ],
+              [
+                14.55428752,
+                57.49952548
+              ],
+              [
+                14.50440137,
+                57.4754041
+              ],
+              [
+                14.45032368,
+                57.45400749
+              ],
+              [
+                14.39257523,
+                57.4355417
+              ],
+              [
+                14.33171218,
+                57.42018457
+              ],
+              [
+                14.26832068,
+                57.408084
+              ],
+              [
+                14.20301121,
+                57.39935653
+              ],
+              [
+                14.13641275,
+                57.39408619
+              ],
+              [
+                14.06916667,
+                57.39232375
+              ],
+              [
+                14.00192059,
+                57.39408619
+              ],
+              [
+                13.93532212,
+                57.39935653
+              ],
+              [
+                13.87001266,
+                57.408084
+              ],
+              [
+                13.80662115,
+                57.42018457
+              ],
+              [
+                13.7457581,
+                57.4355417
+              ],
+              [
+                13.68800966,
+                57.45400749
+              ],
+              [
+                13.63393196,
+                57.4754041
+              ],
+              [
+                13.58404581,
+                57.49952548
+              ],
+              [
+                13.53883164,
+                57.52613931
+              ],
+              [
+                13.49872489,
+                57.55498931
+              ],
+              [
+                13.4641118,
+                57.58579761
+              ],
+              [
+                13.43532572,
+                57.61826753
+              ],
+              [
+                13.41264388,
+                57.65208636
+              ],
+              [
+                13.39628471,
+                57.68692841
+              ],
+              [
+                13.38640576,
+                57.72245812
+              ],
+              [
+                13.38310217,
+                57.75833333
+              ],
+              [
+                13.38640576,
+                57.79420855
+              ],
+              [
+                13.39628471,
+                57.82973826
+              ],
+              [
+                13.41264388,
+                57.86458031
+              ],
+              [
+                13.43532572,
+                57.89839914
+              ],
+              [
+                13.4641118,
+                57.93086905
+              ],
+              [
+                13.49872489,
+                57.96167736
+              ],
+              [
+                13.53883164,
+                57.99052735
+              ],
+              [
+                13.58404581,
+                58.01714119
+              ],
+              [
+                13.63393196,
+                58.04126256
+              ],
+              [
+                13.68800966,
+                58.06265918
+              ],
+              [
+                13.7457581,
+                58.08112496
+              ],
+              [
+                13.80662115,
+                58.09648209
+              ],
+              [
+                13.87001266,
+                58.10858266
+              ],
+              [
+                13.93532212,
+                58.11731014
+              ],
+              [
+                14.00192059,
+                58.12258048
+              ],
+              [
+                14.06916667,
+                58.12434291
+              ],
+              [
+                14.13641275,
+                58.12258048
+              ],
+              [
+                14.20301121,
+                58.11731014
+              ],
+              [
+                14.26832068,
+                58.10858266
+              ],
+              [
+                14.33171218,
+                58.09648209
+              ],
+              [
+                14.39257523,
+                58.08112496
+              ],
+              [
+                14.45032368,
+                58.06265918
+              ],
+              [
+                14.50440137,
+                58.04126256
+              ],
+              [
+                14.55428752,
+                58.01714119
+              ],
+              [
+                14.59950169,
+                57.99052735
+              ],
+              [
+                14.63960845,
+                57.96167736
+              ],
+              [
+                14.67422153,
+                57.93086905
+              ],
+              [
+                14.70300761,
+                57.89839914
+              ],
+              [
+                14.72568945,
+                57.86458031
+              ],
+              [
+                14.74204862,
+                57.82973826
+              ],
+              [
+                14.75192757,
+                57.79420855
+              ],
+              [
+                14.75523116,
+                57.75833333
+              ]
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "the_geom",
+      "properties": {
+        "NAME": "HULT",
+        "ID": "ESR715_1",
+        "DESIG": "ESR715",
+        "LOWER": "2200",
+        "UPPER": "FL185",
+        "FROM": "2026-08-11T06:00Z",
+        "TO": "2026-08-11T20:00Z",
+        "SCHEDULE": "11 AUG 2026, 0600-2000 (0500-1900)",
+        "COM_SE": "Det tillfälliga restriktionsområdet ESR715 Hult upprättas för flygverksamhet.",
+        "COM_EN": "The temporary restricted area ESR715 Hult is established for aviation operations.",
+        "URL": "https://aro.lfv.se/content/eaip/AIRAC%20AIP%20AMDT%204-2026_2026_06_11/eSUP/AIP%20SUP%20123-2026_2026_08_11/ES-SUP-sv-SE.html#SUP",
+        "COORD": "A circle with radius 22 NM centered on 574530N 0140409E",
+        "LOW_UOM": "ft AMSL",
+        "UP_UOM": "",
+        "name": "HULT",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "OTHER"
+        ],
+        "comment": "Det tillfälliga restriktionsområdet ESR715 Hult upprättas för flygverksamhet.",
+        "validFrom": "2026-08-11T06:00Z",
+        "validTo": "2026-08-11T20:00Z",
+        "layer": {
+          "lower": "2200",
+          "upper": "FL185",
+          "uom": "ft AMSL",
+          "lowerReference": "AGL",
+          "upperReference": "AMSL"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SUP.46",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                13.25731818,
+                54.97222222
+              ],
+              [
+                13.2568576,
+                54.96684094
+              ],
+              [
+                13.25548027,
+                54.96151148
+              ],
+              [
+                13.25319946,
+                54.95628518
+              ],
+              [
+                13.25003715,
+                54.95121235
+              ],
+              [
+                13.24602377,
+                54.94634186
+              ],
+              [
+                13.241198,
+                54.94172062
+              ],
+              [
+                13.23560629,
+                54.93739312
+              ],
+              [
+                13.2293025,
+                54.93340104
+              ],
+              [
+                13.22234735,
+                54.92978284
+              ],
+              [
+                13.2148078,
+                54.92657335
+              ],
+              [
+                13.20675648,
+                54.92380348
+              ],
+              [
+                13.19827092,
+                54.92149991
+              ],
+              [
+                13.18943284,
+                54.91968482
+              ],
+              [
+                13.18032735,
+                54.9183757
+              ],
+              [
+                13.17104215,
+                54.91758515
+              ],
+              [
+                13.16166667,
+                54.91732079
+              ],
+              [
+                13.15229118,
+                54.91758515
+              ],
+              [
+                13.14300598,
+                54.9183757
+              ],
+              [
+                13.1339005,
+                54.91968482
+              ],
+              [
+                13.12506242,
+                54.92149991
+              ],
+              [
+                13.11657685,
+                54.92380348
+              ],
+              [
+                13.10852553,
+                54.92657335
+              ],
+              [
+                13.10098599,
+                54.92978284
+              ],
+              [
+                13.09403083,
+                54.93340104
+              ],
+              [
+                13.08772704,
+                54.93739312
+              ],
+              [
+                13.08213534,
+                54.94172062
+              ],
+              [
+                13.07730956,
+                54.94634186
+              ],
+              [
+                13.07329619,
+                54.95121235
+              ],
+              [
+                13.07013387,
+                54.95628518
+              ],
+              [
+                13.06785307,
+                54.96151148
+              ],
+              [
+                13.06647574,
+                54.96684094
+              ],
+              [
+                13.06601515,
+                54.97222222
+              ],
+              [
+                13.06647574,
+                54.9776035
+              ],
+              [
+                13.06785307,
+                54.98293296
+              ],
+              [
+                13.07013387,
+                54.98815927
+              ],
+              [
+                13.07329619,
+                54.99323209
+              ],
+              [
+                13.07730956,
+                54.99810258
+              ],
+              [
+                13.08213534,
+                55.00272383
+              ],
+              [
+                13.08772704,
+                55.00705133
+              ],
+              [
+                13.09403083,
+                55.0110434
+              ],
+              [
+                13.10098599,
+                55.01466161
+              ],
+              [
+                13.10852553,
+                55.0178711
+              ],
+              [
+                13.11657685,
+                55.02064097
+              ],
+              [
+                13.12506242,
+                55.02294454
+              ],
+              [
+                13.1339005,
+                55.02475962
+              ],
+              [
+                13.14300598,
+                55.02606874
+              ],
+              [
+                13.15229118,
+                55.02685929
+              ],
+              [
+                13.16166667,
+                55.02712366
+              ],
+              [
+                13.17104215,
+                55.02685929
+              ],
+              [
+                13.18032735,
+                55.02606874
+              ],
+              [
+                13.18943284,
+                55.02475962
+              ],
+              [
+                13.19827092,
+                55.02294454
+              ],
+              [
+                13.20675648,
+                55.02064097
+              ],
+              [
+                13.2148078,
+                55.0178711
+              ],
+              [
+                13.22234735,
+                55.01466161
+              ],
+              [
+                13.2293025,
+                55.0110434
+              ],
+              [
+                13.23560629,
+                55.00705133
+              ],
+              [
+                13.241198,
+                55.00272383
+              ],
+              [
+                13.24602377,
+                54.99810258
+              ],
+              [
+                13.25003715,
+                54.99323209
+              ],
+              [
+                13.25319946,
+                54.98815927
+              ],
+              [
+                13.25548027,
+                54.98293296
+              ],
+              [
+                13.2568576,
+                54.9776035
+              ],
+              [
+                13.25731818,
+                54.97222222
+              ]
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "the_geom",
+      "properties": {
+        "NAME": "BALTIC OFFSHORE WIND",
+        "ID": "ESD831_2",
+        "DESIG": "ESD831",
+        "LOWER": "GND",
+        "UPPER": "1100",
+        "FROM": "2026-08-01T00:00Z",
+        "TO": "2026-10-31T23:59Z",
+        "SCHEDULE": "01 AUG – 31 OCT 2026, H24",
+        "COM_SE": "Tillfälligt farligt område ESD831 Baltic Offshore Wind upprättas för UAS som flyger utom synhåll (BVLOS) med särskilda villkor.",
+        "COM_EN": "Temporary danger area ESD831 Baltic Offshore Wind established for UAS flying beyond visual line of sight (BVLOS) with special permission.",
+        "URL": "https://aro.lfv.se/content/eaip/AIRAC%20AIP%20AMDT%204-2026_2026_06_11/eSUP/AIP%20SUP%20124-2026_2026_08_01/ES-SUP-sv-SE.html#SUP",
+        "COORD": "A circle with radius 3.3 NM centred on 545820N 0130942E",
+        "LOW_UOM": "",
+        "UP_UOM": "ft AMSL",
+        "name": "BALTIC OFFSHORE WIND",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "OTHER"
+        ],
+        "comment": "Tillfälligt farligt område ESD831 Baltic Offshore Wind upprättas för UAS som flyger utom synhåll (BVLOS) med särskilda villkor.",
+        "validFrom": "2026-08-01T00:00Z",
+        "validTo": "2026-10-31T23:59Z",
+        "layer": {
+          "lower": "GND",
+          "upper": "1100",
+          "uom": "ft AMSL",
+          "lowerReference": "AGL",
+          "upperReference": "AMSL"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SUP.47",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                18.04805556,
+                59.24944444
+              ],
+              [
+                18.16333333,
+                59.24944444
+              ],
+              [
+                18.09027778,
+                59.21805556
+              ],
+              [
+                18.04805556,
+                59.24944444
+              ]
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "the_geom",
+      "properties": {
+        "NAME": "FARSTA UAS",
+        "ID": "ESD891_Z",
+        "DESIG": "ESD891",
+        "LOWER": "GND",
+        "UPPER": "600",
+        "FROM": "2026-08-17T07:00Z",
+        "TO": "2026-12-31T21:30Z",
+        "SCHEDULE": "17 AUG – 31 DEC 2026, daily 0700 – 2130 (0600 – 2030)",
+        "COM_SE": "Tillfälliga farliga områden ESD891 Farsta UAS, ESD892 Bollmora UAS, ESD893 Skogås UAS, ESD894 Vega UAS och ESD895 Sjödalen UAS upprättas för UAS som flyger utom synhåll (BVLOS).",
+        "COM_EN": "Temporary danger areas ESD891 Farsta UAS, ESD892 Bollmora UAS, ESD893 Skogås UAS, ESD894 Vega UAS and ESD895 Sjödalen UAS established for UAS flying beyond visual line of sight (BVLOS).",
+        "URL": "https://aro.lfv.se/content/eaip/AIRAC%20AIP%20AMDT%204-2026_2026_06_11/eSUP/AIP%20SUP%20125-2026_2026_08_17/ES-SUP-sv-SE.html#SUP",
+        "COORD": "",
+        "LOW_UOM": "",
+        "UP_UOM": "ft AMSL",
+        "name": "FARSTA UAS",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "OTHER"
+        ],
+        "comment": "Tillfälliga farliga områden ESD891 Farsta UAS, ESD892 Bollmora UAS, ESD893 Skogås UAS, ESD894 Vega UAS och ESD895 Sjödalen UAS upprättas för UAS som flyger utom synhåll (BVLOS).",
+        "validFrom": "2026-08-17T07:00Z",
+        "validTo": "2026-12-31T21:30Z",
+        "layer": {
+          "lower": "GND",
+          "upper": "600",
+          "uom": "ft AMSL",
+          "lowerReference": "AGL",
+          "upperReference": "AMSL"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SUP.48",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                18.24472222,
+                59.25694444
+              ],
+              [
+                18.24805556,
+                59.21888889
+              ],
+              [
+                18.14111111,
+                59.24
+              ],
+              [
+                18.16333333,
+                59.24944444
+              ],
+              [
+                18.24472222,
+                59.25694444
+              ]
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "the_geom",
+      "properties": {
+        "NAME": "BOLLMORA UAS",
+        "ID": "ESD892_z",
+        "DESIG": "ESD892",
+        "LOWER": "GND",
+        "UPPER": "600",
+        "FROM": "2026-08-17T07:00Z",
+        "TO": "2026-12-31T21:30Z",
+        "SCHEDULE": "17 AUG – 31 DEC 2026, daily 0700 – 2130 (0600 – 2030)",
+        "COM_SE": "Tillfälliga farliga områden ESD891 Farsta UAS, ESD892 Bollmora UAS, ESD893 Skogås UAS, ESD894 Vega UAS och ESD895 Sjödalen UAS upprättas för UAS som flyger utom synhåll (BVLOS).",
+        "COM_EN": "Temporary danger areas ESD891 Farsta UAS, ESD892 Bollmora UAS, ESD893 Skogås UAS, ESD894 Vega UAS and ESD895 Sjödalen UAS established for UAS flying beyond visual line of sight (BVLOS).",
+        "URL": "https://aro.lfv.se/content/eaip/AIRAC%20AIP%20AMDT%204-2026_2026_06_11/eSUP/AIP%20SUP%20125-2026_2026_08_17/ES-SUP-sv-SE.html#SUP",
+        "COORD": "",
+        "LOW_UOM": "",
+        "UP_UOM": "ft AMSL",
+        "name": "BOLLMORA UAS",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "OTHER"
+        ],
+        "comment": "Tillfälliga farliga områden ESD891 Farsta UAS, ESD892 Bollmora UAS, ESD893 Skogås UAS, ESD894 Vega UAS och ESD895 Sjödalen UAS upprättas för UAS som flyger utom synhåll (BVLOS).",
+        "validFrom": "2026-08-17T07:00Z",
+        "validTo": "2026-12-31T21:30Z",
+        "layer": {
+          "lower": "GND",
+          "upper": "600",
+          "uom": "ft AMSL",
+          "lowerReference": "AGL",
+          "upperReference": "AMSL"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SUP.49",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                18.14111111,
+                59.24
+              ],
+              [
+                18.24805556,
+                59.21888889
+              ],
+              [
+                18.21194444,
+                59.18416667
+              ],
+              [
+                18.1075,
+                59.22555556
+              ],
+              [
+                18.14111111,
+                59.24
+              ]
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "the_geom",
+      "properties": {
+        "NAME": "SKOGÅS UAS",
+        "ID": "ESD893_z",
+        "DESIG": "ESD893",
+        "LOWER": "GND",
+        "UPPER": "600",
+        "FROM": "2026-08-17T07:00Z",
+        "TO": "2026-12-31T21:30Z",
+        "SCHEDULE": "17 AUG – 31 DEC 2026, daily 0700 – 2130 (0600 – 2030)",
+        "COM_SE": "Tillfälliga farliga områden ESD891 Farsta UAS, ESD892 Bollmora UAS, ESD893 Skogås UAS, ESD894 Vega UAS och ESD895 Sjödalen UAS upprättas för UAS som flyger utom synhåll (BVLOS).",
+        "COM_EN": "Temporary danger areas ESD891 Farsta UAS, ESD892 Bollmora UAS, ESD893 Skogås UAS, ESD894 Vega UAS and ESD895 Sjödalen UAS established for UAS flying beyond visual line of sight (BVLOS).",
+        "URL": "https://aro.lfv.se/content/eaip/AIRAC%20AIP%20AMDT%204-2026_2026_06_11/eSUP/AIP%20SUP%20125-2026_2026_08_17/ES-SUP-sv-SE.html#SUP",
+        "COORD": "",
+        "LOW_UOM": "",
+        "UP_UOM": "ft AMSL",
+        "name": "SKOGÅS UAS",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "OTHER"
+        ],
+        "comment": "Tillfälliga farliga områden ESD891 Farsta UAS, ESD892 Bollmora UAS, ESD893 Skogås UAS, ESD894 Vega UAS och ESD895 Sjödalen UAS upprättas för UAS som flyger utom synhåll (BVLOS).",
+        "validFrom": "2026-08-17T07:00Z",
+        "validTo": "2026-12-31T21:30Z",
+        "layer": {
+          "lower": "GND",
+          "upper": "600",
+          "uom": "ft AMSL",
+          "lowerReference": "AGL",
+          "upperReference": "AMSL"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SUP.50",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                18.1075,
+                59.22555556
+              ],
+              [
+                18.21194444,
+                59.18416667
+              ],
+              [
+                18.13361111,
+                59.1725
+              ],
+              [
+                18.05333333,
+                59.20222222
+              ],
+              [
+                18.1075,
+                59.22555556
+              ]
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "the_geom",
+      "properties": {
+        "NAME": "VEGA UAS",
+        "ID": "ESD894_z",
+        "DESIG": "ESD894",
+        "LOWER": "GND",
+        "UPPER": "600",
+        "FROM": "2026-08-17T07:00Z",
+        "TO": "2026-12-31T21:30Z",
+        "SCHEDULE": "17 AUG – 31 DEC 2026, daily 0700 – 2130 (0600 – 2030)",
+        "COM_SE": "Tillfälliga farliga områden ESD891 Farsta UAS, ESD892 Bollmora UAS, ESD893 Skogås UAS, ESD894 Vega UAS och ESD895 Sjödalen UAS upprättas för UAS som flyger utom synhåll (BVLOS).",
+        "COM_EN": "Temporary danger areas ESD891 Farsta UAS, ESD892 Bollmora UAS, ESD893 Skogås UAS, ESD894 Vega UAS and ESD895 Sjödalen UAS established for UAS flying beyond visual line of sight (BVLOS).",
+        "URL": "https://aro.lfv.se/content/eaip/AIRAC%20AIP%20AMDT%204-2026_2026_06_11/eSUP/AIP%20SUP%20125-2026_2026_08_17/ES-SUP-sv-SE.html#SUP",
+        "COORD": "",
+        "LOW_UOM": "",
+        "UP_UOM": "ft AMSL",
+        "name": "VEGA UAS",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "OTHER"
+        ],
+        "comment": "Tillfälliga farliga områden ESD891 Farsta UAS, ESD892 Bollmora UAS, ESD893 Skogås UAS, ESD894 Vega UAS och ESD895 Sjödalen UAS upprättas för UAS som flyger utom synhåll (BVLOS).",
+        "validFrom": "2026-08-17T07:00Z",
+        "validTo": "2026-12-31T21:30Z",
+        "layer": {
+          "lower": "GND",
+          "upper": "600",
+          "uom": "ft AMSL",
+          "lowerReference": "AGL",
+          "upperReference": "AMSL"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SUP.51",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                17.99388889,
+                59.24944444
+              ],
+              [
+                18.04805556,
+                59.24944444
+              ],
+              [
+                18.09027778,
+                59.21805556
+              ],
+              [
+                18.05333333,
+                59.20222222
+              ],
+              [
+                17.99416667,
+                59.22416667
+              ],
+              [
+                17.99388889,
+                59.24944444
+              ]
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "the_geom",
+      "properties": {
+        "NAME": "SJÖDALEN UAS",
+        "ID": "ESD895_z",
+        "DESIG": "ESD895",
+        "LOWER": "GND",
+        "UPPER": "600",
+        "FROM": "2026-08-17T07:00Z",
+        "TO": "2026-12-31T21:30Z",
+        "SCHEDULE": "17 AUG – 31 DEC 2026, daily 0700 – 2130 (0600 – 2030)",
+        "COM_SE": "Tillfälliga farliga områden ESD891 Farsta UAS, ESD892 Bollmora UAS, ESD893 Skogås UAS, ESD894 Vega UAS och ESD895 Sjödalen UAS upprättas för UAS som flyger utom synhåll (BVLOS).",
+        "COM_EN": "Temporary danger areas ESD891 Farsta UAS, ESD892 Bollmora UAS, ESD893 Skogås UAS, ESD894 Vega UAS and ESD895 Sjödalen UAS established for UAS flying beyond visual line of sight (BVLOS).",
+        "URL": "https://aro.lfv.se/content/eaip/AIRAC%20AIP%20AMDT%204-2026_2026_06_11/eSUP/AIP%20SUP%20125-2026_2026_08_17/ES-SUP-sv-SE.html#SUP",
+        "COORD": "",
+        "LOW_UOM": "",
+        "UP_UOM": "ft AMSL",
+        "name": "SJÖDALEN UAS",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "OTHER"
+        ],
+        "comment": "Tillfälliga farliga områden ESD891 Farsta UAS, ESD892 Bollmora UAS, ESD893 Skogås UAS, ESD894 Vega UAS och ESD895 Sjödalen UAS upprättas för UAS som flyger utom synhåll (BVLOS).",
+        "validFrom": "2026-08-17T07:00Z",
+        "validTo": "2026-12-31T21:30Z",
+        "layer": {
+          "lower": "GND",
+          "upper": "600",
+          "uom": "ft AMSL",
+          "lowerReference": "AGL",
+          "upperReference": "AMSL"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SUP.52",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                15.38583333,
+                58.52472222
+              ],
+              [
+                15.70583333,
+                58.49972222
+              ],
+              [
+                15.61972222,
+                58.445
+              ],
+              [
+                15.62194444,
+                58.32805556
+              ],
+              [
+                15.31638889,
+                58.42888889
+              ],
+              [
+                15.38583333,
+                58.52472222
+              ]
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "the_geom",
+      "properties": {
+        "NAME": "SAAB CTR SEKTOR B",
+        "ID": "ESD999_1",
+        "DESIG": "ESD999",
+        "LOWER": "GND",
+        "UPPER": "FL120",
+        "FROM": "2026-08-10T06:30Z",
+        "TO": "2026-08-25T23.59Z",
+        "SCHEDULE": "10 AUG – 25 AUG 2026",
+        "COM_SE": "Med anledning av att Flygvapnet fyller 100 år är det flyguppvisning på Linköping/Malmen flygplats.\n \nUppvisningsområdet är Malmen CTR samt SAAB CTR Sektor B, GND - FL120 (tillfällig vertikal utökning).",
+        "COM_EN": "Due to the Swedish Air Force’s 100th anniversary an air display will take place at Linköping/Malmen aerodrome.\n \nDisplay area is Malmen CTR and SAAB CTR Sector B, GND - FL120 (temporary vertical extension).",
+        "URL": "https://aro.lfv.se/content/eaip/AIRAC AIP AMDT 4-2026_2026_06_11/eSUP/AIP SUP 126-2026_2026_08_10/ES-SUP-sv-SE.html#SUP",
+        "COORD": "",
+        "LOW_UOM": "",
+        "UP_UOM": "",
+        "name": "SAAB CTR SEKTOR B",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "OTHER"
+        ],
+        "comment": "Med anledning av att Flygvapnet fyller 100 år är det flyguppvisning på Linköping/Malmen flygplats.\n \nUppvisningsområdet är Malmen CTR samt SAAB CTR Sektor B, GND - FL120 (tillfällig vertikal utökning).",
+        "validFrom": "2026-08-10T06:30Z",
+        "validTo": "2026-08-25T23.59Z",
+        "layer": {
+          "lower": "GND",
+          "upper": "FL120",
+          "uom": "ft AMSL",
+          "lowerReference": "AGL",
+          "upperReference": "AMSL"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SUP.53",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                15.31638889,
+                58.42888889
+              ],
+              [
+                15.62194444,
+                58.32805556
+              ],
+              [
+                15.49694444,
+                58.22805556
+              ],
+              [
+                15.34,
+                58.2575
+              ],
+              [
+                15.31638889,
+                58.42888889
+              ]
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "the_geom",
+      "properties": {
+        "NAME": "MALMEN CTR",
+        "ID": "ESCF_1",
+        "DESIG": "ESCF",
+        "LOWER": "GND",
+        "UPPER": "FL120",
+        "FROM": "2026-08-10T06:30Z",
+        "TO": "2026-08-25T23.59Z",
+        "SCHEDULE": "10 AUG – 25 AUG 2026",
+        "COM_SE": "Med anledning av att Flygvapnet fyller 100 år är det flyguppvisning på Linköping/Malmen flygplats.\n \nUppvisningsområdet är Malmen CTR samt SAAB CTR Sektor B, GND - FL120 (tillfällig vertikal utökning).",
+        "COM_EN": "Due to the Swedish Air Force’s 100th anniversary an air display will take place at Linköping/Malmen aerodrome.\n \nDisplay area is Malmen CTR and SAAB CTR Sector B, GND - FL120 (temporary vertical extension).",
+        "URL": "https://aro.lfv.se/content/eaip/AIRAC AIP AMDT 4-2026_2026_06_11/eSUP/AIP SUP 126-2026_2026_08_10/ES-SUP-sv-SE.html#SUP",
+        "COORD": "",
+        "LOW_UOM": "",
+        "UP_UOM": "",
+        "name": "MALMEN CTR",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "OTHER"
+        ],
+        "comment": "Med anledning av att Flygvapnet fyller 100 år är det flyguppvisning på Linköping/Malmen flygplats.\n \nUppvisningsområdet är Malmen CTR samt SAAB CTR Sektor B, GND - FL120 (tillfällig vertikal utökning).",
+        "validFrom": "2026-08-10T06:30Z",
+        "validTo": "2026-08-25T23.59Z",
+        "layer": {
+          "lower": "GND",
+          "upper": "FL120",
+          "uom": "ft AMSL",
+          "lowerReference": "AGL",
+          "upperReference": "AMSL"
+        }
+      }
+    },
+    {
+      "type": "Feature",
       "id": "NOTAM.14584",
       "geometry": {
         "type": "Polygon",
