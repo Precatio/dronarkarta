@@ -155,7 +155,7 @@
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
   
   <!-- Lucide Icons -->
-  <script src="https://unpkg.com/lucide@latest" defer></script>
+  <script src="https://unpkg.com/lucide@0.400.0/dist/umd/lucide.min.js" integrity="sha384-8aPDSS8PITpbbP5u/xl0pTc7N8yU/dHjXBQwa2hJzZ2FEFd73n1pK5dSgaIYSZOf" crossorigin="anonymous" defer></script>
   
   <!-- Custom Styling -->
   <link rel="stylesheet" href="./style.css">
@@ -272,6 +272,9 @@
           <div class="header-icon-btns">
             <button id="open-rules-btn" class="header-icon-btn" title="Regler &amp; Flygcompliance" aria-label="Regler">
               <i data-lucide="book-open"></i>
+            </button>
+            <button id="open-updates-btn" class="header-icon-btn" title="Uppdateringar &amp; Nyheter" aria-label="Uppdateringar">
+              <i data-lucide="bell"></i>
             </button>
             <button id="open-about-btn" class="header-icon-btn" title="Om appen &amp; Datakällor" aria-label="Om appen">
               <i data-lucide="info"></i>
@@ -631,6 +634,54 @@
           <div class="contact-card">
             <p class="contact-name">Naturvårdsverket</p>
             <p>Tel: <a href="tel:010-6981000">010-698 10 00</a> · E-post: <a href="mailto:registrator@naturvardsverket.se">registrator@naturvardsverket.se</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Updates Modal -->
+    <div id="updates-modal" class="modal-overlay hidden" role="dialog" aria-modal="true" aria-labelledby="updates-modal-title">
+      <div class="modal-content info-modal-content">
+        <button id="close-updates-modal" class="close-btn" aria-label="Stäng"><i data-lucide="x"></i></button>
+        <header class="modal-header">
+          <i data-lucide="bell" class="modal-header-icon"></i>
+          <h2 id="updates-modal-title">Uppdateringar &amp; Nyheter</h2>
+        </header>
+        <div class="modal-body">
+          <p class="about-p">Här kan du se historiska och senaste uppdateringar av Svensk Drönarkarta.</p>
+          
+          <div class="updates-timeline" style="display: flex; flex-direction: column; gap: 16px; margin-top: 14px;">
+            <div class="update-item" style="border-left: 2px solid var(--primary); padding-left: 12px;">
+              <span class="update-date" style="font-size: 0.8rem; color: var(--primary); font-weight: bold;">Juli 2026 (Nuvarande)</span>
+              <h4 style="margin: 4px 0; color: var(--text-primary);">Säkerhetsuppdatering &amp; Prestandaförbättringar</h4>
+              <p style="font-size: 0.85rem; color: var(--text-secondary); margin: 0; line-height: 1.4;">
+                Hela applikationen har genomgått en omfattande säkerhetsöversyn. XSS-skydd har lagts till för alla zonavläsningar, sökresultat och sidomenyer. Beroenden (Vite/esbuild) har uppdaterats till senaste version för att stänga kända sårbarheter, och externa resurser är nu verifierade med Subresource Integrity (SRI).
+              </p>
+            </div>
+            
+            <div class="update-item" style="border-left: 2px solid var(--text-secondary); padding-left: 12px;">
+              <span class="update-date" style="font-size: 0.8rem; color: var(--text-secondary); font-weight: bold;">Våren 2026</span>
+              <h4 style="margin: 4px 0; color: var(--text-primary);">Exakta landningsbanor (RWY5K) &amp; Helikopterplatser (HKP1K)</h4>
+              <p style="font-size: 0.85rem; color: var(--text-secondary); margin: 0; line-height: 1.4;">
+                Lagt till LFV:s exakta landningsbanor med tillhörande 5 km skyddszoner samt 1 km skyddszoner för helikopterflygplatser i hela Sverige.
+              </p>
+            </div>
+
+            <div class="update-item" style="border-left: 2px solid var(--text-secondary); padding-left: 12px;">
+              <span class="update-date" style="font-size: 0.8rem; color: var(--text-secondary); font-weight: bold;">Hösten 2025</span>
+              <h4 style="margin: 4px 0; color: var(--text-primary);">Automatisk veckouppdatering av luftrum och reservat</h4>
+              <p style="font-size: 0.85rem; color: var(--text-secondary); margin: 0; line-height: 1.4;">
+                Automatiserade hämtningar av färska datafiler från LFV och Naturvårdsverket. Kartan visar nu senast uppdaterade tidsstämpel och hämtar automatiskt ny data var 6:e timme för NOTAMs.
+              </p>
+            </div>
+
+            <div class="update-item" style="border-left: 2px solid var(--text-secondary); padding-left: 12px;">
+              <span class="update-date" style="font-size: 0.8rem; color: var(--text-secondary); font-weight: bold;">Sommaren 2025</span>
+              <h4 style="margin: 4px 0; color: var(--text-primary);">PWA-stöd &amp; Offline-läge</h4>
+              <p style="font-size: 0.85rem; color: var(--text-secondary); margin: 0; line-height: 1.4;">
+                Lansering av Progressive Web App (PWA) vilket gör det möjligt att installera kartan på din mobiltelefon eller surfplatta och använda den offline i fält utan mobiltäckning.
+              </p>
+            </div>
           </div>
         </div>
       </div>

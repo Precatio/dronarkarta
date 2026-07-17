@@ -3,8 +3,34 @@
 // Sweden-wide airspace coverage + Dynamic county-level nature reserves
 // ==========================================================================
 
-// Initialize selected color palette theme
+// Helper to escape HTML special characters to prevent XSS
+function escapeHtml(unsafe) {
+  if (unsafe === undefined || unsafe === null) return '';
+  return unsafe.toString()
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#039;");
+}
+
+// Helper to sanitize URL schemes (allows only http/https)
+function sanitizeUrl(url) {
+  if (!url) return '';
+  const cleanUrl = url.trim();
+  if (/^https?:\/\//i.test(cleanUrl)) {
+    return cleanUrl;
+  }
+  return '';
+}
+
+// Initialize selected color palette theme and validate input
 let selectedPalette = localStorage.getItem('selectedPalette') || 'green';
+const allowedPalettes = ['blue', 'green', 'orange', 'dark'];
+if (!allowedPalettes.includes(selectedPalette)) {
+  selectedPalette = 'green';
+  localStorage.setItem('selectedPalette', 'green');
+}
 document.body.className = `palette-${selectedPalette}`;
 
 // Global state variables
@@ -81,6 +107,10 @@ const countyViews = {
 };
 
 let selectedRegion = localStorage.getItem('selectedRegion') || 'skane';
+if (!Object.keys(countyViews).includes(selectedRegion)) {
+  selectedRegion = 'skane';
+  localStorage.setItem('selectedRegion', 'skane');
+}
 
 // Approximate bounding boxes [minLat, maxLat, minLng, maxLng] per county
 const countyBounds = {
@@ -741,7 +771,7 @@ function getFeatureName(feature) {
 
 // Create popup HTML structure
 function createPopupContent(feature) {
-  const name = getFeatureName(feature);
+  const name = escapeHtml(getFeatureName(feature));
   const type = feature.properties.type;
   const source = feature.properties.source;
   
@@ -760,14 +790,18 @@ function createPopupContent(feature) {
 
   // 1. LFV CTR Airspace popup content (includes smart 5km text rules)
   if (source === 'ctr') {
-    const code = feature.properties.POSITIONINDICATOR || '';
+    const code = escapeHtml(feature.properties.POSITIONINDICATOR || '');
     const layer = feature.properties.layer || {};
+    const lower = escapeHtml(layer.lower || 'GND');
+    const upper = escapeHtml(layer.upper || '2000');
+    const uom = escapeHtml(layer.uom || 'ft');
+    const lowerReference = escapeHtml(layer.lowerReference || 'AMSL');
     return `
       <div class="popup-zone-details">
         <span class="popup-zone-tag tag-cond" style="background: rgba(245, 158, 11, 0.2); color: #fde047;">Kontrollzon (CTR)</span>
         <h4>${name}</h4>
         <p><strong>Flygplatskod:</strong> ${code}</p>
-        <p><strong>Höjdgräns:</strong> ${layer.lower} - ${layer.upper} ${layer.uom || 'ft'} ${layer.lowerReference || 'AMSL'}</p>
+        <p><strong>Höjdgräns:</strong> ${lower} - ${upper} ${uom} ${lowerReference}</p>
         
         <p style="margin-top: 6px; font-weight: 600; color: var(--primary);">Drönarregler i CTR (TSFS 2020:87):</p>
         <p style="margin-bottom: 4px;">❌ <strong>Inom 5 km</strong> från banorna: Kräver ALLTID godkännande från flygtrafikledningen (ATC).</p>
@@ -784,15 +818,18 @@ function createPopupContent(feature) {
 
   // 2. LFV RSTA Restricted Area (R-område) popup content
   if (source === 'rsta') {
-    const loc = feature.properties.LOCATION || '';
+    const loc = escapeHtml(feature.properties.LOCATION || '');
     const layer = feature.properties.layer || {};
-    const comment = feature.properties.comment || 'Restriktionsområde för flyg.';
+    const lower = escapeHtml(layer.lower || 'GND');
+    const upper = escapeHtml(layer.upper || 'UNL');
+    const uom = escapeHtml(layer.uom || 'ft');
+    const comment = escapeHtml(feature.properties.comment || 'Restriktionsområde för flyg.');
     return `
       <div class="popup-zone-details">
         <span class="popup-zone-tag tag-auth">Restriktionsområde</span>
         <h4>${name}</h4>
         <p><strong>Plats:</strong> ${loc}</p>
-        <p><strong>Höjdgräns:</strong> ${layer.lower} - ${layer.upper} ${layer.uom || 'ft'}</p>
+        <p><strong>Höjdgräns:</strong> ${lower} - ${upper} ${uom}</p>
         <p><strong>Beskrivning:</strong> ${comment}</p>
         <div class="popup-zone-contact">
           <div class="popup-zone-contact-title">Ansvarig myndighet</div>
@@ -805,7 +842,7 @@ function createPopupContent(feature) {
 
   // 3. LFV ARP Airport marker popup content
   if (source === 'arp') {
-    const code = feature.properties.indicator || '';
+    const code = escapeHtml(feature.properties.indicator || '');
     const hasPreciseZone = rwy5kCodes.has(code);
     return `
       <div class="popup-zone-details">
@@ -820,8 +857,8 @@ function createPopupContent(feature) {
 
   // 3b. LFV HKP Helipad popup content
   if (source === 'hkp') {
-    const code = feature.properties.indicator || '';
-    const comment = feature.properties.comment || '';
+    const code = escapeHtml(feature.properties.indicator || '');
+    const comment = escapeHtml(feature.properties.comment || '');
     return `
       <div class="popup-zone-details">
         <span class="popup-zone-tag tag-auth">Helikopterflygplats (1 km)</span>
@@ -836,7 +873,7 @@ function createPopupContent(feature) {
 
   // 3c. LFV Runway Protection Zone (RWY5K) popup content
   if (source === 'rwy5k') {
-    const code = feature.properties.indicator || '';
+    const code = escapeHtml(feature.properties.indicator || '');
     return `
       <div class="popup-zone-details">
         <span class="popup-zone-tag tag-auth">Skyddszon Landningsbana (5 km)</span>
@@ -850,22 +887,26 @@ function createPopupContent(feature) {
 
   // 4. LFV SUP Temporary restricted area (NOTAM) popup content
   if (source === 'sup') {
-    const from = feature.properties.validFrom ? new Date(feature.properties.validFrom).toLocaleDateString('sv-SE') : 'Okänt';
-    const to = feature.properties.validTo ? new Date(feature.properties.validTo).toLocaleDateString('sv-SE') : 'Okänt';
-    const comment = feature.properties.comment || '';
-    const url = feature.properties.URL || '';
+    const from = feature.properties.validFrom ? escapeHtml(new Date(feature.properties.validFrom).toLocaleDateString('sv-SE')) : 'Okänt';
+    const to = feature.properties.validTo ? escapeHtml(new Date(feature.properties.validTo).toLocaleDateString('sv-SE')) : 'Okänt';
+    const comment = escapeHtml(feature.properties.comment || '');
+    const rawUrl = feature.properties.URL || '';
+    const url = sanitizeUrl(rawUrl);
     const layer = feature.properties.layer || {};
+    const lower = escapeHtml(layer.lower || 'GND');
+    const upper = escapeHtml(layer.upper || 'UNL');
+    const uom = escapeHtml(layer.uom || '');
     return `
       <div class="popup-zone-details">
         <span class="popup-zone-tag tag-auth">Tillfällig restriktion (NOTAM/SUP)</span>
         <h4>${name}</h4>
         <p><strong>Giltig från:</strong> ${from}</p>
         <p><strong>Giltig till:</strong> ${to}</p>
-        <p><strong>Höjdgräns:</strong> ${layer.lower} - ${layer.upper} ${layer.uom || ''}</p>
+        <p><strong>Höjdgräns:</strong> ${lower} - ${upper} ${uom}</p>
         <p><strong>Information:</strong> ${comment}</p>
         ${url ? `
         <div class="popup-zone-contact">
-          <a href="${url}" target="_blank" rel="noopener" class="contact-link"><i data-lucide="external-link"></i> Officiellt AIP-tillägg</a>
+          <a href="${escapeHtml(url)}" target="_blank" rel="noopener" class="contact-link"><i data-lucide="external-link"></i> Officiellt AIP-tillägg</a>
         </div>` : ''}
       </div>
     `;
@@ -873,13 +914,14 @@ function createPopupContent(feature) {
 
   // 5. Naturvårdsverket Nature Reserve (Naturreservat) popup content
   if (source === 'nvr') {
-    const area = feature.properties.areaHa ? `${feature.properties.areaHa.toFixed(1)} ha` : 'Okänd';
+    const area = feature.properties.areaHa ? `${(typeof feature.properties.areaHa === 'number' ? feature.properties.areaHa : parseFloat(feature.properties.areaHa)).toFixed(1)} ha` : 'Okänd';
+    const escapedArea = escapeHtml(area);
     return `
       <div class="popup-zone-details">
         <span class="popup-zone-tag tag-cond">Naturreservat</span>
         <h4>${name}</h4>
         <p><strong>Skyddsform:</strong> Naturreservat</p>
-        <p><strong>Areal:</strong> ${area}</p>
+        <p><strong>Areal:</strong> ${escapedArea}</p>
         <p><strong>Regler:</strong> Fågelskyddsområden och naturreservat har ofta lokala föreskrifter. Det är ofta förbjudet att starta/landa med drönare eller flyga lågt för att inte störa djurliv och fåglar.</p>
         <div class="popup-zone-contact">
           <div class="popup-zone-contact-title">Förvaltare</div>
@@ -892,7 +934,11 @@ function createPopupContent(feature) {
 
   // 6. Original UAS geographical zones
   const layer = feature.geometry.layer || {};
-  const heightText = `${layer.lower} - ${layer.upper} ${layer.uom || 'm'} ${layer.lowerReference || 'AGL'}`;
+  const lower = escapeHtml(layer.lower || '0');
+  const upper = escapeHtml(layer.upper || '0');
+  const uom = escapeHtml(layer.uom || 'm');
+  const lowerReference = escapeHtml(layer.lowerReference || 'AGL');
+  const heightText = `${lower} - ${upper} ${uom} ${lowerReference}`;
 
   const reasonList = feature.properties.reason || [];
   const reasonText = reasonList.map(r => {
@@ -900,16 +946,17 @@ function createPopupContent(feature) {
     if (r === 'AIR_TRAFFIC') return 'Flygtrafiksäkerhet';
     if (r === 'PRIVACY') return 'Privatliv';
     if (r === 'OTHER') return 'Övrigt';
-    return r;
+    return escapeHtml(r);
   }).join(', ');
 
   let authHtml = '';
   if (feature.properties.zoneAuthority && feature.properties.zoneAuthority.length > 0) {
     const auth = feature.properties.zoneAuthority[0];
-    const authName = auth.name?.find(n => n.lang === 'se-SE')?.text || auth.name?.[0]?.text || '';
-    const phone = auth.phone?.[0]?.text || '';
-    const email = auth.email?.[0]?.text || '';
-    const site = auth.siteURL?.[0]?.text || '';
+    const authName = escapeHtml(auth.name?.find(n => n.lang === 'se-SE')?.text || auth.name?.[0]?.text || '');
+    const phone = escapeHtml(auth.phone?.[0]?.text || '');
+    const email = escapeHtml(auth.email?.[0]?.text || '');
+    const rawSite = auth.siteURL?.[0]?.text || '';
+    const site = sanitizeUrl(rawSite);
 
     authHtml = `
       <div class="popup-zone-contact">
@@ -917,7 +964,7 @@ function createPopupContent(feature) {
         <p><strong>${authName}</strong></p>
         ${phone ? `<a href="tel:${phone}" class="contact-link"><i data-lucide="phone"></i> ${phone}</a>` : ''}
         ${email ? `<a href="mailto:${email}" class="contact-link"><i data-lucide="mail"></i> ${email}</a>` : ''}
-        ${site ? `<a href="${site}" target="_blank" rel="noopener" class="contact-link"><i data-lucide="external-link"></i> Webbplats</a>` : ''}
+        ${site ? `<a href="${escapeHtml(site)}" target="_blank" rel="noopener" class="contact-link"><i data-lucide="external-link"></i> Webbplats</a>` : ''}
       </div>
     `;
   }
@@ -925,14 +972,16 @@ function createPopupContent(feature) {
   let msgHtml = '';
   if (feature.properties.message && feature.properties.message.length > 0) {
     const msg = feature.properties.message.find(m => m.lang === 'se-SE')?.text || feature.properties.message[0]?.text || '';
-    msgHtml = `<p><strong>Information:</strong> ${msg}</p>`;
+    msgHtml = `<p><strong>Information:</strong> ${escapeHtml(msg)}</p>`;
   }
+
+  const identifier = escapeHtml(feature.properties.identifier || '');
 
   const html = `
     <div class="popup-zone-details">
       <span class="popup-zone-tag ${tagClass}">${typeText}</span>
       <h4>${name}</h4>
-      <p><strong>Identifierare:</strong> ${feature.properties.identifier}</p>
+      <p><strong>Identifierare:</strong> ${identifier}</p>
       <p><strong>Höjdgränser:</strong> ${heightText}</p>
       ${reasonText ? `<p><strong>Orsak:</strong> ${reasonText}</p>` : ''}
       ${msgHtml}
@@ -1248,11 +1297,11 @@ function checkUserFlightStatus(latLng) {
     // Restricted area or temporary flight ban (NOTAM/SUP)
     statusCard.classList.add('status-restricted');
     statusTitle.innerText = 'Flygning förbjuden / Kräver tillstånd';
-    const zoneNames = insideOtherAuth.map(z => getFeatureName(z)).join(', ');
+    const zoneNames = insideOtherAuth.map(z => escapeHtml(getFeatureName(z))).join(', ');
     statusDesc.innerHTML = `Du befinner dig inom restriktionszon: <strong>${zoneNames}</strong>. Du MÅSTE ha tillstånd från ansvarig myndighet innan flygning!`;
   } else if (insideCTR.length > 0) {
     // Inside CTR: Determine if we are within 5km of the runways
-    const ctrNames = insideCTR.map(z => getFeatureName(z)).join(', ');
+    const ctrNames = insideCTR.map(z => escapeHtml(getFeatureName(z))).join(', ');
     
     // Check if the user is inside any precise runway protection zone polygons (source === 'rwy5k')
     const insideRwy5k = insideZones.filter(z => z.properties.source === 'rwy5k');
@@ -1312,12 +1361,12 @@ function checkUserFlightStatus(latLng) {
     // Inside Nature Reserve or Hospital zones
     statusCard.classList.add('status-warning');
     statusTitle.innerText = 'Särskilda villkor gäller';
-    const zoneNames = insideCond.map(z => getFeatureName(z)).join(', ');
+    const zoneNames = insideCond.map(z => escapeHtml(getFeatureName(z))).join(', ');
     statusDesc.innerHTML = `Du befinner dig inom zon med villkor: <strong>${zoneNames}</strong>. Kontrollera villkor (t.ex. naturreservat flygförbud, sjukhusområde) innan flygning.`;
   } else if (insideInfo.length > 0) {
     statusCard.classList.add('status-warning');
     statusTitle.innerText = 'Informationsområde';
-    const zoneNames = insideInfo.map(z => getFeatureName(z)).join(', ');
+    const zoneNames = insideInfo.map(z => escapeHtml(getFeatureName(z))).join(', ');
     statusDesc.innerHTML = `Du befinner dig i ett lågflyg- eller konsultationsområde: <strong>${zoneNames}</strong>. Var extra uppmärksam på flygtrafik.`;
   }
 }
@@ -1566,7 +1615,7 @@ async function performSearch(query) {
         
         L.popup()
           .setLatLng([lat, lng])
-          .setContent(`<strong>Sökt plats:</strong><br>${cleanName}`)
+          .setContent(`<strong>Sökt plats:</strong><br>${escapeHtml(cleanName)}`)
           .openOn(map);
 
         resultsContainer.innerHTML = '';
@@ -1577,7 +1626,7 @@ async function performSearch(query) {
     });
   } catch (error) {
     console.error('Sökfel:', error);
-    resultsContainer.innerHTML = `<div class="search-result-item error">Fel: ${error.message}</div>`;
+    resultsContainer.innerHTML = `<div class="search-result-item error">Fel: ${escapeHtml(error.message)}</div>`;
   }
 }
 
@@ -1667,8 +1716,9 @@ function updateLocalZonesList() {
     if (source === 'hkp') sourceLabel = 'Helikopterflygplats';
     if (source === 'rwy5k') sourceLabel = 'Skyddszon landningsbana';
 
+    const escapedName = escapeHtml(name);
     card.innerHTML = `
-      <div class="zone-item-title">${name}</div>
+      <div class="zone-item-title">${escapedName}</div>
       <div class="zone-item-meta">
         <span>${sourceLabel} | ${typeLabel}</span>
         ${distHtml}
@@ -2175,6 +2225,10 @@ function setupEventListeners() {
   document.getElementById('close-rules-modal')?.addEventListener('click', () => closeModal('rules-modal'));
   document.getElementById('rules-modal')?.addEventListener('click', (e) => { if (e.target.id === 'rules-modal') closeModal('rules-modal'); });
 
+  document.getElementById('open-updates-btn')?.addEventListener('click', () => openModal('updates-modal'));
+  document.getElementById('close-updates-modal')?.addEventListener('click', () => closeModal('updates-modal'));
+  document.getElementById('updates-modal')?.addEventListener('click', (e) => { if (e.target.id === 'updates-modal') closeModal('updates-modal'); });
+
   // Color Palette Selector buttons
   const paletteBtns = document.querySelectorAll('.palette-btn');
   if (paletteBtns.length > 0) {
@@ -2572,10 +2626,11 @@ function checkGeofenceAlert(latlng) {
       if (warningIcon) warningIcon.style.stroke = '#ffffff';
 
       if (bannerText) {
+        const escapedNearestZoneName = escapeHtml(nearestZoneName);
         if (activeWarningIsInside) {
-          bannerText.innerHTML = `Du står <strong>inuti</strong> restriktionszonen <strong>"${nearestZoneName}"</strong>. <strong>Flygförbud!</strong>`;
+          bannerText.innerHTML = `Du står <strong>inuti</strong> restriktionszonen <strong>"${escapedNearestZoneName}"</strong>. <strong>Flygförbud!</strong>`;
         } else {
-          bannerText.innerHTML = `Zonen <strong>"${nearestZoneName}"</strong> är inom din flygradie (${maxFlightDistance}m). Risk för intrång!`;
+          bannerText.innerHTML = `Zonen <strong>"${escapedNearestZoneName}"</strong> är inom din flygradie (${maxFlightDistance}m). Risk för intrång!`;
         }
       }
     }
@@ -2600,10 +2655,11 @@ function checkGeofenceAlert(latlng) {
       if (warningIcon) warningIcon.style.stroke = '#ffffff';
 
       if (bannerText) {
+        const escapedNearestNvrName = escapeHtml(nearestNvrName);
         if (activeWarningIsInside) {
-          bannerText.innerHTML = `Du är <strong>inuti</strong> naturreservatet <strong>"${nearestNvrName}"</strong>. Kontrollera lokala flygregler!`;
+          bannerText.innerHTML = `Du är <strong>inuti</strong> naturreservatet <strong>"${escapedNearestNvrName}"</strong>. Kontrollera lokala flygregler!`;
         } else {
-          bannerText.innerHTML = `Reservatet <strong>"${nearestNvrName}"</strong> är inom din flygradie (${maxFlightDistance}m). Tänk på djurlivet!`;
+          bannerText.innerHTML = `Reservatet <strong>"${escapedNearestNvrName}"</strong> är inom din flygradie (${maxFlightDistance}m). Tänk på djurlivet!`;
         }
       }
     }
