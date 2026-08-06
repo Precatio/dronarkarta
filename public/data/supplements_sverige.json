@@ -2226,71 +2226,6 @@
           [
             [
               [
-                21.88361111,
-                65.99
-              ],
-              [
-                21.2075,
-                65.62694444
-              ],
-              [
-                21.24555556,
-                65.89861111
-              ],
-              [
-                21.49555556,
-                65.94861111
-              ],
-              [
-                21.88361111,
-                65.99
-              ]
-            ]
-          ]
-        ]
-      },
-      "geometry_name": "the_geom",
-      "properties": {
-        "NAME": "LOCK",
-        "ID": "ESR392_1",
-        "DESIG": "ESR392",
-        "LOWER": "FL095",
-        "UPPER": "FL155",
-        "FROM": "2026-06-04T11:00Z",
-        "TO": "2026-06-18T14:30Z",
-        "SCHEDULE": "04 JUN               1100 - 1400     \n05 JUN               0700 - 1000\n08 - 12 JUN        0700 - 0900, 1130 - 1430\n14 - 18 JUN        0700 - 0900, 1130 - 1430",
-        "COM_SE": "Under perioden 04 – 18 JUN 2026 genomförs den militära NATO-flygövningen Ramstein Flag 2026 (RAFL26) i norra delen av Sweden FIR.",
-        "COM_EN": "During the period 04 – 18 JUN 2026 the military NATO air exercise Ramstein Flag 2026 (RAFL26) will be conducted in the northern part of Sweden FIR.",
-        "URL": "https://aro.lfv.se/content/eaip/AIRAC%20AIP%20AMDT%205-2026_2026_08_06/eSUP/AIRAC%20AIP%20SUP%2084-2026_2026_05_14/ES-SUP-sv-SE.html#SUP",
-        "COORD": "",
-        "LOW_UOM": "",
-        "UP_UOM": "",
-        "name": "LOCK",
-        "type": "REQ_AUTHORIZATION",
-        "reason": [
-          "OTHER"
-        ],
-        "comment": "Under perioden 04 – 18 JUN 2026 genomförs den militära NATO-flygövningen Ramstein Flag 2026 (RAFL26) i norra delen av Sweden FIR.",
-        "validFrom": "2026-06-04T11:00Z",
-        "validTo": "2026-06-18T14:30Z",
-        "layer": {
-          "lower": "FL095",
-          "upper": "FL155",
-          "uom": "ft AMSL",
-          "lowerReference": "AGL",
-          "upperReference": "AMSL"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "SUP.26",
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
-          [
-            [
-              [
                 15.50722222,
                 63.31083333
               ],
@@ -2349,7 +2284,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.27",
+      "id": "SUP.26",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -2422,7 +2357,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.28",
+      "id": "SUP.27",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -2487,7 +2422,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.29",
+      "id": "SUP.28",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -2552,7 +2487,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.30",
+      "id": "SUP.29",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -2653,7 +2588,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.31",
+      "id": "SUP.30",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -2718,7 +2653,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.32",
+      "id": "SUP.31",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -2795,7 +2730,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.33",
+      "id": "SUP.32",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -2868,7 +2803,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.34",
+      "id": "SUP.33",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -2941,7 +2876,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.35",
+      "id": "SUP.34",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -3010,7 +2945,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.36",
+      "id": "SUP.35",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -3079,7 +3014,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.37",
+      "id": "SUP.36",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -3160,7 +3095,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.38",
+      "id": "SUP.37",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -3197,12 +3132,12 @@
         "DESIG": "ESD770",
         "LOWER": "SFC",
         "UPPER": "FL155",
-        "FROM": "2026-06-22T07:00Z",
-        "TO": "2026-06-25T14:00Z",
-        "SCHEDULE": "22 JUN 0700 – 25 JUN 1400",
-        "COM_SE": "Tillfälligt farligt område ESD770 Falken upprättas för militär verksamhet inklusive flygverksamhet.\nInformation om status på ESD770 Falken kan lämnas av Malmö ACC.",
-        "COM_EN": "Temporary danger area ESD770 Falken is established for military activities including aviation operations. \nInformation regarding status of ESD770 Falken can be obtained from Malmö ACC.",
-        "URL": "https://aro.lfv.se/content/eaip/AIRAC%20AIP%20AMDT%205-2026_2026_08_06/eSUP/AIP%20SUP%20113-2026_2026_06_22/ES-SUP-sv-SE.html#SUP",
+        "FROM": "2026-08-24T06:30Z",
+        "TO": "2026-08-28T10:00Z",
+        "SCHEDULE": "24 – 27 AUG 0630 – 1400\n28 AUG 0630 – 1000",
+        "COM_SE": "Det tillfälliga farliga området ESD770 Falken upprättas för militär verksamhet inklusive flygverksamhet.",
+        "COM_EN": "The temporary danger area ESD770 Falken is established for military activities including aviation operations.",
+        "URL": "https://aro.lfv.se/content/eaip/AIRAC%20AIP%20AMDT%205-2026_2026_08_06/eSUP/AIP%20SUP%20134-2026_2026_08_24/ES-SUP-en-GB.html#SUP",
         "COORD": "",
         "LOW_UOM": "",
         "UP_UOM": "",
@@ -3211,12 +3146,85 @@
         "reason": [
           "OTHER"
         ],
-        "comment": "Tillfälligt farligt område ESD770 Falken upprättas för militär verksamhet inklusive flygverksamhet.\nInformation om status på ESD770 Falken kan lämnas av Malmö ACC.",
-        "validFrom": "2026-06-22T07:00Z",
-        "validTo": "2026-06-25T14:00Z",
+        "comment": "Det tillfälliga farliga området ESD770 Falken upprättas för militär verksamhet inklusive flygverksamhet.",
+        "validFrom": "2026-08-24T06:30Z",
+        "validTo": "2026-08-28T10:00Z",
         "layer": {
           "lower": "SFC",
           "upper": "FL155",
+          "uom": "ft AMSL",
+          "lowerReference": "AGL",
+          "upperReference": "AMSL"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SUP.38",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                11.68722222,
+                58.5225
+              ],
+              [
+                11.775,
+                58.38638889
+              ],
+              [
+                11.73611111,
+                58.35888889
+              ],
+              [
+                11.91083333,
+                58.17444444
+              ],
+              [
+                11.3725,
+                58.17444444
+              ],
+              [
+                11.1975,
+                58.41611111
+              ],
+              [
+                11.68722222,
+                58.5225
+              ]
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "the_geom",
+      "properties": {
+        "NAME": "BOKENÄS",
+        "ID": "ESR316_1",
+        "DESIG": "ESR316",
+        "LOWER": "SFC",
+        "UPPER": "4500",
+        "FROM": "2026-08-17T08:00Z",
+        "TO": "2026-09-01T08:00Z",
+        "SCHEDULE": "17 – 21 AUG 0800 – 1630\n24 – 28 AUG 0800 – 1630\n31 AUG – 01 SEP 0800 – 1630",
+        "COM_SE": "Det tillfälliga restriktionsområdet ESR316 Bokenäs upprättas för militär flygverksamhet.",
+        "COM_EN": "The temporary restricted area ESR316 Bokenäs is established for military aviation operations.",
+        "URL": "https://aro.lfv.se/content/eaip/AIRAC%20AIP%20AMDT%205-2026_2026_08_06/eSUP/AIP%20SUP%20133-2026_2026_08_17/ES-SUP-en-GB.html#SUP",
+        "COORD": "",
+        "LOW_UOM": "",
+        "UP_UOM": "ft AMSL",
+        "name": "BOKENÄS",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "OTHER"
+        ],
+        "comment": "Det tillfälliga restriktionsområdet ESR316 Bokenäs upprättas för militär flygverksamhet.",
+        "validFrom": "2026-08-17T08:00Z",
+        "validTo": "2026-09-01T08:00Z",
+        "layer": {
+          "lower": "SFC",
+          "upper": "4500",
           "uom": "ft AMSL",
           "lowerReference": "AGL",
           "upperReference": "AMSL"
