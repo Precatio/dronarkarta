@@ -5126,6 +5126,567 @@
     },
     {
       "type": "Feature",
+      "id": "SUP.56",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                16.13916667,
+                58.61333333
+              ],
+              [
+                16.13916667,
+                58.61333333
+              ],
+              [
+                16.14583333,
+                58.6125
+              ],
+              [
+                16.15027778,
+                58.61194444
+              ],
+              [
+                16.15333333,
+                58.61055556
+              ],
+              [
+                16.16083333,
+                58.60944444
+              ],
+              [
+                16.17611111,
+                58.60583333
+              ],
+              [
+                16.18472222,
+                58.60388889
+              ],
+              [
+                16.18722222,
+                58.60138889
+              ],
+              [
+                16.19166667,
+                58.59694444
+              ],
+              [
+                16.19416667,
+                58.59388889
+              ],
+              [
+                16.1975,
+                58.59305556
+              ],
+              [
+                16.20083333,
+                58.58583333
+              ],
+              [
+                16.20722222,
+                58.58361111
+              ],
+              [
+                16.21,
+                58.58222222
+              ],
+              [
+                16.21083333,
+                58.58111111
+              ],
+              [
+                16.21583333,
+                58.56944444
+              ],
+              [
+                16.21722222,
+                58.56805556
+              ],
+              [
+                16.22,
+                58.56555556
+              ],
+              [
+                16.22638889,
+                58.56027778
+              ],
+              [
+                16.23222222,
+                58.55722222
+              ],
+              [
+                16.21888889,
+                58.54944444
+              ],
+              [
+                16.17388889,
+                58.55194444
+              ],
+              [
+                16.16583333,
+                58.54777778
+              ],
+              [
+                16.15638889,
+                58.5525
+              ],
+              [
+                16.08833333,
+                58.55916667
+              ],
+              [
+                16.07694444,
+                58.56888889
+              ],
+              [
+                16.07944444,
+                58.57
+              ],
+              [
+                16.095,
+                58.575
+              ],
+              [
+                16.10861111,
+                58.57916667
+              ],
+              [
+                16.11277778,
+                58.58027778
+              ],
+              [
+                16.11833333,
+                58.5825
+              ],
+              [
+                16.1225,
+                58.58416667
+              ],
+              [
+                16.12527778,
+                58.58555556
+              ],
+              [
+                16.12666667,
+                58.58611111
+              ],
+              [
+                16.12833333,
+                58.58888889
+              ],
+              [
+                16.12916667,
+                58.59111111
+              ],
+              [
+                16.12805556,
+                58.59444444
+              ],
+              [
+                16.1275,
+                58.59555556
+              ],
+              [
+                16.12583333,
+                58.60055556
+              ],
+              [
+                16.12722222,
+                58.60361111
+              ],
+              [
+                16.13277778,
+                58.60916667
+              ],
+              [
+                16.13916667,
+                58.61333333
+              ]
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "the_geom",
+      "properties": {
+        "NAME": "NORRKÖPING",
+        "ID": "ESD653_1",
+        "DESIG": "ESD653",
+        "LOWER": "260",
+        "UPPER": "500",
+        "FROM": "2026-09-01T00:00Z",
+        "TO": "2027-03-31T23:59Z",
+        "SCHEDULE": "01 SEP 2026 – 31 MAR 2027, H24",
+        "COM_SE": "Tillfälligt farligt område ESD653 Norrköping upprättas för UAS som flyger utom synhåll (BVLOS).",
+        "COM_EN": "Temporary danger area ESD653 Norrköping established for UAS flying beyond visual line of sight (BVLOS).",
+        "URL": "https://aro.lfv.se/content/eaip/AIP%20AMDT%201-2026_2026_08_07/eSUP/AIP%20SUP%20141-2026_2026_09_01/ES-SUP-en-GB.html#SUP",
+        "COORD": "",
+        "LOW_UOM": "ft SFC",
+        "UP_UOM": "ft AMSL",
+        "name": "NORRKÖPING",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "OTHER"
+        ],
+        "comment": "Tillfälligt farligt område ESD653 Norrköping upprättas för UAS som flyger utom synhåll (BVLOS).",
+        "validFrom": "2026-09-01T00:00Z",
+        "validTo": "2027-03-31T23:59Z",
+        "layer": {
+          "lower": "260",
+          "upper": "500",
+          "uom": "ft AMSL",
+          "lowerReference": "AGL",
+          "upperReference": "AMSL"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SUP.57",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                12.24833333,
+                59.17
+              ],
+              [
+                12.36944444,
+                59.06027778
+              ],
+              [
+                12.38305556,
+                58.91222222
+              ],
+              [
+                12.17944444,
+                58.74638889
+              ],
+              [
+                11.87694444,
+                58.81888889
+              ],
+              [
+                11.82861111,
+                58.905
+              ],
+              [
+                12.04388889,
+                59.16416667
+              ],
+              [
+                12.24833333,
+                59.17
+              ]
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "the_geom",
+      "properties": {
+        "NAME": "BENGTSFORS",
+        "ID": "ESD881_2",
+        "DESIG": "ESD881",
+        "LOWER": "GND",
+        "UPPER": "1300",
+        "FROM": "2026-09-01T07:00Z",
+        "TO": "2027-08-31T16:00Z",
+        "SCHEDULE": "01 SEP 2026 – 31 DEC 2027, dagligen/daily 0700-1600 (0600-1500)",
+        "COM_SE": "Tillfälligt farligt område ESD881 Bengtsfors är upprättat för\nUAS som flyger utom synhåll (BVLOS).",
+        "COM_EN": "Temporary danger area ESD881 Bengtsfors is established for\nUAS flying beyond visual line of sight (BVLOS).",
+        "URL": "https://aro.lfv.se/content/eaip/AIP%20AMDT%201-2026_2026_08_07/eSUP/AIP%20SUP%20139-2026_2026_09_01/ES-SUP-sv-SE.html#SUP",
+        "COORD": "",
+        "LOW_UOM": "",
+        "UP_UOM": "ft AMSL",
+        "name": "BENGTSFORS",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "OTHER"
+        ],
+        "comment": "Tillfälligt farligt område ESD881 Bengtsfors är upprättat för\nUAS som flyger utom synhåll (BVLOS).",
+        "validFrom": "2026-09-01T07:00Z",
+        "validTo": "2027-08-31T16:00Z",
+        "layer": {
+          "lower": "GND",
+          "upper": "1300",
+          "uom": "ft AMSL",
+          "lowerReference": "AGL",
+          "upperReference": "AMSL"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SUP.58",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                13.79083333,
+                58.37861111
+              ],
+              [
+                13.83916667,
+                58.375
+              ],
+              [
+                13.83833333,
+                58.37333333
+              ],
+              [
+                13.82944444,
+                58.35916667
+              ],
+              [
+                13.82916667,
+                58.355
+              ],
+              [
+                13.85388889,
+                58.34194444
+              ],
+              [
+                13.86361111,
+                58.32444444
+              ],
+              [
+                13.83027778,
+                58.26611111
+              ],
+              [
+                13.91361111,
+                58.25777778
+              ],
+              [
+                13.93027778,
+                58.31611111
+              ],
+              [
+                13.92666667,
+                58.36944444
+              ],
+              [
+                14.00805556,
+                58.36972222
+              ],
+              [
+                13.99388889,
+                58.30805556
+              ],
+              [
+                13.97972222,
+                58.20361111
+              ],
+              [
+                13.89027778,
+                58.20277778
+              ],
+              [
+                13.75611111,
+                58.24388889
+              ],
+              [
+                13.73444444,
+                58.26611111
+              ],
+              [
+                13.78111111,
+                58.33444444
+              ],
+              [
+                13.79083333,
+                58.37861111
+              ]
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "the_geom",
+      "properties": {
+        "NAME": "BRUKET",
+        "ID": "ESR700 _1",
+        "DESIG": "ESR700",
+        "LOWER": "SFC",
+        "UPPER": "4500",
+        "FROM": "2026-08-31T11:00Z",
+        "TO": "2026-09-06T13:00Z",
+        "SCHEDULE": "31 AUG 1100 – 06 SEP 1300",
+        "COM_SE": "Tillfälliga restriktionsområdena ESR700 Bruket och ESR764 Botorp upprättas för militär flygverksamhet.",
+        "COM_EN": "Temporary restricted areas ESR700 Bruket and ESR764 Botorp established for military aviaion operations.",
+        "URL": "https://aro.lfv.se/content/eaip/AIP%20AMDT%201-2026_2026_08_07/eSUP/AIP%20SUP%20138-2026_2026_08_31/ES-SUP-en-GB.html#SUP",
+        "COORD": "",
+        "LOW_UOM": "",
+        "UP_UOM": "ft AMSL",
+        "name": "BRUKET",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "OTHER"
+        ],
+        "comment": "Tillfälliga restriktionsområdena ESR700 Bruket och ESR764 Botorp upprättas för militär flygverksamhet.",
+        "validFrom": "2026-08-31T11:00Z",
+        "validTo": "2026-09-06T13:00Z",
+        "layer": {
+          "lower": "SFC",
+          "upper": "4500",
+          "uom": "ft AMSL",
+          "lowerReference": "AGL",
+          "upperReference": "AMSL"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SUP.59",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                13.795,
+                58.39666667
+              ],
+              [
+                13.79083333,
+                58.37861111
+              ],
+              [
+                13.78111111,
+                58.33444444
+              ],
+              [
+                13.73444444,
+                58.26611111
+              ],
+              [
+                13.75611111,
+                58.24388889
+              ],
+              [
+                13.68305556,
+                58.21055556
+              ],
+              [
+                13.66111111,
+                58.21666667
+              ],
+              [
+                13.55638889,
+                58.38472222
+              ],
+              [
+                13.795,
+                58.39666667
+              ]
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "the_geom",
+      "properties": {
+        "NAME": "BOTORP",
+        "ID": "ESR764_1",
+        "DESIG": "ESR764",
+        "LOWER": "SFC",
+        "UPPER": "4500",
+        "FROM": "2026-08-31T11:00Z",
+        "TO": "2026-09-06T13:00Z",
+        "SCHEDULE": "31 AUG 1100 – 06 SEP 1300",
+        "COM_SE": "Tillfälliga restriktionsområdena ESR700 Bruket och ESR764 Botorp upprättas för militär flygverksamhet.",
+        "COM_EN": "Temporary restricted areas ESR700 Bruket and ESR764 Botorp established for military aviaion operations.",
+        "URL": "https://aro.lfv.se/content/eaip/AIP%20AMDT%201-2026_2026_08_07/eSUP/AIP%20SUP%20138-2026_2026_08_31/ES-SUP-en-GB.html#SUP",
+        "COORD": "",
+        "LOW_UOM": "",
+        "UP_UOM": "ft AMSL",
+        "name": "BOTORP",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "OTHER"
+        ],
+        "comment": "Tillfälliga restriktionsområdena ESR700 Bruket och ESR764 Botorp upprättas för militär flygverksamhet.",
+        "validFrom": "2026-08-31T11:00Z",
+        "validTo": "2026-09-06T13:00Z",
+        "layer": {
+          "lower": "SFC",
+          "upper": "4500",
+          "uom": "ft AMSL",
+          "lowerReference": "AGL",
+          "upperReference": "AMSL"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SUP.60",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                23.29527778,
+                65.54861111
+              ],
+              [
+                23.82833333,
+                65.39861111
+              ],
+              [
+                22.32888889,
+                64.33222222
+              ],
+              [
+                21.79555556,
+                64.46555556
+              ],
+              [
+                23.29527778,
+                65.54861111
+              ]
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "the_geom",
+      "properties": {
+        "NAME": "BRYNJAN",
+        "ID": "ESD781_1",
+        "DESIG": "ESD781",
+        "LOWER": "SFC",
+        "UPPER": "FL155",
+        "FROM": "2026-08-31T06:30Z",
+        "TO": "2026-09-03T14:00Z",
+        "SCHEDULE": "31 AUG – 03 SEP 0630 – 1400",
+        "COM_SE": "Tillfälligt farligt område ESD781 Brynjan upprättas för militär flygverksamhet.\nInformation om verksamhetens status inom området kan lämnas av Luleå ATS, Skellefteå ATS och Stockholm ACC.",
+        "COM_EN": "Temporary danger area ESD781 Brynjan is established for military aviation activities.\nInformation regarding the operations within the area can be obtained from Luleå ATS, Skellefteå ATS and Stockholm ACC.",
+        "URL": "https://aro.lfv.se/content/eaip/AIP%20AMDT%201-2026_2026_08_07/eSUP/AIP%20SUP%20137-2026_2026_08_31/ES-SUP-en-GB.html#SUP",
+        "COORD": "",
+        "LOW_UOM": "",
+        "UP_UOM": "",
+        "name": "BRYNJAN",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "OTHER"
+        ],
+        "comment": "Tillfälligt farligt område ESD781 Brynjan upprättas för militär flygverksamhet.\nInformation om verksamhetens status inom området kan lämnas av Luleå ATS, Skellefteå ATS och Stockholm ACC.",
+        "validFrom": "2026-08-31T06:30Z",
+        "validTo": "2026-09-03T14:00Z",
+        "layer": {
+          "lower": "SFC",
+          "upper": "FL155",
+          "uom": "ft AMSL",
+          "lowerReference": "AGL",
+          "upperReference": "AMSL"
+        }
+      }
+    },
+    {
+      "type": "Feature",
       "id": "NOTAM.15462",
       "geometry": {
         "type": "Polygon",
@@ -10590,6 +11151,247 @@
         "layer": {
           "lower": "FL 0",
           "upper": "FL 28",
+          "uom": "",
+          "lowerReference": "STD",
+          "upperReference": "STD"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "NOTAM.15711",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              15.51667,
+              60.38342614
+            ],
+            [
+              15.52476513,
+              60.38366828
+            ],
+            [
+              15.53274257,
+              60.38439117
+            ],
+            [
+              15.54048633,
+              60.38558432
+            ],
+            [
+              15.54788378,
+              60.38723037
+            ],
+            [
+              15.55482729,
+              60.38930538
+            ],
+            [
+              15.56121578,
+              60.39177917
+            ],
+            [
+              15.56695616,
+              60.39461576
+            ],
+            [
+              15.57196474,
+              60.39777387
+            ],
+            [
+              15.5761684,
+              60.40120754
+            ],
+            [
+              15.57950566,
+              60.40486676
+            ],
+            [
+              15.58192763,
+              60.40869825
+            ],
+            [
+              15.58339869,
+              60.41264619
+            ],
+            [
+              15.58389706,
+              60.41665304
+            ],
+            [
+              15.58341511,
+              60.42066038
+            ],
+            [
+              15.58195951,
+              60.42460976
+            ],
+            [
+              15.57955115,
+              60.42844356
+            ],
+            [
+              15.57622485,
+              60.43210583
+            ],
+            [
+              15.57202888,
+              60.4355431
+            ],
+            [
+              15.56702426,
+              60.43870516
+            ],
+            [
+              15.56128387,
+              60.44154582
+            ],
+            [
+              15.55489143,
+              60.44402356
+            ],
+            [
+              15.54794024,
+              60.44610217
+            ],
+            [
+              15.54053182,
+              60.44775127
+            ],
+            [
+              15.53277445,
+              60.44894672
+            ],
+            [
+              15.52478155,
+              60.44967107
+            ],
+            [
+              15.51667,
+              60.4499137
+            ],
+            [
+              15.50855845,
+              60.44967107
+            ],
+            [
+              15.50056555,
+              60.44894672
+            ],
+            [
+              15.49280818,
+              60.44775127
+            ],
+            [
+              15.48539976,
+              60.44610217
+            ],
+            [
+              15.47844857,
+              60.44402356
+            ],
+            [
+              15.47205613,
+              60.44154582
+            ],
+            [
+              15.46631574,
+              60.43870516
+            ],
+            [
+              15.46131112,
+              60.4355431
+            ],
+            [
+              15.45711515,
+              60.43210583
+            ],
+            [
+              15.45378885,
+              60.42844356
+            ],
+            [
+              15.45138049,
+              60.42460976
+            ],
+            [
+              15.44992489,
+              60.42066038
+            ],
+            [
+              15.44944294,
+              60.41665304
+            ],
+            [
+              15.44994131,
+              60.41264619
+            ],
+            [
+              15.45141237,
+              60.40869825
+            ],
+            [
+              15.45383434,
+              60.40486676
+            ],
+            [
+              15.4571716,
+              60.40120754
+            ],
+            [
+              15.46137526,
+              60.39777387
+            ],
+            [
+              15.46638384,
+              60.39461576
+            ],
+            [
+              15.47212422,
+              60.39177917
+            ],
+            [
+              15.47851271,
+              60.38930538
+            ],
+            [
+              15.48545622,
+              60.38723037
+            ],
+            [
+              15.49285367,
+              60.38558432
+            ],
+            [
+              15.50059743,
+              60.38439117
+            ],
+            [
+              15.50857487,
+              60.38366828
+            ],
+            [
+              15.51667,
+              60.38342614
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "name": "NOTAM ESSA-B2576/26 (LASER)",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "OTHER"
+        ],
+        "comment": "LASER EMISSION WILL TAKE PLACE OVER BORLANGE, PSN 602520N \n0153054E, RADIUS 1,11NM. INFO +46 70 769 51 54.",
+        "validFrom": "2026-08-14T19:00:00Z",
+        "validTo": "2026-08-14T20:00:00Z",
+        "layer": {
+          "lower": "FL 0",
+          "upper": "FL 94",
           "uom": "",
           "lowerReference": "STD",
           "upperReference": "STD"
