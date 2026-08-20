@@ -3240,311 +3240,6 @@
           [
             [
               [
-                14.75523116,
-                57.75833333
-              ],
-              [
-                14.75192757,
-                57.72245812
-              ],
-              [
-                14.74204862,
-                57.68692841
-              ],
-              [
-                14.72568945,
-                57.65208636
-              ],
-              [
-                14.70300761,
-                57.61826753
-              ],
-              [
-                14.67422153,
-                57.58579761
-              ],
-              [
-                14.63960845,
-                57.55498931
-              ],
-              [
-                14.59950169,
-                57.52613931
-              ],
-              [
-                14.55428752,
-                57.49952548
-              ],
-              [
-                14.50440137,
-                57.4754041
-              ],
-              [
-                14.45032368,
-                57.45400749
-              ],
-              [
-                14.39257523,
-                57.4355417
-              ],
-              [
-                14.33171218,
-                57.42018457
-              ],
-              [
-                14.26832068,
-                57.408084
-              ],
-              [
-                14.20301121,
-                57.39935653
-              ],
-              [
-                14.13641275,
-                57.39408619
-              ],
-              [
-                14.06916667,
-                57.39232375
-              ],
-              [
-                14.00192059,
-                57.39408619
-              ],
-              [
-                13.93532212,
-                57.39935653
-              ],
-              [
-                13.87001266,
-                57.408084
-              ],
-              [
-                13.80662115,
-                57.42018457
-              ],
-              [
-                13.7457581,
-                57.4355417
-              ],
-              [
-                13.68800966,
-                57.45400749
-              ],
-              [
-                13.63393196,
-                57.4754041
-              ],
-              [
-                13.58404581,
-                57.49952548
-              ],
-              [
-                13.53883164,
-                57.52613931
-              ],
-              [
-                13.49872489,
-                57.55498931
-              ],
-              [
-                13.4641118,
-                57.58579761
-              ],
-              [
-                13.43532572,
-                57.61826753
-              ],
-              [
-                13.41264388,
-                57.65208636
-              ],
-              [
-                13.39628471,
-                57.68692841
-              ],
-              [
-                13.38640576,
-                57.72245812
-              ],
-              [
-                13.38310217,
-                57.75833333
-              ],
-              [
-                13.38640576,
-                57.79420855
-              ],
-              [
-                13.39628471,
-                57.82973826
-              ],
-              [
-                13.41264388,
-                57.86458031
-              ],
-              [
-                13.43532572,
-                57.89839914
-              ],
-              [
-                13.4641118,
-                57.93086905
-              ],
-              [
-                13.49872489,
-                57.96167736
-              ],
-              [
-                13.53883164,
-                57.99052735
-              ],
-              [
-                13.58404581,
-                58.01714119
-              ],
-              [
-                13.63393196,
-                58.04126256
-              ],
-              [
-                13.68800966,
-                58.06265918
-              ],
-              [
-                13.7457581,
-                58.08112496
-              ],
-              [
-                13.80662115,
-                58.09648209
-              ],
-              [
-                13.87001266,
-                58.10858266
-              ],
-              [
-                13.93532212,
-                58.11731014
-              ],
-              [
-                14.00192059,
-                58.12258048
-              ],
-              [
-                14.06916667,
-                58.12434291
-              ],
-              [
-                14.13641275,
-                58.12258048
-              ],
-              [
-                14.20301121,
-                58.11731014
-              ],
-              [
-                14.26832068,
-                58.10858266
-              ],
-              [
-                14.33171218,
-                58.09648209
-              ],
-              [
-                14.39257523,
-                58.08112496
-              ],
-              [
-                14.45032368,
-                58.06265918
-              ],
-              [
-                14.50440137,
-                58.04126256
-              ],
-              [
-                14.55428752,
-                58.01714119
-              ],
-              [
-                14.59950169,
-                57.99052735
-              ],
-              [
-                14.63960845,
-                57.96167736
-              ],
-              [
-                14.67422153,
-                57.93086905
-              ],
-              [
-                14.70300761,
-                57.89839914
-              ],
-              [
-                14.72568945,
-                57.86458031
-              ],
-              [
-                14.74204862,
-                57.82973826
-              ],
-              [
-                14.75192757,
-                57.79420855
-              ],
-              [
-                14.75523116,
-                57.75833333
-              ]
-            ]
-          ]
-        ]
-      },
-      "geometry_name": "the_geom",
-      "properties": {
-        "NAME": "HULT",
-        "ID": "ESR715_1",
-        "DESIG": "ESR715",
-        "LOWER": "2200",
-        "UPPER": "FL275*",
-        "FROM": "2026-08-11T06:00Z",
-        "TO": "2026-08-13T20:00Z",
-        "SCHEDULE": "11 AUG 0600 – 2000 (2200ft AMSL - FL185)\n12 AUG 0600 – 2330 (2200ft AMSL - FL275)\n13 AUG 0600 – 1400 (2200ft AMSL - FL275)",
-        "COM_SE": "Det tillfälliga restriktionsområdet ESR715 Hult upprättas för flygverksamhet. \n11 aug: 22000 ft AMSL - FL185. \n12-13 aug: 2200ft AMSL - FL275.",
-        "COM_EN": "The temporary restricted area ESR715 Hult is established for aviation operations. \n11 aug: 22000 ft AMSL - FL185. \n12-13 aug: 2200ft AMSL - FL275.",
-        "URL": "https://aro.lfv.se/content/eaip/AIP%20AMDT%201-2026_2026_08_07/eSUP/AIP%20SUP%20123-2026_2026_08_11/ES-SUP-en-GB.html#SUP",
-        "COORD": "A circle with radius 22 NM centered on 574530N 0140409E",
-        "LOW_UOM": "ft AMSL",
-        "UP_UOM": "",
-        "name": "HULT",
-        "type": "REQ_AUTHORIZATION",
-        "reason": [
-          "OTHER"
-        ],
-        "comment": "Det tillfälliga restriktionsområdet ESR715 Hult upprättas för flygverksamhet. \n11 aug: 22000 ft AMSL - FL185. \n12-13 aug: 2200ft AMSL - FL275.",
-        "validFrom": "2026-08-11T06:00Z",
-        "validTo": "2026-08-13T20:00Z",
-        "layer": {
-          "lower": "2200",
-          "upper": "FL275*",
-          "uom": "ft AMSL",
-          "lowerReference": "AGL",
-          "upperReference": "AMSL"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "SUP.40",
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
-          [
-            [
-              [
                 18.04805556,
                 59.24944444
               ],
@@ -3599,7 +3294,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.41",
+      "id": "SUP.40",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -3664,7 +3359,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.42",
+      "id": "SUP.41",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -3729,7 +3424,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.43",
+      "id": "SUP.42",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -3794,7 +3489,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.44",
+      "id": "SUP.43",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -3863,7 +3558,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.45",
+      "id": "SUP.44",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -4168,7 +3863,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.46",
+      "id": "SUP.45",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -4237,7 +3932,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.47",
+      "id": "SUP.46",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -4302,7 +3997,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.48",
+      "id": "SUP.47",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -4379,7 +4074,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.49",
+      "id": "SUP.48",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -4452,7 +4147,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.50",
+      "id": "SUP.49",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -4517,7 +4212,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.51",
+      "id": "SUP.50",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -4586,7 +4281,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.52",
+      "id": "SUP.51",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -4891,7 +4586,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.53",
+      "id": "SUP.52",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -5108,7 +4803,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.54",
+      "id": "SUP.53",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -5185,7 +4880,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.55",
+      "id": "SUP.54",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -5306,7 +5001,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.56",
+      "id": "SUP.55",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -5387,7 +5082,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.57",
+      "id": "SUP.56",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -5444,6 +5139,1052 @@
         "layer": {
           "lower": "SFC",
           "upper": "FL155",
+          "uom": "ft AMSL",
+          "lowerReference": "AGL",
+          "upperReference": "AMSL"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SUP.57",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                21.42416667,
+                65.86444444
+              ],
+              [
+                21.60444444,
+                65.80972222
+              ],
+              [
+                21.51222222,
+                65.76527778
+              ],
+              [
+                21.31222222,
+                65.75694444
+              ],
+              [
+                21.21222222,
+                65.66527778
+              ],
+              [
+                21.28805556,
+                65.83972222
+              ],
+              [
+                21.34138889,
+                65.8575
+              ],
+              [
+                21.42416667,
+                65.86444444
+              ]
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "the_geom",
+      "properties": {
+        "NAME": "DEGERNÄS",
+        "ID": "ESR727_1",
+        "DESIG": "ESR727",
+        "LOWER": "SFC",
+        "UPPER": "FL235",
+        "FROM": "2026-09-02T08:00Z",
+        "TO": "2026-09-03T20:00Z",
+        "SCHEDULE": "02 – 03 SEP 0800 – 2000",
+        "COM_SE": "Tillfälligt restriktionsområde ESR727 Degernäs upprättas för militär verksamhet inklusive militär flygverksamhet.",
+        "COM_EN": "Temporary restricted area ESR727 Degernäs is established for military activities including military aviation operations.",
+        "URL": "https://aro.lfv.se/content/eaip/AIP%20AMDT%201-2026_2026_08_07/eSUP/AIP%20SUP%20146-2026_2026_09_02/ES-SUP-en-GB.html#SUP",
+        "COORD": "",
+        "LOW_UOM": "",
+        "UP_UOM": "",
+        "name": "DEGERNÄS",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "OTHER"
+        ],
+        "comment": "Tillfälligt restriktionsområde ESR727 Degernäs upprättas för militär verksamhet inklusive militär flygverksamhet.",
+        "validFrom": "2026-09-02T08:00Z",
+        "validTo": "2026-09-03T20:00Z",
+        "layer": {
+          "lower": "SFC",
+          "upper": "FL235",
+          "uom": "ft AMSL",
+          "lowerReference": "AGL",
+          "upperReference": "AMSL"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SUP.58",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                11.51833333,
+                58.59083333
+              ],
+              [
+                11.72944444,
+                58.45805556
+              ],
+              [
+                11.13805556,
+                58.30805556
+              ],
+              [
+                11.00222222,
+                58.52277778
+              ],
+              [
+                11.15083333,
+                58.53916667
+              ],
+              [
+                11.51833333,
+                58.59083333
+              ]
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "the_geom",
+      "properties": {
+        "NAME": "KUNGSHAMN",
+        "ID": "ESR501_1",
+        "DESIG": "ESR501",
+        "LOWER": "SFC",
+        "UPPER": "4500",
+        "FROM": "2026-09-04T06:00Z",
+        "TO": "2026-09-14T06:00Z",
+        "SCHEDULE": "04 SEP 0600 – 2359\n05 – 13 SEP H24\n14 SEP 0000 – 0600",
+        "COM_SE": "Tillfälliga restriktionsområden ESR500 Vrångö, ESR501 Kungshamn, ESR502 Kyrkeby, ESR503 Orust, ESR504 Stigfjorden, ESR505 Hakefjorden och ESR506 Öckerö upprättas för militär flygverksamhet.",
+        "COM_EN": "Temporary restricted areas ESR500 Vrångö, ESR501 Kungshamn, ESR502 Kyrkeby, ESR503 Orust, ESR504 Stigfjorden, ESR505 Hakefjorden and ESR506 Öckerö established for military aviation operations.",
+        "URL": "https://aro.lfv.se/content/eaip/AIP%20AMDT%201-2026_2026_08_07/eSUP/AIP%20SUP%20145-2026_2026_09_04/ES-SUP-sv-SE.html#SUP",
+        "COORD": "",
+        "LOW_UOM": "",
+        "UP_UOM": "ft AMSL",
+        "name": "KUNGSHAMN",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "OTHER"
+        ],
+        "comment": "Tillfälliga restriktionsområden ESR500 Vrångö, ESR501 Kungshamn, ESR502 Kyrkeby, ESR503 Orust, ESR504 Stigfjorden, ESR505 Hakefjorden och ESR506 Öckerö upprättas för militär flygverksamhet.",
+        "validFrom": "2026-09-04T06:00Z",
+        "validTo": "2026-09-14T06:00Z",
+        "layer": {
+          "lower": "SFC",
+          "upper": "4500",
+          "uom": "ft AMSL",
+          "lowerReference": "AGL",
+          "upperReference": "AMSL"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SUP.59",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                11.72944444,
+                58.45805556
+              ],
+              [
+                11.775,
+                58.38638889
+              ],
+              [
+                11.73611111,
+                58.35888889
+              ],
+              [
+                11.80444444,
+                58.28611111
+              ],
+              [
+                11.32361111,
+                58.16833333
+              ],
+              [
+                11.22277778,
+                58.22861111
+              ],
+              [
+                11.13805556,
+                58.30805556
+              ],
+              [
+                11.72944444,
+                58.45805556
+              ]
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "the_geom",
+      "properties": {
+        "NAME": "KYRKEBY",
+        "ID": "ESR502_1",
+        "DESIG": "ESR502",
+        "LOWER": "SFC",
+        "UPPER": "4500",
+        "FROM": "2026-09-04T06:00Z",
+        "TO": "2026-09-14T06:00Z",
+        "SCHEDULE": "04 SEP 0600 – 2359\n05 – 13 SEP H24\n14 SEP 0000 – 0600",
+        "COM_SE": "Tillfälliga restriktionsområden ESR500 Vrångö, ESR501 Kungshamn, ESR502 Kyrkeby, ESR503 Orust, ESR504 Stigfjorden, ESR505 Hakefjorden och ESR506 Öckerö upprättas för militär flygverksamhet.",
+        "COM_EN": "Temporary restricted areas ESR500 Vrångö, ESR501 Kungshamn, ESR502 Kyrkeby, ESR503 Orust, ESR504 Stigfjorden, ESR505 Hakefjorden and ESR506 Öckerö established for military aviation operations.",
+        "URL": "https://aro.lfv.se/content/eaip/AIP%20AMDT%201-2026_2026_08_07/eSUP/AIP%20SUP%20145-2026_2026_09_04/ES-SUP-sv-SE.html#SUP",
+        "COORD": "",
+        "LOW_UOM": "",
+        "UP_UOM": "ft AMSL",
+        "name": "KYRKEBY",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "OTHER"
+        ],
+        "comment": "Tillfälliga restriktionsområden ESR500 Vrångö, ESR501 Kungshamn, ESR502 Kyrkeby, ESR503 Orust, ESR504 Stigfjorden, ESR505 Hakefjorden och ESR506 Öckerö upprättas för militär flygverksamhet.",
+        "validFrom": "2026-09-04T06:00Z",
+        "validTo": "2026-09-14T06:00Z",
+        "layer": {
+          "lower": "SFC",
+          "upper": "4500",
+          "uom": "ft AMSL",
+          "lowerReference": "AGL",
+          "upperReference": "AMSL"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SUP.60",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                11.96333333,
+                58.35416667
+              ],
+              [
+                11.94833333,
+                58.21333333
+              ],
+              [
+                11.85444444,
+                58.1275
+              ],
+              [
+                11.30916667,
+                58.03277778
+              ],
+              [
+                11.26472222,
+                58.10361111
+              ],
+              [
+                11.32361111,
+                58.16833333
+              ],
+              [
+                11.83944444,
+                58.29472222
+              ],
+              [
+                11.96333333,
+                58.35416667
+              ]
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "the_geom",
+      "properties": {
+        "NAME": "ORUST",
+        "ID": "ESR503_1",
+        "DESIG": "ESR503",
+        "LOWER": "SFC",
+        "UPPER": "4500",
+        "FROM": "2026-09-04T06:00Z",
+        "TO": "2026-09-14T06:00Z",
+        "SCHEDULE": "04 SEP 0600 – 2359\n05 – 13 SEP H24\n14 SEP 0000 – 0600",
+        "COM_SE": "Tillfälliga restriktionsområden ESR500 Vrångö, ESR501 Kungshamn, ESR502 Kyrkeby, ESR503 Orust, ESR504 Stigfjorden, ESR505 Hakefjorden och ESR506 Öckerö upprättas för militär flygverksamhet.",
+        "COM_EN": "Temporary restricted areas ESR500 Vrångö, ESR501 Kungshamn, ESR502 Kyrkeby, ESR503 Orust, ESR504 Stigfjorden, ESR505 Hakefjorden and ESR506 Öckerö established for military aviation operations.",
+        "URL": "https://aro.lfv.se/content/eaip/AIP%20AMDT%201-2026_2026_08_07/eSUP/AIP%20SUP%20145-2026_2026_09_04/ES-SUP-sv-SE.html#SUP",
+        "COORD": "",
+        "LOW_UOM": "",
+        "UP_UOM": "ft AMSL",
+        "name": "ORUST",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "OTHER"
+        ],
+        "comment": "Tillfälliga restriktionsområden ESR500 Vrångö, ESR501 Kungshamn, ESR502 Kyrkeby, ESR503 Orust, ESR504 Stigfjorden, ESR505 Hakefjorden och ESR506 Öckerö upprättas för militär flygverksamhet.",
+        "validFrom": "2026-09-04T06:00Z",
+        "validTo": "2026-09-14T06:00Z",
+        "layer": {
+          "lower": "SFC",
+          "upper": "4500",
+          "uom": "ft AMSL",
+          "lowerReference": "AGL",
+          "upperReference": "AMSL"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SUP.61",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                11.85444444,
+                58.1275
+              ],
+              [
+                11.82055556,
+                58.0425
+              ],
+              [
+                11.37833333,
+                57.93666667
+              ],
+              [
+                11.30916667,
+                58.03277778
+              ],
+              [
+                11.85444444,
+                58.1275
+              ]
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "the_geom",
+      "properties": {
+        "NAME": "STIGFJORDEN",
+        "ID": "ESR504_1",
+        "DESIG": "ESR504",
+        "LOWER": "SFC",
+        "UPPER": "4500",
+        "FROM": "2026-09-04T06:00Z",
+        "TO": "2026-09-14T06:00Z",
+        "SCHEDULE": "04 SEP 0600 – 2359\n05 – 13 SEP H24\n14 SEP 0000 – 0600",
+        "COM_SE": "Tillfälliga restriktionsområden ESR500 Vrångö, ESR501 Kungshamn, ESR502 Kyrkeby, ESR503 Orust, ESR504 Stigfjorden, ESR505 Hakefjorden och ESR506 Öckerö upprättas för militär flygverksamhet.",
+        "COM_EN": "Temporary restricted areas ESR500 Vrångö, ESR501 Kungshamn, ESR502 Kyrkeby, ESR503 Orust, ESR504 Stigfjorden, ESR505 Hakefjorden and ESR506 Öckerö established for military aviation operations.",
+        "URL": "https://aro.lfv.se/content/eaip/AIP%20AMDT%201-2026_2026_08_07/eSUP/AIP%20SUP%20145-2026_2026_09_04/ES-SUP-sv-SE.html#SUP",
+        "COORD": "",
+        "LOW_UOM": "",
+        "UP_UOM": "ft AMSL",
+        "name": "STIGFJORDEN",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "OTHER"
+        ],
+        "comment": "Tillfälliga restriktionsområden ESR500 Vrångö, ESR501 Kungshamn, ESR502 Kyrkeby, ESR503 Orust, ESR504 Stigfjorden, ESR505 Hakefjorden och ESR506 Öckerö upprättas för militär flygverksamhet.",
+        "validFrom": "2026-09-04T06:00Z",
+        "validTo": "2026-09-14T06:00Z",
+        "layer": {
+          "lower": "SFC",
+          "upper": "4500",
+          "uom": "ft AMSL",
+          "lowerReference": "AGL",
+          "upperReference": "AMSL"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SUP.62",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                11.82055556,
+                58.0425
+              ],
+              [
+                11.79666667,
+                57.99194444
+              ],
+              [
+                11.74833333,
+                57.9175
+              ],
+              [
+                11.68361111,
+                57.84944444
+              ],
+              [
+                11.47333333,
+                57.83472222
+              ],
+              [
+                11.37833333,
+                57.93666667
+              ],
+              [
+                11.82055556,
+                58.0425
+              ]
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "the_geom",
+      "properties": {
+        "NAME": "HAKEFJORDEN",
+        "ID": "ESR505_1",
+        "DESIG": "ESR505",
+        "LOWER": "SFC",
+        "UPPER": "4500",
+        "FROM": "2026-09-04T06:00Z",
+        "TO": "2026-09-14T06:00Z",
+        "SCHEDULE": "04 SEP 0600 – 2359\n05 – 13 SEP H24\n14 SEP 0000 – 0600",
+        "COM_SE": "Tillfälliga restriktionsområden ESR500 Vrångö, ESR501 Kungshamn, ESR502 Kyrkeby, ESR503 Orust, ESR504 Stigfjorden, ESR505 Hakefjorden och ESR506 Öckerö upprättas för militär flygverksamhet.",
+        "COM_EN": "Temporary restricted areas ESR500 Vrångö, ESR501 Kungshamn, ESR502 Kyrkeby, ESR503 Orust, ESR504 Stigfjorden, ESR505 Hakefjorden and ESR506 Öckerö established for military aviation operations.",
+        "URL": "https://aro.lfv.se/content/eaip/AIP%20AMDT%201-2026_2026_08_07/eSUP/AIP%20SUP%20145-2026_2026_09_04/ES-SUP-sv-SE.html#SUP",
+        "COORD": "",
+        "LOW_UOM": "",
+        "UP_UOM": "ft AMSL",
+        "name": "HAKEFJORDEN",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "OTHER"
+        ],
+        "comment": "Tillfälliga restriktionsområden ESR500 Vrångö, ESR501 Kungshamn, ESR502 Kyrkeby, ESR503 Orust, ESR504 Stigfjorden, ESR505 Hakefjorden och ESR506 Öckerö upprättas för militär flygverksamhet.",
+        "validFrom": "2026-09-04T06:00Z",
+        "validTo": "2026-09-14T06:00Z",
+        "layer": {
+          "lower": "SFC",
+          "upper": "4500",
+          "uom": "ft AMSL",
+          "lowerReference": "AGL",
+          "upperReference": "AMSL"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SUP.63",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                11.68361111,
+                57.84944444
+              ],
+              [
+                11.67805556,
+                57.78861111
+              ],
+              [
+                11.74416667,
+                57.66666667
+              ],
+              [
+                11.71444444,
+                57.66666667
+              ],
+              [
+                11.47583333,
+                57.66666667
+              ],
+              [
+                11.47333333,
+                57.83472222
+              ],
+              [
+                11.68361111,
+                57.84944444
+              ]
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "the_geom",
+      "properties": {
+        "NAME": "ÖCKERÖ",
+        "ID": "ESR506_1",
+        "DESIG": "ESR506",
+        "LOWER": "SFC",
+        "UPPER": "4500",
+        "FROM": "2026-09-04T06:00Z",
+        "TO": "2026-09-14T06:00Z",
+        "SCHEDULE": "04 SEP 0600 – 2359\n05 – 13 SEP H24\n14 SEP 0000 – 0600",
+        "COM_SE": "Tillfälliga restriktionsområden ESR500 Vrångö, ESR501 Kungshamn, ESR502 Kyrkeby, ESR503 Orust, ESR504 Stigfjorden, ESR505 Hakefjorden och ESR506 Öckerö upprättas för militär flygverksamhet.",
+        "COM_EN": "Temporary restricted areas ESR500 Vrångö, ESR501 Kungshamn, ESR502 Kyrkeby, ESR503 Orust, ESR504 Stigfjorden, ESR505 Hakefjorden and ESR506 Öckerö established for military aviation operations.",
+        "URL": "https://aro.lfv.se/content/eaip/AIP%20AMDT%201-2026_2026_08_07/eSUP/AIP%20SUP%20145-2026_2026_09_04/ES-SUP-sv-SE.html#SUP",
+        "COORD": "",
+        "LOW_UOM": "",
+        "UP_UOM": "ft AMSL",
+        "name": "ÖCKERÖ",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "OTHER"
+        ],
+        "comment": "Tillfälliga restriktionsområden ESR500 Vrångö, ESR501 Kungshamn, ESR502 Kyrkeby, ESR503 Orust, ESR504 Stigfjorden, ESR505 Hakefjorden och ESR506 Öckerö upprättas för militär flygverksamhet.",
+        "validFrom": "2026-09-04T06:00Z",
+        "validTo": "2026-09-14T06:00Z",
+        "layer": {
+          "lower": "SFC",
+          "upper": "4500",
+          "uom": "ft AMSL",
+          "lowerReference": "AGL",
+          "upperReference": "AMSL"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SUP.64",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                14.98277778,
+                58.74666667
+              ],
+              [
+                15.24416667,
+                58.67444444
+              ],
+              [
+                15.14833333,
+                58.5575
+              ],
+              [
+                14.9775,
+                58.54222222
+              ],
+              [
+                14.98277778,
+                58.74666667
+              ]
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "the_geom",
+      "properties": {
+        "NAME": "BONA",
+        "ID": "ESR728_1",
+        "DESIG": "ESR728",
+        "LOWER": "1600",
+        "UPPER": "FL100",
+        "FROM": "2026-09-08T06:00Z",
+        "TO": "2026-09-10T20:00Z",
+        "SCHEDULE": "08 – 10 SEP 0600 – 2200",
+        "COM_SE": "Tillfälliga restriktionsområden ESR728 Bona, ESR729 Stråken West, ESR730 Stråken East och ESR731 Lyren upprättas för militär flygverksamhet.",
+        "COM_EN": "Temporary restricted areas ESR728 Bona, ESR729 Stråken West, ESR730 Stråken East and ESR731 Lyren established for military aviation operations.",
+        "URL": "https://aro.lfv.se/content/eaip/AIP%20AMDT%201-2026_2026_08_07/eSUP/AIP%20SUP%20144-2026_2026_09_08/ES-SUP-en-GB.html#SUP",
+        "COORD": "",
+        "LOW_UOM": "ft AMSL",
+        "UP_UOM": "",
+        "name": "BONA",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "OTHER"
+        ],
+        "comment": "Tillfälliga restriktionsområden ESR728 Bona, ESR729 Stråken West, ESR730 Stråken East och ESR731 Lyren upprättas för militär flygverksamhet.",
+        "validFrom": "2026-09-08T06:00Z",
+        "validTo": "2026-09-10T20:00Z",
+        "layer": {
+          "lower": "1600",
+          "upper": "FL100",
+          "uom": "ft AMSL",
+          "lowerReference": "AGL",
+          "upperReference": "AMSL"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SUP.65",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                15.32055556,
+                58.68916667
+              ],
+              [
+                15.3425,
+                58.66611111
+              ],
+              [
+                15.29611111,
+                58.64944444
+              ],
+              [
+                15.31305556,
+                58.58694444
+              ],
+              [
+                15.39138889,
+                58.57472222
+              ],
+              [
+                15.1475,
+                58.55777778
+              ],
+              [
+                15.24416667,
+                58.67444444
+              ],
+              [
+                15.32055556,
+                58.68916667
+              ]
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "the_geom",
+      "properties": {
+        "NAME": "STRÅKEN WEST",
+        "ID": "ESR729_1",
+        "DESIG": "ESR729",
+        "LOWER": "1600",
+        "UPPER": "FL100",
+        "FROM": "2026-09-08T06:00Z",
+        "TO": "2026-09-10T20:00Z",
+        "SCHEDULE": "08 – 10 SEP 0600 – 2200",
+        "COM_SE": "Tillfälliga restriktionsområden ESR728 Bona, ESR729 Stråken West, ESR730 Stråken East och ESR731 Lyren upprättas för militär flygverksamhet.",
+        "COM_EN": "Temporary restricted areas ESR728 Bona, ESR729 Stråken West, ESR730 Stråken East and ESR731 Lyren established for military aviation operations.",
+        "URL": "https://aro.lfv.se/content/eaip/AIP%20AMDT%201-2026_2026_08_07/eSUP/AIP%20SUP%20144-2026_2026_09_08/ES-SUP-en-GB.html#SUP",
+        "COORD": "",
+        "LOW_UOM": "ft AMSL",
+        "UP_UOM": "",
+        "name": "STRÅKEN WEST",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "OTHER"
+        ],
+        "comment": "Tillfälliga restriktionsområden ESR728 Bona, ESR729 Stråken West, ESR730 Stråken East och ESR731 Lyren upprättas för militär flygverksamhet.",
+        "validFrom": "2026-09-08T06:00Z",
+        "validTo": "2026-09-10T20:00Z",
+        "layer": {
+          "lower": "1600",
+          "upper": "FL100",
+          "uom": "ft AMSL",
+          "lowerReference": "AGL",
+          "upperReference": "AMSL"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SUP.66",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                15.48833333,
+                58.72138889
+              ],
+              [
+                15.51333333,
+                58.615
+              ],
+              [
+                15.46138889,
+                58.59722222
+              ],
+              [
+                15.43444444,
+                58.64305556
+              ],
+              [
+                15.38555556,
+                58.68166667
+              ],
+              [
+                15.3425,
+                58.66611111
+              ],
+              [
+                15.32055556,
+                58.68916667
+              ],
+              [
+                15.48833333,
+                58.72138889
+              ]
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "the_geom",
+      "properties": {
+        "NAME": "STRÅKEN EAST",
+        "ID": "ESR730_1",
+        "DESIG": "ESR730",
+        "LOWER": "1600",
+        "UPPER": "FL100",
+        "FROM": "2026-09-08T06:00Z",
+        "TO": "2026-09-10T20:00Z",
+        "SCHEDULE": "08 – 10 SEP 0600 – 2200",
+        "COM_SE": "Tillfälliga restriktionsområden ESR728 Bona, ESR729 Stråken West, ESR730 Stråken East och ESR731 Lyren upprättas för militär flygverksamhet.",
+        "COM_EN": "Temporary restricted areas ESR728 Bona, ESR729 Stråken West, ESR730 Stråken East and ESR731 Lyren established for military aviation operations.",
+        "URL": "https://aro.lfv.se/content/eaip/AIP%20AMDT%201-2026_2026_08_07/eSUP/AIP%20SUP%20144-2026_2026_09_08/ES-SUP-en-GB.html#SUP",
+        "COORD": "",
+        "LOW_UOM": "ft AMSL",
+        "UP_UOM": "",
+        "name": "STRÅKEN EAST",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "OTHER"
+        ],
+        "comment": "Tillfälliga restriktionsområden ESR728 Bona, ESR729 Stråken West, ESR730 Stråken East och ESR731 Lyren upprättas för militär flygverksamhet.",
+        "validFrom": "2026-09-08T06:00Z",
+        "validTo": "2026-09-10T20:00Z",
+        "layer": {
+          "lower": "1600",
+          "upper": "FL100",
+          "uom": "ft AMSL",
+          "lowerReference": "AGL",
+          "upperReference": "AMSL"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SUP.67",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                15.47027778,
+                58.96111111
+              ],
+              [
+                15.48833333,
+                58.72138889
+              ],
+              [
+                15.24416667,
+                58.67444444
+              ],
+              [
+                14.98277778,
+                58.74666667
+              ],
+              [
+                15.47027778,
+                58.96111111
+              ]
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "the_geom",
+      "properties": {
+        "NAME": "LYREN",
+        "ID": "ESR731_1",
+        "DESIG": "ESR731",
+        "LOWER": "1600",
+        "UPPER": "FL100",
+        "FROM": "2026-09-08T06:00Z",
+        "TO": "2026-09-10T20:00Z",
+        "SCHEDULE": "08 – 10 SEP 0600 – 2200",
+        "COM_SE": "Tillfälliga restriktionsområden ESR728 Bona, ESR729 Stråken West, ESR730 Stråken East och ESR731 Lyren upprättas för militär flygverksamhet.",
+        "COM_EN": "Temporary restricted areas ESR728 Bona, ESR729 Stråken West, ESR730 Stråken East and ESR731 Lyren established for military aviation operations.",
+        "URL": "https://aro.lfv.se/content/eaip/AIP%20AMDT%201-2026_2026_08_07/eSUP/AIP%20SUP%20144-2026_2026_09_08/ES-SUP-en-GB.html#SUP",
+        "COORD": "",
+        "LOW_UOM": "ft AMSL",
+        "UP_UOM": "",
+        "name": "LYREN",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "OTHER"
+        ],
+        "comment": "Tillfälliga restriktionsområden ESR728 Bona, ESR729 Stråken West, ESR730 Stråken East och ESR731 Lyren upprättas för militär flygverksamhet.",
+        "validFrom": "2026-09-08T06:00Z",
+        "validTo": "2026-09-10T20:00Z",
+        "layer": {
+          "lower": "1600",
+          "upper": "FL100",
+          "uom": "ft AMSL",
+          "lowerReference": "AGL",
+          "upperReference": "AMSL"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SUP.68",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                17.73138889,
+                59.245
+              ],
+              [
+                17.78361111,
+                59.24472222
+              ],
+              [
+                17.8325,
+                59.22444444
+              ],
+              [
+                17.77638889,
+                59.21277778
+              ],
+              [
+                17.765,
+                59.21527778
+              ],
+              [
+                17.73722222,
+                59.20916667
+              ],
+              [
+                17.68222222,
+                59.20527778
+              ],
+              [
+                17.65916667,
+                59.22305556
+              ],
+              [
+                17.64666667,
+                59.22944444
+              ],
+              [
+                17.65388889,
+                59.23527778
+              ],
+              [
+                17.66583333,
+                59.2325
+              ],
+              [
+                17.68666667,
+                59.23138889
+              ],
+              [
+                17.70666667,
+                59.23416667
+              ],
+              [
+                17.72166667,
+                59.24
+              ],
+              [
+                17.73138889,
+                59.245
+              ]
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "the_geom",
+      "properties": {
+        "NAME": "SALEM",
+        "ID": "ESD822_2",
+        "DESIG": "ESD822",
+        "LOWER": "GND",
+        "UPPER": "700",
+        "FROM": "2026-09-01T09:00Z",
+        "TO": "2027-08-31T17:00Z",
+        "SCHEDULE": "01 SEP 2026 – 31 AUG 2027, MON – FRI 0900 – 1700 (0800 – 1600)",
+        "COM_SE": "Tillfälligt farligt område ESD822 Salem är upprättat för UAS som flyger utom synhåll (BVLOS) enligt särskilda tillstånd.",
+        "COM_EN": "Temporary danger area ESD822 Salem is established for UAS flying beyond visual line of sight (BVLOS) with special permission.",
+        "URL": "https://aro.lfv.se/content/eaip/AIP%20AMDT%201-2026_2026_08_07/eSUP/AIP%20SUP%20143-2026_2026_09_01/ES-SUP-en-GB.html#SUP",
+        "COORD": "",
+        "LOW_UOM": "",
+        "UP_UOM": "ft AMSL",
+        "name": "SALEM",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "OTHER"
+        ],
+        "comment": "Tillfälligt farligt område ESD822 Salem är upprättat för UAS som flyger utom synhåll (BVLOS) enligt särskilda tillstånd.",
+        "validFrom": "2026-09-01T09:00Z",
+        "validTo": "2027-08-31T17:00Z",
+        "layer": {
+          "lower": "GND",
+          "upper": "700",
+          "uom": "ft AMSL",
+          "lowerReference": "AGL",
+          "upperReference": "AMSL"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SUP.69",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                14.44333333,
+                63.09472222
+              ],
+              [
+                14.45833333,
+                63.09472222
+              ],
+              [
+                14.57777778,
+                63.01611111
+              ],
+              [
+                14.55444444,
+                62.99305556
+              ],
+              [
+                14.4925,
+                62.99305556
+              ],
+              [
+                14.51166667,
+                63.01388889
+              ],
+              [
+                14.4575,
+                63.05222222
+              ],
+              [
+                14.44333333,
+                63.09472222
+              ]
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "the_geom",
+      "properties": {
+        "NAME": "ORRLANDA",
+        "ID": "ESD871_1",
+        "DESIG": "ESD871",
+        "LOWER": "GND",
+        "UPPER": "1600",
+        "FROM": "2026-09-01T07:00Z",
+        "TO": "2027-01-31T17:00Z",
+        "SCHEDULE": "01 SEP 2026 – 31 JAN 2027, MON – FRI 0700 – 1700 (0600 – 1600)",
+        "COM_SE": "Tillfälligt farligt område ESD871 Orrlanda upprättas för UAS som flyger utom synhåll (BVLOS) enligt särskilda tillstånd.",
+        "COM_EN": "Temporary danger area ESD871 Orrlanda established for UAS flying beyond visual line of sight (BVLOS) with special permission.",
+        "URL": "https://aro.lfv.se/content/eaip/AIP%20AMDT%201-2026_2026_08_07/eSUP/AIP%20SUP%20142-2026_2026_09_01/ES-SUP-en-GB.html#SUP",
+        "COORD": "",
+        "LOW_UOM": "",
+        "UP_UOM": "ft AMSL",
+        "name": "ORRLANDA",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "OTHER"
+        ],
+        "comment": "Tillfälligt farligt område ESD871 Orrlanda upprättas för UAS som flyger utom synhåll (BVLOS) enligt särskilda tillstånd.",
+        "validFrom": "2026-09-01T07:00Z",
+        "validTo": "2027-01-31T17:00Z",
+        "layer": {
+          "lower": "GND",
+          "upper": "1600",
+          "uom": "ft AMSL",
+          "lowerReference": "AGL",
+          "upperReference": "AMSL"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SUP.70",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                11.82361111,
+                57.59111111
+              ],
+              [
+                11.84833333,
+                57.56416667
+              ],
+              [
+                11.80027778,
+                57.54333333
+              ],
+              [
+                11.745,
+                57.54722222
+              ],
+              [
+                11.71388889,
+                57.58277778
+              ],
+              [
+                11.82361111,
+                57.59111111
+              ]
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "the_geom",
+      "properties": {
+        "NAME": "VRÅNGÖ",
+        "ID": "ESR500_1",
+        "DESIG": "ESR500",
+        "LOWER": "SFC",
+        "UPPER": "2500",
+        "FROM": "2026-09-04T06:00Z",
+        "TO": "2026-09-14T06:00Z",
+        "SCHEDULE": "04 SEP 0600 – 2359\n05 – 13 SEP H24\n14 SEP 0000 – 0600",
+        "COM_SE": "Tillfälliga restriktionsområden ESR500 Vrångö, ESR501 Kungshamn, ESR502 Kyrkeby, ESR503 Orust, ESR504 Stigfjorden, ESR505 Hakefjorden och ESR506 Öckerö upprättas för militär flygverksamhet.",
+        "COM_EN": "Temporary restricted areas ESR500 Vrångö, ESR501 Kungshamn, ESR502 Kyrkeby, ESR503 Orust, ESR504 Stigfjorden, ESR505 Hakefjorden and ESR506 Öckerö established for military aviation operations.",
+        "URL": "https://aro.lfv.se/content/eaip/AIP%20AMDT%201-2026_2026_08_07/eSUP/AIP%20SUP%20145-2026_2026_09_04/ES-SUP-sv-SE.html#SUP",
+        "COORD": "",
+        "LOW_UOM": "",
+        "UP_UOM": "ft AMSL",
+        "name": "VRÅNGÖ",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "OTHER"
+        ],
+        "comment": "Tillfälliga restriktionsområden ESR500 Vrångö, ESR501 Kungshamn, ESR502 Kyrkeby, ESR503 Orust, ESR504 Stigfjorden, ESR505 Hakefjorden och ESR506 Öckerö upprättas för militär flygverksamhet.",
+        "validFrom": "2026-09-04T06:00Z",
+        "validTo": "2026-09-14T06:00Z",
+        "layer": {
+          "lower": "SFC",
+          "upper": "2500",
           "uom": "ft AMSL",
           "lowerReference": "AGL",
           "upperReference": "AMSL"
