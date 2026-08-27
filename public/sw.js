@@ -1,4 +1,4 @@
-const CACHE = 'dronarkarta-v6';
+const CACHE = 'dronarkarta-v7';
 const ALWAYS_FETCH = [
   'opendata-download-metfcst.smhi.se',
   'googletagmanager.com',
@@ -10,6 +10,12 @@ const ALWAYS_FETCH = [
   'basemaps.cartocdn.com',
   'arcgisonline.com'
 ];
+
+self.addEventListener('message', e => {
+  if (e.data && e.data.type === 'SKIP_WAITING') {
+    self.skipWaiting();
+  }
+});
 
 self.addEventListener('install', e => {
   e.waitUntil(

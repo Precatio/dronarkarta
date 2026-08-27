@@ -2,8 +2,15 @@ const fs = require('fs');
 const https = require('https');
 const path = require('path');
 
-const dataDir = path.join(__dirname, 'public', 'data');
-fs.mkdirSync(dataDir, { recursive: true });
+const publicDataDir = path.join(__dirname, 'public', 'data');
+const rootDataDir = path.join(__dirname, 'data');
+fs.mkdirSync(publicDataDir, { recursive: true });
+fs.mkdirSync(rootDataDir, { recursive: true });
+
+function writeDataFile(filename, content) {
+  fs.writeFileSync(path.join(publicDataDir, filename), content);
+  fs.writeFileSync(path.join(rootDataDir, filename), content);
+}
 
 
 function fetchJson(url) {
@@ -152,7 +159,7 @@ async function start() {
       };
     });
 
-    fs.writeFileSync(path.join(dataDir, 'ctrs_sverige.json'), JSON.stringify({ type: 'FeatureCollection', features: features }, null, 2));
+    writeDataFile('ctrs_sverige.json', JSON.stringify({ type: 'FeatureCollection', features: features }, null, 2));
     console.log(`Sparade ${features.length} CTRs i data/ctrs_sverige.json`);
   } catch (e) {
     console.error('Fel vid hämtning av CTR:', e.message);
@@ -179,7 +186,7 @@ async function start() {
       };
     });
 
-    fs.writeFileSync(path.join(dataDir, 'rsta_sverige.json'), JSON.stringify({ type: 'FeatureCollection', features: features }, null, 2));
+    writeDataFile('rsta_sverige.json', JSON.stringify({ type: 'FeatureCollection', features: features }, null, 2));
     console.log(`Sparade ${features.length} R-områden i data/rsta_sverige.json`);
   } catch (e) {
     console.error('Fel vid hämtning av Restricted Areas:', e.message);
@@ -199,7 +206,7 @@ async function start() {
       f.properties.indicator = f.properties.POSITIONINDICATOR || '';
     });
 
-    fs.writeFileSync(path.join(dataDir, 'airports_sverige.json'), JSON.stringify({ type: 'FeatureCollection', features: features }, null, 2));
+    writeDataFile('airports_sverige.json', JSON.stringify({ type: 'FeatureCollection', features: features }, null, 2));
     console.log(`Sparade ${features.length} flygplatser/heliportar i data/airports_sverige.json`);
   } catch (e) {
     console.error('Fel vid hämtning av Airports:', e.message);
@@ -220,7 +227,7 @@ async function start() {
       f.properties.comment = f.properties.COM_SE || '';
     });
 
-    fs.writeFileSync(path.join(dataDir, 'helipads_sverige.json'), JSON.stringify({ type: 'FeatureCollection', features: features }, null, 2));
+    writeDataFile('helipads_sverige.json', JSON.stringify({ type: 'FeatureCollection', features: features }, null, 2));
     console.log(`Sparade ${features.length} helikopterflygplatser i data/helipads_sverige.json`);
   } catch (e) {
     console.error('Fel vid hämtning av helikopterflygplatser (HKP1K):', e.message);
@@ -240,7 +247,7 @@ async function start() {
       f.properties.indicator = f.properties.POSITIONIN || '';
     });
 
-    fs.writeFileSync(path.join(dataDir, 'rwy5k_sverige.json'), JSON.stringify({ type: 'FeatureCollection', features: features }, null, 2));
+    writeDataFile('rwy5k_sverige.json', JSON.stringify({ type: 'FeatureCollection', features: features }, null, 2));
     console.log(`Sparade ${features.length} skyddszoner (RWY5K) i data/rwy5k_sverige.json`);
   } catch (e) {
     console.error('Fel vid hämtning av skyddszoner (RWY5K):', e.message);
@@ -321,7 +328,7 @@ async function start() {
   }
 
   // Save merged supplements file
-  fs.writeFileSync(path.join(dataDir, 'supplements_sverige.json'), JSON.stringify({ type: 'FeatureCollection', features: combinedSupplements }, null, 2));
+  writeDataFile('supplements_sverige.json', JSON.stringify({ type: 'FeatureCollection', features: combinedSupplements }, null, 2));
   console.log(`Sparade totalt ${combinedSupplements.length} tillfälliga restriktioner (NOTAM/SUP) i data/supplements_sverige.json`);
 
   // 5. Fetch Nature Reserves for each of the 21 Counties (Län) using OGC XML Filter
@@ -357,8 +364,7 @@ async function start() {
         }
       }
 
-      const destFile = path.join(dataDir, `reservat_${county.id}.json`);
-      fs.writeFileSync(destFile, JSON.stringify({ type: 'FeatureCollection', features: countyReserves }, null, 2));
+      writeDataFile(`reservat_${county.id}.json`, JSON.stringify({ type: 'FeatureCollection', features: countyReserves }, null, 2));
       console.log(`✓ Sparade ${countyReserves.length} reservat i data/reservat_${county.id}.json`);
     } catch (e) {
       console.error(`❌ Fel vid hämtning av naturreservat för ${county.name}:`, e.message);
@@ -366,8 +372,7 @@ async function start() {
   }
 
   // Save update metadata timestamp file
-  const metaDest = path.join(dataDir, 'last_update.json');
-  fs.writeFileSync(metaDest, JSON.stringify({ lastUpdate: new Date().toISOString() }, null, 2));
+  writeDataFile('last_update.json', JSON.stringify({ lastUpdate: new Date().toISOString() }, null, 2));
   console.log(`✓ Sparade tidsstämpel i data/last_update.json`);
 
   console.log('--- ALLA FILER NEDLADDADE OCH KLARA ---');

@@ -40,6 +40,15 @@ let allFeatures = [];
 let nationalFeatures = [];
 let currentCountyReserves = [];
 let rwy5kCodes = new Set();
+
+// Helper: Check if an airport code or feature has an official LFV runway polygon (RWY5K)
+function hasPreciseRunwayZone(indicatorOrFeature) {
+  if (!indicatorOrFeature) return false;
+  const code = typeof indicatorOrFeature === 'string'
+    ? indicatorOrFeature
+    : (indicatorOrFeature.properties?.indicator || indicatorOrFeature.properties?.POSITIONINDICATOR || indicatorOrFeature.properties?.POSITIONIN || '');
+  return rwy5kCodes.has(code.trim().toUpperCase());
+}
 let userLocation = null;
 let userMarker = null;
 let destinationMarker = null;
@@ -164,9 +173,14 @@ function detectAndChangeCounty(lat, lng) {
 }
 
 
+// CARTO API-nyckel krävs numera för basemaps.
+// Hämta en gratis nyckel på: https://carto.com/basemaps/apikey
+const CARTO_API_KEY = 'cb1_2d9r_1_cf464991d0e85a4d74fe0d80'; 
+const cartoKeyParam = CARTO_API_KEY !== 'KLISTRA_IN_DIN_NYCKEL_HÄR' && CARTO_API_KEY !== '' ? `?key=${CARTO_API_KEY}` : '';
+
 // Map tile layers
 const tileLayers = {
-  dark: L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+  dark: L.tileLayer(`https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png${cartoKeyParam}`, {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>',
     maxZoom: 20
   }),
@@ -174,11 +188,11 @@ const tileLayers = {
     attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community',
     maxZoom: 18
   }),
-  light: L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
+  light: L.tileLayer(`https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png${cartoKeyParam}`, {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>',
     maxZoom: 20
   }),
-  radar: L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+  radar: L.tileLayer(`https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png${cartoKeyParam}`, {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; LFV &copy; Naturvårdsverket',
     maxZoom: 20
   })
@@ -511,7 +525,11 @@ async function loadAllAirspaceData() {
     rwy5kFeatures.forEach(f => f.properties.source = 'rwy5k');
 
     // Populate the set of airport codes that have precise runway buffer geometries
-    rwy5kCodes = new Set(rwy5kFeatures.map(f => f.properties.indicator).filter(Boolean));
+    rwy5kCodes = new Set(
+      rwy5kFeatures
+        .map(f => (f.properties.indicator || f.properties.POSITIONIN || '').trim().toUpperCase())
+        .filter(Boolean)
+    );
 
     // Save as national features
     nationalFeatures = [
@@ -601,7 +619,7 @@ function renderZones() {
 
       // 2. Create 5km airport protection area circle (Red) - Only if we do NOT have a precise runway buffer polygon
       let warningCircle = null;
-      if (!rwy5kCodes.has(code)) {
+      if (!hasPreciseRunwayZone(code)) {
         warningCircle = L.circle(airportLatLng, {
           radius: 5000,
           color: '#ef4444',
@@ -843,7 +861,7 @@ function createPopupContent(feature) {
   // 3. LFV ARP Airport marker popup content
   if (source === 'arp') {
     const code = escapeHtml(feature.properties.indicator || '');
-    const hasPreciseZone = rwy5kCodes.has(code);
+    const hasPreciseZone = hasPreciseRunwayZone(code);
     return `
       <div class="popup-zone-details">
         <span class="popup-zone-tag tag-auth">Flygplats (Trafikpunkt)</span>
@@ -1328,7 +1346,7 @@ function checkUserFlightStatus(latLng) {
       });
       
       const code = nearestAirport?.properties.indicator || '';
-      if (rwy5kCodes.has(code)) {
+      if (hasPreciseRunwayZone(code)) {
         // If the nearest airport has a precise zone, but we are NOT inside it, then we are outside 5km
         isWithin5k = false;
         // Estimate distance to nearest runway boundary (using the rwy5k polygon)
@@ -1384,7 +1402,7 @@ function isPointInsideFeature(latLng, feature) {
 
   // Draw 5km warning zones around Airport points
   if (geom.type === 'Point' && feature.properties.source === 'arp') {
-    if (rwy5kCodes.has(feature.properties.indicator)) {
+    if (hasPreciseRunwayZone(feature)) {
       return false; // Skip circular buffer because we have the precise runway buffer polygon
     }
     const center = L.latLng(geom.coordinates[1], geom.coordinates[0]);
@@ -1423,7 +1441,7 @@ function isCoordinateInRedZone(latLng) {
 
     // Handle airport warning area circle (RED)
     if (source === 'arp') {
-      if (rwy5kCodes.has(feature.properties.indicator)) {
+      if (hasPreciseRunwayZone(feature)) {
         return false; // Skip circular buffer because we have the precise runway buffer polygon
       }
       const coords = feature.geometry.coordinates;
@@ -1487,8 +1505,7 @@ function calculateDistanceToFeature(latLng, feature) {
   if (geom.type === 'Point' && feature.properties.source === 'arp') {
     const center = L.latLng(geom.coordinates[1], geom.coordinates[0]);
     const dist = latLng.distanceTo(center);
-    const code = feature.properties.indicator || '';
-    const radius = rwy5kCodes.has(code) ? 0 : 5000;
+    const radius = hasPreciseRunwayZone(feature) ? 0 : 5000;
     return Math.max(0, dist - radius); // Distance to airport warning boundary
   }
 
@@ -1867,7 +1884,7 @@ function exportToGpx() {
         points = getCirclePoints({ lat: centerLat, lng: centerLng }, feature.geometry.extent.radius);
       } else if (source === 'arp') {
         // Warning circle around airports - only if it does NOT have a precise runway polygon
-        if (!rwy5kCodes.has(feature.properties.indicator)) {
+        if (!hasPreciseRunwayZone(feature)) {
           points = getCirclePoints({ lat: centerLat, lng: centerLng }, 5000);
         }
       }
@@ -2464,7 +2481,7 @@ function checkGeofenceAlert(latlng) {
 
     // 1. Point geometries (mostly airports / heliports with circular warning buffers)
     if (zone.geometry.type === 'Point') {
-      if (source === 'arp' && rwy5kCodes.has(zone.properties.indicator)) {
+      if (source === 'arp' && hasPreciseRunwayZone(zone)) {
         continue; // Skip circular buffer because we have the precise runway buffer polygon
       }
       const centerLng = zone.geometry.coordinates[0];
