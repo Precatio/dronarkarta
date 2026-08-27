@@ -238,7 +238,7 @@ html, body {
 
 /* Green monochrome filter for map tiles in radar theme - high contrast ATC style */
 .radar-theme .leaflet-tile {
-  filter: grayscale(1) sepia(1) saturate(6) hue-rotate(110deg) brightness(0.4) contrast(3.5) !important;
+  filter: grayscale(1) sepia(1) saturate(6) hue-rotate(110deg) brightness(0.8) contrast(1.5) !important;
 }
 
 /* Style zone borders specifically to look glowing and prominent */
