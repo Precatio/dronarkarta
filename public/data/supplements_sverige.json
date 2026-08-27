@@ -77,7 +77,7 @@
         "LOWER": "GND",
         "UPPER": "2300",
         "FROM": "2025-07-01T00:00Z",
-        "TO": "2026-11-30T23:59Z",
+        "TO": "2026-08-27T23:59Z",
         "SCHEDULE": "01 JUL 2025 - 30 NOV 2026, H24",
         "COM_SE": "Tillfälligt farligt område ESD873 Optand är upprättat för UAS\nsom flyger utom synhåll (BVLOS).",
         "COM_EN": "Temporary danger area ESD873 Optand is established for\nUAS flying beyond visual line of sight (BVLOS).",
@@ -92,7 +92,7 @@
         ],
         "comment": "Tillfälligt farligt område ESD873 Optand är upprättat för UAS\nsom flyger utom synhåll (BVLOS).",
         "validFrom": "2025-07-01T00:00Z",
-        "validTo": "2026-11-30T23:59Z",
+        "validTo": "2026-08-27T23:59Z",
         "layer": {
           "lower": "GND",
           "upper": "2300",
@@ -3870,140 +3870,6 @@
           [
             [
               [
-                15.38583333,
-                58.52472222
-              ],
-              [
-                15.70583333,
-                58.49972222
-              ],
-              [
-                15.61972222,
-                58.445
-              ],
-              [
-                15.62194444,
-                58.32805556
-              ],
-              [
-                15.31638889,
-                58.42888889
-              ],
-              [
-                15.38583333,
-                58.52472222
-              ]
-            ]
-          ]
-        ]
-      },
-      "geometry_name": "the_geom",
-      "properties": {
-        "NAME": "SAAB CTR SEKTOR B",
-        "ID": "ESSL_1",
-        "DESIG": "ESSL",
-        "LOWER": "GND",
-        "UPPER": "FL120",
-        "FROM": "2026-08-10T06:30Z",
-        "TO": "2026-08-25T00:00Z",
-        "SCHEDULE": "10 AUG – 25 AUG 2026",
-        "COM_SE": "Med anledning av att Flygvapnet fyller 100 år är det flyguppvisning på Linköping/Malmen flygplats.\n \nUppvisningsområdet är Malmen CTR samt SAAB CTR Sektor B, GND - FL120 (tillfällig vertikal utökning).",
-        "COM_EN": "Due to the Swedish Air Force’s 100th anniversary an air display will take place at Linköping/Malmen aerodrome.\n \nDisplay area is Malmen CTR and SAAB CTR Sector B, GND - FL120 (temporary vertical extension).",
-        "URL": "https://aro.lfv.se/content/eaip/AIP%20AMDT%201-2026_2026_08_07/eSUP/AIP%20SUP%20126-2026_2026_08_10/ES-SUP-en-GB.html#SUP",
-        "COORD": "",
-        "LOW_UOM": "",
-        "UP_UOM": "",
-        "name": "SAAB CTR SEKTOR B",
-        "type": "REQ_AUTHORIZATION",
-        "reason": [
-          "OTHER"
-        ],
-        "comment": "Med anledning av att Flygvapnet fyller 100 år är det flyguppvisning på Linköping/Malmen flygplats.\n \nUppvisningsområdet är Malmen CTR samt SAAB CTR Sektor B, GND - FL120 (tillfällig vertikal utökning).",
-        "validFrom": "2026-08-10T06:30Z",
-        "validTo": "2026-08-25T00:00Z",
-        "layer": {
-          "lower": "GND",
-          "upper": "FL120",
-          "uom": "ft AMSL",
-          "lowerReference": "AGL",
-          "upperReference": "AMSL"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "SUP.46",
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
-          [
-            [
-              [
-                15.31638889,
-                58.42888889
-              ],
-              [
-                15.62194444,
-                58.32805556
-              ],
-              [
-                15.49694444,
-                58.22805556
-              ],
-              [
-                15.34,
-                58.2575
-              ],
-              [
-                15.31638889,
-                58.42888889
-              ]
-            ]
-          ]
-        ]
-      },
-      "geometry_name": "the_geom",
-      "properties": {
-        "NAME": "MALMEN CTR",
-        "ID": "ESCF_1",
-        "DESIG": "ESCF",
-        "LOWER": "GND",
-        "UPPER": "FL120",
-        "FROM": "2026-08-10T06:30Z",
-        "TO": "2026-08-25T23:59Z",
-        "SCHEDULE": "10 AUG – 25 AUG 2026",
-        "COM_SE": "Med anledning av att Flygvapnet fyller 100 år är det flyguppvisning på Linköping/Malmen flygplats.\n \nUppvisningsområdet är Malmen CTR samt SAAB CTR Sektor B, GND - FL120 (tillfällig vertikal utökning).",
-        "COM_EN": "Due to the Swedish Air Force’s 100th anniversary an air display will take place at Linköping/Malmen aerodrome.\n \nDisplay area is Malmen CTR and SAAB CTR Sector B, GND - FL120 (temporary vertical extension).",
-        "URL": "https://aro.lfv.se/content/eaip/AIP%20AMDT%201-2026_2026_08_07/eSUP/AIP%20SUP%20126-2026_2026_08_10/ES-SUP-en-GB.html#SUP",
-        "COORD": "",
-        "LOW_UOM": "",
-        "UP_UOM": "",
-        "name": "MALMEN CTR",
-        "type": "REQ_AUTHORIZATION",
-        "reason": [
-          "OTHER"
-        ],
-        "comment": "Med anledning av att Flygvapnet fyller 100 år är det flyguppvisning på Linköping/Malmen flygplats.\n \nUppvisningsområdet är Malmen CTR samt SAAB CTR Sektor B, GND - FL120 (tillfällig vertikal utökning).",
-        "validFrom": "2026-08-10T06:30Z",
-        "validTo": "2026-08-25T23:59Z",
-        "layer": {
-          "lower": "GND",
-          "upper": "FL120",
-          "uom": "ft AMSL",
-          "lowerReference": "AGL",
-          "upperReference": "AMSL"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "SUP.47",
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
-          [
-            [
-              [
                 12.79138889,
                 63.68
               ],
@@ -4074,7 +3940,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.48",
+      "id": "SUP.46",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -4147,7 +4013,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.49",
+      "id": "SUP.47",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -4212,7 +4078,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.50",
+      "id": "SUP.48",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -4281,7 +4147,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.51",
+      "id": "SUP.49",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -4586,7 +4452,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.52",
+      "id": "SUP.50",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -4803,7 +4669,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.53",
+      "id": "SUP.51",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -4880,7 +4746,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.54",
+      "id": "SUP.52",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -5001,7 +4867,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.55",
+      "id": "SUP.53",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -5082,7 +4948,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.56",
+      "id": "SUP.54",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -5147,7 +5013,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.57",
+      "id": "SUP.55",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -5224,7 +5090,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.58",
+      "id": "SUP.56",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -5268,9 +5134,9 @@
         "FROM": "2026-09-04T06:00Z",
         "TO": "2026-09-14T06:00Z",
         "SCHEDULE": "04 SEP 0600 – 2359\n05 – 13 SEP H24\n14 SEP 0000 – 0600",
-        "COM_SE": "Tillfälliga restriktionsområden ESR500 Vrångö, ESR501 Kungshamn, ESR502 Kyrkeby, ESR503 Orust, ESR504 Stigfjorden, ESR505 Hakefjorden och ESR506 Öckerö upprättas för militär flygverksamhet.",
-        "COM_EN": "Temporary restricted areas ESR500 Vrångö, ESR501 Kungshamn, ESR502 Kyrkeby, ESR503 Orust, ESR504 Stigfjorden, ESR505 Hakefjorden and ESR506 Öckerö established for military aviation operations.",
-        "URL": "https://aro.lfv.se/content/eaip/AIP%20AMDT%201-2026_2026_08_07/eSUP/AIP%20SUP%20145-2026_2026_09_04/ES-SUP-sv-SE.html#SUP",
+        "COM_SE": "Tillfälliga restriktionsområden ESR500 Vrångö, ESR501 Kungshamn, ESR502 Kyrkeby, ESR503 Orust, ESR504 Stigfjorden, ESR506 Öckerö och ESR508 Hakefjorden upprättas för militär flygverksamhet.",
+        "COM_EN": "Temporary restricted areas ESR500 Vrångö, ESR501 Kungshamn, ESR502 Kyrkeby, ESR503 Orust, ESR504 Stigfjorden, ESR506 Öckerö and ESR508 Hakefjorden established for military aviation operations.",
+        "URL": "https://aro.lfv.se/content/eaip/AIP%20AMDT%201-2026_2026_08_07/eSUP/AIP%20SUP%20152-2026_2026_09_04/ES-SUP-sv-SE.html#SUP",
         "COORD": "",
         "LOW_UOM": "",
         "UP_UOM": "ft AMSL",
@@ -5279,7 +5145,7 @@
         "reason": [
           "OTHER"
         ],
-        "comment": "Tillfälliga restriktionsområden ESR500 Vrångö, ESR501 Kungshamn, ESR502 Kyrkeby, ESR503 Orust, ESR504 Stigfjorden, ESR505 Hakefjorden och ESR506 Öckerö upprättas för militär flygverksamhet.",
+        "comment": "Tillfälliga restriktionsområden ESR500 Vrångö, ESR501 Kungshamn, ESR502 Kyrkeby, ESR503 Orust, ESR504 Stigfjorden, ESR506 Öckerö och ESR508 Hakefjorden upprättas för militär flygverksamhet.",
         "validFrom": "2026-09-04T06:00Z",
         "validTo": "2026-09-14T06:00Z",
         "layer": {
@@ -5293,7 +5159,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.59",
+      "id": "SUP.57",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -5345,9 +5211,9 @@
         "FROM": "2026-09-04T06:00Z",
         "TO": "2026-09-14T06:00Z",
         "SCHEDULE": "04 SEP 0600 – 2359\n05 – 13 SEP H24\n14 SEP 0000 – 0600",
-        "COM_SE": "Tillfälliga restriktionsområden ESR500 Vrångö, ESR501 Kungshamn, ESR502 Kyrkeby, ESR503 Orust, ESR504 Stigfjorden, ESR505 Hakefjorden och ESR506 Öckerö upprättas för militär flygverksamhet.",
-        "COM_EN": "Temporary restricted areas ESR500 Vrångö, ESR501 Kungshamn, ESR502 Kyrkeby, ESR503 Orust, ESR504 Stigfjorden, ESR505 Hakefjorden and ESR506 Öckerö established for military aviation operations.",
-        "URL": "https://aro.lfv.se/content/eaip/AIP%20AMDT%201-2026_2026_08_07/eSUP/AIP%20SUP%20145-2026_2026_09_04/ES-SUP-sv-SE.html#SUP",
+        "COM_SE": "Tillfälliga restriktionsområden ESR500 Vrångö, ESR501 Kungshamn, ESR502 Kyrkeby, ESR503 Orust, ESR504 Stigfjorden, ESR506 Öckerö och ESR508 Hakefjorden upprättas för militär flygverksamhet.",
+        "COM_EN": "Temporary restricted areas ESR500 Vrångö, ESR501 Kungshamn, ESR502 Kyrkeby, ESR503 Orust, ESR504 Stigfjorden, ESR506 Öckerö and ESR508 Hakefjorden established for military aviation operations.",
+        "URL": "https://aro.lfv.se/content/eaip/AIP%20AMDT%201-2026_2026_08_07/eSUP/AIP%20SUP%20152-2026_2026_09_04/ES-SUP-sv-SE.html#SUP",
         "COORD": "",
         "LOW_UOM": "",
         "UP_UOM": "ft AMSL",
@@ -5356,7 +5222,7 @@
         "reason": [
           "OTHER"
         ],
-        "comment": "Tillfälliga restriktionsområden ESR500 Vrångö, ESR501 Kungshamn, ESR502 Kyrkeby, ESR503 Orust, ESR504 Stigfjorden, ESR505 Hakefjorden och ESR506 Öckerö upprättas för militär flygverksamhet.",
+        "comment": "Tillfälliga restriktionsområden ESR500 Vrångö, ESR501 Kungshamn, ESR502 Kyrkeby, ESR503 Orust, ESR504 Stigfjorden, ESR506 Öckerö och ESR508 Hakefjorden upprättas för militär flygverksamhet.",
         "validFrom": "2026-09-04T06:00Z",
         "validTo": "2026-09-14T06:00Z",
         "layer": {
@@ -5370,7 +5236,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.60",
+      "id": "SUP.58",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -5422,9 +5288,9 @@
         "FROM": "2026-09-04T06:00Z",
         "TO": "2026-09-14T06:00Z",
         "SCHEDULE": "04 SEP 0600 – 2359\n05 – 13 SEP H24\n14 SEP 0000 – 0600",
-        "COM_SE": "Tillfälliga restriktionsområden ESR500 Vrångö, ESR501 Kungshamn, ESR502 Kyrkeby, ESR503 Orust, ESR504 Stigfjorden, ESR505 Hakefjorden och ESR506 Öckerö upprättas för militär flygverksamhet.",
-        "COM_EN": "Temporary restricted areas ESR500 Vrångö, ESR501 Kungshamn, ESR502 Kyrkeby, ESR503 Orust, ESR504 Stigfjorden, ESR505 Hakefjorden and ESR506 Öckerö established for military aviation operations.",
-        "URL": "https://aro.lfv.se/content/eaip/AIP%20AMDT%201-2026_2026_08_07/eSUP/AIP%20SUP%20145-2026_2026_09_04/ES-SUP-sv-SE.html#SUP",
+        "COM_SE": "Tillfälliga restriktionsområden ESR500 Vrångö, ESR501 Kungshamn, ESR502 Kyrkeby, ESR503 Orust, ESR504 Stigfjorden, ESR506 Öckerö och ESR508 Hakefjorden upprättas för militär flygverksamhet.",
+        "COM_EN": "Temporary restricted areas ESR500 Vrångö, ESR501 Kungshamn, ESR502 Kyrkeby, ESR503 Orust, ESR504 Stigfjorden, ESR506 Öckerö and ESR508 Hakefjorden established for military aviation operations.",
+        "URL": "https://aro.lfv.se/content/eaip/AIP%20AMDT%201-2026_2026_08_07/eSUP/AIP%20SUP%20152-2026_2026_09_04/ES-SUP-sv-SE.html#SUP",
         "COORD": "",
         "LOW_UOM": "",
         "UP_UOM": "ft AMSL",
@@ -5433,7 +5299,7 @@
         "reason": [
           "OTHER"
         ],
-        "comment": "Tillfälliga restriktionsområden ESR500 Vrångö, ESR501 Kungshamn, ESR502 Kyrkeby, ESR503 Orust, ESR504 Stigfjorden, ESR505 Hakefjorden och ESR506 Öckerö upprättas för militär flygverksamhet.",
+        "comment": "Tillfälliga restriktionsområden ESR500 Vrångö, ESR501 Kungshamn, ESR502 Kyrkeby, ESR503 Orust, ESR504 Stigfjorden, ESR506 Öckerö och ESR508 Hakefjorden upprättas för militär flygverksamhet.",
         "validFrom": "2026-09-04T06:00Z",
         "validTo": "2026-09-14T06:00Z",
         "layer": {
@@ -5447,7 +5313,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.61",
+      "id": "SUP.59",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -5487,9 +5353,9 @@
         "FROM": "2026-09-04T06:00Z",
         "TO": "2026-09-14T06:00Z",
         "SCHEDULE": "04 SEP 0600 – 2359\n05 – 13 SEP H24\n14 SEP 0000 – 0600",
-        "COM_SE": "Tillfälliga restriktionsområden ESR500 Vrångö, ESR501 Kungshamn, ESR502 Kyrkeby, ESR503 Orust, ESR504 Stigfjorden, ESR505 Hakefjorden och ESR506 Öckerö upprättas för militär flygverksamhet.",
-        "COM_EN": "Temporary restricted areas ESR500 Vrångö, ESR501 Kungshamn, ESR502 Kyrkeby, ESR503 Orust, ESR504 Stigfjorden, ESR505 Hakefjorden and ESR506 Öckerö established for military aviation operations.",
-        "URL": "https://aro.lfv.se/content/eaip/AIP%20AMDT%201-2026_2026_08_07/eSUP/AIP%20SUP%20145-2026_2026_09_04/ES-SUP-sv-SE.html#SUP",
+        "COM_SE": "Tillfälliga restriktionsområden ESR500 Vrångö, ESR501 Kungshamn, ESR502 Kyrkeby, ESR503 Orust, ESR504 Stigfjorden, ESR506 Öckerö och ESR508 Hakefjorden upprättas för militär flygverksamhet.",
+        "COM_EN": "Temporary restricted areas ESR500 Vrångö, ESR501 Kungshamn, ESR502 Kyrkeby, ESR503 Orust, ESR504 Stigfjorden, ESR506 Öckerö and ESR508 Hakefjorden established for military aviation operations.",
+        "URL": "https://aro.lfv.se/content/eaip/AIP%20AMDT%201-2026_2026_08_07/eSUP/AIP%20SUP%20152-2026_2026_09_04/ES-SUP-sv-SE.html#SUP",
         "COORD": "",
         "LOW_UOM": "",
         "UP_UOM": "ft AMSL",
@@ -5498,7 +5364,7 @@
         "reason": [
           "OTHER"
         ],
-        "comment": "Tillfälliga restriktionsområden ESR500 Vrångö, ESR501 Kungshamn, ESR502 Kyrkeby, ESR503 Orust, ESR504 Stigfjorden, ESR505 Hakefjorden och ESR506 Öckerö upprättas för militär flygverksamhet.",
+        "comment": "Tillfälliga restriktionsområden ESR500 Vrångö, ESR501 Kungshamn, ESR502 Kyrkeby, ESR503 Orust, ESR504 Stigfjorden, ESR506 Öckerö och ESR508 Hakefjorden upprättas för militär flygverksamhet.",
         "validFrom": "2026-09-04T06:00Z",
         "validTo": "2026-09-14T06:00Z",
         "layer": {
@@ -5512,7 +5378,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.62",
+      "id": "SUP.60",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -5553,16 +5419,16 @@
       "geometry_name": "the_geom",
       "properties": {
         "NAME": "HAKEFJORDEN",
-        "ID": "ESR505_1",
-        "DESIG": "ESR505",
+        "ID": "ESR508_1",
+        "DESIG": "ESR508",
         "LOWER": "SFC",
         "UPPER": "4500",
         "FROM": "2026-09-04T06:00Z",
         "TO": "2026-09-14T06:00Z",
         "SCHEDULE": "04 SEP 0600 – 2359\n05 – 13 SEP H24\n14 SEP 0000 – 0600",
-        "COM_SE": "Tillfälliga restriktionsområden ESR500 Vrångö, ESR501 Kungshamn, ESR502 Kyrkeby, ESR503 Orust, ESR504 Stigfjorden, ESR505 Hakefjorden och ESR506 Öckerö upprättas för militär flygverksamhet.",
-        "COM_EN": "Temporary restricted areas ESR500 Vrångö, ESR501 Kungshamn, ESR502 Kyrkeby, ESR503 Orust, ESR504 Stigfjorden, ESR505 Hakefjorden and ESR506 Öckerö established for military aviation operations.",
-        "URL": "https://aro.lfv.se/content/eaip/AIP%20AMDT%201-2026_2026_08_07/eSUP/AIP%20SUP%20145-2026_2026_09_04/ES-SUP-sv-SE.html#SUP",
+        "COM_SE": "Tillfälliga restriktionsområden ESR500 Vrångö, ESR501 Kungshamn, ESR502 Kyrkeby, ESR503 Orust, ESR504 Stigfjorden, ESR506 Öckerö och ESR508 Hakefjorden upprättas för militär flygverksamhet.",
+        "COM_EN": "Temporary restricted areas ESR500 Vrångö, ESR501 Kungshamn, ESR502 Kyrkeby, ESR503 Orust, ESR504 Stigfjorden, ESR506 Öckerö and ESR508 Hakefjorden established for military aviation operations.",
+        "URL": "https://aro.lfv.se/content/eaip/AIP%20AMDT%201-2026_2026_08_07/eSUP/AIP%20SUP%20152-2026_2026_09_04/ES-SUP-sv-SE.html#SUP",
         "COORD": "",
         "LOW_UOM": "",
         "UP_UOM": "ft AMSL",
@@ -5571,7 +5437,7 @@
         "reason": [
           "OTHER"
         ],
-        "comment": "Tillfälliga restriktionsområden ESR500 Vrångö, ESR501 Kungshamn, ESR502 Kyrkeby, ESR503 Orust, ESR504 Stigfjorden, ESR505 Hakefjorden och ESR506 Öckerö upprättas för militär flygverksamhet.",
+        "comment": "Tillfälliga restriktionsområden ESR500 Vrångö, ESR501 Kungshamn, ESR502 Kyrkeby, ESR503 Orust, ESR504 Stigfjorden, ESR506 Öckerö och ESR508 Hakefjorden upprättas för militär flygverksamhet.",
         "validFrom": "2026-09-04T06:00Z",
         "validTo": "2026-09-14T06:00Z",
         "layer": {
@@ -5585,7 +5451,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.63",
+      "id": "SUP.61",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -5633,9 +5499,9 @@
         "FROM": "2026-09-04T06:00Z",
         "TO": "2026-09-14T06:00Z",
         "SCHEDULE": "04 SEP 0600 – 2359\n05 – 13 SEP H24\n14 SEP 0000 – 0600",
-        "COM_SE": "Tillfälliga restriktionsområden ESR500 Vrångö, ESR501 Kungshamn, ESR502 Kyrkeby, ESR503 Orust, ESR504 Stigfjorden, ESR505 Hakefjorden och ESR506 Öckerö upprättas för militär flygverksamhet.",
-        "COM_EN": "Temporary restricted areas ESR500 Vrångö, ESR501 Kungshamn, ESR502 Kyrkeby, ESR503 Orust, ESR504 Stigfjorden, ESR505 Hakefjorden and ESR506 Öckerö established for military aviation operations.",
-        "URL": "https://aro.lfv.se/content/eaip/AIP%20AMDT%201-2026_2026_08_07/eSUP/AIP%20SUP%20145-2026_2026_09_04/ES-SUP-sv-SE.html#SUP",
+        "COM_SE": "Tillfälliga restriktionsområden ESR500 Vrångö, ESR501 Kungshamn, ESR502 Kyrkeby, ESR503 Orust, ESR504 Stigfjorden, ESR506 Öckerö och ESR508 Hakefjorden upprättas för militär flygverksamhet.",
+        "COM_EN": "Temporary restricted areas ESR500 Vrångö, ESR501 Kungshamn, ESR502 Kyrkeby, ESR503 Orust, ESR504 Stigfjorden, ESR506 Öckerö and ESR508 Hakefjorden established for military aviation operations.",
+        "URL": "https://aro.lfv.se/content/eaip/AIP%20AMDT%201-2026_2026_08_07/eSUP/AIP%20SUP%20152-2026_2026_09_04/ES-SUP-sv-SE.html#SUP",
         "COORD": "",
         "LOW_UOM": "",
         "UP_UOM": "ft AMSL",
@@ -5644,7 +5510,7 @@
         "reason": [
           "OTHER"
         ],
-        "comment": "Tillfälliga restriktionsområden ESR500 Vrångö, ESR501 Kungshamn, ESR502 Kyrkeby, ESR503 Orust, ESR504 Stigfjorden, ESR505 Hakefjorden och ESR506 Öckerö upprättas för militär flygverksamhet.",
+        "comment": "Tillfälliga restriktionsområden ESR500 Vrångö, ESR501 Kungshamn, ESR502 Kyrkeby, ESR503 Orust, ESR504 Stigfjorden, ESR506 Öckerö och ESR508 Hakefjorden upprättas för militär flygverksamhet.",
         "validFrom": "2026-09-04T06:00Z",
         "validTo": "2026-09-14T06:00Z",
         "layer": {
@@ -5658,7 +5524,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.64",
+      "id": "SUP.62",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -5723,7 +5589,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.65",
+      "id": "SUP.63",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -5800,7 +5666,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.66",
+      "id": "SUP.64",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -5877,7 +5743,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.67",
+      "id": "SUP.65",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -5942,7 +5808,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.68",
+      "id": "SUP.66",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -6047,7 +5913,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.69",
+      "id": "SUP.67",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -6124,7 +5990,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.70",
+      "id": "SUP.68",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -6168,9 +6034,9 @@
         "FROM": "2026-09-04T06:00Z",
         "TO": "2026-09-14T06:00Z",
         "SCHEDULE": "04 SEP 0600 – 2359\n05 – 13 SEP H24\n14 SEP 0000 – 0600",
-        "COM_SE": "Tillfälliga restriktionsområden ESR500 Vrångö, ESR501 Kungshamn, ESR502 Kyrkeby, ESR503 Orust, ESR504 Stigfjorden, ESR505 Hakefjorden och ESR506 Öckerö upprättas för militär flygverksamhet.",
-        "COM_EN": "Temporary restricted areas ESR500 Vrångö, ESR501 Kungshamn, ESR502 Kyrkeby, ESR503 Orust, ESR504 Stigfjorden, ESR505 Hakefjorden and ESR506 Öckerö established for military aviation operations.",
-        "URL": "https://aro.lfv.se/content/eaip/AIP%20AMDT%201-2026_2026_08_07/eSUP/AIP%20SUP%20145-2026_2026_09_04/ES-SUP-sv-SE.html#SUP",
+        "COM_SE": "Tillfälliga restriktionsområden ESR500 Vrångö, ESR501 Kungshamn, ESR502 Kyrkeby, ESR503 Orust, ESR504 Stigfjorden, ESR506 Öckerö och ESR508 Hakefjorden upprättas för militär flygverksamhet.",
+        "COM_EN": "Temporary restricted areas ESR500 Vrångö, ESR501 Kungshamn, ESR502 Kyrkeby, ESR503 Orust, ESR504 Stigfjorden, ESR506 Öckerö and ESR508 Hakefjorden established for military aviation operations.",
+        "URL": "https://aro.lfv.se/content/eaip/AIP%20AMDT%201-2026_2026_08_07/eSUP/AIP%20SUP%20152-2026_2026_09_04/ES-SUP-sv-SE.html#SUP",
         "COORD": "",
         "LOW_UOM": "",
         "UP_UOM": "ft AMSL",
@@ -6179,12 +6045,957 @@
         "reason": [
           "OTHER"
         ],
-        "comment": "Tillfälliga restriktionsområden ESR500 Vrångö, ESR501 Kungshamn, ESR502 Kyrkeby, ESR503 Orust, ESR504 Stigfjorden, ESR505 Hakefjorden och ESR506 Öckerö upprättas för militär flygverksamhet.",
+        "comment": "Tillfälliga restriktionsområden ESR500 Vrångö, ESR501 Kungshamn, ESR502 Kyrkeby, ESR503 Orust, ESR504 Stigfjorden, ESR506 Öckerö och ESR508 Hakefjorden upprättas för militär flygverksamhet.",
         "validFrom": "2026-09-04T06:00Z",
         "validTo": "2026-09-14T06:00Z",
         "layer": {
           "lower": "SFC",
           "upper": "2500",
+          "uom": "ft AMSL",
+          "lowerReference": "AGL",
+          "upperReference": "AMSL"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SUP.69",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                15.53672713,
+                57.24361111
+              ],
+              [
+                15.53625333,
+                57.2383929
+              ],
+              [
+                15.53483652,
+                57.23322494
+              ],
+              [
+                15.53249032,
+                57.22815701
+              ],
+              [
+                15.52923734,
+                57.2232379
+              ],
+              [
+                15.52510891,
+                57.21851501
+              ],
+              [
+                15.52014478,
+                57.2140338
+              ],
+              [
+                15.51439276,
+                57.20983744
+              ],
+              [
+                15.50790825,
+                57.20596633
+              ],
+              [
+                15.50075369,
+                57.20245777
+              ],
+              [
+                15.492998,
+                57.19934553
+              ],
+              [
+                15.48471585,
+                57.1966596
+              ],
+              [
+                15.47598701,
+                57.19442584
+              ],
+              [
+                15.46689554,
+                57.19266575
+              ],
+              [
+                15.45752901,
+                57.1913963
+              ],
+              [
+                15.44797761,
+                57.19062971
+              ],
+              [
+                15.43833333,
+                57.19037335
+              ],
+              [
+                15.42868906,
+                57.19062971
+              ],
+              [
+                15.41913766,
+                57.1913963
+              ],
+              [
+                15.40977112,
+                57.19266575
+              ],
+              [
+                15.40067966,
+                57.19442584
+              ],
+              [
+                15.39195082,
+                57.1966596
+              ],
+              [
+                15.38366867,
+                57.19934553
+              ],
+              [
+                15.37591297,
+                57.20245777
+              ],
+              [
+                15.36875842,
+                57.20596633
+              ],
+              [
+                15.3622739,
+                57.20983744
+              ],
+              [
+                15.35652188,
+                57.2140338
+              ],
+              [
+                15.35155776,
+                57.21851501
+              ],
+              [
+                15.34742932,
+                57.2232379
+              ],
+              [
+                15.34417634,
+                57.22815701
+              ],
+              [
+                15.34183015,
+                57.23322494
+              ],
+              [
+                15.34041333,
+                57.2383929
+              ],
+              [
+                15.33993954,
+                57.24361111
+              ],
+              [
+                15.34041333,
+                57.24882932
+              ],
+              [
+                15.34183015,
+                57.25399728
+              ],
+              [
+                15.34417634,
+                57.25906522
+              ],
+              [
+                15.34742932,
+                57.26398432
+              ],
+              [
+                15.35155776,
+                57.26870722
+              ],
+              [
+                15.35652188,
+                57.27318842
+              ],
+              [
+                15.3622739,
+                57.27738479
+              ],
+              [
+                15.36875842,
+                57.28125589
+              ],
+              [
+                15.37591297,
+                57.28476445
+              ],
+              [
+                15.38366867,
+                57.28787669
+              ],
+              [
+                15.39195082,
+                57.29056262
+              ],
+              [
+                15.40067966,
+                57.29279639
+              ],
+              [
+                15.40977112,
+                57.29455647
+              ],
+              [
+                15.41913766,
+                57.29582592
+              ],
+              [
+                15.42868906,
+                57.29659251
+              ],
+              [
+                15.43833333,
+                57.29684887
+              ],
+              [
+                15.44797761,
+                57.29659251
+              ],
+              [
+                15.45752901,
+                57.29582592
+              ],
+              [
+                15.46689554,
+                57.29455647
+              ],
+              [
+                15.47598701,
+                57.29279639
+              ],
+              [
+                15.48471585,
+                57.29056262
+              ],
+              [
+                15.492998,
+                57.28787669
+              ],
+              [
+                15.50075369,
+                57.28476445
+              ],
+              [
+                15.50790825,
+                57.28125589
+              ],
+              [
+                15.51439276,
+                57.27738479
+              ],
+              [
+                15.52014478,
+                57.27318842
+              ],
+              [
+                15.52510891,
+                57.26870722
+              ],
+              [
+                15.52923734,
+                57.26398432
+              ],
+              [
+                15.53249032,
+                57.25906522
+              ],
+              [
+                15.53483652,
+                57.25399728
+              ],
+              [
+                15.53625333,
+                57.24882932
+              ],
+              [
+                15.53672713,
+                57.24361111
+              ]
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "the_geom",
+      "properties": {
+        "NAME": "ÅSEDA",
+        "ID": "ESR421_1",
+        "DESIG": "ESR421",
+        "LOWER": "SFC",
+        "UPPER": "2200",
+        "FROM": "2026-09-12T07:00Z",
+        "TO": "2026-09-19T20:00Z",
+        "SCHEDULE": "12 SEP 0700 – 19 SEP 2000",
+        "COM_SE": "Tillfälliga restriktionsområden ESR741 Marieholm, ESR742 Rusken, ESR419 Malmbäck, ESR420 Vetlanda och ESR421 Åseda upprättas för Militär flygverksamhet.",
+        "COM_EN": "Temporary restricted areas ESR741 Marieholm, ESR742 Rusken, ESR419 Malmbäck, ESR420 Vetlanda and ESR421 Åseda are established for military aviation operations.",
+        "URL": "https://aro.lfv.se/content/eaip/AIP%20AMDT%201-2026_2026_08_07/eSUP/AIP%20SUP%20150-2026_2026_09_12/ES-SUP-en-GB.html#SUP",
+        "COORD": "A circle with radius 3.2 NM centered on 571437N 0152618E",
+        "LOW_UOM": "",
+        "UP_UOM": "ft AMSL",
+        "name": "ÅSEDA",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "OTHER"
+        ],
+        "comment": "Tillfälliga restriktionsområden ESR741 Marieholm, ESR742 Rusken, ESR419 Malmbäck, ESR420 Vetlanda och ESR421 Åseda upprättas för Militär flygverksamhet.",
+        "validFrom": "2026-09-12T07:00Z",
+        "validTo": "2026-09-19T20:00Z",
+        "layer": {
+          "lower": "SFC",
+          "upper": "2200",
+          "uom": "ft AMSL",
+          "lowerReference": "AGL",
+          "upperReference": "AMSL"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SUP.70",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                13.84805556,
+                57.54416667
+              ],
+              [
+                14.10277778,
+                57.51138889
+              ],
+              [
+                14.08805556,
+                57.48611111
+              ],
+              [
+                14.08861111,
+                57.34944444
+              ],
+              [
+                14.08027778,
+                57.28305556
+              ],
+              [
+                14.03972222,
+                57.20444444
+              ],
+              [
+                13.69444444,
+                57.23083333
+              ],
+              [
+                13.84805556,
+                57.54416667
+              ]
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "the_geom",
+      "properties": {
+        "NAME": "MARIEHOLM",
+        "ID": "ESR741_1",
+        "DESIG": "ESR741",
+        "LOWER": "SFC",
+        "UPPER": "2200",
+        "FROM": "2026-09-12T07:00Z",
+        "TO": "2026-09-19T20:00Z",
+        "SCHEDULE": "12 SEP 0700 – 19 SEP 2000",
+        "COM_SE": "Tillfälliga restriktionsområden ESR741 Marieholm, ESR742 Rusken, ESR419 Malmbäck, ESR420 Vetlanda och ESR421 Åseda upprättas för Militär flygverksamhet.",
+        "COM_EN": "Temporary restricted areas ESR741 Marieholm, ESR742 Rusken, ESR419 Malmbäck, ESR420 Vetlanda and ESR421 Åseda are established for military aviation operations.",
+        "URL": "https://aro.lfv.se/content/eaip/AIP%20AMDT%201-2026_2026_08_07/eSUP/AIP%20SUP%20150-2026_2026_09_12/ES-SUP-en-GB.html#SUP",
+        "COORD": "",
+        "LOW_UOM": "",
+        "UP_UOM": "ft AMSL",
+        "name": "MARIEHOLM",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "OTHER"
+        ],
+        "comment": "Tillfälliga restriktionsområden ESR741 Marieholm, ESR742 Rusken, ESR419 Malmbäck, ESR420 Vetlanda och ESR421 Åseda upprättas för Militär flygverksamhet.",
+        "validFrom": "2026-09-12T07:00Z",
+        "validTo": "2026-09-19T20:00Z",
+        "layer": {
+          "lower": "SFC",
+          "upper": "2200",
+          "uom": "ft AMSL",
+          "lowerReference": "AGL",
+          "upperReference": "AMSL"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SUP.71",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                14.23861111,
+                57.49111111
+              ],
+              [
+                14.49972222,
+                57.40555556
+              ],
+              [
+                14.34638889,
+                57.18638889
+              ],
+              [
+                14.03972222,
+                57.20444444
+              ],
+              [
+                14.08027778,
+                57.28305556
+              ],
+              [
+                14.15527778,
+                57.28305556
+              ],
+              [
+                14.18027778,
+                57.35777778
+              ],
+              [
+                14.23861111,
+                57.49111111
+              ]
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "the_geom",
+      "properties": {
+        "NAME": "RUSKEN",
+        "ID": "ESR742_1",
+        "DESIG": "ESR742",
+        "LOWER": "SFC",
+        "UPPER": "2200",
+        "FROM": "2026-09-12T07:00Z",
+        "TO": "2026-09-19T20:00Z",
+        "SCHEDULE": "12 SEP 0700 – 19 SEP 2000",
+        "COM_SE": "Tillfälliga restriktionsområden ESR741 Marieholm, ESR742 Rusken, ESR419 Malmbäck, ESR420 Vetlanda och ESR421 Åseda upprättas för Militär flygverksamhet.",
+        "COM_EN": "Temporary restricted areas ESR741 Marieholm, ESR742 Rusken, ESR419 Malmbäck, ESR420 Vetlanda and ESR421 Åseda are established for military aviation operations.",
+        "URL": "https://aro.lfv.se/content/eaip/AIP%20AMDT%201-2026_2026_08_07/eSUP/AIP%20SUP%20150-2026_2026_09_12/ES-SUP-en-GB.html#SUP",
+        "COORD": "",
+        "LOW_UOM": "",
+        "UP_UOM": "ft AMSL",
+        "name": "RUSKEN",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "OTHER"
+        ],
+        "comment": "Tillfälliga restriktionsområden ESR741 Marieholm, ESR742 Rusken, ESR419 Malmbäck, ESR420 Vetlanda och ESR421 Åseda upprättas för Militär flygverksamhet.",
+        "validFrom": "2026-09-12T07:00Z",
+        "validTo": "2026-09-19T20:00Z",
+        "layer": {
+          "lower": "SFC",
+          "upper": "2200",
+          "uom": "ft AMSL",
+          "lowerReference": "AGL",
+          "upperReference": "AMSL"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SUP.72",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                14.28444444,
+                57.66777778
+              ],
+              [
+                14.65444444,
+                57.50361111
+              ],
+              [
+                14.56472222,
+                57.42805556
+              ],
+              [
+                14.15916667,
+                57.59333333
+              ],
+              [
+                14.28444444,
+                57.66777778
+              ]
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "the_geom",
+      "properties": {
+        "NAME": "MALMBÄCK",
+        "ID": "ESR419_1",
+        "DESIG": "ESR419",
+        "LOWER": "SFC",
+        "UPPER": "2200",
+        "FROM": "2026-09-12T07:00Z",
+        "TO": "2026-09-19T20:00Z",
+        "SCHEDULE": "12 SEP 0700 – 19 SEP 2000",
+        "COM_SE": "Tillfälliga restriktionsområden ESR741 Marieholm, ESR742 Rusken, ESR419 Malmbäck, ESR420 Vetlanda och ESR421 Åseda upprättas för Militär flygverksamhet.",
+        "COM_EN": "Temporary restricted areas ESR741 Marieholm, ESR742 Rusken, ESR419 Malmbäck, ESR420 Vetlanda and ESR421 Åseda are established for military aviation operations.",
+        "URL": "https://aro.lfv.se/content/eaip/AIP%20AMDT%201-2026_2026_08_07/eSUP/AIP%20SUP%20150-2026_2026_09_12/ES-SUP-en-GB.html#SUP",
+        "COORD": "",
+        "LOW_UOM": "",
+        "UP_UOM": "ft AMSL",
+        "name": "MALMBÄCK",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "OTHER"
+        ],
+        "comment": "Tillfälliga restriktionsområden ESR741 Marieholm, ESR742 Rusken, ESR419 Malmbäck, ESR420 Vetlanda och ESR421 Åseda upprättas för Militär flygverksamhet.",
+        "validFrom": "2026-09-12T07:00Z",
+        "validTo": "2026-09-19T20:00Z",
+        "layer": {
+          "lower": "SFC",
+          "upper": "2200",
+          "uom": "ft AMSL",
+          "lowerReference": "AGL",
+          "upperReference": "AMSL"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SUP.73",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                15.21305556,
+                57.62777778
+              ],
+              [
+                15.46944444,
+                57.44833333
+              ],
+              [
+                14.93666667,
+                57.39027778
+              ],
+              [
+                14.77722222,
+                57.50666667
+              ],
+              [
+                15.21305556,
+                57.62777778
+              ]
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "the_geom",
+      "properties": {
+        "NAME": "VETLANDA",
+        "ID": "ESR420_1",
+        "DESIG": "ESR420",
+        "LOWER": "SFC",
+        "UPPER": "2200",
+        "FROM": "2026-09-12T07:00Z",
+        "TO": "2026-09-19T20:00Z",
+        "SCHEDULE": "12 SEP 0700 – 19 SEP 2000",
+        "COM_SE": "Tillfälliga restriktionsområden ESR741 Marieholm, ESR742 Rusken, ESR419 Malmbäck, ESR420 Vetlanda och ESR421 Åseda upprättas för Militär flygverksamhet.",
+        "COM_EN": "Temporary restricted areas ESR741 Marieholm, ESR742 Rusken, ESR419 Malmbäck, ESR420 Vetlanda and ESR421 Åseda are established for military aviation operations.",
+        "URL": "https://aro.lfv.se/content/eaip/AIP%20AMDT%201-2026_2026_08_07/eSUP/AIP%20SUP%20150-2026_2026_09_12/ES-SUP-en-GB.html#SUP",
+        "COORD": "",
+        "LOW_UOM": "",
+        "UP_UOM": "ft AMSL",
+        "name": "VETLANDA",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "OTHER"
+        ],
+        "comment": "Tillfälliga restriktionsområden ESR741 Marieholm, ESR742 Rusken, ESR419 Malmbäck, ESR420 Vetlanda och ESR421 Åseda upprättas för Militär flygverksamhet.",
+        "validFrom": "2026-09-12T07:00Z",
+        "validTo": "2026-09-19T20:00Z",
+        "layer": {
+          "lower": "SFC",
+          "upper": "2200",
+          "uom": "ft AMSL",
+          "lowerReference": "AGL",
+          "upperReference": "AMSL"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SUP.74",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                14.115,
+                58.58555556
+              ],
+              [
+                14.10611111,
+                58.42777778
+              ],
+              [
+                14.02972222,
+                58.37777778
+              ],
+              [
+                13.92666667,
+                58.36944444
+              ],
+              [
+                13.85638889,
+                58.37388889
+              ],
+              [
+                13.83916667,
+                58.375
+              ],
+              [
+                13.86861111,
+                58.41972222
+              ],
+              [
+                13.84777778,
+                58.45555556
+              ],
+              [
+                13.8475,
+                58.46833333
+              ],
+              [
+                13.8525,
+                58.48222222
+              ],
+              [
+                13.84944444,
+                58.49138889
+              ],
+              [
+                13.84916667,
+                58.49166667
+              ],
+              [
+                13.84277778,
+                58.5
+              ],
+              [
+                13.84222222,
+                58.50111111
+              ],
+              [
+                13.8925,
+                58.51555556
+              ],
+              [
+                14.115,
+                58.58555556
+              ]
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "the_geom",
+      "properties": {
+        "NAME": "VÄRING",
+        "ID": "ESR361_1",
+        "DESIG": "ESR361",
+        "LOWER": "1700",
+        "UPPER": "FL95",
+        "FROM": "2026-09-14T10:00Z",
+        "TO": "2026-09-30T18:00Z",
+        "SCHEDULE": "14 SEP 1000 – 30 SEP 1800",
+        "COM_SE": "Tillfälliga restriktionsområden ESR794 Fagersanna, ESR361 Väring och ESR362 Knistad upprättas för Militär flygverksamhet.",
+        "COM_EN": "Temporary restricted areas ESR794 Fagersanna, ESR361 Väring and ESR362 Knistad are established for military aviation operations.",
+        "URL": "https://aro.lfv.se/content/eaip/AIP%20AMDT%201-2026_2026_08_07/eSUP/AIP%20SUP%20151-2026_2026_09_14/ES-SUP-en-GB.html#SUP",
+        "COORD": "",
+        "LOW_UOM": "ft AMSL",
+        "UP_UOM": "",
+        "name": "VÄRING",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "OTHER"
+        ],
+        "comment": "Tillfälliga restriktionsområden ESR794 Fagersanna, ESR361 Väring och ESR362 Knistad upprättas för Militär flygverksamhet.",
+        "validFrom": "2026-09-14T10:00Z",
+        "validTo": "2026-09-30T18:00Z",
+        "layer": {
+          "lower": "1700",
+          "upper": "FL95",
+          "uom": "ft AMSL",
+          "lowerReference": "AGL",
+          "upperReference": "AMSL"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SUP.75",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                14.39833333,
+                58.65861111
+              ],
+              [
+                14.31805556,
+                58.47833333
+              ],
+              [
+                14.28638889,
+                58.29944444
+              ],
+              [
+                14.28194444,
+                58.29083333
+              ],
+              [
+                14.28472222,
+                58.28222222
+              ],
+              [
+                14.28833333,
+                58.26972222
+              ],
+              [
+                14.16388889,
+                58.24305556
+              ],
+              [
+                14.02972222,
+                58.37777778
+              ],
+              [
+                14.10611111,
+                58.42777778
+              ],
+              [
+                14.115,
+                58.58555556
+              ],
+              [
+                14.39833333,
+                58.65861111
+              ]
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "the_geom",
+      "properties": {
+        "NAME": "FAGERSANNA",
+        "ID": "ESR794_1",
+        "DESIG": "ESR794",
+        "LOWER": "GND",
+        "UPPER": "FL95",
+        "FROM": "2026-09-23T16:00Z",
+        "TO": "2026-09-24T12:00Z",
+        "SCHEDULE": "23 SEP 1600 – 24 SEP 1200",
+        "COM_SE": "Tillfälligt restriktionsområde ESR794 Fagersanna upprättas för Militär flygverksamhet.\n23 SEP 1600 – 24 SEP 1200: FL95/GND\n(15 SEP – 30 SEP: FL95/1700 ft AMSL)",
+        "COM_EN": "Temporary restricted area ESR794 Fagersanna established for military aviation operations.\n23 SEP 1600 – 24 SEP 1200: FL95/GND\n(15 SEP – 30 SEP: FL95/1700 ft AMSL)",
+        "URL": "https://aro.lfv.se/content/eaip/AIP%20AMDT%201-2026_2026_08_07/eSUP/AIP%20SUP%20151-2026_2026_09_14/ES-SUP-en-GB.html#SUP",
+        "COORD": "",
+        "LOW_UOM": "",
+        "UP_UOM": "",
+        "name": "FAGERSANNA",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "OTHER"
+        ],
+        "comment": "Tillfälligt restriktionsområde ESR794 Fagersanna upprättas för Militär flygverksamhet.\n23 SEP 1600 – 24 SEP 1200: FL95/GND\n(15 SEP – 30 SEP: FL95/1700 ft AMSL)",
+        "validFrom": "2026-09-23T16:00Z",
+        "validTo": "2026-09-24T12:00Z",
+        "layer": {
+          "lower": "GND",
+          "upper": "FL95",
+          "uom": "ft AMSL",
+          "lowerReference": "AGL",
+          "upperReference": "AMSL"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SUP.76",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                13.90083333,
+                58.49777778
+              ],
+              [
+                14.05166667,
+                58.49694444
+              ],
+              [
+                14.02972222,
+                58.37777778
+              ],
+              [
+                13.905,
+                58.39722222
+              ],
+              [
+                13.92833333,
+                58.43916667
+              ],
+              [
+                13.90083333,
+                58.49777778
+              ]
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "the_geom",
+      "properties": {
+        "NAME": "KNISTAD",
+        "ID": "ESR362_1",
+        "DESIG": "ESR362",
+        "LOWER": "GND",
+        "UPPER": "2500",
+        "FROM": "2026-09-14T10:00Z",
+        "TO": "2026-09-30T18:00Z",
+        "SCHEDULE": "14 SEP 1000 – 30 SEP 1800",
+        "COM_SE": "Tillfälliga restriktionsområden ESR794 Fagersanna, ESR361 Väring och ESR362 Knistad upprättas för Militär flygverksamhet.",
+        "COM_EN": "Temporary restricted areas ESR794 Fagersanna, ESR361 Väring and ESR362 Knistad are established for military aviation operations.",
+        "URL": "https://aro.lfv.se/content/eaip/AIP%20AMDT%201-2026_2026_08_07/eSUP/AIP%20SUP%20151-2026_2026_09_14/ES-SUP-en-GB.html#SUP",
+        "COORD": "",
+        "LOW_UOM": "",
+        "UP_UOM": "ft AMSL",
+        "name": "KNISTAD",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "OTHER"
+        ],
+        "comment": "Tillfälliga restriktionsområden ESR794 Fagersanna, ESR361 Väring och ESR362 Knistad upprättas för Militär flygverksamhet.",
+        "validFrom": "2026-09-14T10:00Z",
+        "validTo": "2026-09-30T18:00Z",
+        "layer": {
+          "lower": "GND",
+          "upper": "2500",
+          "uom": "ft AMSL",
+          "lowerReference": "AGL",
+          "upperReference": "AMSL"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SUP.77",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                14.39833333,
+                58.65861111
+              ],
+              [
+                14.31805556,
+                58.47833333
+              ],
+              [
+                14.28638889,
+                58.29944444
+              ],
+              [
+                14.28194444,
+                58.29083333
+              ],
+              [
+                14.28472222,
+                58.28222222
+              ],
+              [
+                14.28833333,
+                58.26972222
+              ],
+              [
+                14.16388889,
+                58.24305556
+              ],
+              [
+                14.02972222,
+                58.37777778
+              ],
+              [
+                14.10611111,
+                58.42777778
+              ],
+              [
+                14.115,
+                58.58555556
+              ],
+              [
+                14.39833333,
+                58.65861111
+              ]
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "the_geom",
+      "properties": {
+        "NAME": "FAGERSANNA",
+        "ID": "ESR794_2",
+        "DESIG": "ESR794",
+        "LOWER": "1700",
+        "UPPER": "FL95",
+        "FROM": "2026-09-15T06:00Z",
+        "TO": "2026-09-30T20:00Z",
+        "SCHEDULE": "15 SEP 0600 – 30 SEP 2000",
+        "COM_SE": "Tillfälligt restriktionsområden ESR794 Fagersanna upprättas för Militär flygverksamhet.\nFL95/1700 ft AMSL\n23 SEP 1600 – 24 SEP 1200 FL95/GND",
+        "COM_EN": "Temporary restricted areas ESR794 Fagersanna, ESR361 Väring and ESR362 Knistad are established for military aviation operations.\nFL95/1700 ft AMSL\n23 SEP 1600 – 24 SEP 1200 FL95/GND",
+        "URL": "https://aro.lfv.se/content/eaip/AIP%20AMDT%201-2026_2026_08_07/eSUP/AIP%20SUP%20151-2026_2026_09_14/ES-SUP-en-GB.html#SUP",
+        "COORD": "",
+        "LOW_UOM": "ft AMSL",
+        "UP_UOM": "",
+        "name": "FAGERSANNA",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "OTHER"
+        ],
+        "comment": "Tillfälligt restriktionsområden ESR794 Fagersanna upprättas för Militär flygverksamhet.\nFL95/1700 ft AMSL\n23 SEP 1600 – 24 SEP 1200 FL95/GND",
+        "validFrom": "2026-09-15T06:00Z",
+        "validTo": "2026-09-30T20:00Z",
+        "layer": {
+          "lower": "1700",
+          "upper": "FL95",
           "uom": "ft AMSL",
           "lowerReference": "AGL",
           "upperReference": "AMSL"
@@ -6987,6 +7798,247 @@
     },
     {
       "type": "Feature",
+      "id": "NOTAM.16011",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              15.8,
+              59.96675403
+            ],
+            [
+              15.80799326,
+              59.96699619
+            ],
+            [
+              15.8158703,
+              59.96771915
+            ],
+            [
+              15.82351659,
+              59.96891239
+            ],
+            [
+              15.83082091,
+              59.97055857
+            ],
+            [
+              15.83767698,
+              59.97263374
+            ],
+            [
+              15.843985,
+              59.97510772
+            ],
+            [
+              15.84965305,
+              59.97794453
+            ],
+            [
+              15.85459848,
+              59.98110287
+            ],
+            [
+              15.8587491,
+              59.98453678
+            ],
+            [
+              15.86204422,
+              59.98819626
+            ],
+            [
+              15.86443555,
+              59.99202802
+            ],
+            [
+              15.86588795,
+              59.99597622
+            ],
+            [
+              15.8663799,
+              59.99998332
+            ],
+            [
+              15.86590389,
+              60.00399091
+            ],
+            [
+              15.86446651,
+              60.00794053
+            ],
+            [
+              15.86208838,
+              60.01177456
+            ],
+            [
+              15.85880391,
+              60.01543703
+            ],
+            [
+              15.85466075,
+              60.01887448
+            ],
+            [
+              15.84971916,
+              60.02203671
+            ],
+            [
+              15.84405111,
+              60.02487751
+            ],
+            [
+              15.83773926,
+              60.02735538
+            ],
+            [
+              15.83087572,
+              60.0294341
+            ],
+            [
+              15.82356075,
+              60.03108327
+            ],
+            [
+              15.81590125,
+              60.03227878
+            ],
+            [
+              15.80800919,
+              60.03300316
+            ],
+            [
+              15.8,
+              60.0332458
+            ],
+            [
+              15.79199081,
+              60.03300316
+            ],
+            [
+              15.78409875,
+              60.03227878
+            ],
+            [
+              15.77643925,
+              60.03108327
+            ],
+            [
+              15.76912428,
+              60.0294341
+            ],
+            [
+              15.76226074,
+              60.02735538
+            ],
+            [
+              15.75594889,
+              60.02487751
+            ],
+            [
+              15.75028084,
+              60.02203671
+            ],
+            [
+              15.74533925,
+              60.01887448
+            ],
+            [
+              15.74119609,
+              60.01543703
+            ],
+            [
+              15.73791162,
+              60.01177456
+            ],
+            [
+              15.73553349,
+              60.00794053
+            ],
+            [
+              15.73409611,
+              60.00399091
+            ],
+            [
+              15.7336201,
+              59.99998332
+            ],
+            [
+              15.73411205,
+              59.99597622
+            ],
+            [
+              15.73556445,
+              59.99202802
+            ],
+            [
+              15.73795578,
+              59.98819626
+            ],
+            [
+              15.7412509,
+              59.98453678
+            ],
+            [
+              15.74540152,
+              59.98110287
+            ],
+            [
+              15.75034695,
+              59.97794453
+            ],
+            [
+              15.756015,
+              59.97510772
+            ],
+            [
+              15.76232302,
+              59.97263374
+            ],
+            [
+              15.76917909,
+              59.97055857
+            ],
+            [
+              15.77648341,
+              59.96891239
+            ],
+            [
+              15.7841297,
+              59.96771915
+            ],
+            [
+              15.79200674,
+              59.96699619
+            ],
+            [
+              15.8,
+              59.96675403
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "name": "NOTAM ESSA-A973/26 (TEMPORARY)",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "OTHER"
+        ],
+        "comment": "TEMPORARY RESTRICTED AREA ESR903 FAGERSTA EXTENDED WI A CIRCLE \nWITH RADIUS 1,25 NM CENTERED ON COORD 600000N 0154812E ESTABLISHED \nOVER FAGERSTA. FLIGHT WI THE AREA PROHIBITED FOR ALL ACFT. AFTER \nCLEARANCE FROM ATCC STOCKHOLM THE FOLLOWING TFC IS EXEMPTED: POLICE \nAND RESCUE SERVICES IN ACCORDANCE WITH CIVIL PROTECTION ACT \n(2003:778), SWEDISH MIL ACFT, ACFT ON POLICE-, AMBULANCE-, CUSTOMS-, \nCOAST GUARD- OR SAR MISSION. NON EXEMPTED TFC CAN APPLY FOR \nEXEMPTION WITH THE POLICE AUTHORITY TEL +46 10 567 65 97.",
+        "validFrom": "2026-08-27T14:04:00Z",
+        "validTo": "2026-09-02T20:00:00Z",
+        "layer": {
+          "lower": "FL 0",
+          "upper": "FL 20",
+          "uom": "",
+          "lowerReference": "STD",
+          "upperReference": "STD"
+        }
+      }
+    },
+    {
+      "type": "Feature",
       "id": "NOTAM.15797",
       "geometry": {
         "type": "Polygon",
@@ -7220,451 +8272,6 @@
         "layer": {
           "lower": "FL 0",
           "upper": "FL 20",
-          "uom": "",
-          "lowerReference": "STD",
-          "upperReference": "STD"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "NOTAM.15672",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              14.35,
-              58.56698837
-            ],
-            [
-              14.36552099,
-              58.56723484
-            ],
-            [
-              14.38098489,
-              58.56797335
-            ],
-            [
-              14.39633482,
-              58.56920117
-            ],
-            [
-              14.41151431,
-              58.57091379
-            ],
-            [
-              14.42646748,
-              58.57310492
-            ],
-            [
-              14.44113926,
-              58.57576648
-            ],
-            [
-              14.45547559,
-              58.57888868
-            ],
-            [
-              14.4694236,
-              58.58246003
-            ],
-            [
-              14.4829318,
-              58.58646738
-            ],
-            [
-              14.49595028,
-              58.59089596
-            ],
-            [
-              14.50843088,
-              58.59572946
-            ],
-            [
-              14.52032735,
-              58.60095005
-            ],
-            [
-              14.53159555,
-              58.60653849
-            ],
-            [
-              14.54219361,
-              58.61247415
-            ],
-            [
-              14.55208206,
-              58.61873513
-            ],
-            [
-              14.56122397,
-              58.62529829
-            ],
-            [
-              14.56958515,
-              58.63213939
-            ],
-            [
-              14.57713421,
-              58.63923314
-            ],
-            [
-              14.58384272,
-              58.64655328
-            ],
-            [
-              14.58968532,
-              58.65407272
-            ],
-            [
-              14.5946398,
-              58.6617636
-            ],
-            [
-              14.5986872,
-              58.66959742
-            ],
-            [
-              14.60181189,
-              58.67754512
-            ],
-            [
-              14.60400165,
-              58.6855772
-            ],
-            [
-              14.60524769,
-              58.69366384
-            ],
-            [
-              14.60554474,
-              58.70177497
-            ],
-            [
-              14.60489101,
-              58.70988042
-            ],
-            [
-              14.60328829,
-              58.71795004
-            ],
-            [
-              14.60074188,
-              58.72595376
-            ],
-            [
-              14.59726063,
-              58.73386176
-            ],
-            [
-              14.5928569,
-              58.74164454
-            ],
-            [
-              14.5875465,
-              58.74927307
-            ],
-            [
-              14.58134868,
-              58.75671884
-            ],
-            [
-              14.57428604,
-              58.76395403
-            ],
-            [
-              14.56638446,
-              58.7709516
-            ],
-            [
-              14.557673,
-              58.77768537
-            ],
-            [
-              14.54818382,
-              58.78413011
-            ],
-            [
-              14.53795204,
-              58.79026169
-            ],
-            [
-              14.52701563,
-              58.79605713
-            ],
-            [
-              14.51541526,
-              58.8014947
-            ],
-            [
-              14.50319415,
-              58.806554
-            ],
-            [
-              14.4903979,
-              58.81121604
-            ],
-            [
-              14.47707435,
-              58.81546331
-            ],
-            [
-              14.46327337,
-              58.81927986
-            ],
-            [
-              14.44904665,
-              58.82265136
-            ],
-            [
-              14.43444757,
-              58.82556511
-            ],
-            [
-              14.41953093,
-              58.82801018
-            ],
-            [
-              14.40435277,
-              58.82997737
-            ],
-            [
-              14.38897014,
-              58.83145927
-            ],
-            [
-              14.37344089,
-              58.83245031
-            ],
-            [
-              14.35782344,
-              58.83294676
-            ],
-            [
-              14.34217656,
-              58.83294676
-            ],
-            [
-              14.32655911,
-              58.83245031
-            ],
-            [
-              14.31102986,
-              58.83145927
-            ],
-            [
-              14.29564723,
-              58.82997737
-            ],
-            [
-              14.28046907,
-              58.82801018
-            ],
-            [
-              14.26555243,
-              58.82556511
-            ],
-            [
-              14.25095335,
-              58.82265136
-            ],
-            [
-              14.23672663,
-              58.81927986
-            ],
-            [
-              14.22292565,
-              58.81546331
-            ],
-            [
-              14.2096021,
-              58.81121604
-            ],
-            [
-              14.19680585,
-              58.806554
-            ],
-            [
-              14.18458474,
-              58.8014947
-            ],
-            [
-              14.17298437,
-              58.79605713
-            ],
-            [
-              14.16204796,
-              58.79026169
-            ],
-            [
-              14.15181618,
-              58.78413011
-            ],
-            [
-              14.142327,
-              58.77768537
-            ],
-            [
-              14.13361554,
-              58.7709516
-            ],
-            [
-              14.12571396,
-              58.76395403
-            ],
-            [
-              14.11865132,
-              58.75671884
-            ],
-            [
-              14.1124535,
-              58.74927307
-            ],
-            [
-              14.1071431,
-              58.74164454
-            ],
-            [
-              14.10273937,
-              58.73386176
-            ],
-            [
-              14.09925812,
-              58.72595376
-            ],
-            [
-              14.09671171,
-              58.71795004
-            ],
-            [
-              14.09510899,
-              58.70988042
-            ],
-            [
-              14.09445526,
-              58.70177497
-            ],
-            [
-              14.09475231,
-              58.69366384
-            ],
-            [
-              14.09599835,
-              58.6855772
-            ],
-            [
-              14.09818811,
-              58.67754512
-            ],
-            [
-              14.1013128,
-              58.66959742
-            ],
-            [
-              14.1053602,
-              58.6617636
-            ],
-            [
-              14.11031468,
-              58.65407272
-            ],
-            [
-              14.11615728,
-              58.64655328
-            ],
-            [
-              14.12286579,
-              58.63923314
-            ],
-            [
-              14.13041485,
-              58.63213939
-            ],
-            [
-              14.13877603,
-              58.62529829
-            ],
-            [
-              14.14791794,
-              58.61873513
-            ],
-            [
-              14.15780639,
-              58.61247415
-            ],
-            [
-              14.16840445,
-              58.60653849
-            ],
-            [
-              14.17967265,
-              58.60095005
-            ],
-            [
-              14.19156912,
-              58.59572946
-            ],
-            [
-              14.20404972,
-              58.59089596
-            ],
-            [
-              14.2170682,
-              58.58646738
-            ],
-            [
-              14.2305764,
-              58.58246003
-            ],
-            [
-              14.24452441,
-              58.57888868
-            ],
-            [
-              14.25886074,
-              58.57576648
-            ],
-            [
-              14.27353252,
-              58.57310492
-            ],
-            [
-              14.28848569,
-              58.57091379
-            ],
-            [
-              14.30366518,
-              58.56920117
-            ],
-            [
-              14.31901511,
-              58.56797335
-            ],
-            [
-              14.33447901,
-              58.56723484
-            ],
-            [
-              14.35,
-              58.56698837
-            ]
-          ]
-        ]
-      },
-      "geometry_name": "GEOMETRY",
-      "properties": {
-        "name": "NOTAM ESSA-A900/26 (TEMPORARY)",
-        "type": "REQ_AUTHORIZATION",
-        "reason": [
-          "OTHER"
-        ],
-        "comment": "TEMPORARY RESTRICTED AREA ESR798 SATRA ESTABLISHED FOR MILITARY \nAVIATION OPERATIONS. AREA BOUNDED BY:\n584842N 0141512E - 584820N 0142052E - 584212N 0143517E - 583931N \n0142354E - 583815N 0142320E - 584126N 0140704E - 584842N 0141512E\nFLIGHT WI THE AREA PROHIBITED FOR ALL NON-PARTICIPATING ACFT. AFTER \nCLEARANCE FROM KARLSBORG ATS, OREBRO ATS, STOCKHOLM ACC OR MALMO ACC \nTHE FOLLOWING TFC ON MISSION IS EXEMPTED: MILITARY FLIGHTS, POLICE, \nAMBULANCE, THE COAST GUARD, SAR AND RESCUE SERVICES IN ACCORDANCE \nWITH CIVIL PROTECTION ACT (2003:778).",
-        "validFrom": "2026-08-25T06:00:00Z",
-        "validTo": "2026-08-27T15:00:00Z",
-        "layer": {
-          "lower": "FL 0",
-          "upper": "FL 50",
           "uom": "",
           "lowerReference": "STD",
           "upperReference": "STD"
@@ -13258,6 +13865,187 @@
     },
     {
       "type": "Feature",
+      "id": "NOTAM.15985",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              18.08333,
+              59.30004529
+            ],
+            [
+              18.08882354,
+              59.30028431
+            ],
+            [
+              18.09415927,
+              59.30099449
+            ],
+            [
+              18.09918389,
+              59.30215543
+            ],
+            [
+              18.10375299,
+              59.30373379
+            ],
+            [
+              18.10773523,
+              59.30568419
+            ],
+            [
+              18.11101605,
+              59.30795061
+            ],
+            [
+              18.11350099,
+              59.31046788
+            ],
+            [
+              18.11511844,
+              59.31316365
+            ],
+            [
+              18.11582167,
+              59.31596038
+            ],
+            [
+              18.11559024,
+              59.31877764
+            ],
+            [
+              18.11443056,
+              59.32153437
+            ],
+            [
+              18.11237581,
+              59.32415126
+            ],
+            [
+              18.10948491,
+              59.32655296
+            ],
+            [
+              18.10584093,
+              59.32867034
+            ],
+            [
+              18.10154867,
+              59.33044243
+            ],
+            [
+              18.09673167,
+              59.33181818
+            ],
+            [
+              18.09152862,
+              59.33275798
+            ],
+            [
+              18.08608937,
+              59.33323475
+            ],
+            [
+              18.08057063,
+              59.33323475
+            ],
+            [
+              18.07513138,
+              59.33275798
+            ],
+            [
+              18.06992833,
+              59.33181818
+            ],
+            [
+              18.06511133,
+              59.33044243
+            ],
+            [
+              18.06081907,
+              59.32867034
+            ],
+            [
+              18.05717509,
+              59.32655296
+            ],
+            [
+              18.05428419,
+              59.32415126
+            ],
+            [
+              18.05222944,
+              59.32153437
+            ],
+            [
+              18.05106976,
+              59.31877764
+            ],
+            [
+              18.05083833,
+              59.31596038
+            ],
+            [
+              18.05154156,
+              59.31316365
+            ],
+            [
+              18.05315901,
+              59.31046788
+            ],
+            [
+              18.05564395,
+              59.30795061
+            ],
+            [
+              18.05892477,
+              59.30568419
+            ],
+            [
+              18.06290701,
+              59.30373379
+            ],
+            [
+              18.06747611,
+              59.30215543
+            ],
+            [
+              18.07250073,
+              59.30099449
+            ],
+            [
+              18.07783646,
+              59.30028431
+            ],
+            [
+              18.08333,
+              59.30004529
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "name": "NOTAM ESSA-B2769/26 (TEMPORARY)",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "OTHER"
+        ],
+        "comment": "TEMPORARY RESTRICTED AREA ESR645 STOCKHOLM STADSGARDEN \nESTABLISHED \nFOR AVIATION OPERATIONS. AREA BOUNDED BY:\n591947N 0180453E - 591919N 0180539E - 591919N 0180622E - 591845N \n0180610E - 591906N 0180358E - 591919N 0180356E - 591914N 0180429E - \n591947N 0180453E. WITHIN THIS AREA, ALL AIR TRAFFIC NOT \nPARTICIPATING IN THE ACTIVITY IS PROHIBITED.\nMILITARY FLIGHTS, AND RESCUE SERVICE IN ACCORDANCE WITH CIBIL \nPROTECTION ACT (2003:778), ALL OF THEM WHEN ON MISSION AND TRAFFIC \nTO/FROM BROMMA AIRPORT ON FLIGHT PLAN, ARE EXEMPT FROM THE \nRESTRICTIONS AND MAY TRANSIT THE AREA OPTAINING PERMISSION FROM \nBROMMA ATS.",
+        "validFrom": "2026-08-31T08:00:00Z",
+        "validTo": "2026-08-31T20:00:00Z",
+        "layer": {
+          "lower": "FL 0",
+          "upper": "FL 15",
+          "uom": "",
+          "lowerReference": "STD",
+          "upperReference": "STD"
+        }
+      }
+    },
+    {
+      "type": "Feature",
       "id": "NOTAM.15787",
       "geometry": {
         "type": "Polygon",
@@ -14204,247 +14992,6 @@
         "layer": {
           "lower": "FL 0",
           "upper": "FL 260",
-          "uom": "",
-          "lowerReference": "STD",
-          "upperReference": "STD"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "NOTAM.15897",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              15.8,
-              59.96675403
-            ],
-            [
-              15.80799326,
-              59.96699619
-            ],
-            [
-              15.8158703,
-              59.96771915
-            ],
-            [
-              15.82351659,
-              59.96891239
-            ],
-            [
-              15.83082091,
-              59.97055857
-            ],
-            [
-              15.83767698,
-              59.97263374
-            ],
-            [
-              15.843985,
-              59.97510772
-            ],
-            [
-              15.84965305,
-              59.97794453
-            ],
-            [
-              15.85459848,
-              59.98110287
-            ],
-            [
-              15.8587491,
-              59.98453678
-            ],
-            [
-              15.86204422,
-              59.98819626
-            ],
-            [
-              15.86443555,
-              59.99202802
-            ],
-            [
-              15.86588795,
-              59.99597622
-            ],
-            [
-              15.8663799,
-              59.99998332
-            ],
-            [
-              15.86590389,
-              60.00399091
-            ],
-            [
-              15.86446651,
-              60.00794053
-            ],
-            [
-              15.86208838,
-              60.01177456
-            ],
-            [
-              15.85880391,
-              60.01543703
-            ],
-            [
-              15.85466075,
-              60.01887448
-            ],
-            [
-              15.84971916,
-              60.02203671
-            ],
-            [
-              15.84405111,
-              60.02487751
-            ],
-            [
-              15.83773926,
-              60.02735538
-            ],
-            [
-              15.83087572,
-              60.0294341
-            ],
-            [
-              15.82356075,
-              60.03108327
-            ],
-            [
-              15.81590125,
-              60.03227878
-            ],
-            [
-              15.80800919,
-              60.03300316
-            ],
-            [
-              15.8,
-              60.0332458
-            ],
-            [
-              15.79199081,
-              60.03300316
-            ],
-            [
-              15.78409875,
-              60.03227878
-            ],
-            [
-              15.77643925,
-              60.03108327
-            ],
-            [
-              15.76912428,
-              60.0294341
-            ],
-            [
-              15.76226074,
-              60.02735538
-            ],
-            [
-              15.75594889,
-              60.02487751
-            ],
-            [
-              15.75028084,
-              60.02203671
-            ],
-            [
-              15.74533925,
-              60.01887448
-            ],
-            [
-              15.74119609,
-              60.01543703
-            ],
-            [
-              15.73791162,
-              60.01177456
-            ],
-            [
-              15.73553349,
-              60.00794053
-            ],
-            [
-              15.73409611,
-              60.00399091
-            ],
-            [
-              15.7336201,
-              59.99998332
-            ],
-            [
-              15.73411205,
-              59.99597622
-            ],
-            [
-              15.73556445,
-              59.99202802
-            ],
-            [
-              15.73795578,
-              59.98819626
-            ],
-            [
-              15.7412509,
-              59.98453678
-            ],
-            [
-              15.74540152,
-              59.98110287
-            ],
-            [
-              15.75034695,
-              59.97794453
-            ],
-            [
-              15.756015,
-              59.97510772
-            ],
-            [
-              15.76232302,
-              59.97263374
-            ],
-            [
-              15.76917909,
-              59.97055857
-            ],
-            [
-              15.77648341,
-              59.96891239
-            ],
-            [
-              15.7841297,
-              59.96771915
-            ],
-            [
-              15.79200674,
-              59.96699619
-            ],
-            [
-              15.8,
-              59.96675403
-            ]
-          ]
-        ]
-      },
-      "geometry_name": "GEOMETRY",
-      "properties": {
-        "name": "NOTAM ESSA-A952/26 (TEMPORARY)",
-        "type": "REQ_AUTHORIZATION",
-        "reason": [
-          "OTHER"
-        ],
-        "comment": "TEMPORARY RESTRICTED AREA ESR902 FAGERSTA WI A CIRCLE WITH RADIUS \n1 NM CENTERED ON COORD 600000N 0154803E. FLIGHT WI THE AREA \nPROHIBITED FOR ALL ACFT. AFTER CLEARANCE FROM ATCC STOCKHOLM THE \nFOLLOWING TFC IS EXEMPTED: POLICE AND RESCUE SERVICES IN ACCORDANCE \nWITH CIVIL PROTECTION ACT (2003:778), SWEDISH MIL ACFT, ACFT ON \nPOLICE-, AMBULANCE-, CUSTOMS-, COAST GUARD- OR SAR MISSION. NON \nEXEMPTED TFC CAN APPLY FOR EXEMPTION WITH THE POLICE AUTHORITY TEL \n+46 114 14",
-        "validFrom": "2026-08-23T10:36:00Z",
-        "validTo": "2026-08-28T20:00:00Z",
-        "layer": {
-          "lower": "FL 0",
-          "upper": "FL 20",
           "uom": "",
           "lowerReference": "STD",
           "upperReference": "STD"
