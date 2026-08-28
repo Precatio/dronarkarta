@@ -213,8 +213,8 @@ document.addEventListener('DOMContentLoaded', () => {
       if (points.length >= 3) {
         window._drawPoints = points;
         window._drawnPolygonLayer = L.polygon(points, {
-          color: '#10b981',
-          fillColor: '#10b981',
+          color: '#3b82f6',
+          fillColor: '#3b82f6',
           fillOpacity: 0.3,
           weight: 2
         }).addTo(map);
@@ -432,7 +432,7 @@ function handleMapDrawClick(e) {
     window._drawTempLine.setLatLngs(window._drawPoints);
   } else {
     window._drawTempLine = L.polyline(window._drawPoints, {
-      color: '#10b981',
+      color: '#3b82f6',
       weight: 3,
       dashArray: '5, 5'
     }).addTo(map);
@@ -453,8 +453,8 @@ function finishMapDraw() {
   }
   
   window._drawnPolygonLayer = L.polygon(window._drawPoints, {
-    color: '#10b981',
-    fillColor: '#10b981',
+    color: '#3b82f6',
+    fillColor: '#3b82f6',
     fillOpacity: 0.3,
     weight: 2
   }).addTo(map);
