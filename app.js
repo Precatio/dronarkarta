@@ -205,6 +205,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const urlParams = new URLSearchParams(window.location.search);
   const polygonParam = urlParams.get('polygon');
   let loadedPoints = null;
+  let loadedName = '';
   
   if (polygonParam) {
     try {
@@ -212,8 +213,9 @@ document.addEventListener('DOMContentLoaded', () => {
         const [lat, lng] = pt.split(',');
         return L.latLng(parseFloat(lat), parseFloat(lng));
       });
+      loadedName = urlParams.get('name') || `Delad zon med ${loadedPoints.length} punkter`;
       if (loadedPoints.length >= 3) {
-        localStorage.setItem('savedPolygon', JSON.stringify(loadedPoints));
+        localStorage.setItem('savedPolygon', JSON.stringify({ name: loadedName, points: loadedPoints }));
       }
     } catch (e) {
       console.error('Failed to parse polygon from URL:', e);
@@ -223,7 +225,13 @@ document.addEventListener('DOMContentLoaded', () => {
     if (saved) {
       try {
         const parsed = JSON.parse(saved);
-        loadedPoints = parsed.map(pt => L.latLng(pt.lat, pt.lng));
+        if (Array.isArray(parsed)) {
+          loadedPoints = parsed.map(pt => L.latLng(pt.lat, pt.lng));
+          loadedName = `Zon med ${loadedPoints.length} punkter`;
+        } else if (parsed && parsed.points) {
+          loadedPoints = parsed.points.map(pt => L.latLng(pt.lat, pt.lng));
+          loadedName = parsed.name || `Zon med ${loadedPoints.length} punkter`;
+        }
       } catch (e) {
         console.error('Failed to parse polygon from localStorage:', e);
       }
@@ -244,7 +252,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const card = document.getElementById('drawn-zone-card');
     const info = document.getElementById('drawn-zone-info');
     if (card && info) {
-      info.textContent = polygonParam ? `Delad zon med ${loadedPoints.length} punkter` : `Zon med ${loadedPoints.length} punkter`;
+      info.value = loadedName;
       card.classList.remove('hidden');
       initLucide();
     }
@@ -478,14 +486,15 @@ function finishMapDraw() {
   
   const card = document.getElementById('drawn-zone-card');
   const info = document.getElementById('drawn-zone-info');
+  let zoneName = `Zon med ${window._drawPoints.length} punkter`;
   if (card && info) {
-    info.textContent = `Zon med ${window._drawPoints.length} punkter`;
+    info.value = zoneName;
     card.classList.remove('hidden');
     initLucide();
   }
   
   // Save to local storage
-  localStorage.setItem('savedPolygon', JSON.stringify(window._drawPoints));
+  localStorage.setItem('savedPolygon', JSON.stringify({ name: zoneName, points: window._drawPoints }));
 }
 
 function clearDrawnZone() {
@@ -623,6 +632,15 @@ function setupDestinationListeners() {
   const gpxDrawBtn = document.getElementById('drawn-zone-gpx-btn');
   const phoneDrawBtn = document.getElementById('drawn-zone-phone-btn');
   const copyDrawBtn = document.getElementById('copy-drawn-zone-btn');
+  const drawInfoInput = document.getElementById('drawn-zone-info');
+
+  if (drawInfoInput) {
+    drawInfoInput.addEventListener('change', (e) => {
+      if (window._drawPoints && window._drawPoints.length >= 3) {
+        localStorage.setItem('savedPolygon', JSON.stringify({ name: e.target.value, points: window._drawPoints }));
+      }
+    });
+  }
 
   if (activateDrawBtn) {
     activateDrawBtn.addEventListener('click', (e) => {
@@ -658,7 +676,8 @@ function setupDestinationListeners() {
       e.stopPropagation();
       if (window._drawPoints && window._drawPoints.length > 0) {
         const polyString = window._drawPoints.map(p => `${p.lat.toFixed(5)},${p.lng.toFixed(5)}`).join('|');
-        const mapsUrl = `${window.location.origin}${window.location.pathname}?polygon=${polyString}`;
+        const zoneName = drawInfoInput ? encodeURIComponent(drawInfoInput.value) : '';
+        const mapsUrl = `${window.location.origin}${window.location.pathname}?polygon=${polyString}&name=${zoneName}`;
         navigator.clipboard.writeText(mapsUrl).then(() => {
           const originalHTML = copyDrawBtn.innerHTML;
           copyDrawBtn.innerHTML = '<i data-lucide="check" style="color:#10b981"></i>';
@@ -677,10 +696,11 @@ function setupDestinationListeners() {
       e.stopPropagation();
       if (!window._drawPoints || window._drawPoints.length === 0) return;
       
+      const zoneName = drawInfoInput ? drawInfoInput.value || 'Egen ritad flygzon' : 'Egen ritad flygzon';
       let gpx = `<?xml version="1.0" encoding="UTF-8"?>
 <gpx version="1.1" creator="Drönarkarta.se">
   <trk>
-    <name>Egen ritad flygzon</name>
+    <name>${escapeHtml(zoneName)}</name>
     <trkseg>\n`;
       
       const points = [...window._drawPoints, window._drawPoints[0]];
@@ -697,7 +717,7 @@ function setupDestinationListeners() {
       const a = document.createElement('a');
       a.style.display = 'none';
       a.href = url;
-      a.download = 'egen_flygzon.gpx';
+      a.download = `${zoneName.replace(/[^a-z0-9]/gi, '_').toLowerCase()}.gpx`;
       document.body.appendChild(a);
       a.click();
       window.URL.revokeObjectURL(url);
@@ -711,12 +731,13 @@ function setupDestinationListeners() {
       if (!window._drawPoints || window._drawPoints.length === 0) return;
       
       const polyString = window._drawPoints.map(p => `${p.lat.toFixed(5)},${p.lng.toFixed(5)}`).join('|');
-      const mapsUrl = `${window.location.origin}${window.location.pathname}?polygon=${polyString}`;
+      const zoneName = drawInfoInput ? encodeURIComponent(drawInfoInput.value) : '';
+      const mapsUrl = `${window.location.origin}${window.location.pathname}?polygon=${polyString}&name=${zoneName}`;
       
       const isMobile = navigator.maxTouchPoints > 1 || ('ontouchstart' in window && navigator.maxTouchPoints > 0);
       if (isMobile && navigator.share) {
         navigator.share({
-          title: 'Egen ritad flygzon',
+          title: drawInfoInput ? drawInfoInput.value || 'Egen ritad flygzon' : 'Egen ritad flygzon',
           text: 'Här är min ritade flygzon på Drönarkartan.',
           url: mapsUrl
         }).catch(err => console.log('Share failed:', err));
