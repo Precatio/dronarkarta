@@ -77,7 +77,7 @@
         "LOWER": "GND",
         "UPPER": "2300",
         "FROM": "2025-07-01T00:00Z",
-        "TO": "2026-08-27T23:59Z",
+        "TO": "2026-08-31T23:59Z",
         "SCHEDULE": "01 JUL 2025 - 30 NOV 2026, H24",
         "COM_SE": "Tillfälligt farligt område ESD873 Optand är upprättat för UAS\nsom flyger utom synhåll (BVLOS).",
         "COM_EN": "Temporary danger area ESD873 Optand is established for\nUAS flying beyond visual line of sight (BVLOS).",
@@ -92,7 +92,7 @@
         ],
         "comment": "Tillfälligt farligt område ESD873 Optand är upprättat för UAS\nsom flyger utom synhåll (BVLOS).",
         "validFrom": "2025-07-01T00:00Z",
-        "validTo": "2026-08-27T23:59Z",
+        "validTo": "2026-08-31T23:59Z",
         "layer": {
           "lower": "GND",
           "upper": "2300",
