@@ -241,6 +241,19 @@
     </button>
   </div>
 
+  <!-- Map Draw Tooltip Banner -->
+  <div id="map-draw-banner" class="geofence-banner hidden" style="background: rgba(12, 74, 96, 0.95); border: 1px solid #10b981; box-shadow: 0 0 15px rgba(16, 189, 129, 0.4); display: flex; align-items: center; gap: 8px;">
+    <i data-lucide="hexagon" style="color: #10b981; width: 20px; height: 20px; flex-shrink: 0;"></i>
+    <div class="banner-text" style="flex: 1;">
+      <h4 style="color: #10b981;">RITA FLYGZON</h4>
+      <p style="color: #fff; font-weight: 500; font-size: 0.8rem; margin: 2px 0 0;">Klicka på kartan för att rita punkter.</p>
+    </div>
+    <button id="finish-map-draw-btn" class="primary-btn" style="padding: 6px 12px; font-size: 0.8rem; border-radius: 4px; margin-right: 4px;">Klar</button>
+    <button id="cancel-map-draw-btn" class="close-geofence-btn" aria-label="Avbryt">
+      <i data-lucide="x" style="stroke: #fff;"></i>
+    </button>
+  </div>
+
   <div id="app-container">
     <!-- Map Area Wrapper with Radar Overlays -->
     <main id="map-wrapper">
@@ -368,9 +381,33 @@
             <i data-lucide="crosshair"></i>
             <span>Sätt flygpunkt på kartan</span>
           </button>
+          <button id="activate-draw-polygon-btn" class="secondary-btn" style="margin-top: 8px; width: 100%; display: flex; align-items: center; justify-content: center; gap: 8px;">
+            <i data-lucide="hexagon"></i>
+            <span>Rita egen flygzon</span>
+          </button>
         </div>
 
-
+        <!-- Drawn Zone Card -->
+        <div id="drawn-zone-card" class="destination-card hidden" style="margin-bottom: 12px;">
+          <div class="dest-header">
+            <h4><i data-lucide="hexagon"></i> Egen ritad flygzon</h4>
+            <button id="clear-drawn-zone-btn" class="dest-clear-btn" title="Rensa zon" aria-label="Rensa zon"><i data-lucide="trash-2"></i></button>
+          </div>
+          <div class="dest-coords-row">
+            <span id="drawn-zone-info" class="dest-coords">Zon med X punkter</span>
+            <button id="copy-drawn-zone-btn" class="dest-copy-btn" title="Kopiera polygon-URL" aria-label="Kopiera URL"><i data-lucide="copy"></i></button>
+          </div>
+          <div class="dest-actions-row" style="margin-top: 10px; display: flex; gap: 8px; flex-wrap: wrap;">
+            <button id="drawn-zone-gpx-btn" class="secondary-btn" style="flex: 1; display: flex; align-items: center; justify-content: center; gap: 6px; font-size: 0.8rem; padding: 6px 12px; background: rgba(56, 189, 248, 0.1); border: 1px solid rgba(56, 189, 248, 0.3); border-radius: 6px; color: var(--text-primary); cursor: pointer;">
+              <i data-lucide="download" style="width:14px; height:14px;"></i>
+              <span>Ladda ner GPX</span>
+            </button>
+            <button id="drawn-zone-phone-btn" class="secondary-btn" style="flex: 1; display: flex; align-items: center; justify-content: center; gap: 6px; font-size: 0.8rem; padding: 6px 12px; background: rgba(16, 185, 129, 0.1); border: 1px solid rgba(16, 185, 129, 0.3); border-radius: 6px; color: var(--text-primary); cursor: pointer;">
+              <i data-lucide="smartphone" style="width:14px; height:14px;"></i>
+              <span>Till telefon</span>
+            </button>
+          </div>
+        </div>
 
         <!-- Geofence Settings -->
         <div class="section-group">

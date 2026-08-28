@@ -200,6 +200,38 @@ document.addEventListener('DOMContentLoaded', () => {
   loadAllAirspaceData();
   setupEventListeners();
   initLucide();
+  
+  // Check for polygon in URL
+  const urlParams = new URLSearchParams(window.location.search);
+  const polygonParam = urlParams.get('polygon');
+  if (polygonParam) {
+    try {
+      const points = polygonParam.split('|').map(pt => {
+        const [lat, lng] = pt.split(',');
+        return L.latLng(parseFloat(lat), parseFloat(lng));
+      });
+      if (points.length >= 3) {
+        window._drawPoints = points;
+        window._drawnPolygonLayer = L.polygon(points, {
+          color: '#10b981',
+          fillColor: '#10b981',
+          fillOpacity: 0.3,
+          weight: 2
+        }).addTo(map);
+        map.fitBounds(window._drawnPolygonLayer.getBounds());
+        
+        const card = document.getElementById('drawn-zone-card');
+        const info = document.getElementById('drawn-zone-info');
+        if (card && info) {
+          info.textContent = `Delad zon med ${points.length} punkter`;
+          card.classList.remove('hidden');
+          initLucide();
+        }
+      }
+    } catch (e) {
+      console.error('Failed to parse polygon from URL:', e);
+    }
+  }
 });
 
 // Initialize Lucide icons
@@ -233,11 +265,13 @@ function initMap() {
   // Trigger search update on map move
   map.on('moveend', updateLocalZonesList);
 
-  // Map click listener to place destination marker (only when selection mode is active!)
+  // Map click listener to place destination marker or draw polygon
   map.on('click', (e) => {
     if (window._mapSelectionActive) {
       setDestination(e.latlng.lat, e.latlng.lng);
       deactivateMapSelection();
+    } else if (window._drawPolygonActive) {
+      handleMapDrawClick(e);
     }
   });
 }
@@ -330,6 +364,7 @@ function clearDestination() {
 window._mapSelectionActive = false;
 
 function activateMapSelection() {
+  deactivateMapDraw(); // Ensure drawing mode is inactive
   window._mapSelectionActive = true;
   const banner = document.getElementById('map-select-banner');
   if (banner) {
@@ -346,6 +381,101 @@ function deactivateMapSelection() {
   if (banner) banner.classList.add('hidden');
   const mapEl = document.getElementById('map');
   if (mapEl) mapEl.style.cursor = '';
+}
+
+// ── Custom Polygon Drawing Logic ───────────────────────────────
+window._drawPolygonActive = false;
+window._drawPoints = [];
+window._drawTempLine = null;
+window._drawnPolygonLayer = null;
+
+function activateMapDraw() {
+  deactivateMapSelection(); // Ensure the other mode is inactive
+  window._drawPolygonActive = true;
+  window._drawPoints = [];
+  
+  if (window._drawnPolygonLayer) {
+    map.removeLayer(window._drawnPolygonLayer);
+    window._drawnPolygonLayer = null;
+  }
+  if (window._drawTempLine) {
+    map.removeLayer(window._drawTempLine);
+    window._drawTempLine = null;
+  }
+
+  const banner = document.getElementById('map-draw-banner');
+  if (banner) {
+    banner.classList.remove('hidden');
+    initLucide();
+  }
+  const mapEl = document.getElementById('map');
+  if (mapEl) mapEl.style.cursor = 'crosshair';
+  
+  const card = document.getElementById('drawn-zone-card');
+  if (card) card.classList.add('hidden');
+}
+
+function deactivateMapDraw() {
+  window._drawPolygonActive = false;
+  const banner = document.getElementById('map-draw-banner');
+  if (banner) banner.classList.add('hidden');
+  const mapEl = document.getElementById('map');
+  if (mapEl) mapEl.style.cursor = '';
+}
+
+function handleMapDrawClick(e) {
+  if (!window._drawPolygonActive) return;
+  
+  window._drawPoints.push(e.latlng);
+  
+  if (window._drawTempLine) {
+    window._drawTempLine.setLatLngs(window._drawPoints);
+  } else {
+    window._drawTempLine = L.polyline(window._drawPoints, {
+      color: '#10b981',
+      weight: 3,
+      dashArray: '5, 5'
+    }).addTo(map);
+  }
+}
+
+function finishMapDraw() {
+  if (window._drawPoints.length < 3) {
+    alert("Du måste rita minst 3 punkter för att skapa en zon.");
+    return;
+  }
+  
+  deactivateMapDraw();
+  
+  if (window._drawTempLine) {
+    map.removeLayer(window._drawTempLine);
+    window._drawTempLine = null;
+  }
+  
+  window._drawnPolygonLayer = L.polygon(window._drawPoints, {
+    color: '#10b981',
+    fillColor: '#10b981',
+    fillOpacity: 0.3,
+    weight: 2
+  }).addTo(map);
+  
+  const card = document.getElementById('drawn-zone-card');
+  const info = document.getElementById('drawn-zone-info');
+  if (card && info) {
+    info.textContent = `Zon med ${window._drawPoints.length} punkter`;
+    card.classList.remove('hidden');
+    initLucide();
+  }
+}
+
+function clearDrawnZone() {
+  if (window._drawnPolygonLayer) {
+    map.removeLayer(window._drawnPolygonLayer);
+    window._drawnPolygonLayer = null;
+  }
+  window._drawPoints = [];
+  const card = document.getElementById('drawn-zone-card');
+  if (card) card.classList.add('hidden');
 }
 
 // Wire copy/clear buttons once window loads / setupEventListeners runs
@@ -416,8 +546,10 @@ function setupDestinationListeners() {
         const modal = document.getElementById('phone-modal');
         const qrImg = document.getElementById('phone-qr-img');
         const linkText = document.getElementById('phone-link-text');
+        const titleText = document.getElementById('phone-modal-title');
         
         if (modal) {
+          if (titleText) titleText.textContent = "Öppna i telefonen";
           if (qrImg) {
             qrImg.src = `https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=${encodeURIComponent(mapsUrl)}`;
           }
@@ -458,6 +590,151 @@ function setupDestinationListeners() {
         }).catch(err => {
           console.error('Clipboard copy failed:', err);
         });
+      }
+    });
+  }
+
+  // Polygon Drawing Handlers
+  const activateDrawBtn = document.getElementById('activate-draw-polygon-btn');
+  const cancelDrawBtn = document.getElementById('cancel-map-draw-btn');
+  const finishDrawBtn = document.getElementById('finish-map-draw-btn');
+  const clearDrawBtn = document.getElementById('clear-drawn-zone-btn');
+  const gpxDrawBtn = document.getElementById('drawn-zone-gpx-btn');
+  const phoneDrawBtn = document.getElementById('drawn-zone-phone-btn');
+  const copyDrawBtn = document.getElementById('copy-drawn-zone-btn');
+
+  if (activateDrawBtn) {
+    activateDrawBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      activateMapDraw();
+    });
+  }
+
+  if (cancelDrawBtn) {
+    cancelDrawBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      deactivateMapDraw();
+      clearDrawnZone();
+    });
+  }
+
+  if (finishDrawBtn) {
+    finishDrawBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      finishMapDraw();
+    });
+  }
+
+  if (clearDrawBtn) {
+    clearDrawBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      clearDrawnZone();
+    });
+  }
+
+  if (copyDrawBtn) {
+    copyDrawBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      if (window._drawPoints && window._drawPoints.length > 0) {
+        const polyString = window._drawPoints.map(p => `${p.lat.toFixed(5)},${p.lng.toFixed(5)}`).join('|');
+        const mapsUrl = `${window.location.origin}${window.location.pathname}?polygon=${polyString}`;
+        navigator.clipboard.writeText(mapsUrl).then(() => {
+          const originalHTML = copyDrawBtn.innerHTML;
+          copyDrawBtn.innerHTML = '<i data-lucide="check" style="color:#10b981"></i>';
+          initLucide();
+          setTimeout(() => {
+            copyDrawBtn.innerHTML = originalHTML;
+            initLucide();
+          }, 1500);
+        });
+      }
+    });
+  }
+
+  if (gpxDrawBtn) {
+    gpxDrawBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      if (!window._drawPoints || window._drawPoints.length === 0) return;
+      
+      let gpx = `<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="Drönarkarta.se">
+  <trk>
+    <name>Egen ritad flygzon</name>
+    <trkseg>\n`;
+      
+      const points = [...window._drawPoints, window._drawPoints[0]];
+      points.forEach(p => {
+        gpx += `      <trkpt lat="${p.lat}" lon="${p.lng}"></trkpt>\n`;
+      });
+      
+      gpx += `    </trkseg>
+  </trk>
+</gpx>`;
+      
+      const blob = new Blob([gpx], { type: 'application/gpx+xml' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.style.display = 'none';
+      a.href = url;
+      a.download = 'egen_flygzon.gpx';
+      document.body.appendChild(a);
+      a.click();
+      window.URL.revokeObjectURL(url);
+      a.remove();
+    });
+  }
+
+  if (phoneDrawBtn) {
+    phoneDrawBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      if (!window._drawPoints || window._drawPoints.length === 0) return;
+      
+      const polyString = window._drawPoints.map(p => `${p.lat.toFixed(5)},${p.lng.toFixed(5)}`).join('|');
+      const mapsUrl = `${window.location.origin}${window.location.pathname}?polygon=${polyString}`;
+      
+      const isMobile = navigator.maxTouchPoints > 1 || ('ontouchstart' in window && navigator.maxTouchPoints > 0);
+      if (isMobile && navigator.share) {
+        navigator.share({
+          title: 'Egen ritad flygzon',
+          text: 'Här är min ritade flygzon på Drönarkartan.',
+          url: mapsUrl
+        }).catch(err => console.log('Share failed:', err));
+      } else {
+        const modal = document.getElementById('phone-modal');
+        const qrImg = document.getElementById('phone-qr-img');
+        const linkText = document.getElementById('phone-link-text');
+        const titleText = document.getElementById('phone-modal-title');
+        
+        if (modal) {
+          if (titleText) titleText.textContent = "Dela flygzon till telefon";
+          if (qrImg) {
+            qrImg.src = `https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=${encodeURIComponent(mapsUrl)}`;
+          }
+          if (linkText) {
+            linkText.textContent = mapsUrl;
+          }
+          
+          const copyPhoneLinkBtn = document.getElementById('copy-phone-link-btn');
+          if (copyPhoneLinkBtn) {
+            const newClone = copyPhoneLinkBtn.cloneNode(true);
+            copyPhoneLinkBtn.parentNode.replaceChild(newClone, copyPhoneLinkBtn);
+            newClone.addEventListener('click', (ev) => {
+              ev.stopPropagation();
+              navigator.clipboard.writeText(mapsUrl).then(() => {
+                const originalHTML = newClone.innerHTML;
+                newClone.innerHTML = '<i data-lucide="check" style="color:#10b981"></i>';
+                initLucide();
+                setTimeout(() => {
+                  newClone.innerHTML = originalHTML;
+                  initLucide();
+                }, 1500);
+              });
+            });
+          }
+
+          modal.classList.remove('hidden');
+          initLucide();
+        }
       }
     });
   }
