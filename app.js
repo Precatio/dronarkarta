@@ -201,35 +201,52 @@ document.addEventListener('DOMContentLoaded', () => {
   setupEventListeners();
   initLucide();
   
-  // Check for polygon in URL
+  // Check for polygon in URL or localStorage
   const urlParams = new URLSearchParams(window.location.search);
   const polygonParam = urlParams.get('polygon');
+  let loadedPoints = null;
+  
   if (polygonParam) {
     try {
-      const points = polygonParam.split('|').map(pt => {
+      loadedPoints = polygonParam.split('|').map(pt => {
         const [lat, lng] = pt.split(',');
         return L.latLng(parseFloat(lat), parseFloat(lng));
       });
-      if (points.length >= 3) {
-        window._drawPoints = points;
-        window._drawnPolygonLayer = L.polygon(points, {
-          color: '#3b82f6',
-          fillColor: '#3b82f6',
-          fillOpacity: 0.3,
-          weight: 2
-        }).addTo(map);
-        map.fitBounds(window._drawnPolygonLayer.getBounds());
-        
-        const card = document.getElementById('drawn-zone-card');
-        const info = document.getElementById('drawn-zone-info');
-        if (card && info) {
-          info.textContent = `Delad zon med ${points.length} punkter`;
-          card.classList.remove('hidden');
-          initLucide();
-        }
+      if (loadedPoints.length >= 3) {
+        localStorage.setItem('savedPolygon', JSON.stringify(loadedPoints));
       }
     } catch (e) {
       console.error('Failed to parse polygon from URL:', e);
+    }
+  } else {
+    const saved = localStorage.getItem('savedPolygon');
+    if (saved) {
+      try {
+        const parsed = JSON.parse(saved);
+        loadedPoints = parsed.map(pt => L.latLng(pt.lat, pt.lng));
+      } catch (e) {
+        console.error('Failed to parse polygon from localStorage:', e);
+      }
+    }
+  }
+
+  if (loadedPoints && loadedPoints.length >= 3) {
+    window._drawPoints = loadedPoints;
+    window._drawnPolygonLayer = L.polygon(loadedPoints, {
+      color: '#3b82f6',
+      fillColor: '#3b82f6',
+      fillOpacity: 0.3,
+      weight: 2
+    }).addTo(map);
+    
+    map.fitBounds(window._drawnPolygonLayer.getBounds());
+    
+    const card = document.getElementById('drawn-zone-card');
+    const info = document.getElementById('drawn-zone-info');
+    if (card && info) {
+      info.textContent = polygonParam ? `Delad zon med ${loadedPoints.length} punkter` : `Zon med ${loadedPoints.length} punkter`;
+      card.classList.remove('hidden');
+      initLucide();
     }
   }
 });
@@ -466,6 +483,9 @@ function finishMapDraw() {
     card.classList.remove('hidden');
     initLucide();
   }
+  
+  // Save to local storage
+  localStorage.setItem('savedPolygon', JSON.stringify(window._drawPoints));
 }
 
 function clearDrawnZone() {
@@ -476,6 +496,7 @@ function clearDrawnZone() {
   window._drawPoints = [];
   const card = document.getElementById('drawn-zone-card');
   if (card) card.classList.add('hidden');
+  localStorage.removeItem('savedPolygon');
 }
 
 // Wire copy/clear buttons once window loads / setupEventListeners runs
