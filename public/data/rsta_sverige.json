@@ -20480,7 +20480,7 @@
         "LOWER": "GND",
         "WEF": "2026-09-03",
         "COMMENT_1": null,
-        "COMMENT_2": "Militär verksamhet inklusive flygverksamhet.\nTillstånd kan erhållas från MALMÖ ACC, LANDVETTER, STALLBACKA eller SÅTENÄS ATS.\n\nMilitary activities including aviation operations. \nPermission obtainable from MALMÖ ACC, LANDVETTER, STALLBACKA or SÅTENÄS ATS.",
+        "COMMENT_2": "Militär verksamhet inklusive flygverksamhet.\nTillstånd kan erhållas från MALM�� ACC, LANDVETTER, STALLBACKA eller SÅTENÄS ATS.\n\nMilitary activities including aviation operations. \nPermission obtainable from MALMÖ ACC, LANDVETTER, STALLBACKA or SÅTENÄS ATS.",
         "QUALITY": "ROUTINE",
         "CRC_ID": null,
         "CRC_POS": null,
@@ -20493,7 +20493,7 @@
         "reason": [
           "SENSITIVE"
         ],
-        "comment": "Militär verksamhet inklusive flygverksamhet.\nTillstånd kan erhållas från MALMÖ ACC, LANDVETTER, STALLBACKA eller SÅTENÄS ATS.\n\nMilitary activities including aviation operations. \nPermission obtainable from MALMÖ ACC, LANDVETTER, STALLBACKA or SÅTENÄS ATS.",
+        "comment": "Militär verksamhet inklusive flygverksamhet.\nTillstånd kan erhållas från MALM�� ACC, LANDVETTER, STALLBACKA eller SÅTENÄS ATS.\n\nMilitary activities including aviation operations. \nPermission obtainable from MALMÖ ACC, LANDVETTER, STALLBACKA or SÅTENÄS ATS.",
         "layer": {
           "lower": "GND",
           "upper": "20200",
