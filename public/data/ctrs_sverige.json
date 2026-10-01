@@ -3,79 +3,6 @@
   "features": [
     {
       "type": "Feature",
-      "id": "CTR.16291",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              15.0325,
-              59.40361111
-            ],
-            [
-              15.22055556,
-              59.38861111
-            ],
-            [
-              15.20861111,
-              59.19416667
-            ],
-            [
-              15.01777778,
-              59.00611111
-            ],
-            [
-              14.87777778,
-              59.02083333
-            ],
-            [
-              14.86027778,
-              59.24888889
-            ],
-            [
-              15.0325,
-              59.40361111
-            ]
-          ]
-        ]
-      },
-      "geometry_name": "GEOMETRY",
-      "properties": {
-        "TYPEOFAREA": "CTR",
-        "NAMEOFAREA": "ÖREBRO CTR",
-        "POSITIONINDICATOR": "ESOE",
-        "DATETIMEOFCHG": null,
-        "NAMEOFOPERATOR": null,
-        "ORIGIN": "AIP",
-        "LOCATION": "ÖREBRO CTR",
-        "UPPER": "2000",
-        "LOWER": "GND",
-        "WEF": "2026-10-01",
-        "COMMENT_1": "C",
-        "COMMENT_2": null,
-        "QUALITY": "ROUTINE",
-        "CRC_ID": null,
-        "CRC_POS": null,
-        "CRC_TOT": null,
-        "MSID": 4064,
-        "IDNR": 16291,
-        "MI_STYLE": null,
-        "name": "ÖREBRO CTR",
-        "type": "REQ_AUTHORIZATION",
-        "reason": [
-          "AIR_TRAFFIC"
-        ],
-        "layer": {
-          "lower": "GND",
-          "upper": "2000",
-          "uom": "ft",
-          "lowerReference": "AMSL",
-          "upperReference": "AMSL"
-        }
-      }
-    },
-    {
-      "type": "Feature",
       "id": "CTR.16292",
       "geometry": {
         "type": "Polygon",
@@ -1602,6 +1529,1133 @@
     },
     {
       "type": "Feature",
+      "id": "CTR.16291",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              15.0325,
+              59.40361111
+            ],
+            [
+              15.22055556,
+              59.38861111
+            ],
+            [
+              15.20861111,
+              59.19416667
+            ],
+            [
+              15.01777778,
+              59.00611111
+            ],
+            [
+              14.87777778,
+              59.02083333
+            ],
+            [
+              14.86027778,
+              59.24888889
+            ],
+            [
+              15.0325,
+              59.40361111
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "TYPEOFAREA": "CTR",
+        "NAMEOFAREA": "ÖREBRO CTR",
+        "POSITIONINDICATOR": "ESOE",
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "ÖREBRO CTR",
+        "UPPER": "2000",
+        "LOWER": "GND",
+        "WEF": "2026-10-01",
+        "COMMENT_1": "C",
+        "COMMENT_2": null,
+        "QUALITY": "ROUTINE",
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 4064,
+        "IDNR": 16291,
+        "MI_STYLE": null,
+        "name": "ÖREBRO CTR",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "layer": {
+          "lower": "GND",
+          "upper": "2000",
+          "uom": "ft",
+          "lowerReference": "AMSL",
+          "upperReference": "AMSL"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CTR.16280",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              17.74666667,
+              59.44111111
+            ],
+            [
+              17.95472222,
+              59.44138889
+            ],
+            [
+              18.16333333,
+              59.38277778
+            ],
+            [
+              18.16333333,
+              59.24944444
+            ],
+            [
+              17.74666667,
+              59.24944444
+            ],
+            [
+              17.74666667,
+              59.32444444
+            ],
+            [
+              17.69666667,
+              59.32444444
+            ],
+            [
+              17.69666667,
+              59.36611111
+            ],
+            [
+              17.74666667,
+              59.36611111
+            ],
+            [
+              17.74666667,
+              59.44111111
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "TYPEOFAREA": "CTR",
+        "NAMEOFAREA": "BROMMA CTR",
+        "POSITIONINDICATOR": "ESSB",
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "BROMMA CTR",
+        "UPPER": "2000",
+        "LOWER": "GND",
+        "WEF": "2026-10-01",
+        "COMMENT_1": "C",
+        "COMMENT_2": "Skå-Edeby ATZ with airspace class G penetrates CTR. The lower limit of Bromma CTR in this part is 1000 ft AMSL. For details see ENR 2.2 and AD 2 ESSB 6-1.",
+        "QUALITY": "ROUTINE",
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 4052,
+        "IDNR": 16280,
+        "MI_STYLE": null,
+        "name": "BROMMA CTR",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "layer": {
+          "lower": "GND",
+          "upper": "2000",
+          "uom": "ft",
+          "lowerReference": "AMSL",
+          "upperReference": "AMSL"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CTR.16281",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              14.08222222,
+              57.94638889
+            ],
+            [
+              14.26333333,
+              57.91638889
+            ],
+            [
+              14.28833333,
+              57.85194444
+            ],
+            [
+              14.17222222,
+              57.67361111
+            ],
+            [
+              14.05611111,
+              57.57611111
+            ],
+            [
+              13.88444444,
+              57.60583333
+            ],
+            [
+              13.86916667,
+              57.69888889
+            ],
+            [
+              13.96694444,
+              57.86277778
+            ],
+            [
+              14.08222222,
+              57.94638889
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "TYPEOFAREA": "CTR",
+        "NAMEOFAREA": "JÖNKÖPING CTR",
+        "POSITIONINDICATOR": "ESGJ",
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "JÖNKÖPING CTR",
+        "UPPER": "2200",
+        "LOWER": "GND",
+        "WEF": "2026-10-01",
+        "COMMENT_1": "C",
+        "COMMENT_2": null,
+        "QUALITY": "ROUTINE",
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 4054,
+        "IDNR": 16281,
+        "MI_STYLE": null,
+        "name": "JÖNKÖPING CTR",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "layer": {
+          "lower": "GND",
+          "upper": "2200",
+          "uom": "ft",
+          "lowerReference": "AMSL",
+          "upperReference": "AMSL"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CTR.16282",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              21.88722222,
+              65.7225
+            ],
+            [
+              22.315,
+              65.59555556
+            ],
+            [
+              22.53638889,
+              65.43222222
+            ],
+            [
+              22.35361111,
+              65.36277778
+            ],
+            [
+              21.96222222,
+              65.46888889
+            ],
+            [
+              21.70388889,
+              65.65222222
+            ],
+            [
+              21.88722222,
+              65.7225
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "TYPEOFAREA": "CTR",
+        "NAMEOFAREA": "KALLAX CTR",
+        "POSITIONINDICATOR": "ESPA",
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "KALLAX CTR",
+        "UPPER": "1600",
+        "LOWER": "GND",
+        "WEF": "2026-10-01",
+        "COMMENT_1": "C",
+        "COMMENT_2": null,
+        "QUALITY": "ROUTINE",
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 4055,
+        "IDNR": 16282,
+        "MI_STYLE": null,
+        "name": "KALLAX CTR",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "layer": {
+          "lower": "GND",
+          "upper": "1600",
+          "uom": "ft",
+          "lowerReference": "AMSL",
+          "upperReference": "AMSL"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CTR.16283",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              16.20777778,
+              56.8725
+            ],
+            [
+              16.43805556,
+              56.71333333
+            ],
+            [
+              16.49277778,
+              56.58277778
+            ],
+            [
+              16.34111111,
+              56.53944444
+            ],
+            [
+              16.14694444,
+              56.63861111
+            ],
+            [
+              16.0475,
+              56.8275
+            ],
+            [
+              16.20777778,
+              56.8725
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "TYPEOFAREA": "CTR",
+        "NAMEOFAREA": "KALMAR CTR",
+        "POSITIONINDICATOR": "ESMQ",
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "KALMAR CTR",
+        "UPPER": "1500",
+        "LOWER": "GND",
+        "WEF": "2026-10-01",
+        "COMMENT_1": "C",
+        "COMMENT_2": null,
+        "QUALITY": "ROUTINE",
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 4056,
+        "IDNR": 16283,
+        "MI_STYLE": null,
+        "name": "KALMAR CTR",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "layer": {
+          "lower": "GND",
+          "upper": "1500",
+          "uom": "ft",
+          "lowerReference": "AMSL",
+          "upperReference": "AMSL"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CTR.16284",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.4,
+              59.64944444
+            ],
+            [
+              13.59944444,
+              59.60527778
+            ],
+            [
+              13.56388889,
+              59.49944444
+            ],
+            [
+              13.46305556,
+              59.3875
+            ],
+            [
+              13.28305556,
+              59.25472222
+            ],
+            [
+              13.10694444,
+              59.29444444
+            ],
+            [
+              13.16388889,
+              59.4425
+            ],
+            [
+              13.20611111,
+              59.49944444
+            ],
+            [
+              13.4,
+              59.64944444
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "TYPEOFAREA": "CTR",
+        "NAMEOFAREA": "KARLSTAD CTR",
+        "POSITIONINDICATOR": "ESOK",
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "KARLSTAD CTR",
+        "UPPER": "2000",
+        "LOWER": "GND",
+        "WEF": "2026-10-01",
+        "COMMENT_1": "C",
+        "COMMENT_2": null,
+        "QUALITY": "ROUTINE",
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 4057,
+        "IDNR": 16284,
+        "MI_STYLE": null,
+        "name": "KARLSTAD CTR",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "layer": {
+          "lower": "GND",
+          "upper": "2000",
+          "uom": "ft",
+          "lowerReference": "AMSL",
+          "upperReference": "AMSL"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CTR.16285",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              20.46222222,
+              68.015
+            ],
+            [
+              20.71222222,
+              67.965
+            ],
+            [
+              20.56222222,
+              67.77361111
+            ],
+            [
+              20.24555556,
+              67.62361111
+            ],
+            [
+              19.97888889,
+              67.67361111
+            ],
+            [
+              20.11777778,
+              67.865
+            ],
+            [
+              20.46222222,
+              68.015
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "TYPEOFAREA": "CTR",
+        "NAMEOFAREA": "KIRUNA CTR",
+        "POSITIONINDICATOR": "ESNQ",
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "KIRUNA CTR",
+        "UPPER": "3100",
+        "LOWER": "GND",
+        "WEF": "2026-10-01",
+        "COMMENT_1": "C",
+        "COMMENT_2": null,
+        "QUALITY": "ROUTINE",
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 4058,
+        "IDNR": 16285,
+        "MI_STYLE": null,
+        "name": "KIRUNA CTR",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "layer": {
+          "lower": "GND",
+          "upper": "3100",
+          "uom": "ft",
+          "lowerReference": "AMSL",
+          "upperReference": "AMSL"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CTR.16286",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              14.03055556,
+              56.13333333
+            ],
+            [
+              14.24305556,
+              56.125
+            ],
+            [
+              14.26666667,
+              55.91055556
+            ],
+            [
+              14.14166667,
+              55.73055556
+            ],
+            [
+              13.95555556,
+              55.73833333
+            ],
+            [
+              13.92666667,
+              55.93777778
+            ],
+            [
+              14.03055556,
+              56.13333333
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "TYPEOFAREA": "CTR",
+        "NAMEOFAREA": "KRISTIANSTAD CTR",
+        "POSITIONINDICATOR": "ESMK",
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "KRISTIANSTAD CTR",
+        "UPPER": "1700",
+        "LOWER": "GND",
+        "WEF": "2026-10-01",
+        "COMMENT_1": "C",
+        "COMMENT_2": null,
+        "QUALITY": "ROUTINE",
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 4059,
+        "IDNR": 16286,
+        "MI_STYLE": null,
+        "name": "KRISTIANSTAD CTR",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "layer": {
+          "lower": "GND",
+          "upper": "1700",
+          "uom": "ft",
+          "lowerReference": "AMSL",
+          "upperReference": "AMSL"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CTR.16287",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              14.72,
+              57.11583333
+            ],
+            [
+              14.89583333,
+              57.09333333
+            ],
+            [
+              14.88138889,
+              56.90333333
+            ],
+            [
+              14.73305556,
+              56.735
+            ],
+            [
+              14.55694444,
+              56.75638889
+            ],
+            [
+              14.57805556,
+              56.93555556
+            ],
+            [
+              14.72,
+              57.11583333
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "TYPEOFAREA": "CTR",
+        "NAMEOFAREA": "KRONOBERG CTR",
+        "POSITIONINDICATOR": "ESMX",
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "KRONOBERG CTR",
+        "UPPER": "2000",
+        "LOWER": "GND",
+        "WEF": "2026-10-01",
+        "COMMENT_1": "C",
+        "COMMENT_2": null,
+        "QUALITY": "ROUTINE",
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 4060,
+        "IDNR": 16287,
+        "MI_STYLE": null,
+        "name": "KRONOBERG CTR",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "layer": {
+          "lower": "GND",
+          "upper": "2000",
+          "uom": "ft",
+          "lowerReference": "AMSL",
+          "upperReference": "AMSL"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CTR.16288",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              12.33083333,
+              57.83305556
+            ],
+            [
+              12.50222222,
+              57.78777778
+            ],
+            [
+              12.46416667,
+              57.63027778
+            ],
+            [
+              12.21416667,
+              57.49972222
+            ],
+            [
+              12.07666667,
+              57.53722222
+            ],
+            [
+              12.10305556,
+              57.70805556
+            ],
+            [
+              12.33083333,
+              57.83305556
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "TYPEOFAREA": "CTR",
+        "NAMEOFAREA": "LANDVETTER CTR",
+        "POSITIONINDICATOR": "ESGG",
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "LANDVETTER CTR",
+        "UPPER": "1500",
+        "LOWER": "GND",
+        "WEF": "2026-10-01",
+        "COMMENT_1": "C",
+        "COMMENT_2": null,
+        "QUALITY": "ROUTINE",
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 4062,
+        "IDNR": 16288,
+        "MI_STYLE": null,
+        "name": "LANDVETTER CTR",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "layer": {
+          "lower": "GND",
+          "upper": "1500",
+          "uom": "ft",
+          "lowerReference": "AMSL",
+          "upperReference": "AMSL"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CTR.16267",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              12.73638889,
+              56.91416667
+            ],
+            [
+              12.95138889,
+              56.90722222
+            ],
+            [
+              12.97277778,
+              56.69166667
+            ],
+            [
+              12.96527778,
+              56.65666667
+            ],
+            [
+              12.87,
+              56.55694444
+            ],
+            [
+              12.74222222,
+              56.56111111
+            ],
+            [
+              12.6625,
+              56.67027778
+            ],
+            [
+              12.67138889,
+              56.70694444
+            ],
+            [
+              12.73638889,
+              56.91416667
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "TYPEOFAREA": "CTR",
+        "NAMEOFAREA": "HALMSTAD CTR",
+        "POSITIONINDICATOR": "ESMT",
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "HALMSTAD CTR",
+        "UPPER": "2000",
+        "LOWER": "GND",
+        "WEF": "2026-10-01",
+        "COMMENT_1": "C",
+        "COMMENT_2": null,
+        "QUALITY": "ROUTINE",
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 4764,
+        "IDNR": 16267,
+        "MI_STYLE": null,
+        "name": "HALMSTAD CTR",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "layer": {
+          "lower": "GND",
+          "upper": "2000",
+          "uom": "ft",
+          "lowerReference": "AMSL",
+          "upperReference": "AMSL"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CTR.16268",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.45305556,
+              55.67333333
+            ],
+            [
+              13.5375,
+              55.55277778
+            ],
+            [
+              13.52194444,
+              55.41
+            ],
+            [
+              13.30555556,
+              55.39555556
+            ],
+            [
+              13.21527778,
+              55.51694444
+            ],
+            [
+              13.22972222,
+              55.65861111
+            ],
+            [
+              13.45305556,
+              55.67333333
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "TYPEOFAREA": "CTR",
+        "NAMEOFAREA": "STURUP CTR",
+        "POSITIONINDICATOR": "ESMS",
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "STURUP CTR",
+        "UPPER": "2000",
+        "LOWER": "GND",
+        "WEF": "2026-10-01",
+        "COMMENT_1": "C",
+        "COMMENT_2": null,
+        "QUALITY": "ROUTINE",
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 4765,
+        "IDNR": 16268,
+        "MI_STYLE": null,
+        "name": "STURUP CTR",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "layer": {
+          "lower": "GND",
+          "upper": "2000",
+          "uom": "ft",
+          "lowerReference": "AMSL",
+          "upperReference": "AMSL"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CTR.16269",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.02555556,
+              56.155
+            ],
+            [
+              13.31388889,
+              56.125
+            ],
+            [
+              13.4525,
+              56.08416667
+            ],
+            [
+              13.35833333,
+              55.98416667
+            ],
+            [
+              13.13055556,
+              56.025
+            ],
+            [
+              12.9825,
+              56.08722222
+            ],
+            [
+              13.02555556,
+              56.155
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "TYPEOFAREA": "CTR",
+        "NAMEOFAREA": "LJUNGBYHED CTR",
+        "POSITIONINDICATOR": "ESTL",
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "LJUNGBYHED CTR",
+        "UPPER": "1500",
+        "LOWER": "GND",
+        "WEF": "2026-10-01",
+        "COMMENT_1": "C",
+        "COMMENT_2": null,
+        "QUALITY": "ROUTINE",
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 4766,
+        "IDNR": 16269,
+        "MI_STYLE": null,
+        "name": "LJUNGBYHED CTR",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "layer": {
+          "lower": "GND",
+          "upper": "1500",
+          "uom": "ft",
+          "lowerReference": "AMSL",
+          "upperReference": "AMSL"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CTR.16270",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              16.26361111,
+              58.67444444
+            ],
+            [
+              16.63,
+              58.64111111
+            ],
+            [
+              16.62444444,
+              58.5275
+            ],
+            [
+              16.24694444,
+              58.49138889
+            ],
+            [
+              15.91361111,
+              58.54972222
+            ],
+            [
+              15.91361111,
+              58.65777778
+            ],
+            [
+              16.26361111,
+              58.67444444
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "TYPEOFAREA": "CTR",
+        "NAMEOFAREA": "KUNGSÄNGEN CTR",
+        "POSITIONINDICATOR": "ESSP",
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "KUNGSÄNGEN CTR",
+        "UPPER": "1600",
+        "LOWER": "GND",
+        "WEF": "2026-10-01",
+        "COMMENT_1": "C",
+        "COMMENT_2": null,
+        "QUALITY": "ROUTINE",
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 4767,
+        "IDNR": 16270,
+        "MI_STYLE": null,
+        "name": "KUNGSÄNGEN CTR",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "layer": {
+          "lower": "GND",
+          "upper": "1600",
+          "uom": "ft",
+          "lowerReference": "AMSL",
+          "upperReference": "AMSL"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CTR.16271",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              14.18722222,
+              57.42555556
+            ],
+            [
+              14.37833333,
+              57.32861111
+            ],
+            [
+              14.08555556,
+              57.15722222
+            ],
+            [
+              13.89083333,
+              57.25472222
+            ],
+            [
+              14.02722222,
+              57.38722222
+            ],
+            [
+              14.18722222,
+              57.42555556
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "GEOMETRY",
+      "properties": {
+        "TYPEOFAREA": "CTR",
+        "NAMEOFAREA": "HAGSHULT CTR",
+        "POSITIONINDICATOR": "ESMV",
+        "DATETIMEOFCHG": null,
+        "NAMEOFOPERATOR": null,
+        "ORIGIN": "AIP",
+        "LOCATION": "HAGSHULT CTR",
+        "UPPER": "2000",
+        "LOWER": "GND",
+        "WEF": "2026-10-01",
+        "COMMENT_1": "C",
+        "COMMENT_2": null,
+        "QUALITY": "ROUTINE",
+        "CRC_ID": null,
+        "CRC_POS": null,
+        "CRC_TOT": null,
+        "MSID": 283556,
+        "IDNR": 16271,
+        "MI_STYLE": null,
+        "name": "HAGSHULT CTR",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "AIR_TRAFFIC"
+        ],
+        "layer": {
+          "lower": "GND",
+          "upper": "2000",
+          "uom": "ft",
+          "lowerReference": "AMSL",
+          "upperReference": "AMSL"
+        }
+      }
+    },
+    {
+      "type": "Feature",
       "id": "CTR.16273",
       "geometry": {
         "type": "Polygon",
@@ -2668,1060 +3722,6 @@
         "layer": {
           "lower": "GND",
           "upper": "2400",
-          "uom": "ft",
-          "lowerReference": "AMSL",
-          "upperReference": "AMSL"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "CTR.16280",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              17.74666667,
-              59.44111111
-            ],
-            [
-              17.95472222,
-              59.44138889
-            ],
-            [
-              18.16333333,
-              59.38277778
-            ],
-            [
-              18.16333333,
-              59.24944444
-            ],
-            [
-              17.74666667,
-              59.24944444
-            ],
-            [
-              17.74666667,
-              59.32444444
-            ],
-            [
-              17.69666667,
-              59.32444444
-            ],
-            [
-              17.69666667,
-              59.36611111
-            ],
-            [
-              17.74666667,
-              59.36611111
-            ],
-            [
-              17.74666667,
-              59.44111111
-            ]
-          ]
-        ]
-      },
-      "geometry_name": "GEOMETRY",
-      "properties": {
-        "TYPEOFAREA": "CTR",
-        "NAMEOFAREA": "BROMMA CTR",
-        "POSITIONINDICATOR": "ESSB",
-        "DATETIMEOFCHG": null,
-        "NAMEOFOPERATOR": null,
-        "ORIGIN": "AIP",
-        "LOCATION": "BROMMA CTR",
-        "UPPER": "2000",
-        "LOWER": "GND",
-        "WEF": "2026-10-01",
-        "COMMENT_1": "C",
-        "COMMENT_2": "Skå-Edeby ATZ with airspace class G penetrates CTR. The lower limit of Bromma CTR in this part is 1000 ft AMSL. For details see ENR 2.2 and AD 2 ESSB 6-1.",
-        "QUALITY": "ROUTINE",
-        "CRC_ID": null,
-        "CRC_POS": null,
-        "CRC_TOT": null,
-        "MSID": 4052,
-        "IDNR": 16280,
-        "MI_STYLE": null,
-        "name": "BROMMA CTR",
-        "type": "REQ_AUTHORIZATION",
-        "reason": [
-          "AIR_TRAFFIC"
-        ],
-        "layer": {
-          "lower": "GND",
-          "upper": "2000",
-          "uom": "ft",
-          "lowerReference": "AMSL",
-          "upperReference": "AMSL"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "CTR.16281",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              14.08222222,
-              57.94638889
-            ],
-            [
-              14.26333333,
-              57.91638889
-            ],
-            [
-              14.28833333,
-              57.85194444
-            ],
-            [
-              14.17222222,
-              57.67361111
-            ],
-            [
-              14.05611111,
-              57.57611111
-            ],
-            [
-              13.88444444,
-              57.60583333
-            ],
-            [
-              13.86916667,
-              57.69888889
-            ],
-            [
-              13.96694444,
-              57.86277778
-            ],
-            [
-              14.08222222,
-              57.94638889
-            ]
-          ]
-        ]
-      },
-      "geometry_name": "GEOMETRY",
-      "properties": {
-        "TYPEOFAREA": "CTR",
-        "NAMEOFAREA": "JÖNKÖPING CTR",
-        "POSITIONINDICATOR": "ESGJ",
-        "DATETIMEOFCHG": null,
-        "NAMEOFOPERATOR": null,
-        "ORIGIN": "AIP",
-        "LOCATION": "JÖNKÖPING CTR",
-        "UPPER": "2200",
-        "LOWER": "GND",
-        "WEF": "2026-10-01",
-        "COMMENT_1": "C",
-        "COMMENT_2": null,
-        "QUALITY": "ROUTINE",
-        "CRC_ID": null,
-        "CRC_POS": null,
-        "CRC_TOT": null,
-        "MSID": 4054,
-        "IDNR": 16281,
-        "MI_STYLE": null,
-        "name": "JÖNKÖPING CTR",
-        "type": "REQ_AUTHORIZATION",
-        "reason": [
-          "AIR_TRAFFIC"
-        ],
-        "layer": {
-          "lower": "GND",
-          "upper": "2200",
-          "uom": "ft",
-          "lowerReference": "AMSL",
-          "upperReference": "AMSL"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "CTR.16282",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              21.88722222,
-              65.7225
-            ],
-            [
-              22.315,
-              65.59555556
-            ],
-            [
-              22.53638889,
-              65.43222222
-            ],
-            [
-              22.35361111,
-              65.36277778
-            ],
-            [
-              21.96222222,
-              65.46888889
-            ],
-            [
-              21.70388889,
-              65.65222222
-            ],
-            [
-              21.88722222,
-              65.7225
-            ]
-          ]
-        ]
-      },
-      "geometry_name": "GEOMETRY",
-      "properties": {
-        "TYPEOFAREA": "CTR",
-        "NAMEOFAREA": "KALLAX CTR",
-        "POSITIONINDICATOR": "ESPA",
-        "DATETIMEOFCHG": null,
-        "NAMEOFOPERATOR": null,
-        "ORIGIN": "AIP",
-        "LOCATION": "KALLAX CTR",
-        "UPPER": "1600",
-        "LOWER": "GND",
-        "WEF": "2026-10-01",
-        "COMMENT_1": "C",
-        "COMMENT_2": null,
-        "QUALITY": "ROUTINE",
-        "CRC_ID": null,
-        "CRC_POS": null,
-        "CRC_TOT": null,
-        "MSID": 4055,
-        "IDNR": 16282,
-        "MI_STYLE": null,
-        "name": "KALLAX CTR",
-        "type": "REQ_AUTHORIZATION",
-        "reason": [
-          "AIR_TRAFFIC"
-        ],
-        "layer": {
-          "lower": "GND",
-          "upper": "1600",
-          "uom": "ft",
-          "lowerReference": "AMSL",
-          "upperReference": "AMSL"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "CTR.16283",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              16.20777778,
-              56.8725
-            ],
-            [
-              16.43805556,
-              56.71333333
-            ],
-            [
-              16.49277778,
-              56.58277778
-            ],
-            [
-              16.34111111,
-              56.53944444
-            ],
-            [
-              16.14694444,
-              56.63861111
-            ],
-            [
-              16.0475,
-              56.8275
-            ],
-            [
-              16.20777778,
-              56.8725
-            ]
-          ]
-        ]
-      },
-      "geometry_name": "GEOMETRY",
-      "properties": {
-        "TYPEOFAREA": "CTR",
-        "NAMEOFAREA": "KALMAR CTR",
-        "POSITIONINDICATOR": "ESMQ",
-        "DATETIMEOFCHG": null,
-        "NAMEOFOPERATOR": null,
-        "ORIGIN": "AIP",
-        "LOCATION": "KALMAR CTR",
-        "UPPER": "1500",
-        "LOWER": "GND",
-        "WEF": "2026-10-01",
-        "COMMENT_1": "C",
-        "COMMENT_2": null,
-        "QUALITY": "ROUTINE",
-        "CRC_ID": null,
-        "CRC_POS": null,
-        "CRC_TOT": null,
-        "MSID": 4056,
-        "IDNR": 16283,
-        "MI_STYLE": null,
-        "name": "KALMAR CTR",
-        "type": "REQ_AUTHORIZATION",
-        "reason": [
-          "AIR_TRAFFIC"
-        ],
-        "layer": {
-          "lower": "GND",
-          "upper": "1500",
-          "uom": "ft",
-          "lowerReference": "AMSL",
-          "upperReference": "AMSL"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "CTR.16284",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              13.4,
-              59.64944444
-            ],
-            [
-              13.59944444,
-              59.60527778
-            ],
-            [
-              13.56388889,
-              59.49944444
-            ],
-            [
-              13.46305556,
-              59.3875
-            ],
-            [
-              13.28305556,
-              59.25472222
-            ],
-            [
-              13.10694444,
-              59.29444444
-            ],
-            [
-              13.16388889,
-              59.4425
-            ],
-            [
-              13.20611111,
-              59.49944444
-            ],
-            [
-              13.4,
-              59.64944444
-            ]
-          ]
-        ]
-      },
-      "geometry_name": "GEOMETRY",
-      "properties": {
-        "TYPEOFAREA": "CTR",
-        "NAMEOFAREA": "KARLSTAD CTR",
-        "POSITIONINDICATOR": "ESOK",
-        "DATETIMEOFCHG": null,
-        "NAMEOFOPERATOR": null,
-        "ORIGIN": "AIP",
-        "LOCATION": "KARLSTAD CTR",
-        "UPPER": "2000",
-        "LOWER": "GND",
-        "WEF": "2026-10-01",
-        "COMMENT_1": "C",
-        "COMMENT_2": null,
-        "QUALITY": "ROUTINE",
-        "CRC_ID": null,
-        "CRC_POS": null,
-        "CRC_TOT": null,
-        "MSID": 4057,
-        "IDNR": 16284,
-        "MI_STYLE": null,
-        "name": "KARLSTAD CTR",
-        "type": "REQ_AUTHORIZATION",
-        "reason": [
-          "AIR_TRAFFIC"
-        ],
-        "layer": {
-          "lower": "GND",
-          "upper": "2000",
-          "uom": "ft",
-          "lowerReference": "AMSL",
-          "upperReference": "AMSL"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "CTR.16285",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              20.46222222,
-              68.015
-            ],
-            [
-              20.71222222,
-              67.965
-            ],
-            [
-              20.56222222,
-              67.77361111
-            ],
-            [
-              20.24555556,
-              67.62361111
-            ],
-            [
-              19.97888889,
-              67.67361111
-            ],
-            [
-              20.11777778,
-              67.865
-            ],
-            [
-              20.46222222,
-              68.015
-            ]
-          ]
-        ]
-      },
-      "geometry_name": "GEOMETRY",
-      "properties": {
-        "TYPEOFAREA": "CTR",
-        "NAMEOFAREA": "KIRUNA CTR",
-        "POSITIONINDICATOR": "ESNQ",
-        "DATETIMEOFCHG": null,
-        "NAMEOFOPERATOR": null,
-        "ORIGIN": "AIP",
-        "LOCATION": "KIRUNA CTR",
-        "UPPER": "3100",
-        "LOWER": "GND",
-        "WEF": "2026-10-01",
-        "COMMENT_1": "C",
-        "COMMENT_2": null,
-        "QUALITY": "ROUTINE",
-        "CRC_ID": null,
-        "CRC_POS": null,
-        "CRC_TOT": null,
-        "MSID": 4058,
-        "IDNR": 16285,
-        "MI_STYLE": null,
-        "name": "KIRUNA CTR",
-        "type": "REQ_AUTHORIZATION",
-        "reason": [
-          "AIR_TRAFFIC"
-        ],
-        "layer": {
-          "lower": "GND",
-          "upper": "3100",
-          "uom": "ft",
-          "lowerReference": "AMSL",
-          "upperReference": "AMSL"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "CTR.16286",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              14.03055556,
-              56.13333333
-            ],
-            [
-              14.24305556,
-              56.125
-            ],
-            [
-              14.26666667,
-              55.91055556
-            ],
-            [
-              14.14166667,
-              55.73055556
-            ],
-            [
-              13.95555556,
-              55.73833333
-            ],
-            [
-              13.92666667,
-              55.93777778
-            ],
-            [
-              14.03055556,
-              56.13333333
-            ]
-          ]
-        ]
-      },
-      "geometry_name": "GEOMETRY",
-      "properties": {
-        "TYPEOFAREA": "CTR",
-        "NAMEOFAREA": "KRISTIANSTAD CTR",
-        "POSITIONINDICATOR": "ESMK",
-        "DATETIMEOFCHG": null,
-        "NAMEOFOPERATOR": null,
-        "ORIGIN": "AIP",
-        "LOCATION": "KRISTIANSTAD CTR",
-        "UPPER": "1700",
-        "LOWER": "GND",
-        "WEF": "2026-10-01",
-        "COMMENT_1": "C",
-        "COMMENT_2": null,
-        "QUALITY": "ROUTINE",
-        "CRC_ID": null,
-        "CRC_POS": null,
-        "CRC_TOT": null,
-        "MSID": 4059,
-        "IDNR": 16286,
-        "MI_STYLE": null,
-        "name": "KRISTIANSTAD CTR",
-        "type": "REQ_AUTHORIZATION",
-        "reason": [
-          "AIR_TRAFFIC"
-        ],
-        "layer": {
-          "lower": "GND",
-          "upper": "1700",
-          "uom": "ft",
-          "lowerReference": "AMSL",
-          "upperReference": "AMSL"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "CTR.16287",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              14.72,
-              57.11583333
-            ],
-            [
-              14.89583333,
-              57.09333333
-            ],
-            [
-              14.88138889,
-              56.90333333
-            ],
-            [
-              14.73305556,
-              56.735
-            ],
-            [
-              14.55694444,
-              56.75638889
-            ],
-            [
-              14.57805556,
-              56.93555556
-            ],
-            [
-              14.72,
-              57.11583333
-            ]
-          ]
-        ]
-      },
-      "geometry_name": "GEOMETRY",
-      "properties": {
-        "TYPEOFAREA": "CTR",
-        "NAMEOFAREA": "KRONOBERG CTR",
-        "POSITIONINDICATOR": "ESMX",
-        "DATETIMEOFCHG": null,
-        "NAMEOFOPERATOR": null,
-        "ORIGIN": "AIP",
-        "LOCATION": "KRONOBERG CTR",
-        "UPPER": "2000",
-        "LOWER": "GND",
-        "WEF": "2026-10-01",
-        "COMMENT_1": "C",
-        "COMMENT_2": null,
-        "QUALITY": "ROUTINE",
-        "CRC_ID": null,
-        "CRC_POS": null,
-        "CRC_TOT": null,
-        "MSID": 4060,
-        "IDNR": 16287,
-        "MI_STYLE": null,
-        "name": "KRONOBERG CTR",
-        "type": "REQ_AUTHORIZATION",
-        "reason": [
-          "AIR_TRAFFIC"
-        ],
-        "layer": {
-          "lower": "GND",
-          "upper": "2000",
-          "uom": "ft",
-          "lowerReference": "AMSL",
-          "upperReference": "AMSL"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "CTR.16288",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              12.33083333,
-              57.83305556
-            ],
-            [
-              12.50222222,
-              57.78777778
-            ],
-            [
-              12.46416667,
-              57.63027778
-            ],
-            [
-              12.21416667,
-              57.49972222
-            ],
-            [
-              12.07666667,
-              57.53722222
-            ],
-            [
-              12.10305556,
-              57.70805556
-            ],
-            [
-              12.33083333,
-              57.83305556
-            ]
-          ]
-        ]
-      },
-      "geometry_name": "GEOMETRY",
-      "properties": {
-        "TYPEOFAREA": "CTR",
-        "NAMEOFAREA": "LANDVETTER CTR",
-        "POSITIONINDICATOR": "ESGG",
-        "DATETIMEOFCHG": null,
-        "NAMEOFOPERATOR": null,
-        "ORIGIN": "AIP",
-        "LOCATION": "LANDVETTER CTR",
-        "UPPER": "1500",
-        "LOWER": "GND",
-        "WEF": "2026-10-01",
-        "COMMENT_1": "C",
-        "COMMENT_2": null,
-        "QUALITY": "ROUTINE",
-        "CRC_ID": null,
-        "CRC_POS": null,
-        "CRC_TOT": null,
-        "MSID": 4062,
-        "IDNR": 16288,
-        "MI_STYLE": null,
-        "name": "LANDVETTER CTR",
-        "type": "REQ_AUTHORIZATION",
-        "reason": [
-          "AIR_TRAFFIC"
-        ],
-        "layer": {
-          "lower": "GND",
-          "upper": "1500",
-          "uom": "ft",
-          "lowerReference": "AMSL",
-          "upperReference": "AMSL"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "CTR.16267",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              12.73638889,
-              56.91416667
-            ],
-            [
-              12.95138889,
-              56.90722222
-            ],
-            [
-              12.97277778,
-              56.69166667
-            ],
-            [
-              12.96527778,
-              56.65666667
-            ],
-            [
-              12.87,
-              56.55694444
-            ],
-            [
-              12.74222222,
-              56.56111111
-            ],
-            [
-              12.6625,
-              56.67027778
-            ],
-            [
-              12.67138889,
-              56.70694444
-            ],
-            [
-              12.73638889,
-              56.91416667
-            ]
-          ]
-        ]
-      },
-      "geometry_name": "GEOMETRY",
-      "properties": {
-        "TYPEOFAREA": "CTR",
-        "NAMEOFAREA": "HALMSTAD CTR",
-        "POSITIONINDICATOR": "ESMT",
-        "DATETIMEOFCHG": null,
-        "NAMEOFOPERATOR": null,
-        "ORIGIN": "AIP",
-        "LOCATION": "HALMSTAD CTR",
-        "UPPER": "2000",
-        "LOWER": "GND",
-        "WEF": "2026-10-01",
-        "COMMENT_1": "C",
-        "COMMENT_2": null,
-        "QUALITY": "ROUTINE",
-        "CRC_ID": null,
-        "CRC_POS": null,
-        "CRC_TOT": null,
-        "MSID": 4764,
-        "IDNR": 16267,
-        "MI_STYLE": null,
-        "name": "HALMSTAD CTR",
-        "type": "REQ_AUTHORIZATION",
-        "reason": [
-          "AIR_TRAFFIC"
-        ],
-        "layer": {
-          "lower": "GND",
-          "upper": "2000",
-          "uom": "ft",
-          "lowerReference": "AMSL",
-          "upperReference": "AMSL"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "CTR.16268",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              13.45305556,
-              55.67333333
-            ],
-            [
-              13.5375,
-              55.55277778
-            ],
-            [
-              13.52194444,
-              55.41
-            ],
-            [
-              13.30555556,
-              55.39555556
-            ],
-            [
-              13.21527778,
-              55.51694444
-            ],
-            [
-              13.22972222,
-              55.65861111
-            ],
-            [
-              13.45305556,
-              55.67333333
-            ]
-          ]
-        ]
-      },
-      "geometry_name": "GEOMETRY",
-      "properties": {
-        "TYPEOFAREA": "CTR",
-        "NAMEOFAREA": "STURUP CTR",
-        "POSITIONINDICATOR": "ESMS",
-        "DATETIMEOFCHG": null,
-        "NAMEOFOPERATOR": null,
-        "ORIGIN": "AIP",
-        "LOCATION": "STURUP CTR",
-        "UPPER": "2000",
-        "LOWER": "GND",
-        "WEF": "2026-10-01",
-        "COMMENT_1": "C",
-        "COMMENT_2": null,
-        "QUALITY": "ROUTINE",
-        "CRC_ID": null,
-        "CRC_POS": null,
-        "CRC_TOT": null,
-        "MSID": 4765,
-        "IDNR": 16268,
-        "MI_STYLE": null,
-        "name": "STURUP CTR",
-        "type": "REQ_AUTHORIZATION",
-        "reason": [
-          "AIR_TRAFFIC"
-        ],
-        "layer": {
-          "lower": "GND",
-          "upper": "2000",
-          "uom": "ft",
-          "lowerReference": "AMSL",
-          "upperReference": "AMSL"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "CTR.16269",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              13.02555556,
-              56.155
-            ],
-            [
-              13.31388889,
-              56.125
-            ],
-            [
-              13.4525,
-              56.08416667
-            ],
-            [
-              13.35833333,
-              55.98416667
-            ],
-            [
-              13.13055556,
-              56.025
-            ],
-            [
-              12.9825,
-              56.08722222
-            ],
-            [
-              13.02555556,
-              56.155
-            ]
-          ]
-        ]
-      },
-      "geometry_name": "GEOMETRY",
-      "properties": {
-        "TYPEOFAREA": "CTR",
-        "NAMEOFAREA": "LJUNGBYHED CTR",
-        "POSITIONINDICATOR": "ESTL",
-        "DATETIMEOFCHG": null,
-        "NAMEOFOPERATOR": null,
-        "ORIGIN": "AIP",
-        "LOCATION": "LJUNGBYHED CTR",
-        "UPPER": "1500",
-        "LOWER": "GND",
-        "WEF": "2026-10-01",
-        "COMMENT_1": "C",
-        "COMMENT_2": null,
-        "QUALITY": "ROUTINE",
-        "CRC_ID": null,
-        "CRC_POS": null,
-        "CRC_TOT": null,
-        "MSID": 4766,
-        "IDNR": 16269,
-        "MI_STYLE": null,
-        "name": "LJUNGBYHED CTR",
-        "type": "REQ_AUTHORIZATION",
-        "reason": [
-          "AIR_TRAFFIC"
-        ],
-        "layer": {
-          "lower": "GND",
-          "upper": "1500",
-          "uom": "ft",
-          "lowerReference": "AMSL",
-          "upperReference": "AMSL"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "CTR.16270",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              16.26361111,
-              58.67444444
-            ],
-            [
-              16.63,
-              58.64111111
-            ],
-            [
-              16.62444444,
-              58.5275
-            ],
-            [
-              16.24694444,
-              58.49138889
-            ],
-            [
-              15.91361111,
-              58.54972222
-            ],
-            [
-              15.91361111,
-              58.65777778
-            ],
-            [
-              16.26361111,
-              58.67444444
-            ]
-          ]
-        ]
-      },
-      "geometry_name": "GEOMETRY",
-      "properties": {
-        "TYPEOFAREA": "CTR",
-        "NAMEOFAREA": "KUNGSÄNGEN CTR",
-        "POSITIONINDICATOR": "ESSP",
-        "DATETIMEOFCHG": null,
-        "NAMEOFOPERATOR": null,
-        "ORIGIN": "AIP",
-        "LOCATION": "KUNGSÄNGEN CTR",
-        "UPPER": "1600",
-        "LOWER": "GND",
-        "WEF": "2026-10-01",
-        "COMMENT_1": "C",
-        "COMMENT_2": null,
-        "QUALITY": "ROUTINE",
-        "CRC_ID": null,
-        "CRC_POS": null,
-        "CRC_TOT": null,
-        "MSID": 4767,
-        "IDNR": 16270,
-        "MI_STYLE": null,
-        "name": "KUNGSÄNGEN CTR",
-        "type": "REQ_AUTHORIZATION",
-        "reason": [
-          "AIR_TRAFFIC"
-        ],
-        "layer": {
-          "lower": "GND",
-          "upper": "1600",
-          "uom": "ft",
-          "lowerReference": "AMSL",
-          "upperReference": "AMSL"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "CTR.16271",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              14.18722222,
-              57.42555556
-            ],
-            [
-              14.37833333,
-              57.32861111
-            ],
-            [
-              14.08555556,
-              57.15722222
-            ],
-            [
-              13.89083333,
-              57.25472222
-            ],
-            [
-              14.02722222,
-              57.38722222
-            ],
-            [
-              14.18722222,
-              57.42555556
-            ]
-          ]
-        ]
-      },
-      "geometry_name": "GEOMETRY",
-      "properties": {
-        "TYPEOFAREA": "CTR",
-        "NAMEOFAREA": "HAGSHULT CTR",
-        "POSITIONINDICATOR": "ESMV",
-        "DATETIMEOFCHG": null,
-        "NAMEOFOPERATOR": null,
-        "ORIGIN": "AIP",
-        "LOCATION": "HAGSHULT CTR",
-        "UPPER": "2000",
-        "LOWER": "GND",
-        "WEF": "2026-10-01",
-        "COMMENT_1": "C",
-        "COMMENT_2": null,
-        "QUALITY": "ROUTINE",
-        "CRC_ID": null,
-        "CRC_POS": null,
-        "CRC_TOT": null,
-        "MSID": 283556,
-        "IDNR": 16271,
-        "MI_STYLE": null,
-        "name": "HAGSHULT CTR",
-        "type": "REQ_AUTHORIZATION",
-        "reason": [
-          "AIR_TRAFFIC"
-        ],
-        "layer": {
-          "lower": "GND",
-          "upper": "2000",
           "uom": "ft",
           "lowerReference": "AMSL",
           "upperReference": "AMSL"
