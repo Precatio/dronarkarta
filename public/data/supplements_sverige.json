@@ -3123,663 +3123,6 @@
           [
             [
               [
-                17.99527778,
-                60.34222222
-              ],
-              [
-                17.9925,
-                60.30333333
-              ],
-              [
-                18.10472222,
-                60.30472222
-              ],
-              [
-                18.10138889,
-                60.2875
-              ],
-              [
-                17.79472222,
-                60.25416667
-              ],
-              [
-                17.93583333,
-                60.33888889
-              ],
-              [
-                17.94694444,
-                60.34111111
-              ],
-              [
-                17.99527778,
-                60.34222222
-              ]
-            ]
-          ]
-        ]
-      },
-      "geometry_name": "the_geom",
-      "properties": {
-        "NAME": "ÄLGSJÖN",
-        "ID": "ESR524_1",
-        "DESIG": "ESR524",
-        "LOWER": "SFC",
-        "UPPER": "3000",
-        "FROM": "2026-10-12T10:00Z",
-        "TO": "2026-10-22T08:00Z",
-        "SCHEDULE": "12 OCT 1000 – 22 OCT 0800",
-        "COM_SE": "Tillfälliga restriktionsområden ESR524 Älgsjön och ESR525 Alunda upprättas för militär flygverksamhet.\nInom området gäller förbud mot all luftfart som inte ingår i verksamheten.",
-        "COM_EN": "Temporary restricted areas ESR524 Älgsjön and ESR525 Alunda established for military aviation operations.\nFlight within the areas prohibited for all non-participating aircraft.",
-        "URL": "https://aro.lfv.se/content/eaip/AIRAC%20AIP%20AMDT%207-2026_2026_11_26/eSUP/AIP%20SUP%20178-2026_2026_10_12/ES-SUP-en-GB.html#SUP",
-        "COORD": "",
-        "LOW_UOM": "",
-        "UP_UOM": "ft AMSL",
-        "name": "ÄLGSJÖN",
-        "type": "REQ_AUTHORIZATION",
-        "reason": [
-          "OTHER"
-        ],
-        "comment": "Tillfälliga restriktionsområden ESR524 Älgsjön och ESR525 Alunda upprättas för militär flygverksamhet.\nInom området gäller förbud mot all luftfart som inte ingår i verksamheten.",
-        "validFrom": "2026-10-12T10:00Z",
-        "validTo": "2026-10-22T08:00Z",
-        "layer": {
-          "lower": "SFC",
-          "upper": "3000",
-          "uom": "ft AMSL",
-          "lowerReference": "AGL",
-          "upperReference": "AMSL"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "SUP.31",
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
-          [
-            [
-              [
-                18.21305556,
-                60.29944444
-              ],
-              [
-                18.24638889,
-                60.09527778
-              ],
-              [
-                18.07027778,
-                60.07972222
-              ],
-              [
-                17.97166667,
-                60.07444444
-              ],
-              [
-                17.94277778,
-                60.09666667
-              ],
-              [
-                17.87361111,
-                60.14638889
-              ],
-              [
-                17.82333333,
-                60.19527778
-              ],
-              [
-                17.79472222,
-                60.25416667
-              ],
-              [
-                18.21305556,
-                60.29944444
-              ]
-            ]
-          ]
-        ]
-      },
-      "geometry_name": "the_geom",
-      "properties": {
-        "NAME": "ALUNDA",
-        "ID": "ESR525_1",
-        "DESIG": "ESR525",
-        "LOWER": "SFC",
-        "UPPER": "1200",
-        "FROM": "2026-10-12T10:00Z",
-        "TO": "2026-10-22T08:00Z",
-        "SCHEDULE": "12 OCT 1000 – 22 OCT 0800",
-        "COM_SE": "Tillfälliga restriktionsområden ESR524 Älgsjön och ESR525 Alunda upprättas för militär flygverksamhet.\nInom området gäller förbud mot all luftfart som inte ingår i verksamheten.",
-        "COM_EN": "Temporary restricted areas ESR524 Älgsjön and ESR525 Alunda established for military aviation operations.\nFlight within the areas prohibited for all non-participating aircraft.",
-        "URL": "https://aro.lfv.se/content/eaip/AIRAC%20AIP%20AMDT%207-2026_2026_11_26/eSUP/AIP%20SUP%20178-2026_2026_10_12/ES-SUP-en-GB.html#SUP",
-        "COORD": "",
-        "LOW_UOM": "",
-        "UP_UOM": "ft AMSL",
-        "name": "ALUNDA",
-        "type": "REQ_AUTHORIZATION",
-        "reason": [
-          "OTHER"
-        ],
-        "comment": "Tillfälliga restriktionsområden ESR524 Älgsjön och ESR525 Alunda upprättas för militär flygverksamhet.\nInom området gäller förbud mot all luftfart som inte ingår i verksamheten.",
-        "validFrom": "2026-10-12T10:00Z",
-        "validTo": "2026-10-22T08:00Z",
-        "layer": {
-          "lower": "SFC",
-          "upper": "1200",
-          "uom": "ft AMSL",
-          "lowerReference": "AGL",
-          "upperReference": "AMSL"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "SUP.32",
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
-          [
-            [
-              [
-                18.8425,
-                59.49694444
-              ],
-              [
-                19.1475,
-                59.36722222
-              ],
-              [
-                18.98166667,
-                59.19722222
-              ],
-              [
-                18.62805556,
-                59.26083333
-              ],
-              [
-                18.58305556,
-                59.35333333
-              ],
-              [
-                18.44583333,
-                59.35583333
-              ],
-              [
-                18.39638889,
-                59.43611111
-              ],
-              [
-                18.41722222,
-                59.47222222
-              ],
-              [
-                18.8425,
-                59.49694444
-              ]
-            ]
-          ]
-        ]
-      },
-      "geometry_name": "the_geom",
-      "properties": {
-        "NAME": "MÖJA",
-        "ID": "ESR791_2",
-        "DESIG": "ESR791",
-        "LOWER": "SFC",
-        "UPPER": "2000",
-        "FROM": "2026-10-23T00:00Z",
-        "TO": "2026-10-27T23:59Z",
-        "SCHEDULE": "23 OCT 0000 – 27 OCT 2359",
-        "COM_SE": "Tillfälligt restriktionsområde ESR791 Möja upprättas för militär flygverksamhet.\nInom området gäller förbud mot all luftfart som inte ingår i verksamheten.",
-        "COM_EN": "Temporary restricted area ESR791 Möja established for military aviation operations.\nFlight within the area prohibited for all non-participating aircraft.",
-        "URL": "https://aro.lfv.se/content/eaip/AIRAC%20AIP%20AMDT%207-2026_2026_11_26/eSUP/AIP%20SUP%20185-2026_2026_10_23/ES-SUP-sv-SE.html#SUP",
-        "COORD": "",
-        "LOW_UOM": "",
-        "UP_UOM": "ft AMSL",
-        "name": "MÖJA",
-        "type": "REQ_AUTHORIZATION",
-        "reason": [
-          "OTHER"
-        ],
-        "comment": "Tillfälligt restriktionsområde ESR791 Möja upprättas för militär flygverksamhet.\nInom området gäller förbud mot all luftfart som inte ingår i verksamheten.",
-        "validFrom": "2026-10-23T00:00Z",
-        "validTo": "2026-10-27T23:59Z",
-        "layer": {
-          "lower": "SFC",
-          "upper": "2000",
-          "uom": "ft AMSL",
-          "lowerReference": "AGL",
-          "upperReference": "AMSL"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "SUP.33",
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
-          [
-            [
-              [
-                15.37361111,
-                58.75527778
-              ],
-              [
-                15.42277778,
-                58.755
-              ],
-              [
-                15.41666667,
-                58.65722222
-              ],
-              [
-                15.38555556,
-                58.68166667
-              ],
-              [
-                15.3475,
-                58.66805556
-              ],
-              [
-                15.37361111,
-                58.75527778
-              ]
-            ]
-          ]
-        ]
-      },
-      "geometry_name": "the_geom",
-      "properties": {
-        "NAME": "HYTTEFALLET",
-        "ID": "ESR739_1",
-        "DESIG": "ESR739",
-        "LOWER": "SFC",
-        "UPPER": "FL140",
-        "FROM": "2026-10-21T10:00Z",
-        "TO": "2026-10-22T12:00Z",
-        "SCHEDULE": "21 OCT 1000 – 1400\n22 OCT 0400 – 1200",
-        "COM_SE": "Tillfälligt restriktionsområde ESR739 Hyttefallet upprättas för militär verksamhet.\nInom området gäller förbud mot all luftfart som inte ingår i verksamheten.",
-        "COM_EN": "Temporary restricted area ESR739 Hyttefallet established for military activities.\nFlight within the area prohibited for all non-participating aircraft.",
-        "URL": "https://aro.lfv.se/content/eaip/AIRAC%20AIP%20AMDT%207-2026_2026_11_26/eSUP/AIP%20SUP%20186-2026_2026_10_21/ES-SUP-sv-SE.html#SUP",
-        "COORD": "",
-        "LOW_UOM": "",
-        "UP_UOM": "",
-        "name": "HYTTEFALLET",
-        "type": "REQ_AUTHORIZATION",
-        "reason": [
-          "OTHER"
-        ],
-        "comment": "Tillfälligt restriktionsområde ESR739 Hyttefallet upprättas för militär verksamhet.\nInom området gäller förbud mot all luftfart som inte ingår i verksamheten.",
-        "validFrom": "2026-10-21T10:00Z",
-        "validTo": "2026-10-22T12:00Z",
-        "layer": {
-          "lower": "SFC",
-          "upper": "FL140",
-          "uom": "ft AMSL",
-          "lowerReference": "AGL",
-          "upperReference": "AMSL"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "SUP.34",
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
-          [
-            [
-              [
-                12.8825,
-                59.47333333
-              ],
-              [
-                13.15166667,
-                59.47333333
-              ],
-              [
-                13.05055556,
-                59.29805556
-              ],
-              [
-                12.82277778,
-                59.37027778
-              ],
-              [
-                12.8825,
-                59.47333333
-              ]
-            ]
-          ]
-        ]
-      },
-      "geometry_name": "the_geom",
-      "properties": {
-        "NAME": "BORGVIK",
-        "ID": "ESR561_1",
-        "DESIG": "ESR561",
-        "LOWER": "SFC",
-        "UPPER": "2600",
-        "FROM": "2026-10-17T06:00Z",
-        "TO": "2026-10-23T20:00Z",
-        "SCHEDULE": "17 OCT 0600 – 23 OCT 2000",
-        "COM_SE": "Tillfälliga restriktionsområden upprättas för militär flygverksamhet.\nInom områdena gäller förbud mot all luftfart som inte ingår i verksamheten.",
-        "COM_EN": "Temporary restricted areas established for military aviation operations.\nFlight within the areas prohibited for all non-participating aircraft.",
-        "URL": "https://aro.lfv.se/content/eaip/AIRAC%20AIP%20AMDT%207-2026_2026_11_26/eSUP/AIP%20SUP%20188-2026_2026_10_17/ES-SUP-sv-SE.html#SUP",
-        "COORD": "",
-        "LOW_UOM": "",
-        "UP_UOM": "ft AMSL",
-        "name": "BORGVIK",
-        "type": "REQ_AUTHORIZATION",
-        "reason": [
-          "OTHER"
-        ],
-        "comment": "Tillfälliga restriktionsområden upprättas för militär flygverksamhet.\nInom områdena gäller förbud mot all luftfart som inte ingår i verksamheten.",
-        "validFrom": "2026-10-17T06:00Z",
-        "validTo": "2026-10-23T20:00Z",
-        "layer": {
-          "lower": "SFC",
-          "upper": "2600",
-          "uom": "ft AMSL",
-          "lowerReference": "AGL",
-          "upperReference": "AMSL"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "SUP.35",
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
-          [
-            [
-              [
-                13.67833333,
-                59.42388889
-              ],
-              [
-                13.69416667,
-                59.41361111
-              ],
-              [
-                13.65472222,
-                59.39805556
-              ],
-              [
-                13.645,
-                59.40944444
-              ],
-              [
-                13.67833333,
-                59.42388889
-              ]
-            ]
-          ]
-        ]
-      },
-      "geometry_name": "the_geom",
-      "properties": {
-        "NAME": "SKATTSKÄRR",
-        "ID": "ESR563_1",
-        "DESIG": "ESR563",
-        "LOWER": "SFC",
-        "UPPER": "2200",
-        "FROM": "2026-10-17T06:00Z",
-        "TO": "2026-10-23T20:00Z",
-        "SCHEDULE": "17 OCT 0600 – 23 OCT 2000",
-        "COM_SE": "Tillfälliga restriktionsområden upprättas för militär flygverksamhet.\nInom områdena gäller förbud mot all luftfart som inte ingår i verksamheten.",
-        "COM_EN": "Temporary restricted areas established for military aviation operations.\nFlight within the areas prohibited for all non-participating aircraft.",
-        "URL": "https://aro.lfv.se/content/eaip/AIRAC%20AIP%20AMDT%207-2026_2026_11_26/eSUP/AIP%20SUP%20188-2026_2026_10_17/ES-SUP-sv-SE.html#SUP",
-        "COORD": "",
-        "LOW_UOM": "",
-        "UP_UOM": "ft AMSL",
-        "name": "SKATTSKÄRR",
-        "type": "REQ_AUTHORIZATION",
-        "reason": [
-          "OTHER"
-        ],
-        "comment": "Tillfälliga restriktionsområden upprättas för militär flygverksamhet.\nInom områdena gäller förbud mot all luftfart som inte ingår i verksamheten.",
-        "validFrom": "2026-10-17T06:00Z",
-        "validTo": "2026-10-23T20:00Z",
-        "layer": {
-          "lower": "SFC",
-          "upper": "2200",
-          "uom": "ft AMSL",
-          "lowerReference": "AGL",
-          "upperReference": "AMSL"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "SUP.36",
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
-          [
-            [
-              [
-                12.63111111,
-                60.74111111
-              ],
-              [
-                12.71583333,
-                60.65944444
-              ],
-              [
-                12.50972222,
-                60.64194444
-              ],
-              [
-                12.45972222,
-                60.68555556
-              ],
-              [
-                12.39611111,
-                60.73388889
-              ],
-              [
-                12.63111111,
-                60.74111111
-              ]
-            ]
-          ]
-        ]
-      },
-      "geometry_name": "the_geom",
-      "properties": {
-        "NAME": "FLISAVEGEN",
-        "ID": "ESR567_1",
-        "DESIG": "ESR567",
-        "LOWER": "SFC",
-        "UPPER": "2000",
-        "FROM": "2026-10-22T05:00Z",
-        "TO": "2026-10-22T18:00Z",
-        "SCHEDULE": "22 OCT 0500 – 1800",
-        "COM_SE": "Tillfälliga restriktionsområden upprättas för militär flygverksamhet.\nInom områdena gäller förbud mot all luftfart som inte ingår i verksamheten.",
-        "COM_EN": "Temporary restricted areas established for military aviation operations.\nFlight within the areas prohibited for all non-participating aircraft.",
-        "URL": "https://aro.lfv.se/content/eaip/AIRAC%20AIP%20AMDT%207-2026_2026_11_26/eSUP/AIP%20SUP%20188-2026_2026_10_17/ES-SUP-sv-SE.html#SUP",
-        "COORD": "",
-        "LOW_UOM": "",
-        "UP_UOM": "ft AMSL",
-        "name": "FLISAVEGEN",
-        "type": "REQ_AUTHORIZATION",
-        "reason": [
-          "OTHER"
-        ],
-        "comment": "Tillfälliga restriktionsområden upprättas för militär flygverksamhet.\nInom områdena gäller förbud mot all luftfart som inte ingår i verksamheten.",
-        "validFrom": "2026-10-22T05:00Z",
-        "validTo": "2026-10-22T18:00Z",
-        "layer": {
-          "lower": "SFC",
-          "upper": "2000",
-          "uom": "ft AMSL",
-          "lowerReference": "AGL",
-          "upperReference": "AMSL"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "SUP.37",
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
-          [
-            [
-              [
-                12.57333333,
-                60.32805556
-              ],
-              [
-                12.78361111,
-                60.16083333
-              ],
-              [
-                12.52722222,
-                60.16027778
-              ],
-              [
-                12.54166667,
-                60.19333333
-              ],
-              [
-                12.52305556,
-                60.22916667
-              ],
-              [
-                12.505,
-                60.28
-              ],
-              [
-                12.49861111,
-                60.32388889
-              ],
-              [
-                12.57333333,
-                60.32805556
-              ]
-            ]
-          ]
-        ]
-      },
-      "geometry_name": "the_geom",
-      "properties": {
-        "NAME": "TORSBYVEGEN",
-        "ID": "ESR568_1",
-        "DESIG": "ESR568",
-        "LOWER": "SFC",
-        "UPPER": "2000",
-        "FROM": "2026-10-20T05:00Z",
-        "TO": "2026-10-23T18:00Z",
-        "SCHEDULE": "20 OCT 0500 – 1800\n23 OCT 0500 – 1800",
-        "COM_SE": "Tillfälliga restriktionsområden upprättas för militär flygverksamhet.\nInom områdena gäller förbud mot all luftfart som inte ingår i verksamheten.",
-        "COM_EN": "Temporary restricted areas established for military aviation operations.\nFlight within the areas prohibited for all non-participating aircraft.",
-        "URL": "https://aro.lfv.se/content/eaip/AIRAC%20AIP%20AMDT%207-2026_2026_11_26/eSUP/AIP%20SUP%20188-2026_2026_10_17/ES-SUP-sv-SE.html#SUP",
-        "COORD": "",
-        "LOW_UOM": "",
-        "UP_UOM": "ft AMSL",
-        "name": "TORSBYVEGEN",
-        "type": "REQ_AUTHORIZATION",
-        "reason": [
-          "OTHER"
-        ],
-        "comment": "Tillfälliga restriktionsområden upprättas för militär flygverksamhet.\nInom områdena gäller förbud mot all luftfart som inte ingår i verksamheten.",
-        "validFrom": "2026-10-20T05:00Z",
-        "validTo": "2026-10-23T18:00Z",
-        "layer": {
-          "lower": "SFC",
-          "upper": "2000",
-          "uom": "ft AMSL",
-          "lowerReference": "AGL",
-          "upperReference": "AMSL"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "SUP.38",
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
-          [
-            [
-              [
-                12.91,
-                60.31
-              ],
-              [
-                13.07111111,
-                60.17972222
-              ],
-              [
-                13.13944444,
-                60.05222222
-              ],
-              [
-                13.0375,
-                60.03166667
-              ],
-              [
-                12.90388889,
-                60.14527778
-              ],
-              [
-                12.83555556,
-                60.29472222
-              ],
-              [
-                12.91,
-                60.31
-              ]
-            ]
-          ]
-        ]
-      },
-      "geometry_name": "the_geom",
-      "properties": {
-        "NAME": "TORSBY VASSJÖN",
-        "ID": "ESR569_1",
-        "DESIG": "ESR569",
-        "LOWER": "SFC",
-        "UPPER": "2000",
-        "FROM": "2026-10-17T06:00Z",
-        "TO": "2026-10-23T20:00Z",
-        "SCHEDULE": "17 OCT 0600 – 23 OCT 2000",
-        "COM_SE": "Tillfälliga restriktionsområden upprättas för militär flygverksamhet.\nInom områdena gäller förbud mot all luftfart som inte ingår i verksamheten.",
-        "COM_EN": "Temporary restricted areas established for military aviation operations.\nFlight within the areas prohibited for all non-participating aircraft.",
-        "URL": "https://aro.lfv.se/content/eaip/AIRAC%20AIP%20AMDT%207-2026_2026_11_26/eSUP/AIP%20SUP%20188-2026_2026_10_17/ES-SUP-sv-SE.html#SUP",
-        "COORD": "",
-        "LOW_UOM": "",
-        "UP_UOM": "ft AMSL",
-        "name": "TORSBY VASSJÖN",
-        "type": "REQ_AUTHORIZATION",
-        "reason": [
-          "OTHER"
-        ],
-        "comment": "Tillfälliga restriktionsområden upprättas för militär flygverksamhet.\nInom områdena gäller förbud mot all luftfart som inte ingår i verksamheten.",
-        "validFrom": "2026-10-17T06:00Z",
-        "validTo": "2026-10-23T20:00Z",
-        "layer": {
-          "lower": "SFC",
-          "upper": "2000",
-          "uom": "ft AMSL",
-          "lowerReference": "AGL",
-          "upperReference": "AMSL"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "SUP.39",
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
-          [
-            [
-              [
                 17.25888889,
                 58.48444444
               ],
@@ -3838,7 +3181,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.40",
+      "id": "SUP.31",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -3923,7 +3266,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.41",
+      "id": "SUP.32",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -4000,165 +3343,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.42",
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
-          [
-            [
-              [
-                14.39833333,
-                58.65861111
-              ],
-              [
-                14.31805556,
-                58.47833333
-              ],
-              [
-                14.28638889,
-                58.29944444
-              ],
-              [
-                14.28194444,
-                58.29083333
-              ],
-              [
-                14.28472222,
-                58.28222222
-              ],
-              [
-                14.28833333,
-                58.26972222
-              ],
-              [
-                14.16388889,
-                58.24305556
-              ],
-              [
-                14.02972222,
-                58.37777778
-              ],
-              [
-                14.10611111,
-                58.42777778
-              ],
-              [
-                14.115,
-                58.58555556
-              ],
-              [
-                14.39833333,
-                58.65861111
-              ]
-            ]
-          ]
-        ]
-      },
-      "geometry_name": "the_geom",
-      "properties": {
-        "NAME": "FAGERSANNA",
-        "ID": "ESR794_1",
-        "DESIG": "ESR794",
-        "LOWER": "SFC",
-        "UPPER": "4000",
-        "FROM": "2026-10-21T16:00Z",
-        "TO": "2026-10-22T12:00Z",
-        "SCHEDULE": "21 OCT 1600 – 22 OCT 1200",
-        "COM_SE": "Tillfälliga restriktionsområden ESR794 Fagersanna och ESR797 Moholm upprättas för militär flygverksamhet.\nInom områdena gäller förbud mot all luftfart som inte ingår i verksamheten.",
-        "COM_EN": "Temporary restricted areas ESR794 Fagersanna and ESR797 Moholm established for military aviation operations.\nFlight within the areas prohibited for all non-participating aircraft.",
-        "URL": "https://aro.lfv.se/content/eaip/AIRAC%20AIP%20AMDT%207-2026_2026_11_26/eSUP/AIP%20SUP%20191-2026_2026_10_21/ES-SUP-sv-SE.html#SUP",
-        "COORD": "",
-        "LOW_UOM": "",
-        "UP_UOM": "ft AMSL",
-        "name": "FAGERSANNA",
-        "type": "REQ_AUTHORIZATION",
-        "reason": [
-          "OTHER"
-        ],
-        "comment": "Tillfälliga restriktionsområden ESR794 Fagersanna och ESR797 Moholm upprättas för militär flygverksamhet.\nInom områdena gäller förbud mot all luftfart som inte ingår i verksamheten.",
-        "validFrom": "2026-10-21T16:00Z",
-        "validTo": "2026-10-22T12:00Z",
-        "layer": {
-          "lower": "SFC",
-          "upper": "4000",
-          "uom": "ft AMSL",
-          "lowerReference": "AGL",
-          "upperReference": "AMSL"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "SUP.43",
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
-          [
-            [
-              [
-                14.06611111,
-                58.70055556
-              ],
-              [
-                14.38888889,
-                58.6375
-              ],
-              [
-                14.35972222,
-                58.57222222
-              ],
-              [
-                14.17,
-                58.48055556
-              ],
-              [
-                13.91972222,
-                58.55527778
-              ],
-              [
-                14.06611111,
-                58.70055556
-              ]
-            ]
-          ]
-        ]
-      },
-      "geometry_name": "the_geom",
-      "properties": {
-        "NAME": "MOHOLM",
-        "ID": "ESR797_1",
-        "DESIG": "ESR797",
-        "LOWER": "SFC",
-        "UPPER": "4000",
-        "FROM": "2026-10-21T16:00Z",
-        "TO": "2026-10-22T12:00Z",
-        "SCHEDULE": "21 OCT 1600 – 22 OCT 1200",
-        "COM_SE": "Tillfälliga restriktionsområden ESR794 Fagersanna och ESR797 Moholm upprättas för militär flygverksamhet.\nInom områdena gäller förbud mot all luftfart som inte ingår i verksamheten.",
-        "COM_EN": "Temporary restricted areas ESR794 Fagersanna and ESR797 Moholm established for military aviation operations.\nFlight within the areas prohibited for all non-participating aircraft.",
-        "URL": "https://aro.lfv.se/content/eaip/AIRAC%20AIP%20AMDT%207-2026_2026_11_26/eSUP/AIP%20SUP%20191-2026_2026_10_21/ES-SUP-sv-SE.html#SUP",
-        "COORD": "",
-        "LOW_UOM": "",
-        "UP_UOM": "ft AMSL",
-        "name": "MOHOLM",
-        "type": "REQ_AUTHORIZATION",
-        "reason": [
-          "OTHER"
-        ],
-        "comment": "Tillfälliga restriktionsområden ESR794 Fagersanna och ESR797 Moholm upprättas för militär flygverksamhet.\nInom områdena gäller förbud mot all luftfart som inte ingår i verksamheten.",
-        "validFrom": "2026-10-21T16:00Z",
-        "validTo": "2026-10-22T12:00Z",
-        "layer": {
-          "lower": "SFC",
-          "upper": "4000",
-          "uom": "ft AMSL",
-          "lowerReference": "AGL",
-          "upperReference": "AMSL"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "SUP.44",
+      "id": "SUP.33",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -4263,202 +3448,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.45",
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
-          [
-            [
-              [
-                17.51666667,
-                58.23333333
-              ],
-              [
-                17.51666667,
-                57.48333333
-              ],
-              [
-                17.26388889,
-                57.48333333
-              ],
-              [
-                17.23333333,
-                57.83333333
-              ],
-              [
-                17.51666667,
-                58.23333333
-              ]
-            ]
-          ]
-        ]
-      },
-      "geometry_name": "the_geom",
-      "properties": {
-        "NAME": "URBAN CENTER",
-        "ID": "ESR772_1",
-        "DESIG": "ESR772",
-        "LOWER": "SFC",
-        "UPPER": "FL280",
-        "FROM": "2026-10-20T06:30Z",
-        "TO": "2026-10-22T07:30Z",
-        "SCHEDULE": "Tider / Hours FL085\n20 OCT 0630 – 0930\n21 OCT 0500 – 1000\n22 OCT 0300 – 0730\n \nTider / Hours FL280\n20 OCT 0930 – 1330\n21 OCT 1000 – 1200",
-        "COM_SE": "Tillfälliga restriktionsområden ESR773 Urban South, ESR772 Urban Center och ESR776 Urban East upprättas för militär verksamhet inklusive flygverksamhet.\nInom områdena gäller förbud mot all luftfart som inte ingår i verksamheten.",
-        "COM_EN": "Temporary restricted areas ESR773 Urban South, ESR772 Urban Center and ESR776 Urban East established for military activities including aviation operations.\nFlight within the areas prohibited for all non-participating aircraft.",
-        "URL": "https://aro.lfv.se/content/eaip/AIRAC%20AIP%20AMDT%207-2026_2026_11_26/eSUP/AIP%20SUP%20192-2026_2026_10_20/ES-SUP-en-GB.html",
-        "COORD": "",
-        "LOW_UOM": "",
-        "UP_UOM": "",
-        "name": "URBAN CENTER",
-        "type": "REQ_AUTHORIZATION",
-        "reason": [
-          "OTHER"
-        ],
-        "comment": "Tillfälliga restriktionsområden ESR773 Urban South, ESR772 Urban Center och ESR776 Urban East upprättas för militär verksamhet inklusive flygverksamhet.\nInom områdena gäller förbud mot all luftfart som inte ingår i verksamheten.",
-        "validFrom": "2026-10-20T06:30Z",
-        "validTo": "2026-10-22T07:30Z",
-        "layer": {
-          "lower": "SFC",
-          "upper": "FL280",
-          "uom": "ft AMSL",
-          "lowerReference": "AGL",
-          "upperReference": "AMSL"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "SUP.46",
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
-          [
-            [
-              [
-                17.23333333,
-                57.83333333
-              ],
-              [
-                17.26388889,
-                57.48333333
-              ],
-              [
-                16.89722222,
-                57.48333333
-              ],
-              [
-                16.88333333,
-                57.83333333
-              ],
-              [
-                17.23333333,
-                57.83333333
-              ]
-            ]
-          ]
-        ]
-      },
-      "geometry_name": "the_geom",
-      "properties": {
-        "NAME": "URBAN SOUTH",
-        "ID": "ESR773_1",
-        "DESIG": "ESR773",
-        "LOWER": "SFC",
-        "UPPER": "FL280",
-        "FROM": "2026-10-20T06:30Z",
-        "TO": "2026-10-22T07:30Z",
-        "SCHEDULE": "Tider / Hours FL085\n20 OCT 0630 – 0930\n21 OCT 0500 – 1000\n22 OCT 0300 – 0730\n \nTider / Hours FL280\n20 OCT 0930 – 1330\n21 OCT 1000 – 1200",
-        "COM_SE": "Tillfälliga restriktionsområden ESR773 Urban South, ESR772 Urban Center och ESR776 Urban East upprättas för militär verksamhet inklusive flygverksamhet.\nInom områdena gäller förbud mot all luftfart som inte ingår i verksamheten.",
-        "COM_EN": "Temporary restricted areas ESR773 Urban South, ESR772 Urban Center and ESR776 Urban East established for military activities including aviation operations.\nFlight within the areas prohibited for all non-participating aircraft.",
-        "URL": "https://aro.lfv.se/content/eaip/AIRAC%20AIP%20AMDT%207-2026_2026_11_26/eSUP/AIP%20SUP%20192-2026_2026_10_20/ES-SUP-en-GB.html",
-        "COORD": "",
-        "LOW_UOM": "",
-        "UP_UOM": "",
-        "name": "URBAN SOUTH",
-        "type": "REQ_AUTHORIZATION",
-        "reason": [
-          "OTHER"
-        ],
-        "comment": "Tillfälliga restriktionsområden ESR773 Urban South, ESR772 Urban Center och ESR776 Urban East upprättas för militär verksamhet inklusive flygverksamhet.\nInom områdena gäller förbud mot all luftfart som inte ingår i verksamheten.",
-        "validFrom": "2026-10-20T06:30Z",
-        "validTo": "2026-10-22T07:30Z",
-        "layer": {
-          "lower": "SFC",
-          "upper": "FL280",
-          "uom": "ft AMSL",
-          "lowerReference": "AGL",
-          "upperReference": "AMSL"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "SUP.47",
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
-          [
-            [
-              [
-                17.51666667,
-                58.23333333
-              ],
-              [
-                17.75,
-                58.23333333
-              ],
-              [
-                17.75,
-                57.48333333
-              ],
-              [
-                17.51666667,
-                57.48333333
-              ],
-              [
-                17.51666667,
-                58.23333333
-              ]
-            ]
-          ]
-        ]
-      },
-      "geometry_name": "the_geom",
-      "properties": {
-        "NAME": "URBAN EAST",
-        "ID": "ESR776_1",
-        "DESIG": "ESR776",
-        "LOWER": "SFC",
-        "UPPER": "FL280",
-        "FROM": "2026-10-20T06:30Z",
-        "TO": "2026-10-22T07:30Z",
-        "SCHEDULE": "Tider / Hours FL085\n20 OCT 0630 – 0930\n21 OCT 0500 – 1000\n22 OCT 0300 – 0730\n \nTider / Hours FL280\n20 OCT 0930 – 1330\n21 OCT 1000 – 1200",
-        "COM_SE": "Tillfälliga restriktionsområden ESR773 Urban South, ESR772 Urban Center och ESR776 Urban East upprättas för militär verksamhet inklusive flygverksamhet.\nInom områdena gäller förbud mot all luftfart som inte ingår i verksamheten.",
-        "COM_EN": "Temporary restricted areas ESR773 Urban South, ESR772 Urban Center and ESR776 Urban East established for military activities including aviation operations.\nFlight within the areas prohibited for all non-participating aircraft.",
-        "URL": "https://aro.lfv.se/content/eaip/AIRAC%20AIP%20AMDT%207-2026_2026_11_26/eSUP/AIP%20SUP%20192-2026_2026_10_20/ES-SUP-en-GB.html",
-        "COORD": "",
-        "LOW_UOM": "",
-        "UP_UOM": "",
-        "name": "URBAN EAST",
-        "type": "REQ_AUTHORIZATION",
-        "reason": [
-          "OTHER"
-        ],
-        "comment": "Tillfälliga restriktionsområden ESR773 Urban South, ESR772 Urban Center och ESR776 Urban East upprättas för militär verksamhet inklusive flygverksamhet.\nInom områdena gäller förbud mot all luftfart som inte ingår i verksamheten.",
-        "validFrom": "2026-10-20T06:30Z",
-        "validTo": "2026-10-22T07:30Z",
-        "layer": {
-          "lower": "SFC",
-          "upper": "FL280",
-          "uom": "ft AMSL",
-          "lowerReference": "AGL",
-          "upperReference": "AMSL"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "SUP.48",
+      "id": "SUP.34",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -4527,7 +3517,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.49",
+      "id": "SUP.35",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -4592,7 +3582,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.50",
+      "id": "SUP.36",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -4657,7 +3647,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.51",
+      "id": "SUP.37",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -4722,7 +3712,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.52",
+      "id": "SUP.38",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -4787,7 +3777,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.53",
+      "id": "SUP.39",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -4860,7 +3850,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.54",
+      "id": "SUP.40",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -4941,7 +3931,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.55",
+      "id": "SUP.41",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -5006,7 +3996,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.56",
+      "id": "SUP.42",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -5079,7 +4069,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.57",
+      "id": "SUP.43",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -5156,7 +4146,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.58",
+      "id": "SUP.44",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -5225,7 +4215,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.59",
+      "id": "SUP.45",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -5290,7 +4280,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.60",
+      "id": "SUP.46",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -5355,7 +4345,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.61",
+      "id": "SUP.47",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -5420,7 +4410,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.62",
+      "id": "SUP.48",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -5981,7 +4971,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.63",
+      "id": "SUP.49",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -6542,7 +5532,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.64",
+      "id": "SUP.50",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -7103,7 +6093,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.65",
+      "id": "SUP.51",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -7172,88 +6162,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.66",
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
-          [
-            [
-              [
-                18.78666667,
-                65.76888889
-              ],
-              [
-                19.09833333,
-                65.66055556
-              ],
-              [
-                19.08972222,
-                65.61083333
-              ],
-              [
-                19.04472222,
-                65.60166667
-              ],
-              [
-                19.03,
-                65.58277778
-              ],
-              [
-                18.95361111,
-                65.58472222
-              ],
-              [
-                18.6625,
-                65.70861111
-              ],
-              [
-                18.67861111,
-                65.76194444
-              ],
-              [
-                18.78666667,
-                65.76888889
-              ]
-            ]
-          ]
-        ]
-      },
-      "geometry_name": "the_geom",
-      "properties": {
-        "NAME": "ARVIDSJAUR REVENSBERG",
-        "ID": "ESD851_1",
-        "DESIG": "ESD851",
-        "LOWER": "SFC",
-        "UPPER": "2300",
-        "FROM": "2026-06-22T00:00Z",
-        "TO": "2026-10-23T23:59Z",
-        "SCHEDULE": "22 JUN – 23 OCT, H24",
-        "COM_SE": "Tillfälliga farliga områden ESD850 Moskosel Suddesjaur, ESD851 Arvidsjaur Revensberg, ESD852 Storuman Renberg och ESD853 Sorsele Ardnasjavrrie upprättas för UAS som flyger utom synhåll (BVLOS) enligt särskilt tillstånd.",
-        "COM_EN": "Temporary danger areas ESD850 Moskosel Suddesjaur, ESD851 Arvidsjaur Revensberg, ESD852 Storuman Renberg and ESD853 Sorsele Ardnasjavrrie established for UAS flying beyond visual line of sight (BVLOS) according to special permission.\nInformation...",
-        "URL": "https://aro.lfv.se/content/eaip/AIRAC%20AIP%20AMDT%207-2026_2026_11_26/eSUP/AIP%20SUP%20202-2026_2026_10_15/ES-SUP-en-GB.html",
-        "COORD": "",
-        "LOW_UOM": "",
-        "UP_UOM": "ft AMSL",
-        "name": "ARVIDSJAUR REVENSBERG",
-        "type": "REQ_AUTHORIZATION",
-        "reason": [
-          "OTHER"
-        ],
-        "comment": "Tillfälliga farliga områden ESD850 Moskosel Suddesjaur, ESD851 Arvidsjaur Revensberg, ESD852 Storuman Renberg och ESD853 Sorsele Ardnasjavrrie upprättas för UAS som flyger utom synhåll (BVLOS) enligt särskilt tillstånd.",
-        "validFrom": "2026-06-22T00:00Z",
-        "validTo": "2026-10-23T23:59Z",
-        "layer": {
-          "lower": "SFC",
-          "upper": "2300",
-          "uom": "ft AMSL",
-          "lowerReference": "AGL",
-          "upperReference": "AMSL"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "SUP.67",
+      "id": "SUP.52",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -7326,7 +6235,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.68",
+      "id": "SUP.53",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -7395,7 +6304,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.69",
+      "id": "SUP.54",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -7472,7 +6381,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.70",
+      "id": "SUP.55",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -7549,7 +6458,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.71",
+      "id": "SUP.56",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -7614,7 +6523,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.72",
+      "id": "SUP.57",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -7703,7 +6612,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.73",
+      "id": "SUP.58",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -7764,6 +6673,765 @@
         "layer": {
           "lower": "SFC",
           "upper": "4000",
+          "uom": "ft AMSL",
+          "lowerReference": "AGL",
+          "upperReference": "AMSL"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SUP.59",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                14.37444444,
+                55.93972222
+              ],
+              [
+                14.19555556,
+                55.76222222
+              ],
+              [
+                14.165,
+                55.76916667
+              ],
+              [
+                14.13861111,
+                55.75388889
+              ],
+              [
+                14.15527778,
+                55.72194444
+              ],
+              [
+                14.19611111,
+                55.72361111
+              ],
+              [
+                14.46472222,
+                55.56861111
+              ],
+              [
+                14.43888889,
+                55.54416667
+              ],
+              [
+                13.99472222,
+                55.69
+              ],
+              [
+                14.02416667,
+                55.81138889
+              ],
+              [
+                14.16555556,
+                55.82666667
+              ],
+              [
+                14.27833333,
+                55.93666667
+              ],
+              [
+                14.37444444,
+                55.93972222
+              ]
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "the_geom",
+      "properties": {
+        "NAME": "BRÖSARP",
+        "ID": "ESR745_1",
+        "DESIG": "ESR745",
+        "LOWER": "SFC",
+        "UPPER": "FL310",
+        "FROM": "2026-11-15T08:00Z",
+        "TO": "2026-11-15T17:00Z",
+        "SCHEDULE": "15 NOV 0800 – 1700",
+        "COM_SE": "Inom området gäller förbud mot all luftfart som inte ingår i verksamheten.",
+        "COM_EN": "Flight within the area prohibited for all non-participating aircraft.",
+        "URL": "https://aro.lfv.se/content/eaip/AIRAC%20AIP%20AMDT%207-2026_2026_11_26/eSUP/AIP%20SUP%20212-2026_2026_11_15/ES-SUP-en-GB.html",
+        "COORD": "",
+        "LOW_UOM": "",
+        "UP_UOM": "",
+        "name": "BRÖSARP",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "OTHER"
+        ],
+        "comment": "Inom området gäller förbud mot all luftfart som inte ingår i verksamheten.",
+        "validFrom": "2026-11-15T08:00Z",
+        "validTo": "2026-11-15T17:00Z",
+        "layer": {
+          "lower": "SFC",
+          "upper": "FL310",
+          "uom": "ft AMSL",
+          "lowerReference": "AGL",
+          "upperReference": "AMSL"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SUP.60",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                15.0475,
+                55.94972222
+              ],
+              [
+                15.17861111,
+                55.93861111
+              ],
+              [
+                15.18527778,
+                55.61972222
+              ],
+              [
+                14.46472222,
+                55.56861111
+              ],
+              [
+                14.37583333,
+                55.59805556
+              ],
+              [
+                14.19611111,
+                55.72361111
+              ],
+              [
+                14.15527778,
+                55.72194444
+              ],
+              [
+                14.13861111,
+                55.75388889
+              ],
+              [
+                14.165,
+                55.76916667
+              ],
+              [
+                14.19555556,
+                55.76222222
+              ],
+              [
+                14.37444444,
+                55.93972222
+              ],
+              [
+                15.0475,
+                55.94972222
+              ]
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "the_geom",
+      "properties": {
+        "NAME": "STENSHUVUD",
+        "ID": "ESR527_1",
+        "DESIG": "ESR527",
+        "LOWER": "SFC",
+        "UPPER": "FL195",
+        "FROM": "2026-11-10T08:00Z",
+        "TO": "2026-11-11T16:00Z",
+        "SCHEDULE": "10 – 11 NOV 0800 – 1600",
+        "COM_SE": "Tillfälligt restriktionsområde ESR527 Stenshuvud upprättas för militär verksamhet.\nUtanför territorialvattengränsen upprättas områdena som farliga områden.",
+        "COM_EN": "Temporary restricted area ESR527 Stenshuvud established for military operations.\nAreas beyond the territorial waters boundary are designated as danger areas.",
+        "URL": "https://aro.lfv.se/content/eaip/AIRAC%20AIP%20AMDT%207-2026_2026_11_26/eSUP/AIP%20SUP%20210-2026_2026_11_10/ES-SUP-en-GB.html",
+        "COORD": "",
+        "LOW_UOM": "",
+        "UP_UOM": "",
+        "name": "STENSHUVUD",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "OTHER"
+        ],
+        "comment": "Tillfälligt restriktionsområde ESR527 Stenshuvud upprättas för militär verksamhet.\nUtanför territorialvattengränsen upprättas områdena som farliga områden.",
+        "validFrom": "2026-11-10T08:00Z",
+        "validTo": "2026-11-11T16:00Z",
+        "layer": {
+          "lower": "SFC",
+          "upper": "FL195",
+          "uom": "ft AMSL",
+          "lowerReference": "AGL",
+          "upperReference": "AMSL"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SUP.61",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                12.46638889,
+                63.3425
+              ],
+              [
+                12.50083333,
+                63.34861111
+              ],
+              [
+                12.525,
+                63.32111111
+              ],
+              [
+                12.49083333,
+                63.315
+              ],
+              [
+                12.46638889,
+                63.3425
+              ]
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "the_geom",
+      "properties": {
+        "NAME": "STORLIEN D",
+        "ID": "ESR416_1",
+        "DESIG": "ESR416",
+        "LOWER": "SFC",
+        "UPPER": "3500",
+        "FROM": "2026-11-14T11:00Z",
+        "TO": "2026-11-19T11:00Z",
+        "SCHEDULE": "14 NOV 1100 – 19 NOV 1100",
+        "COM_SE": "Tillfälliga restriktionsområden i Storlien upprättas för militär flygverksamhet.\nInom områdena gäller förbud mot all luftfart som inte ingår i verksamheten.",
+        "COM_EN": "Temporary restricted areas in Storlien established for military aviation operations.\nFlight within the areas prohibited for all non-participating aircraft.",
+        "URL": "https://aro.lfv.se/content/eaip/AIRAC%20AIP%20AMDT%207-2026_2026_11_26/eSUP/AIP%20SUP%20211-2026_2026_11_14/ES-SUP-en-GB.html",
+        "COORD": "",
+        "LOW_UOM": "",
+        "UP_UOM": "ft AMSL",
+        "name": "STORLIEN D",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "OTHER"
+        ],
+        "comment": "Tillfälliga restriktionsområden i Storlien upprättas för militär flygverksamhet.\nInom områdena gäller förbud mot all luftfart som inte ingår i verksamheten.",
+        "validFrom": "2026-11-14T11:00Z",
+        "validTo": "2026-11-19T11:00Z",
+        "layer": {
+          "lower": "SFC",
+          "upper": "3500",
+          "uom": "ft AMSL",
+          "lowerReference": "AGL",
+          "upperReference": "AMSL"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SUP.62",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                12.01527778,
+                63.22555556
+              ],
+              [
+                12.18055556,
+                63.25694444
+              ],
+              [
+                12.32861111,
+                63.29166667
+              ],
+              [
+                12.24361111,
+                63.12111111
+              ],
+              [
+                12.10222222,
+                63.13
+              ],
+              [
+                12.01527778,
+                63.22555556
+              ]
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "the_geom",
+      "properties": {
+        "NAME": "STORLIEN C",
+        "ID": "ESR415_1",
+        "DESIG": "ESR415",
+        "LOWER": "SFC",
+        "UPPER": "3500",
+        "FROM": "2026-11-14T11:00Z",
+        "TO": "2026-11-19T11:00Z",
+        "SCHEDULE": "14 NOV 1100 – 19 NOV 1100",
+        "COM_SE": "Tillfälliga restriktionsområden i Storlien upprättas för militär flygverksamhet.\nInom områdena gäller förbud mot all luftfart som inte ingår i verksamheten.",
+        "COM_EN": "Temporary restricted areas in Storlien established for military aviation operations.\nFlight within the areas prohibited for all non-participating aircraft.",
+        "URL": "https://aro.lfv.se/content/eaip/AIRAC%20AIP%20AMDT%207-2026_2026_11_26/eSUP/AIP%20SUP%20211-2026_2026_11_14/ES-SUP-en-GB.html",
+        "COORD": "",
+        "LOW_UOM": "",
+        "UP_UOM": "ft AMSL",
+        "name": "STORLIEN C",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "OTHER"
+        ],
+        "comment": "Tillfälliga restriktionsområden i Storlien upprättas för militär flygverksamhet.\nInom områdena gäller förbud mot all luftfart som inte ingår i verksamheten.",
+        "validFrom": "2026-11-14T11:00Z",
+        "validTo": "2026-11-19T11:00Z",
+        "layer": {
+          "lower": "SFC",
+          "upper": "3500",
+          "uom": "ft AMSL",
+          "lowerReference": "AGL",
+          "upperReference": "AMSL"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SUP.63",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                12.29972222,
+                63.67166667
+              ],
+              [
+                12.47416667,
+                63.625
+              ],
+              [
+                12.41027778,
+                63.51722222
+              ],
+              [
+                12.32861111,
+                63.29166667
+              ],
+              [
+                12.18055556,
+                63.25694444
+              ],
+              [
+                12.05944444,
+                63.33611111
+              ],
+              [
+                12.08972222,
+                63.35611111
+              ],
+              [
+                12.21555556,
+                63.47805556
+              ],
+              [
+                12.15361111,
+                63.59361111
+              ],
+              [
+                12.23444444,
+                63.63277778
+              ],
+              [
+                12.29972222,
+                63.67166667
+              ]
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "the_geom",
+      "properties": {
+        "NAME": "STORLIEN B",
+        "ID": "ESR414_1",
+        "DESIG": "ESR414",
+        "LOWER": "SFC",
+        "UPPER": "3500",
+        "FROM": "2026-11-14T11:00Z",
+        "TO": "2026-11-19T11:00Z",
+        "SCHEDULE": "14 NOV 1100 – 19 NOV 1100",
+        "COM_SE": "Tillfälliga restriktionsområden i Storlien upprättas för militär flygverksamhet.\nInom områdena gäller förbud mot all luftfart som inte ingår i verksamheten.",
+        "COM_EN": "Temporary restricted areas in Storlien established for military aviation operations.\nFlight within the areas prohibited for all non-participating aircraft.",
+        "URL": "https://aro.lfv.se/content/eaip/AIRAC%20AIP%20AMDT%207-2026_2026_11_26/eSUP/AIP%20SUP%20211-2026_2026_11_14/ES-SUP-en-GB.html",
+        "COORD": "",
+        "LOW_UOM": "",
+        "UP_UOM": "ft AMSL",
+        "name": "STORLIEN B",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "OTHER"
+        ],
+        "comment": "Tillfälliga restriktionsområden i Storlien upprättas för militär flygverksamhet.\nInom områdena gäller förbud mot all luftfart som inte ingår i verksamheten.",
+        "validFrom": "2026-11-14T11:00Z",
+        "validTo": "2026-11-19T11:00Z",
+        "layer": {
+          "lower": "SFC",
+          "upper": "3500",
+          "uom": "ft AMSL",
+          "lowerReference": "AGL",
+          "upperReference": "AMSL"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SUP.64",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                12.05944444,
+                63.33611111
+              ],
+              [
+                12.18055556,
+                63.25694444
+              ],
+              [
+                12.01527778,
+                63.22555556
+              ],
+              [
+                11.975,
+                63.26916667
+              ],
+              [
+                12.05944444,
+                63.33611111
+              ]
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "the_geom",
+      "properties": {
+        "NAME": "STORLIEN A",
+        "ID": "ESR413_1",
+        "DESIG": "ESR413",
+        "LOWER": "SFC",
+        "UPPER": "3500",
+        "FROM": "2026-11-14T11:00Z",
+        "TO": "2026-11-19T11:00Z",
+        "SCHEDULE": "14 NOV 1100 – 19 NOV 1100",
+        "COM_SE": "Tillfälliga restriktionsområden i Storlien upprättas för militär flygverksamhet.\nInom områdena gäller förbud mot all luftfart som inte ingår i verksamheten.",
+        "COM_EN": "Temporary restricted areas in Storlien established for military aviation operations.\nFlight within the areas prohibited for all non-participating aircraft.",
+        "URL": "https://aro.lfv.se/content/eaip/AIRAC%20AIP%20AMDT%207-2026_2026_11_26/eSUP/AIP%20SUP%20211-2026_2026_11_14/ES-SUP-en-GB.html",
+        "COORD": "",
+        "LOW_UOM": "",
+        "UP_UOM": "ft AMSL",
+        "name": "STORLIEN A",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "OTHER"
+        ],
+        "comment": "Tillfälliga restriktionsområden i Storlien upprättas för militär flygverksamhet.\nInom områdena gäller förbud mot all luftfart som inte ingår i verksamheten.",
+        "validFrom": "2026-11-14T11:00Z",
+        "validTo": "2026-11-19T11:00Z",
+        "layer": {
+          "lower": "SFC",
+          "upper": "3500",
+          "uom": "ft AMSL",
+          "lowerReference": "AGL",
+          "upperReference": "AMSL"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SUP.65",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                14.374444,
+                55.939722
+              ],
+              [
+                14.386496,
+                55.935644
+              ],
+              [
+                14.398874,
+                55.931125
+              ],
+              [
+                14.410961,
+                55.926366
+              ],
+              [
+                14.422743,
+                55.921372
+              ],
+              [
+                14.434205,
+                55.916151
+              ],
+              [
+                14.445334,
+                55.910707
+              ],
+              [
+                14.456115,
+                55.905048
+              ],
+              [
+                14.466535,
+                55.899181
+              ],
+              [
+                14.476583,
+                55.893113
+              ],
+              [
+                14.486245,
+                55.886851
+              ],
+              [
+                14.495509,
+                55.880402
+              ],
+              [
+                14.504366,
+                55.873776
+              ],
+              [
+                14.512803,
+                55.866979
+              ],
+              [
+                14.520811,
+                55.86002
+              ],
+              [
+                14.52838,
+                55.852908
+              ],
+              [
+                14.535501,
+                55.845651
+              ],
+              [
+                14.542165,
+                55.838258
+              ],
+              [
+                14.548364,
+                55.830737
+              ],
+              [
+                14.554091,
+                55.8231
+              ],
+              [
+                14.559339,
+                55.815353
+              ],
+              [
+                14.564101,
+                55.807508
+              ],
+              [
+                14.568372,
+                55.799573
+              ],
+              [
+                14.572147,
+                55.791558
+              ],
+              [
+                14.575422,
+                55.783474
+              ],
+              [
+                14.578192,
+                55.775329
+              ],
+              [
+                14.580455,
+                55.767133
+              ],
+              [
+                14.582207,
+                55.758898
+              ],
+              [
+                14.583447,
+                55.750632
+              ],
+              [
+                14.584174,
+                55.742346
+              ],
+              [
+                14.584386,
+                55.73405
+              ],
+              [
+                14.584084,
+                55.725754
+              ],
+              [
+                14.583268,
+                55.717468
+              ],
+              [
+                14.58194,
+                55.709202
+              ],
+              [
+                14.5801,
+                55.700966
+              ],
+              [
+                14.577752,
+                55.692771
+              ],
+              [
+                14.574899,
+                55.684626
+              ],
+              [
+                14.571543,
+                55.676541
+              ],
+              [
+                14.56769,
+                55.668526
+              ],
+              [
+                14.563344,
+                55.660592
+              ],
+              [
+                14.558511,
+                55.652746
+              ],
+              [
+                14.553197,
+                55.645
+              ],
+              [
+                14.547407,
+                55.637362
+              ],
+              [
+                14.541151,
+                55.629842
+              ],
+              [
+                14.534434,
+                55.622449
+              ],
+              [
+                14.527265,
+                55.615192
+              ],
+              [
+                14.519654,
+                55.60808
+              ],
+              [
+                14.51161,
+                55.601121
+              ],
+              [
+                14.503142,
+                55.594324
+              ],
+              [
+                14.494261,
+                55.587697
+              ],
+              [
+                14.484977,
+                55.581249
+              ],
+              [
+                14.475303,
+                55.574987
+              ],
+              [
+                14.464722,
+                55.568611
+              ],
+              [
+                14.196111,
+                55.723611
+              ],
+              [
+                14.155278,
+                55.721944
+              ],
+              [
+                14.138611,
+                55.753889
+              ],
+              [
+                14.165,
+                55.769167
+              ],
+              [
+                14.195556,
+                55.762222
+              ],
+              [
+                14.374444,
+                55.939722
+              ]
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "the_geom",
+      "properties": {
+        "NAME": "RAVLUNDA",
+        "ID": "ESR34_1",
+        "DESIG": "ESR34",
+        "LOWER": "SFC",
+        "UPPER": "FL310",
+        "FROM": "2026-11-15T08:00Z",
+        "TO": "2026-11-15T17:00Z",
+        "SCHEDULE": "15 NOV 0800 – 1700",
+        "COM_SE": "Inom området gäller förbud mot all luftfart som inte ingår i verksamheten.",
+        "COM_EN": "Flight within the area prohibited for all non-participating aircraft.",
+        "URL": "https://aro.lfv.se/content/eaip/AIRAC%20AIP%20AMDT%207-2026_2026_11_26/eSUP/AIP%20SUP%20212-2026_2026_11_15/ES-SUP-en-GB.html",
+        "COORD": "",
+        "LOW_UOM": "",
+        "UP_UOM": "",
+        "name": "RAVLUNDA",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "OTHER"
+        ],
+        "comment": "Inom området gäller förbud mot all luftfart som inte ingår i verksamheten.",
+        "validFrom": "2026-11-15T08:00Z",
+        "validTo": "2026-11-15T17:00Z",
+        "layer": {
+          "lower": "SFC",
+          "upper": "FL310",
           "uom": "ft AMSL",
           "lowerReference": "AGL",
           "upperReference": "AMSL"
