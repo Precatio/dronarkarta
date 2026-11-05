@@ -1121,536 +1121,6 @@
           [
             [
               [
-                14.68416667,
-                64.12083333
-              ],
-              [
-                14.66222222,
-                64.08444444
-              ],
-              [
-                14.69,
-                63.99833333
-              ],
-              [
-                14.71777778,
-                63.97083333
-              ],
-              [
-                14.77083333,
-                63.9275
-              ],
-              [
-                14.765,
-                63.89527778
-              ],
-              [
-                14.71777778,
-                63.89527778
-              ],
-              [
-                14.72222222,
-                63.92333333
-              ],
-              [
-                14.67694444,
-                63.96694444
-              ],
-              [
-                14.64527778,
-                63.99555556
-              ],
-              [
-                14.61916667,
-                64.08138889
-              ],
-              [
-                14.6375,
-                64.11861111
-              ],
-              [
-                14.68416667,
-                64.12083333
-              ]
-            ]
-          ]
-        ]
-      },
-      "geometry_name": "the_geom",
-      "properties": {
-        "NAME": "ALMDALEN UAS",
-        "ID": "ESD840_1",
-        "DESIG": "ESD840",
-        "LOWER": "GND",
-        "UPPER": "3400",
-        "FROM": "2026-03-23T07:00Z",
-        "TO": "2026-10-30T16:00Z",
-        "SCHEDULE": "23 MAR – 30 OCT, MON – FRI 0700 – 1600 (0600 – 1500)",
-        "COM_SE": "Tillfälliga farliga områdena ESD840 Almdalen UAS, ESD841 Gäddede UAS, ESD842 Laxviken UAS, ESD843 Munsvattnet UAS, ESD817 Krokom Nord UAS och ESD818 Krokom Syd UAS upprättas för UAS som flyger utom synhåll (BVLOS).",
-        "COM_EN": "Temporary danger areas ESD840 Almdalen UAS, ESD841 Gäddede UAS, ESD842 Laxviken UAS, ESD843 Munsvattnet UAS, ESD817 Krokom Nord UAS and ESD818 Krokom Syd UAS are established for UAS flying beyond visual line of sight (BVLOS).",
-        "URL": "https://aro.lfv.se/content/eaip/AIRAC%20AIP%20AMDT%207-2026_2026_11_26/eSUP/AIP%20SUP%2054-2026_2026_03_23/ES-SUP-en-GB.html#SUP",
-        "COORD": "",
-        "LOW_UOM": "",
-        "UP_UOM": "ft AMSL",
-        "name": "ALMDALEN UAS",
-        "type": "REQ_AUTHORIZATION",
-        "reason": [
-          "OTHER"
-        ],
-        "comment": "Tillfälliga farliga områdena ESD840 Almdalen UAS, ESD841 Gäddede UAS, ESD842 Laxviken UAS, ESD843 Munsvattnet UAS, ESD817 Krokom Nord UAS och ESD818 Krokom Syd UAS upprättas för UAS som flyger utom synhåll (BVLOS).",
-        "validFrom": "2026-03-23T07:00Z",
-        "validTo": "2026-10-30T16:00Z",
-        "layer": {
-          "lower": "GND",
-          "upper": "3400",
-          "uom": "ft AMSL",
-          "lowerReference": "AGL",
-          "upperReference": "AMSL"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "SUP.13",
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
-          [
-            [
-              [
-                14.12583333,
-                64.51333333
-              ],
-              [
-                14.16944444,
-                64.51111111
-              ],
-              [
-                14.20416667,
-                64.49555556
-              ],
-              [
-                14.23027778,
-                64.44444444
-              ],
-              [
-                14.37861111,
-                64.37972222
-              ],
-              [
-                14.33944444,
-                64.37083333
-              ],
-              [
-                14.17083333,
-                64.43611111
-              ],
-              [
-                14.15277778,
-                64.4775
-              ],
-              [
-                14.11777778,
-                64.49722222
-              ],
-              [
-                14.12583333,
-                64.51333333
-              ]
-            ]
-          ]
-        ]
-      },
-      "geometry_name": "the_geom",
-      "properties": {
-        "NAME": "GÄDDEDE UAS",
-        "ID": "ESD841_1",
-        "DESIG": "ESD841",
-        "LOWER": "GND",
-        "UPPER": "2100",
-        "FROM": "2026-03-23T07:00Z",
-        "TO": "2026-10-30T16:00Z",
-        "SCHEDULE": "23 MAR – 30 OCT, MON – FRI 0700 – 1600 (0600 – 1500)",
-        "COM_SE": "Tillfälliga farliga områdena ESD840 Almdalen UAS, ESD841 Gäddede UAS, ESD842 Laxviken UAS, ESD843 Munsvattnet UAS, ESD817 Krokom Nord UAS och ESD818 Krokom Syd UAS upprättas för UAS som flyger utom synhåll (BVLOS).",
-        "COM_EN": "Temporary danger areas ESD840 Almdalen UAS, ESD841 Gäddede UAS, ESD842 Laxviken UAS, ESD843 Munsvattnet UAS, ESD817 Krokom Nord UAS and ESD818 Krokom Syd UAS are established for UAS flying beyond visual line of sight (BVLOS).",
-        "URL": "https://aro.lfv.se/content/eaip/AIRAC%20AIP%20AMDT%207-2026_2026_11_26/eSUP/AIP%20SUP%2054-2026_2026_03_23/ES-SUP-en-GB.html#SUP",
-        "COORD": "",
-        "LOW_UOM": "",
-        "UP_UOM": "ft AMSL",
-        "name": "GÄDDEDE UAS",
-        "type": "REQ_AUTHORIZATION",
-        "reason": [
-          "OTHER"
-        ],
-        "comment": "Tillfälliga farliga områdena ESD840 Almdalen UAS, ESD841 Gäddede UAS, ESD842 Laxviken UAS, ESD843 Munsvattnet UAS, ESD817 Krokom Nord UAS och ESD818 Krokom Syd UAS upprättas för UAS som flyger utom synhåll (BVLOS).",
-        "validFrom": "2026-03-23T07:00Z",
-        "validTo": "2026-10-30T16:00Z",
-        "layer": {
-          "lower": "GND",
-          "upper": "2100",
-          "uom": "ft AMSL",
-          "lowerReference": "AGL",
-          "upperReference": "AMSL"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "SUP.14",
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
-          [
-            [
-              [
-                14.765,
-                63.89527778
-              ],
-              [
-                14.74916667,
-                63.80527778
-              ],
-              [
-                14.67666667,
-                63.67166667
-              ],
-              [
-                14.67388889,
-                63.67666667
-              ],
-              [
-                14.64138889,
-                63.68722222
-              ],
-              [
-                14.70416667,
-                63.80722222
-              ],
-              [
-                14.71777778,
-                63.89527778
-              ],
-              [
-                14.765,
-                63.89527778
-              ]
-            ]
-          ]
-        ]
-      },
-      "geometry_name": "the_geom",
-      "properties": {
-        "NAME": "LAXVIKEN UAS",
-        "ID": "ESD842_1",
-        "DESIG": "ESD842",
-        "LOWER": "GND",
-        "UPPER": "2000",
-        "FROM": "2026-03-23T07:00Z",
-        "TO": "2026-10-30T16:00Z",
-        "SCHEDULE": "23 MAR – 30 OCT, MON – FRI 0700 – 1600 (0600 – 1500)",
-        "COM_SE": "Tillfälliga farliga områdena ESD840 Almdalen UAS, ESD841 Gäddede UAS, ESD842 Laxviken UAS, ESD843 Munsvattnet UAS, ESD817 Krokom Nord UAS och ESD818 Krokom Syd UAS upprättas för UAS som flyger utom synhåll (BVLOS).",
-        "COM_EN": "Temporary danger areas ESD840 Almdalen UAS, ESD841 Gäddede UAS, ESD842 Laxviken UAS, ESD843 Munsvattnet UAS, ESD817 Krokom Nord UAS and ESD818 Krokom Syd UAS are established for UAS flying beyond visual line of sight (BVLOS).",
-        "URL": "https://aro.lfv.se/content/eaip/AIRAC%20AIP%20AMDT%207-2026_2026_11_26/eSUP/AIP%20SUP%2054-2026_2026_03_23/ES-SUP-en-GB.html#SUP",
-        "COORD": "",
-        "LOW_UOM": "",
-        "UP_UOM": "ft AMSL",
-        "name": "LAXVIKEN UAS",
-        "type": "REQ_AUTHORIZATION",
-        "reason": [
-          "OTHER"
-        ],
-        "comment": "Tillfälliga farliga områdena ESD840 Almdalen UAS, ESD841 Gäddede UAS, ESD842 Laxviken UAS, ESD843 Munsvattnet UAS, ESD817 Krokom Nord UAS och ESD818 Krokom Syd UAS upprättas för UAS som flyger utom synhåll (BVLOS).",
-        "validFrom": "2026-03-23T07:00Z",
-        "validTo": "2026-10-30T16:00Z",
-        "layer": {
-          "lower": "GND",
-          "upper": "2000",
-          "uom": "ft AMSL",
-          "lowerReference": "AGL",
-          "upperReference": "AMSL"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "SUP.15",
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
-          [
-            [
-              [
-                14.37861111,
-                64.37972222
-              ],
-              [
-                14.39944444,
-                64.35833333
-              ],
-              [
-                14.39861111,
-                64.32111111
-              ],
-              [
-                14.42777778,
-                64.28666667
-              ],
-              [
-                14.57972222,
-                64.24388889
-              ],
-              [
-                14.60666667,
-                64.21277778
-              ],
-              [
-                14.68416667,
-                64.12083333
-              ],
-              [
-                14.6375,
-                64.11861111
-              ],
-              [
-                14.56277778,
-                64.21138889
-              ],
-              [
-                14.54305556,
-                64.2325
-              ],
-              [
-                14.39,
-                64.27388889
-              ],
-              [
-                14.35472222,
-                64.31527778
-              ],
-              [
-                14.355,
-                64.35416667
-              ],
-              [
-                14.33944444,
-                64.37083333
-              ],
-              [
-                14.37861111,
-                64.37972222
-              ]
-            ]
-          ]
-        ]
-      },
-      "geometry_name": "the_geom",
-      "properties": {
-        "NAME": "MUNSVATTNET UAS",
-        "ID": "ESD843_1",
-        "DESIG": "ESD843",
-        "LOWER": "GND",
-        "UPPER": "3100",
-        "FROM": "2026-03-23T07:00Z",
-        "TO": "2026-10-30T16:00Z",
-        "SCHEDULE": "23 MAR – 30 OCT, MON – FRI 0700 – 1600 (0600 – 1500)",
-        "COM_SE": "Tillfälliga farliga områdena ESD840 Almdalen UAS, ESD841 Gäddede UAS, ESD842 Laxviken UAS, ESD843 Munsvattnet UAS, ESD817 Krokom Nord UAS och ESD818 Krokom Syd UAS upprättas för UAS som flyger utom synhåll (BVLOS).",
-        "COM_EN": "Temporary danger areas ESD840 Almdalen UAS, ESD841 Gäddede UAS, ESD842 Laxviken UAS, ESD843 Munsvattnet UAS, ESD817 Krokom Nord UAS and ESD818 Krokom Syd UAS are established for UAS flying beyond visual line of sight (BVLOS).",
-        "URL": "https://aro.lfv.se/content/eaip/AIRAC%20AIP%20AMDT%207-2026_2026_11_26/eSUP/AIP%20SUP%2054-2026_2026_03_23/ES-SUP-en-GB.html#SUP",
-        "COORD": "",
-        "LOW_UOM": "",
-        "UP_UOM": "ft AMSL",
-        "name": "MUNSVATTNET UAS",
-        "type": "REQ_AUTHORIZATION",
-        "reason": [
-          "OTHER"
-        ],
-        "comment": "Tillfälliga farliga områdena ESD840 Almdalen UAS, ESD841 Gäddede UAS, ESD842 Laxviken UAS, ESD843 Munsvattnet UAS, ESD817 Krokom Nord UAS och ESD818 Krokom Syd UAS upprättas för UAS som flyger utom synhåll (BVLOS).",
-        "validFrom": "2026-03-23T07:00Z",
-        "validTo": "2026-10-30T16:00Z",
-        "layer": {
-          "lower": "GND",
-          "upper": "3100",
-          "uom": "ft AMSL",
-          "lowerReference": "AGL",
-          "upperReference": "AMSL"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "SUP.16",
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
-          [
-            [
-              [
-                14.55611111,
-                63.47222222
-              ],
-              [
-                14.59222222,
-                63.46583333
-              ],
-              [
-                14.53361111,
-                63.3225
-              ],
-              [
-                14.47666667,
-                63.31083333
-              ],
-              [
-                14.42416667,
-                63.32583333
-              ],
-              [
-                14.45694444,
-                63.34527778
-              ],
-              [
-                14.50055556,
-                63.34638889
-              ],
-              [
-                14.53555556,
-                63.42083333
-              ],
-              [
-                14.55611111,
-                63.47222222
-              ]
-            ]
-          ]
-        ]
-      },
-      "geometry_name": "the_geom",
-      "properties": {
-        "NAME": "KROKOM SYD UAS",
-        "ID": "ESD818_2",
-        "DESIG": "ESD818",
-        "LOWER": "GND",
-        "UPPER": "1900",
-        "FROM": "2026-05-15T07:00Z",
-        "TO": "2026-10-30T16:00Z",
-        "SCHEDULE": "15 MAY – 30 OCT, MON – FRI 0700 – 1600 (0600 – 1500)",
-        "COM_SE": "Tillfälliga farliga områdena ESD840 Almdalen UAS, ESD841 Gäddede UAS, ESD842 Laxviken UAS, ESD843 Munsvattnet UAS, ESD817 Krokom Nord UAS och ESD818 Krokom Syd UAS upprättas för UAS som flyger utom synhåll (BVLOS).",
-        "COM_EN": "Temporary danger areas ESD840 Almdalen UAS, ESD841 Gäddede UAS, ESD842 Laxviken UAS, ESD843 Munsvattnet UAS, ESD817 Krokom Nord UAS and ESD818 Krokom Syd UAS are established for UAS flying beyond visual line of sight (BVLOS).",
-        "URL": "https://aro.lfv.se/content/eaip/AIRAC%20AIP%20AMDT%207-2026_2026_11_26/eSUP/AIP%20SUP%2054-2026_2026_03_23/ES-SUP-en-GB.html#SUP",
-        "COORD": "",
-        "LOW_UOM": "",
-        "UP_UOM": "ft AMSL",
-        "name": "KROKOM SYD UAS",
-        "type": "REQ_AUTHORIZATION",
-        "reason": [
-          "OTHER"
-        ],
-        "comment": "Tillfälliga farliga områdena ESD840 Almdalen UAS, ESD841 Gäddede UAS, ESD842 Laxviken UAS, ESD843 Munsvattnet UAS, ESD817 Krokom Nord UAS och ESD818 Krokom Syd UAS upprättas för UAS som flyger utom synhåll (BVLOS).",
-        "validFrom": "2026-05-15T07:00Z",
-        "validTo": "2026-10-30T16:00Z",
-        "layer": {
-          "lower": "GND",
-          "upper": "1900",
-          "uom": "ft AMSL",
-          "lowerReference": "AGL",
-          "upperReference": "AMSL"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "SUP.17",
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
-          [
-            [
-              [
-                14.64138889,
-                63.68722222
-              ],
-              [
-                14.67388889,
-                63.67666667
-              ],
-              [
-                14.67666667,
-                63.67166667
-              ],
-              [
-                14.59222222,
-                63.46583333
-              ],
-              [
-                14.55611111,
-                63.47222222
-              ],
-              [
-                14.63027778,
-                63.65666667
-              ],
-              [
-                14.60361111,
-                63.66527778
-              ],
-              [
-                14.59111111,
-                63.67888889
-              ],
-              [
-                14.61416667,
-                63.68333333
-              ],
-              [
-                14.64138889,
-                63.68722222
-              ]
-            ]
-          ]
-        ]
-      },
-      "geometry_name": "the_geom",
-      "properties": {
-        "NAME": "KROKOM NORD UAS",
-        "ID": "ESD817_2",
-        "DESIG": "ESD817",
-        "LOWER": "GND",
-        "UPPER": "1900",
-        "FROM": "2026-05-15T07:00Z",
-        "TO": "2026-10-30T16:00Z",
-        "SCHEDULE": "15 MAY – 30 OCT, MON – FRI 0700 – 1600 (0600 – 1500)",
-        "COM_SE": "Tillfälliga farliga områdena ESD840 Almdalen UAS, ESD841 Gäddede UAS, ESD842 Laxviken UAS, ESD843 Munsvattnet UAS, ESD817 Krokom Nord UAS och ESD818 Krokom Syd UAS upprättas för UAS som flyger utom synhåll (BVLOS).",
-        "COM_EN": "Temporary danger areas ESD840 Almdalen UAS, ESD841 Gäddede UAS, ESD842 Laxviken UAS, ESD843 Munsvattnet UAS, ESD817 Krokom Nord UAS and ESD818 Krokom Syd UAS are established for UAS flying beyond visual line of sight (BVLOS).",
-        "URL": "https://aro.lfv.se/content/eaip/AIRAC%20AIP%20AMDT%207-2026_2026_11_26/eSUP/AIP%20SUP%2054-2026_2026_03_23/ES-SUP-en-GB.html#SUP",
-        "COORD": "",
-        "LOW_UOM": "",
-        "UP_UOM": "ft AMSL",
-        "name": "KROKOM NORD UAS",
-        "type": "REQ_AUTHORIZATION",
-        "reason": [
-          "OTHER"
-        ],
-        "comment": "Tillfälliga farliga områdena ESD840 Almdalen UAS, ESD841 Gäddede UAS, ESD842 Laxviken UAS, ESD843 Munsvattnet UAS, ESD817 Krokom Nord UAS och ESD818 Krokom Syd UAS upprättas för UAS som flyger utom synhåll (BVLOS).",
-        "validFrom": "2026-05-15T07:00Z",
-        "validTo": "2026-10-30T16:00Z",
-        "layer": {
-          "lower": "GND",
-          "upper": "1900",
-          "uom": "ft AMSL",
-          "lowerReference": "AGL",
-          "upperReference": "AMSL"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "SUP.18",
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
-          [
-            [
-              [
                 17.696667,
                 59.557778
               ],
@@ -1709,7 +1179,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.19",
+      "id": "SUP.13",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -1782,7 +1252,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.20",
+      "id": "SUP.14",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -1843,7 +1313,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.21",
+      "id": "SUP.15",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -1908,7 +1378,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.22",
+      "id": "SUP.16",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -1973,7 +1443,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.23",
+      "id": "SUP.17",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -2038,7 +1508,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.24",
+      "id": "SUP.18",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -2107,312 +1577,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.25",
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
-          [
-            [
-              [
-                13.25731818,
-                54.97222222
-              ],
-              [
-                13.2568576,
-                54.96684094
-              ],
-              [
-                13.25548027,
-                54.96151148
-              ],
-              [
-                13.25319946,
-                54.95628518
-              ],
-              [
-                13.25003715,
-                54.95121235
-              ],
-              [
-                13.24602377,
-                54.94634186
-              ],
-              [
-                13.241198,
-                54.94172062
-              ],
-              [
-                13.23560629,
-                54.93739312
-              ],
-              [
-                13.2293025,
-                54.93340104
-              ],
-              [
-                13.22234735,
-                54.92978284
-              ],
-              [
-                13.2148078,
-                54.92657335
-              ],
-              [
-                13.20675648,
-                54.92380348
-              ],
-              [
-                13.19827092,
-                54.92149991
-              ],
-              [
-                13.18943284,
-                54.91968482
-              ],
-              [
-                13.18032735,
-                54.9183757
-              ],
-              [
-                13.17104215,
-                54.91758515
-              ],
-              [
-                13.16166667,
-                54.91732079
-              ],
-              [
-                13.15229118,
-                54.91758515
-              ],
-              [
-                13.14300598,
-                54.9183757
-              ],
-              [
-                13.1339005,
-                54.91968482
-              ],
-              [
-                13.12506242,
-                54.92149991
-              ],
-              [
-                13.11657685,
-                54.92380348
-              ],
-              [
-                13.10852553,
-                54.92657335
-              ],
-              [
-                13.10098599,
-                54.92978284
-              ],
-              [
-                13.09403083,
-                54.93340104
-              ],
-              [
-                13.08772704,
-                54.93739312
-              ],
-              [
-                13.08213534,
-                54.94172062
-              ],
-              [
-                13.07730956,
-                54.94634186
-              ],
-              [
-                13.07329619,
-                54.95121235
-              ],
-              [
-                13.07013387,
-                54.95628518
-              ],
-              [
-                13.06785307,
-                54.96151148
-              ],
-              [
-                13.06647574,
-                54.96684094
-              ],
-              [
-                13.06601515,
-                54.97222222
-              ],
-              [
-                13.06647574,
-                54.9776035
-              ],
-              [
-                13.06785307,
-                54.98293296
-              ],
-              [
-                13.07013387,
-                54.98815927
-              ],
-              [
-                13.07329619,
-                54.99323209
-              ],
-              [
-                13.07730956,
-                54.99810258
-              ],
-              [
-                13.08213534,
-                55.00272383
-              ],
-              [
-                13.08772704,
-                55.00705133
-              ],
-              [
-                13.09403083,
-                55.0110434
-              ],
-              [
-                13.10098599,
-                55.01466161
-              ],
-              [
-                13.10852553,
-                55.0178711
-              ],
-              [
-                13.11657685,
-                55.02064097
-              ],
-              [
-                13.12506242,
-                55.02294454
-              ],
-              [
-                13.1339005,
-                55.02475962
-              ],
-              [
-                13.14300598,
-                55.02606874
-              ],
-              [
-                13.15229118,
-                55.02685929
-              ],
-              [
-                13.16166667,
-                55.02712366
-              ],
-              [
-                13.17104215,
-                55.02685929
-              ],
-              [
-                13.18032735,
-                55.02606874
-              ],
-              [
-                13.18943284,
-                55.02475962
-              ],
-              [
-                13.19827092,
-                55.02294454
-              ],
-              [
-                13.20675648,
-                55.02064097
-              ],
-              [
-                13.2148078,
-                55.0178711
-              ],
-              [
-                13.22234735,
-                55.01466161
-              ],
-              [
-                13.2293025,
-                55.0110434
-              ],
-              [
-                13.23560629,
-                55.00705133
-              ],
-              [
-                13.241198,
-                55.00272383
-              ],
-              [
-                13.24602377,
-                54.99810258
-              ],
-              [
-                13.25003715,
-                54.99323209
-              ],
-              [
-                13.25319946,
-                54.98815927
-              ],
-              [
-                13.25548027,
-                54.98293296
-              ],
-              [
-                13.2568576,
-                54.9776035
-              ],
-              [
-                13.25731818,
-                54.97222222
-              ]
-            ]
-          ]
-        ]
-      },
-      "geometry_name": "the_geom",
-      "properties": {
-        "NAME": "BALTIC OFFSHORE WIND",
-        "ID": "ESD831_2",
-        "DESIG": "ESD831",
-        "LOWER": "GND",
-        "UPPER": "1100",
-        "FROM": "2026-08-01T00:00Z",
-        "TO": "2026-10-31T23:59Z",
-        "SCHEDULE": "01 AUG – 31 OCT 2026, H24",
-        "COM_SE": "Tillfälligt farligt område ESD831 Baltic Offshore Wind upprättas för UAS som flyger utom synhåll (BVLOS) med särskilda villkor.",
-        "COM_EN": "Temporary danger area ESD831 Baltic Offshore Wind established for UAS flying beyond visual line of sight (BVLOS) with special permission.",
-        "URL": "https://aro.lfv.se/content/eaip/AIRAC%20AIP%20AMDT%207-2026_2026_11_26/eSUP/AIP%20SUP%20124-2026_2026_08_01/ES-SUP-sv-SE.html#SUP",
-        "COORD": "A circle with radius 3.3 NM centred on 545820N 0130942E",
-        "LOW_UOM": "",
-        "UP_UOM": "ft AMSL",
-        "name": "BALTIC OFFSHORE WIND",
-        "type": "REQ_AUTHORIZATION",
-        "reason": [
-          "OTHER"
-        ],
-        "comment": "Tillfälligt farligt område ESD831 Baltic Offshore Wind upprättas för UAS som flyger utom synhåll (BVLOS) med särskilda villkor.",
-        "validFrom": "2026-08-01T00:00Z",
-        "validTo": "2026-10-31T23:59Z",
-        "layer": {
-          "lower": "GND",
-          "upper": "1100",
-          "uom": "ft AMSL",
-          "lowerReference": "AGL",
-          "upperReference": "AMSL"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "SUP.26",
+      "id": "SUP.19",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -2717,7 +1882,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.27",
+      "id": "SUP.20",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -2934,7 +2099,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.28",
+      "id": "SUP.21",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -3039,7 +2204,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.29",
+      "id": "SUP.22",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -3116,7 +2281,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.30",
+      "id": "SUP.23",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -3181,7 +2346,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.31",
+      "id": "SUP.24",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -3266,7 +2431,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.32",
+      "id": "SUP.25",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -3343,7 +2508,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.33",
+      "id": "SUP.26",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -3448,7 +2613,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.34",
+      "id": "SUP.27",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -3517,7 +2682,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.35",
+      "id": "SUP.28",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -3582,7 +2747,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.36",
+      "id": "SUP.29",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -3647,7 +2812,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.37",
+      "id": "SUP.30",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -3712,7 +2877,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.38",
+      "id": "SUP.31",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -3777,7 +2942,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.39",
+      "id": "SUP.32",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -3850,7 +3015,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.40",
+      "id": "SUP.33",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -3931,7 +3096,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.41",
+      "id": "SUP.34",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -3996,7 +3161,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.42",
+      "id": "SUP.35",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -4069,7 +3234,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.43",
+      "id": "SUP.36",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -4146,7 +3311,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.44",
+      "id": "SUP.37",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -4215,7 +3380,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.45",
+      "id": "SUP.38",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -4280,7 +3445,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.46",
+      "id": "SUP.39",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -4345,7 +3510,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.47",
+      "id": "SUP.40",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -4410,7 +3575,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.48",
+      "id": "SUP.41",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -4971,7 +4136,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.49",
+      "id": "SUP.42",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -5532,7 +4697,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.50",
+      "id": "SUP.43",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -6093,7 +5258,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.51",
+      "id": "SUP.44",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -6162,7 +5327,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.52",
+      "id": "SUP.45",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -6235,7 +5400,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.53",
+      "id": "SUP.46",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -6304,7 +5469,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.54",
+      "id": "SUP.47",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -6381,7 +5546,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.55",
+      "id": "SUP.48",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -6458,7 +5623,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.56",
+      "id": "SUP.49",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -6523,7 +5688,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.57",
+      "id": "SUP.50",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -6612,7 +5777,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.58",
+      "id": "SUP.51",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -6681,7 +5846,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.59",
+      "id": "SUP.52",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -6778,7 +5943,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.60",
+      "id": "SUP.53",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -6871,7 +6036,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.61",
+      "id": "SUP.54",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -6936,7 +6101,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.62",
+      "id": "SUP.55",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -7005,7 +6170,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.63",
+      "id": "SUP.56",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -7094,7 +6259,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.64",
+      "id": "SUP.57",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -7159,7 +6324,7 @@
     },
     {
       "type": "Feature",
-      "id": "SUP.65",
+      "id": "SUP.58",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -7432,6 +6597,2687 @@
         "layer": {
           "lower": "SFC",
           "upper": "FL310",
+          "uom": "ft AMSL",
+          "lowerReference": "AGL",
+          "upperReference": "AMSL"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SUP.59",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                14.36833333,
+                63.12861111
+              ],
+              [
+                14.47694444,
+                63.10388889
+              ],
+              [
+                14.45916667,
+                63.095
+              ],
+              [
+                14.56694444,
+                63.00388889
+              ],
+              [
+                14.59472222,
+                62.99472222
+              ],
+              [
+                14.595,
+                62.98472222
+              ],
+              [
+                14.57833333,
+                62.97944444
+              ],
+              [
+                14.54277778,
+                62.98666667
+              ],
+              [
+                14.42111111,
+                63.08888889
+              ],
+              [
+                14.39888889,
+                63.11
+              ],
+              [
+                14.36833333,
+                63.12861111
+              ]
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "the_geom",
+      "properties": {
+        "NAME": "ÖSTERSUND SYD",
+        "ID": "ESD861_1",
+        "DESIG": "ESD861",
+        "LOWER": "SFC",
+        "UPPER": "1900",
+        "FROM": "2026-11-10T07:00Z",
+        "TO": "2026-11-13T17:00Z",
+        "SCHEDULE": "10 – 13 NOV, DAILY 0700 – 1700",
+        "COM_SE": "Tillfälligt farliga områden upprättas för UAS som flyger utom synhåll (BVLOS) med särskilda tillstånd.\nVerksamhet bedrivs bara i aktiverat farligt område.",
+        "COM_EN": "Temporary danger areas established for UAS flying beyond visual line of sight (BVLOS) with special permission.\nUAS operations in activated danger areas up to 120 m AGL.",
+        "URL": "https://aro.lfv.se/content/eaip/AIRAC%20AIP%20AMDT%207-2026_2026_11_26/eSUP/AIP%20SUP%20217-2026_2026_11_10/ES-SUP-en-GB.html",
+        "COORD": "",
+        "LOW_UOM": "",
+        "UP_UOM": "ft AMSL",
+        "name": "ÖSTERSUND SYD",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "OTHER"
+        ],
+        "comment": "Tillfälligt farliga områden upprättas för UAS som flyger utom synhåll (BVLOS) med särskilda tillstånd.\nVerksamhet bedrivs bara i aktiverat farligt område.",
+        "validFrom": "2026-11-10T07:00Z",
+        "validTo": "2026-11-13T17:00Z",
+        "layer": {
+          "lower": "SFC",
+          "upper": "1900",
+          "uom": "ft AMSL",
+          "lowerReference": "AGL",
+          "upperReference": "AMSL"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SUP.60",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                14.74944444,
+                63.12722222
+              ],
+              [
+                14.79166667,
+                63.09916667
+              ],
+              [
+                14.83027778,
+                63.10611111
+              ],
+              [
+                14.8625,
+                63.09305556
+              ],
+              [
+                14.85388889,
+                63.0775
+              ],
+              [
+                14.81972222,
+                63.06888889
+              ],
+              [
+                14.77638889,
+                63.07472222
+              ],
+              [
+                14.73,
+                63.11027778
+              ],
+              [
+                14.74944444,
+                63.12722222
+              ]
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "the_geom",
+      "properties": {
+        "NAME": "ÖSTERSUND ÖST",
+        "ID": "ESD862_1",
+        "DESIG": "ESD862",
+        "LOWER": "SFC",
+        "UPPER": "1900",
+        "FROM": "2026-11-10T07:00Z",
+        "TO": "2026-11-13T17:00Z",
+        "SCHEDULE": "10 – 13 NOV, DAILY 0700 – 1700",
+        "COM_SE": "Tillfälligt farliga områden upprättas för UAS som flyger utom synhåll (BVLOS) med särskilda tillstånd.\nVerksamhet bedrivs bara i aktiverat farligt område.",
+        "COM_EN": "Temporary danger areas established for UAS flying beyond visual line of sight (BVLOS) with special permission.\nUAS operations in activated danger areas up to 120 m AGL.",
+        "URL": "https://aro.lfv.se/content/eaip/AIRAC%20AIP%20AMDT%207-2026_2026_11_26/eSUP/AIP%20SUP%20217-2026_2026_11_10/ES-SUP-en-GB.html",
+        "COORD": "",
+        "LOW_UOM": "",
+        "UP_UOM": "ft AMSL",
+        "name": "ÖSTERSUND ÖST",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "OTHER"
+        ],
+        "comment": "Tillfälligt farliga områden upprättas för UAS som flyger utom synhåll (BVLOS) med särskilda tillstånd.\nVerksamhet bedrivs bara i aktiverat farligt område.",
+        "validFrom": "2026-11-10T07:00Z",
+        "validTo": "2026-11-13T17:00Z",
+        "layer": {
+          "lower": "SFC",
+          "upper": "1900",
+          "uom": "ft AMSL",
+          "lowerReference": "AGL",
+          "upperReference": "AMSL"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SUP.61",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                14.50055556,
+                63.34638889
+              ],
+              [
+                14.53361111,
+                63.3225
+              ],
+              [
+                14.62888889,
+                63.28722222
+              ],
+              [
+                14.70972222,
+                63.31472222
+              ],
+              [
+                14.815,
+                63.31472222
+              ],
+              [
+                14.83777778,
+                63.32722222
+              ],
+              [
+                14.88222222,
+                63.32722222
+              ],
+              [
+                14.8975,
+                63.32055556
+              ],
+              [
+                14.8975,
+                63.30416667
+              ],
+              [
+                14.88194444,
+                63.29638889
+              ],
+              [
+                14.72222222,
+                63.29638889
+              ],
+              [
+                14.64166667,
+                63.26916667
+              ],
+              [
+                14.63833333,
+                63.26333333
+              ],
+              [
+                14.60083333,
+                63.26916667
+              ],
+              [
+                14.60333333,
+                63.27388889
+              ],
+              [
+                14.47666667,
+                63.31083333
+              ],
+              [
+                14.42416667,
+                63.32583333
+              ],
+              [
+                14.45694444,
+                63.34527778
+              ],
+              [
+                14.50055556,
+                63.34638889
+              ]
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "the_geom",
+      "properties": {
+        "NAME": "ÖSTERSUND NORR",
+        "ID": "ESD863_1",
+        "DESIG": "ESD863",
+        "LOWER": "SFC",
+        "UPPER": "1900",
+        "FROM": "2026-11-10T07:00Z",
+        "TO": "2026-11-13T17:00Z",
+        "SCHEDULE": "10 – 13 NOV, DAILY 0700 – 1700",
+        "COM_SE": "Tillfälligt farliga områden upprättas för UAS som flyger utom synhåll (BVLOS) med särskilda tillstånd.\nVerksamhet bedrivs bara i aktiverat farligt område.",
+        "COM_EN": "Temporary danger areas established for UAS flying beyond visual line of sight (BVLOS) with special permission.\nUAS operations in activated danger areas up to 120 m AGL.",
+        "URL": "https://aro.lfv.se/content/eaip/AIRAC%20AIP%20AMDT%207-2026_2026_11_26/eSUP/AIP%20SUP%20217-2026_2026_11_10/ES-SUP-en-GB.html",
+        "COORD": "",
+        "LOW_UOM": "",
+        "UP_UOM": "ft AMSL",
+        "name": "ÖSTERSUND NORR",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "OTHER"
+        ],
+        "comment": "Tillfälligt farliga områden upprättas för UAS som flyger utom synhåll (BVLOS) med särskilda tillstånd.\nVerksamhet bedrivs bara i aktiverat farligt område.",
+        "validFrom": "2026-11-10T07:00Z",
+        "validTo": "2026-11-13T17:00Z",
+        "layer": {
+          "lower": "SFC",
+          "upper": "1900",
+          "uom": "ft AMSL",
+          "lowerReference": "AGL",
+          "upperReference": "AMSL"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SUP.62",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                14.00361111,
+                55.45805556
+              ],
+              [
+                14.15527778,
+                55.44916667
+              ],
+              [
+                14.20166667,
+                55.28861111
+              ],
+              [
+                14.08333333,
+                55.25277778
+              ],
+              [
+                13.88694444,
+                55.26805556
+              ],
+              [
+                13.7325,
+                55.33388889
+              ],
+              [
+                13.80166667,
+                55.45111111
+              ],
+              [
+                13.80055556,
+                55.45222222
+              ],
+              [
+                14.00361111,
+                55.45805556
+              ]
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "the_geom",
+      "properties": {
+        "NAME": "NYBROSTRAND",
+        "ID": "ESR548_1",
+        "DESIG": "ESR548",
+        "LOWER": "SFC",
+        "UPPER": "FL125",
+        "FROM": "2026-11-24T06:00Z",
+        "TO": "2026-11-26T14:00Z",
+        "SCHEDULE": "24 – 26 NOV 2026 0600 – 1400",
+        "COM_SE": "Tillfälligt restriktionsområde ESR548 Nybrostrand upprättas för militär flygverksamhet.\nInom området gäller förbud mot all luftfart som inte ingår i verksamheten.",
+        "COM_EN": "Temporary restricted area ESR548 Nybrostrand established for military aviation operations.\nFlight within the area prohibited for all non-participating aircraft.",
+        "URL": "https://aro.lfv.se/content/eaip/AIRAC%20AIP%20AMDT%207-2026_2026_11_26/eSUP/AIP%20SUP%20215-2026_2026_11_24/ES-SUP-en-GB.html",
+        "COORD": "",
+        "LOW_UOM": "",
+        "UP_UOM": "",
+        "name": "NYBROSTRAND",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "OTHER"
+        ],
+        "comment": "Tillfälligt restriktionsområde ESR548 Nybrostrand upprättas för militär flygverksamhet.\nInom området gäller förbud mot all luftfart som inte ingår i verksamheten.",
+        "validFrom": "2026-11-24T06:00Z",
+        "validTo": "2026-11-26T14:00Z",
+        "layer": {
+          "lower": "SFC",
+          "upper": "FL125",
+          "uom": "ft AMSL",
+          "lowerReference": "AGL",
+          "upperReference": "AMSL"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SUP.63",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                11.37638889,
+                58.25638889
+              ],
+              [
+                11.53166667,
+                58.2575
+              ],
+              [
+                11.56833333,
+                58.1375
+              ],
+              [
+                11.45194444,
+                58.12972222
+              ],
+              [
+                11.37638889,
+                58.25638889
+              ]
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "the_geom",
+      "properties": {
+        "NAME": "ELLOS",
+        "ID": "ESR589_1",
+        "DESIG": "ESR589",
+        "LOWER": "SFC",
+        "UPPER": "2500",
+        "FROM": "2026-11-24T06:00Z",
+        "TO": "2026-11-28T17:00Z",
+        "SCHEDULE": "24 NOV 2026 0600 – 28 NOV 2026 1700",
+        "COM_SE": "Tillfälliga restriktionsområden kring Uddevalla upprättas för militär flygverksamhet.\nInom områdena gäller förbud mot all luftfart som inte ingår i verksamheten.",
+        "COM_EN": "Temporary restricted areas near Uddevalla established for military aviation operations.\nFlight within the areas prohibited for all non-participating aircraft.",
+        "URL": "https://aro.lfv.se/content/eaip/AIRAC%20AIP%20AMDT%207-2026_2026_11_26/eSUP/AIP%20SUP%20216-2026_2026_11_23/ES-SUP-en-GB.html",
+        "COORD": "",
+        "LOW_UOM": "",
+        "UP_UOM": "ft AMSL",
+        "name": "ELLOS",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "OTHER"
+        ],
+        "comment": "Tillfälliga restriktionsområden kring Uddevalla upprättas för militär flygverksamhet.\nInom områdena gäller förbud mot all luftfart som inte ingår i verksamheten.",
+        "validFrom": "2026-11-24T06:00Z",
+        "validTo": "2026-11-28T17:00Z",
+        "layer": {
+          "lower": "SFC",
+          "upper": "2500",
+          "uom": "ft AMSL",
+          "lowerReference": "AGL",
+          "upperReference": "AMSL"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SUP.64",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                11.6375,
+                58.44274402
+              ],
+              [
+                11.64218467,
+                58.44268375
+              ],
+              [
+                11.646858,
+                58.44250308
+              ],
+              [
+                11.6515087,
+                58.44220244
+              ],
+              [
+                11.6561255,
+                58.44178258
+              ],
+              [
+                11.66069725,
+                58.4412445
+              ],
+              [
+                11.66521288,
+                58.4405895
+              ],
+              [
+                11.66966147,
+                58.43981917
+              ],
+              [
+                11.67403228,
+                58.43893537
+              ],
+              [
+                11.67831473,
+                58.43794024
+              ],
+              [
+                11.68249848,
+                58.43683619
+              ],
+              [
+                11.68657341,
+                58.43562588
+              ],
+              [
+                11.69052969,
+                58.43431225
+              ],
+              [
+                11.69435776,
+                58.43289846
+              ],
+              [
+                11.69804839,
+                58.43138794
+              ],
+              [
+                11.70159268,
+                58.42978433
+              ],
+              [
+                11.70498207,
+                58.42809152
+              ],
+              [
+                11.70820841,
+                58.4263136
+              ],
+              [
+                11.71126391,
+                58.42445485
+              ],
+              [
+                11.71414123,
+                58.42251977
+              ],
+              [
+                11.71683345,
+                58.42051303
+              ],
+              [
+                11.7193341,
+                58.41843949
+              ],
+              [
+                11.72163717,
+                58.41630414
+              ],
+              [
+                11.72373715,
+                58.41411215
+              ],
+              [
+                11.72562899,
+                58.41186879
+              ],
+              [
+                11.72730818,
+                58.40957949
+              ],
+              [
+                11.7287707,
+                58.40724978
+              ],
+              [
+                11.73001307,
+                58.40488526
+              ],
+              [
+                11.73103235,
+                58.40249164
+              ],
+              [
+                11.73182611,
+                58.4000747
+              ],
+              [
+                11.73239249,
+                58.39764026
+              ],
+              [
+                11.73273017,
+                58.39519418
+              ],
+              [
+                11.73283839,
+                58.39274237
+              ],
+              [
+                11.73271693,
+                58.39029073
+              ],
+              [
+                11.73236613,
+                58.38784517
+              ],
+              [
+                11.73178689,
+                58.38541157
+              ],
+              [
+                11.73098064,
+                58.3829958
+              ],
+              [
+                11.72994939,
+                58.38060367
+              ],
+              [
+                11.72869564,
+                58.37824094
+              ],
+              [
+                11.72722247,
+                58.37591329
+              ],
+              [
+                11.72553345,
+                58.37362632
+              ],
+              [
+                11.72363271,
+                58.37138554
+              ],
+              [
+                11.72152484,
+                58.36919634
+              ],
+              [
+                11.71921495,
+                58.36706397
+              ],
+              [
+                11.71670863,
+                58.36499357
+              ],
+              [
+                11.71401194,
+                58.3629901
+              ],
+              [
+                11.7111314,
+                58.3610584
+              ],
+              [
+                11.70807395,
+                58.35920309
+              ],
+              [
+                11.70484696,
+                58.35742863
+              ],
+              [
+                11.70145822,
+                58.35573929
+              ],
+              [
+                11.69791588,
+                58.35413912
+              ],
+              [
+                11.69422847,
+                58.35263197
+              ],
+              [
+                11.69040487,
+                58.35122145
+              ],
+              [
+                11.68645425,
+                58.34991096
+              ],
+              [
+                11.68238614,
+                58.34870363
+              ],
+              [
+                11.67821029,
+                58.34760237
+              ],
+              [
+                11.67393674,
+                58.34660981
+              ],
+              [
+                11.66957576,
+                58.34572835
+              ],
+              [
+                11.66513782,
+                58.34496009
+              ],
+              [
+                11.66063356,
+                58.34430688
+              ],
+              [
+                11.6560738,
+                58.34377028
+              ],
+              [
+                11.65146948,
+                58.34335159
+              ],
+              [
+                11.64683164,
+                58.3430518
+              ],
+              [
+                11.64217143,
+                58.34287164
+              ],
+              [
+                11.6375,
+                58.34281154
+              ],
+              [
+                11.63282857,
+                58.34287164
+              ],
+              [
+                11.62816836,
+                58.3430518
+              ],
+              [
+                11.62353052,
+                58.34335159
+              ],
+              [
+                11.6189262,
+                58.34377028
+              ],
+              [
+                11.61436644,
+                58.34430688
+              ],
+              [
+                11.60986218,
+                58.34496009
+              ],
+              [
+                11.60542424,
+                58.34572835
+              ],
+              [
+                11.60106326,
+                58.34660981
+              ],
+              [
+                11.59678971,
+                58.34760237
+              ],
+              [
+                11.59261386,
+                58.34870363
+              ],
+              [
+                11.58854575,
+                58.34991096
+              ],
+              [
+                11.58459513,
+                58.35122145
+              ],
+              [
+                11.58077153,
+                58.35263197
+              ],
+              [
+                11.57708412,
+                58.35413912
+              ],
+              [
+                11.57354178,
+                58.35573929
+              ],
+              [
+                11.57015304,
+                58.35742863
+              ],
+              [
+                11.56692605,
+                58.35920309
+              ],
+              [
+                11.5638686,
+                58.3610584
+              ],
+              [
+                11.56098806,
+                58.3629901
+              ],
+              [
+                11.55829137,
+                58.36499357
+              ],
+              [
+                11.55578505,
+                58.36706397
+              ],
+              [
+                11.55347516,
+                58.36919634
+              ],
+              [
+                11.55136729,
+                58.37138554
+              ],
+              [
+                11.54946655,
+                58.37362632
+              ],
+              [
+                11.54777753,
+                58.37591329
+              ],
+              [
+                11.54630436,
+                58.37824094
+              ],
+              [
+                11.54505061,
+                58.38060367
+              ],
+              [
+                11.54401936,
+                58.3829958
+              ],
+              [
+                11.54321311,
+                58.38541157
+              ],
+              [
+                11.54263387,
+                58.38784517
+              ],
+              [
+                11.54228307,
+                58.39029073
+              ],
+              [
+                11.54216161,
+                58.39274237
+              ],
+              [
+                11.54226983,
+                58.39519418
+              ],
+              [
+                11.54260751,
+                58.39764026
+              ],
+              [
+                11.54317389,
+                58.4000747
+              ],
+              [
+                11.54396765,
+                58.40249164
+              ],
+              [
+                11.54498693,
+                58.40488526
+              ],
+              [
+                11.5462293,
+                58.40724978
+              ],
+              [
+                11.54769182,
+                58.40957949
+              ],
+              [
+                11.54937101,
+                58.41186879
+              ],
+              [
+                11.55126285,
+                58.41411215
+              ],
+              [
+                11.55336283,
+                58.41630414
+              ],
+              [
+                11.5556659,
+                58.41843949
+              ],
+              [
+                11.55816655,
+                58.42051303
+              ],
+              [
+                11.56085877,
+                58.42251977
+              ],
+              [
+                11.56373609,
+                58.42445485
+              ],
+              [
+                11.56679159,
+                58.4263136
+              ],
+              [
+                11.57001793,
+                58.42809152
+              ],
+              [
+                11.57340732,
+                58.42978433
+              ],
+              [
+                11.57695161,
+                58.43138794
+              ],
+              [
+                11.58064224,
+                58.43289846
+              ],
+              [
+                11.58447031,
+                58.43431225
+              ],
+              [
+                11.58842659,
+                58.43562588
+              ],
+              [
+                11.59250152,
+                58.43683619
+              ],
+              [
+                11.59668527,
+                58.43794024
+              ],
+              [
+                11.60096772,
+                58.43893537
+              ],
+              [
+                11.60533853,
+                58.43981917
+              ],
+              [
+                11.60978712,
+                58.4405895
+              ],
+              [
+                11.61430275,
+                58.4412445
+              ],
+              [
+                11.6188745,
+                58.44178258
+              ],
+              [
+                11.6234913,
+                58.44220244
+              ],
+              [
+                11.628142,
+                58.44250308
+              ],
+              [
+                11.63281533,
+                58.44268375
+              ],
+              [
+                11.6375,
+                58.44274402
+              ]
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "the_geom",
+      "properties": {
+        "NAME": "GUNNARBY",
+        "ID": "ESR588_1",
+        "DESIG": "ESR588",
+        "LOWER": "SFC",
+        "UPPER": "2500",
+        "FROM": "2026-11-23T08:00Z",
+        "TO": "2026-11-28T17:00Z",
+        "SCHEDULE": "23 NOV 2026 0800 – 28 NOV 2026 1700",
+        "COM_SE": "Tillfälliga restriktionsområden kring Uddevalla upprättas för militär flygverksamhet.\nInom områdena gäller förbud mot all luftfart som inte ingår i verksamheten.",
+        "COM_EN": "Temporary restricted areas near Uddevalla established for military aviation operations.\nFlight within the areas prohibited for all non-participating aircraft.",
+        "URL": "https://aro.lfv.se/content/eaip/AIRAC%20AIP%20AMDT%207-2026_2026_11_26/eSUP/AIP%20SUP%20216-2026_2026_11_23/ES-SUP-en-GB.html",
+        "COORD": "A circle with radius 3 NM centered on 582334N 0113815E",
+        "LOW_UOM": "",
+        "UP_UOM": "ft AMSL",
+        "name": "GUNNARBY",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "OTHER"
+        ],
+        "comment": "Tillfälliga restriktionsområden kring Uddevalla upprättas för militär flygverksamhet.\nInom områdena gäller förbud mot all luftfart som inte ingår i verksamheten.",
+        "validFrom": "2026-11-23T08:00Z",
+        "validTo": "2026-11-28T17:00Z",
+        "layer": {
+          "lower": "SFC",
+          "upper": "2500",
+          "uom": "ft AMSL",
+          "lowerReference": "AGL",
+          "upperReference": "AMSL"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SUP.65",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                11.85277778,
+                58.59774402
+              ],
+              [
+                11.85748319,
+                58.59768374
+              ],
+              [
+                11.86217722,
+                58.59750307
+              ],
+              [
+                11.8668485,
+                58.59720244
+              ],
+              [
+                11.87148575,
+                58.59678257
+              ],
+              [
+                11.87607773,
+                58.59624449
+              ],
+              [
+                11.88061335,
+                58.59558948
+              ],
+              [
+                11.88508164,
+                58.59481915
+              ],
+              [
+                11.88947179,
+                58.59393534
+              ],
+              [
+                11.8937732,
+                58.5929402
+              ],
+              [
+                11.89797545,
+                58.59183614
+              ],
+              [
+                11.90206842,
+                58.59062582
+              ],
+              [
+                11.9060422,
+                58.58931218
+              ],
+              [
+                11.9098872,
+                58.58789838
+              ],
+              [
+                11.91359415,
+                58.58638785
+              ],
+              [
+                11.91715411,
+                58.58478424
+              ],
+              [
+                11.92055848,
+                58.58309141
+              ],
+              [
+                11.92379907,
+                58.58131348
+              ],
+              [
+                11.92686807,
+                58.57945472
+              ],
+              [
+                11.9297581,
+                58.57751963
+              ],
+              [
+                11.9324622,
+                58.57551289
+              ],
+              [
+                11.93497388,
+                58.57343933
+              ],
+              [
+                11.93728711,
+                58.57130397
+              ],
+              [
+                11.93939634,
+                58.56911197
+              ],
+              [
+                11.94129652,
+                58.56686861
+              ],
+              [
+                11.9429831,
+                58.5645793
+              ],
+              [
+                11.94445205,
+                58.56224958
+              ],
+              [
+                11.94569988,
+                58.55988505
+              ],
+              [
+                11.94672362,
+                58.55749143
+              ],
+              [
+                11.94752085,
+                58.55507449
+              ],
+              [
+                11.94808969,
+                58.55264004
+              ],
+              [
+                11.94842883,
+                58.55019397
+              ],
+              [
+                11.94853748,
+                58.54774216
+              ],
+              [
+                11.94841544,
+                58.54529052
+              ],
+              [
+                11.94806306,
+                58.54284496
+              ],
+              [
+                11.94748122,
+                58.54041136
+              ],
+              [
+                11.94667137,
+                58.53799559
+              ],
+              [
+                11.94563552,
+                58.53560347
+              ],
+              [
+                11.9443762,
+                58.53324074
+              ],
+              [
+                11.94289648,
+                58.5309131
+              ],
+              [
+                11.94119998,
+                58.52862614
+              ],
+              [
+                11.9392908,
+                58.52638537
+              ],
+              [
+                11.93717359,
+                58.52419617
+              ],
+              [
+                11.93485348,
+                58.52206381
+              ],
+              [
+                11.93233607,
+                58.51999342
+              ],
+              [
+                11.92962745,
+                58.51798997
+              ],
+              [
+                11.92673416,
+                58.51605827
+              ],
+              [
+                11.9236632,
+                58.51420297
+              ],
+              [
+                11.92042195,
+                58.51242852
+              ],
+              [
+                11.91701823,
+                58.51073919
+              ],
+              [
+                11.91346024,
+                58.50913903
+              ],
+              [
+                11.90975655,
+                58.50763189
+              ],
+              [
+                11.90591606,
+                58.50622139
+              ],
+              [
+                11.90194801,
+                58.5049109
+              ],
+              [
+                11.89786193,
+                58.50370358
+              ],
+              [
+                11.89366766,
+                58.50260233
+              ],
+              [
+                11.88937525,
+                58.50160978
+              ],
+              [
+                11.88499503,
+                58.50072833
+              ],
+              [
+                11.8805375,
+                58.49996007
+              ],
+              [
+                11.87601337,
+                58.49930686
+              ],
+              [
+                11.8714335,
+                58.49877027
+              ],
+              [
+                11.86680887,
+                58.49835158
+              ],
+              [
+                11.86215058,
+                58.4980518
+              ],
+              [
+                11.85746981,
+                58.49787164
+              ],
+              [
+                11.85277778,
+                58.49781154
+              ],
+              [
+                11.84808575,
+                58.49787164
+              ],
+              [
+                11.84340498,
+                58.4980518
+              ],
+              [
+                11.83874669,
+                58.49835158
+              ],
+              [
+                11.83412206,
+                58.49877027
+              ],
+              [
+                11.82954218,
+                58.49930686
+              ],
+              [
+                11.82501805,
+                58.49996007
+              ],
+              [
+                11.82056053,
+                58.50072833
+              ],
+              [
+                11.8161803,
+                58.50160978
+              ],
+              [
+                11.8118879,
+                58.50260233
+              ],
+              [
+                11.80769362,
+                58.50370358
+              ],
+              [
+                11.80360755,
+                58.5049109
+              ],
+              [
+                11.7996395,
+                58.50622139
+              ],
+              [
+                11.79579901,
+                58.50763189
+              ],
+              [
+                11.79209531,
+                58.50913903
+              ],
+              [
+                11.78853732,
+                58.51073919
+              ],
+              [
+                11.78513361,
+                58.51242852
+              ],
+              [
+                11.78189236,
+                58.51420297
+              ],
+              [
+                11.77882139,
+                58.51605827
+              ],
+              [
+                11.77592811,
+                58.51798997
+              ],
+              [
+                11.77321949,
+                58.51999342
+              ],
+              [
+                11.77070208,
+                58.52206381
+              ],
+              [
+                11.76838196,
+                58.52419617
+              ],
+              [
+                11.76626475,
+                58.52638537
+              ],
+              [
+                11.76435558,
+                58.52862614
+              ],
+              [
+                11.76265907,
+                58.5309131
+              ],
+              [
+                11.76117936,
+                58.53324074
+              ],
+              [
+                11.75992004,
+                58.53560347
+              ],
+              [
+                11.75888418,
+                58.53799559
+              ],
+              [
+                11.75807434,
+                58.54041136
+              ],
+              [
+                11.7574925,
+                58.54284496
+              ],
+              [
+                11.75714011,
+                58.54529052
+              ],
+              [
+                11.75701807,
+                58.54774216
+              ],
+              [
+                11.75712673,
+                58.55019397
+              ],
+              [
+                11.75746586,
+                58.55264004
+              ],
+              [
+                11.75803471,
+                58.55507449
+              ],
+              [
+                11.75883193,
+                58.55749143
+              ],
+              [
+                11.75985568,
+                58.55988505
+              ],
+              [
+                11.76110351,
+                58.56224958
+              ],
+              [
+                11.76257246,
+                58.5645793
+              ],
+              [
+                11.76425904,
+                58.56686861
+              ],
+              [
+                11.76615921,
+                58.56911197
+              ],
+              [
+                11.76826844,
+                58.57130397
+              ],
+              [
+                11.77058167,
+                58.57343933
+              ],
+              [
+                11.77309335,
+                58.57551289
+              ],
+              [
+                11.77579746,
+                58.57751963
+              ],
+              [
+                11.77868748,
+                58.57945472
+              ],
+              [
+                11.78175649,
+                58.58131348
+              ],
+              [
+                11.78499708,
+                58.58309141
+              ],
+              [
+                11.78840145,
+                58.58478424
+              ],
+              [
+                11.7919614,
+                58.58638785
+              ],
+              [
+                11.79566835,
+                58.58789838
+              ],
+              [
+                11.79951336,
+                58.58931218
+              ],
+              [
+                11.80348714,
+                58.59062582
+              ],
+              [
+                11.8075801,
+                58.59183614
+              ],
+              [
+                11.81178236,
+                58.5929402
+              ],
+              [
+                11.81608376,
+                58.59393534
+              ],
+              [
+                11.82047391,
+                58.59481915
+              ],
+              [
+                11.8249422,
+                58.59558948
+              ],
+              [
+                11.82947782,
+                58.59624449
+              ],
+              [
+                11.83406981,
+                58.59678257
+              ],
+              [
+                11.83870705,
+                58.59720244
+              ],
+              [
+                11.84337834,
+                58.59750307
+              ],
+              [
+                11.84807237,
+                58.59768374
+              ],
+              [
+                11.85277778,
+                58.59774402
+              ]
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "the_geom",
+      "properties": {
+        "NAME": "VALBO-RYR",
+        "ID": "ESR590_1",
+        "DESIG": "ESR590",
+        "LOWER": "SFC",
+        "UPPER": "2500",
+        "FROM": "2026-11-24T06:00Z",
+        "TO": "2026-11-28T17:00Z",
+        "SCHEDULE": "24 NOV 2026 0600 – 28 NOV 2026 1700",
+        "COM_SE": "Tillfälliga restriktionsområden kring Uddevalla upprättas för militär flygverksamhet.\nInom områdena gäller förbud mot all luftfart som inte ingår i verksamheten.",
+        "COM_EN": "Temporary restricted areas near Uddevalla established for military aviation operations.\nFlight within the areas prohibited for all non-participating aircraft.",
+        "URL": "https://aro.lfv.se/content/eaip/AIRAC%20AIP%20AMDT%207-2026_2026_11_26/eSUP/AIP%20SUP%20216-2026_2026_11_23/ES-SUP-en-GB.html",
+        "COORD": "A circle with radius 3 NM centered on 583252N 0115110E",
+        "LOW_UOM": "",
+        "UP_UOM": "ft AMSL",
+        "name": "VALBO-RYR",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "OTHER"
+        ],
+        "comment": "Tillfälliga restriktionsområden kring Uddevalla upprättas för militär flygverksamhet.\nInom områdena gäller förbud mot all luftfart som inte ingår i verksamheten.",
+        "validFrom": "2026-11-24T06:00Z",
+        "validTo": "2026-11-28T17:00Z",
+        "layer": {
+          "lower": "SFC",
+          "upper": "2500",
+          "uom": "ft AMSL",
+          "lowerReference": "AGL",
+          "upperReference": "AMSL"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SUP.66",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                11.34194444,
+                58.45996624
+              ],
+              [
+                11.34663141,
+                58.45990597
+              ],
+              [
+                11.35130703,
+                58.4597253
+              ],
+              [
+                11.35596,
+                58.45942467
+              ],
+              [
+                11.36057907,
+                58.4590048
+              ],
+              [
+                11.36515305,
+                58.45846672
+              ],
+              [
+                11.36967089,
+                58.45781172
+              ],
+              [
+                11.37412167,
+                58.45704139
+              ],
+              [
+                11.37849461,
+                58.45615759
+              ],
+              [
+                11.38277916,
+                58.45516246
+              ],
+              [
+                11.38696495,
+                58.45405841
+              ],
+              [
+                11.39104188,
+                58.4528481
+              ],
+              [
+                11.39500009,
+                58.45153446
+              ],
+              [
+                11.39883004,
+                58.45012067
+              ],
+              [
+                11.40252248,
+                58.44861015
+              ],
+              [
+                11.40606849,
+                58.44700654
+              ],
+              [
+                11.40945954,
+                58.44531373
+              ],
+              [
+                11.41268745,
+                58.4435358
+              ],
+              [
+                11.41574445,
+                58.44167706
+              ],
+              [
+                11.41862318,
+                58.43974198
+              ],
+              [
+                11.42131671,
+                58.43773524
+              ],
+              [
+                11.42381858,
+                58.43566169
+              ],
+              [
+                11.42612278,
+                58.43352635
+              ],
+              [
+                11.42822377,
+                58.43133435
+              ],
+              [
+                11.43011654,
+                58.42909099
+              ],
+              [
+                11.43179654,
+                58.42680169
+              ],
+              [
+                11.43325978,
+                58.42447198
+              ],
+              [
+                11.43450276,
+                58.42210746
+              ],
+              [
+                11.43552252,
+                58.41971384
+              ],
+              [
+                11.43631667,
+                58.4172969
+              ],
+              [
+                11.43688332,
+                58.41486245
+              ],
+              [
+                11.43722116,
+                58.41241638
+              ],
+              [
+                11.43732943,
+                58.40996457
+              ],
+              [
+                11.4372079,
+                58.40751293
+              ],
+              [
+                11.43685693,
+                58.40506737
+              ],
+              [
+                11.4362774,
+                58.40263377
+              ],
+              [
+                11.43547076,
+                58.400218
+              ],
+              [
+                11.43443899,
+                58.39782587
+              ],
+              [
+                11.43318463,
+                58.39546314
+              ],
+              [
+                11.43171073,
+                58.39313549
+              ],
+              [
+                11.43002089,
+                58.39084853
+              ],
+              [
+                11.42811921,
+                58.38860775
+              ],
+              [
+                11.42601031,
+                58.38641854
+              ],
+              [
+                11.42369929,
+                58.38428618
+              ],
+              [
+                11.42119175,
+                58.38221577
+              ],
+              [
+                11.41849374,
+                58.38021231
+              ],
+              [
+                11.41561179,
+                58.3782806
+              ],
+              [
+                11.41255284,
+                58.37642529
+              ],
+              [
+                11.40932428,
+                58.37465084
+              ],
+              [
+                11.40593388,
+                58.3729615
+              ],
+              [
+                11.40238981,
+                58.37136133
+              ],
+              [
+                11.3987006,
+                58.36985418
+              ],
+              [
+                11.39487512,
+                58.36844367
+              ],
+              [
+                11.39092258,
+                58.36713318
+              ],
+              [
+                11.38685248,
+                58.36592585
+              ],
+              [
+                11.3826746,
+                58.36482459
+              ],
+              [
+                11.37839896,
+                58.36383203
+              ],
+              [
+                11.37403585,
+                58.36295057
+              ],
+              [
+                11.36959574,
+                58.36218231
+              ],
+              [
+                11.36508929,
+                58.3615291
+              ],
+              [
+                11.3605273,
+                58.3609925
+              ],
+              [
+                11.35592074,
+                58.36057381
+              ],
+              [
+                11.35128064,
+                58.36027402
+              ],
+              [
+                11.34661815,
+                58.36009386
+              ],
+              [
+                11.34194444,
+                58.36003376
+              ],
+              [
+                11.33727074,
+                58.36009386
+              ],
+              [
+                11.33260825,
+                58.36027402
+              ],
+              [
+                11.32796815,
+                58.36057381
+              ],
+              [
+                11.32336159,
+                58.3609925
+              ],
+              [
+                11.3187996,
+                58.3615291
+              ],
+              [
+                11.31429315,
+                58.36218231
+              ],
+              [
+                11.30985303,
+                58.36295057
+              ],
+              [
+                11.30548992,
+                58.36383203
+              ],
+              [
+                11.30121429,
+                58.36482459
+              ],
+              [
+                11.29703641,
+                58.36592585
+              ],
+              [
+                11.2929663,
+                58.36713318
+              ],
+              [
+                11.28901376,
+                58.36844367
+              ],
+              [
+                11.28518829,
+                58.36985418
+              ],
+              [
+                11.28149908,
+                58.37136133
+              ],
+              [
+                11.27795501,
+                58.3729615
+              ],
+              [
+                11.27456461,
+                58.37465084
+              ],
+              [
+                11.27133605,
+                58.37642529
+              ],
+              [
+                11.2682771,
+                58.3782806
+              ],
+              [
+                11.26539515,
+                58.38021231
+              ],
+              [
+                11.26269714,
+                58.38221577
+              ],
+              [
+                11.2601896,
+                58.38428618
+              ],
+              [
+                11.25787858,
+                58.38641854
+              ],
+              [
+                11.25576968,
+                58.38860775
+              ],
+              [
+                11.253868,
+                58.39084853
+              ],
+              [
+                11.25217816,
+                58.39313549
+              ],
+              [
+                11.25070426,
+                58.39546314
+              ],
+              [
+                11.2494499,
+                58.39782587
+              ],
+              [
+                11.24841813,
+                58.400218
+              ],
+              [
+                11.24761149,
+                58.40263377
+              ],
+              [
+                11.24703196,
+                58.40506737
+              ],
+              [
+                11.24668099,
+                58.40751293
+              ],
+              [
+                11.24655946,
+                58.40996457
+              ],
+              [
+                11.24666773,
+                58.41241638
+              ],
+              [
+                11.24700557,
+                58.41486245
+              ],
+              [
+                11.24757222,
+                58.4172969
+              ],
+              [
+                11.24836637,
+                58.41971384
+              ],
+              [
+                11.24938613,
+                58.42210746
+              ],
+              [
+                11.25062911,
+                58.42447198
+              ],
+              [
+                11.25209235,
+                58.42680169
+              ],
+              [
+                11.25377235,
+                58.42909099
+              ],
+              [
+                11.25566512,
+                58.43133435
+              ],
+              [
+                11.25776611,
+                58.43352635
+              ],
+              [
+                11.26007031,
+                58.43566169
+              ],
+              [
+                11.26257217,
+                58.43773524
+              ],
+              [
+                11.26526571,
+                58.43974198
+              ],
+              [
+                11.26814444,
+                58.44167706
+              ],
+              [
+                11.27120143,
+                58.4435358
+              ],
+              [
+                11.27442935,
+                58.44531373
+              ],
+              [
+                11.2778204,
+                58.44700654
+              ],
+              [
+                11.28136641,
+                58.44861015
+              ],
+              [
+                11.28505885,
+                58.45012067
+              ],
+              [
+                11.2888888,
+                58.45153446
+              ],
+              [
+                11.29284701,
+                58.4528481
+              ],
+              [
+                11.29692394,
+                58.45405841
+              ],
+              [
+                11.30110973,
+                58.45516246
+              ],
+              [
+                11.30539428,
+                58.45615759
+              ],
+              [
+                11.30976722,
+                58.45704139
+              ],
+              [
+                11.314218,
+                58.45781172
+              ],
+              [
+                11.31873584,
+                58.45846672
+              ],
+              [
+                11.32330982,
+                58.4590048
+              ],
+              [
+                11.32792889,
+                58.45942467
+              ],
+              [
+                11.33258186,
+                58.4597253
+              ],
+              [
+                11.33725748,
+                58.45990597
+              ],
+              [
+                11.34194444,
+                58.45996624
+              ]
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "the_geom",
+      "properties": {
+        "NAME": "VÄJERN",
+        "ID": "ESR591_1",
+        "DESIG": "ESR591",
+        "LOWER": "SFC",
+        "UPPER": "2500",
+        "FROM": "2026-11-24T06:00Z",
+        "TO": "2026-11-28T17:00Z",
+        "SCHEDULE": "24 NOV 2026 0600 – 28 NOV 2026 1700",
+        "COM_SE": "Tillfälliga restriktionsområden kring Uddevalla upprättas för militär flygverksamhet.\nInom områdena gäller förbud mot all luftfart som inte ingår i verksamheten.",
+        "COM_EN": "Temporary restricted areas near Uddevalla established for military aviation operations.\nFlight within the areas prohibited for all non-participating aircraft.",
+        "URL": "https://aro.lfv.se/content/eaip/AIRAC%20AIP%20AMDT%207-2026_2026_11_26/eSUP/AIP%20SUP%20216-2026_2026_11_23/ES-SUP-en-GB.html",
+        "COORD": "A circle with radius 3 NM centered on 582436N 0112031E",
+        "LOW_UOM": "",
+        "UP_UOM": "ft AMSL",
+        "name": "VÄJERN",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "OTHER"
+        ],
+        "comment": "Tillfälliga restriktionsområden kring Uddevalla upprättas för militär flygverksamhet.\nInom områdena gäller förbud mot all luftfart som inte ingår i verksamheten.",
+        "validFrom": "2026-11-24T06:00Z",
+        "validTo": "2026-11-28T17:00Z",
+        "layer": {
+          "lower": "SFC",
+          "upper": "2500",
+          "uom": "ft AMSL",
+          "lowerReference": "AGL",
+          "upperReference": "AMSL"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SUP.67",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                11.45305556,
+                58.38191068
+              ],
+              [
+                11.45773214,
+                58.38185041
+              ],
+              [
+                11.46239741,
+                58.38166974
+              ],
+              [
+                11.46704009,
+                58.38136911
+              ],
+              [
+                11.47164893,
+                58.38094925
+              ],
+              [
+                11.47621279,
+                58.38041117
+              ],
+              [
+                11.48072063,
+                58.37975617
+              ],
+              [
+                11.48516155,
+                58.37898585
+              ],
+              [
+                11.48952482,
+                58.37810205
+              ],
+              [
+                11.49379989,
+                58.37710692
+              ],
+              [
+                11.49797642,
+                58.37600287
+              ],
+              [
+                11.50204433,
+                58.37479257
+              ],
+              [
+                11.50599379,
+                58.37347894
+              ],
+              [
+                11.50981527,
+                58.37206515
+              ],
+              [
+                11.51349954,
+                58.37055464
+              ],
+              [
+                11.51703772,
+                58.36895104
+              ],
+              [
+                11.52042128,
+                58.36725823
+              ],
+              [
+                11.52364206,
+                58.36548031
+              ],
+              [
+                11.5266923,
+                58.36362156
+              ],
+              [
+                11.52956467,
+                58.36168649
+              ],
+              [
+                11.53225226,
+                58.35967976
+              ],
+              [
+                11.53474861,
+                58.35760622
+              ],
+              [
+                11.53704773,
+                58.35547087
+              ],
+              [
+                11.53914409,
+                58.35327888
+              ],
+              [
+                11.54103269,
+                58.35103553
+              ],
+              [
+                11.542709,
+                58.34874623
+              ],
+              [
+                11.54416902,
+                58.34641652
+              ],
+              [
+                11.54540926,
+                58.344052
+              ],
+              [
+                11.5464268,
+                58.34165839
+              ],
+              [
+                11.54721921,
+                58.33924145
+              ],
+              [
+                11.54778462,
+                58.33680701
+              ],
+              [
+                11.54812174,
+                58.33436093
+              ],
+              [
+                11.54822979,
+                58.33190912
+              ],
+              [
+                11.54810855,
+                58.32945748
+              ],
+              [
+                11.54775837,
+                58.32701192
+              ],
+              [
+                11.54718015,
+                58.32457832
+              ],
+              [
+                11.54637531,
+                58.32216255
+              ],
+              [
+                11.54534584,
+                58.31977042
+              ],
+              [
+                11.54409426,
+                58.31740768
+              ],
+              [
+                11.54262364,
+                58.31508003
+              ],
+              [
+                11.54093755,
+                58.31279306
+              ],
+              [
+                11.53904008,
+                58.31055228
+              ],
+              [
+                11.53693585,
+                58.30836307
+              ],
+              [
+                11.53462995,
+                58.3062307
+              ],
+              [
+                11.53212795,
+                58.30416029
+              ],
+              [
+                11.52943591,
+                58.30215683
+              ],
+              [
+                11.52656033,
+                58.30022511
+              ],
+              [
+                11.52350815,
+                58.2983698
+              ],
+              [
+                11.52028672,
+                58.29659534
+              ],
+              [
+                11.51690381,
+                58.29490599
+              ],
+              [
+                11.51336757,
+                58.29330582
+              ],
+              [
+                11.50968651,
+                58.29179867
+              ],
+              [
+                11.50586948,
+                58.29038815
+              ],
+              [
+                11.50192566,
+                58.28907765
+              ],
+              [
+                11.49786454,
+                58.28787032
+              ],
+              [
+                11.49369587,
+                58.28676905
+              ],
+              [
+                11.48942968,
+                58.28577649
+              ],
+              [
+                11.48507619,
+                58.28489503
+              ],
+              [
+                11.48064587,
+                58.28412676
+              ],
+              [
+                11.47614936,
+                58.28347355
+              ],
+              [
+                11.47159743,
+                58.28293695
+              ],
+              [
+                11.46700103,
+                58.28251825
+              ],
+              [
+                11.46237116,
+                58.28221847
+              ],
+              [
+                11.45771895,
+                58.28203831
+              ],
+              [
+                11.45305556,
+                58.28197821
+              ],
+              [
+                11.44839216,
+                58.28203831
+              ],
+              [
+                11.44373995,
+                58.28221847
+              ],
+              [
+                11.43911009,
+                58.28251825
+              ],
+              [
+                11.43451368,
+                58.28293695
+              ],
+              [
+                11.42996175,
+                58.28347355
+              ],
+              [
+                11.42546524,
+                58.28412676
+              ],
+              [
+                11.42103492,
+                58.28489503
+              ],
+              [
+                11.41668144,
+                58.28577649
+              ],
+              [
+                11.41241524,
+                58.28676905
+              ],
+              [
+                11.40824657,
+                58.28787032
+              ],
+              [
+                11.40418545,
+                58.28907765
+              ],
+              [
+                11.40024164,
+                58.29038815
+              ],
+              [
+                11.39642461,
+                58.29179867
+              ],
+              [
+                11.39274354,
+                58.29330582
+              ],
+              [
+                11.3892073,
+                58.29490599
+              ],
+              [
+                11.38582439,
+                58.29659534
+              ],
+              [
+                11.38260296,
+                58.2983698
+              ],
+              [
+                11.37955078,
+                58.30022511
+              ],
+              [
+                11.3766752,
+                58.30215683
+              ],
+              [
+                11.37398316,
+                58.30416029
+              ],
+              [
+                11.37148116,
+                58.3062307
+              ],
+              [
+                11.36917526,
+                58.30836307
+              ],
+              [
+                11.36707103,
+                58.31055228
+              ],
+              [
+                11.36517357,
+                58.31279306
+              ],
+              [
+                11.36348747,
+                58.31508003
+              ],
+              [
+                11.36201685,
+                58.31740768
+              ],
+              [
+                11.36076527,
+                58.31977042
+              ],
+              [
+                11.35973581,
+                58.32216255
+              ],
+              [
+                11.35893097,
+                58.32457832
+              ],
+              [
+                11.35835274,
+                58.32701192
+              ],
+              [
+                11.35800256,
+                58.32945748
+              ],
+              [
+                11.35788132,
+                58.33190912
+              ],
+              [
+                11.35798937,
+                58.33436093
+              ],
+              [
+                11.35832649,
+                58.33680701
+              ],
+              [
+                11.35889191,
+                58.33924145
+              ],
+              [
+                11.35968431,
+                58.34165839
+              ],
+              [
+                11.36070185,
+                58.344052
+              ],
+              [
+                11.36194209,
+                58.34641652
+              ],
+              [
+                11.36340211,
+                58.34874623
+              ],
+              [
+                11.36507842,
+                58.35103553
+              ],
+              [
+                11.36696702,
+                58.35327888
+              ],
+              [
+                11.36906338,
+                58.35547087
+              ],
+              [
+                11.3713625,
+                58.35760622
+              ],
+              [
+                11.37385885,
+                58.35967976
+              ],
+              [
+                11.37654644,
+                58.36168649
+              ],
+              [
+                11.37941881,
+                58.36362156
+              ],
+              [
+                11.38246906,
+                58.36548031
+              ],
+              [
+                11.38568984,
+                58.36725823
+              ],
+              [
+                11.38907339,
+                58.36895104
+              ],
+              [
+                11.39261157,
+                58.37055464
+              ],
+              [
+                11.39629584,
+                58.37206515
+              ],
+              [
+                11.40011732,
+                58.37347894
+              ],
+              [
+                11.40406678,
+                58.37479257
+              ],
+              [
+                11.40813469,
+                58.37600287
+              ],
+              [
+                11.41231122,
+                58.37710692
+              ],
+              [
+                11.41658629,
+                58.37810205
+              ],
+              [
+                11.42094956,
+                58.37898585
+              ],
+              [
+                11.42539048,
+                58.37975617
+              ],
+              [
+                11.42989833,
+                58.38041117
+              ],
+              [
+                11.43446219,
+                58.38094925
+              ],
+              [
+                11.43907103,
+                58.38136911
+              ],
+              [
+                11.4437137,
+                58.38166974
+              ],
+              [
+                11.44837897,
+                58.38185041
+              ],
+              [
+                11.45305556,
+                58.38191068
+              ]
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "the_geom",
+      "properties": {
+        "NAME": "KOLLERÖD",
+        "ID": "ESR592_1",
+        "DESIG": "ESR592",
+        "LOWER": "SFC",
+        "UPPER": "2500",
+        "FROM": "2026-11-24T06:00Z",
+        "TO": "2026-11-28T17:00Z",
+        "SCHEDULE": "24 NOV 2026 0600 – 28 NOV 2026 1700",
+        "COM_SE": "Tillfälliga restriktionsområden kring Uddevalla upprättas för militär flygverksamhet.\nInom områdena gäller förbud mot all luftfart som inte ingår i verksamheten.",
+        "COM_EN": "Temporary restricted areas near Uddevalla established for military aviation operations.\nFlight within the areas prohibited for all non-participating aircraft.",
+        "URL": "https://aro.lfv.se/content/eaip/AIRAC%20AIP%20AMDT%207-2026_2026_11_26/eSUP/AIP%20SUP%20216-2026_2026_11_23/ES-SUP-en-GB.html",
+        "COORD": "A circle with radius 3 NM centered on 581955N 0112711E",
+        "LOW_UOM": "",
+        "UP_UOM": "ft AMSL",
+        "name": "KOLLERÖD",
+        "type": "REQ_AUTHORIZATION",
+        "reason": [
+          "OTHER"
+        ],
+        "comment": "Tillfälliga restriktionsområden kring Uddevalla upprättas för militär flygverksamhet.\nInom områdena gäller förbud mot all luftfart som inte ingår i verksamheten.",
+        "validFrom": "2026-11-24T06:00Z",
+        "validTo": "2026-11-28T17:00Z",
+        "layer": {
+          "lower": "SFC",
+          "upper": "2500",
           "uom": "ft AMSL",
           "lowerReference": "AGL",
           "upperReference": "AMSL"
