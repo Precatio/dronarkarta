@@ -18922,7 +18922,7 @@
         "LOWER": "GND",
         "WEF": "2026-10-29",
         "COMMENT_1": null,
-        "COMMENT_2": "Militär verksamhet inklusive flygverksamhet upp till 2000 ft AMSL.\nTillstånd kan erhållas från STOCKHOLM ACC eller LULEÅ ATS. \n \nMilitary activities including aviation operations up to 2000 ft AMSL. \nPermission obtainable from STOCKHOLM ACC or LULEÅ ATS.",
+        "COMMENT_2": "Milit��r verksamhet inklusive flygverksamhet upp till 2000 ft AMSL.\nTillstånd kan erhållas från STOCKHOLM ACC eller LULEÅ ATS. \n \nMilitary activities including aviation operations up to 2000 ft AMSL. \nPermission obtainable from STOCKHOLM ACC or LULEÅ ATS.",
         "QUALITY": "ROUTINE",
         "CRC_ID": null,
         "CRC_POS": null,
@@ -18935,7 +18935,7 @@
         "reason": [
           "SENSITIVE"
         ],
-        "comment": "Militär verksamhet inklusive flygverksamhet upp till 2000 ft AMSL.\nTillstånd kan erhållas från STOCKHOLM ACC eller LULEÅ ATS. \n \nMilitary activities including aviation operations up to 2000 ft AMSL. \nPermission obtainable from STOCKHOLM ACC or LULEÅ ATS.",
+        "comment": "Milit��r verksamhet inklusive flygverksamhet upp till 2000 ft AMSL.\nTillstånd kan erhållas från STOCKHOLM ACC eller LULEÅ ATS. \n \nMilitary activities including aviation operations up to 2000 ft AMSL. \nPermission obtainable from STOCKHOLM ACC or LULEÅ ATS.",
         "layer": {
           "lower": "GND",
           "upper": "32000",
